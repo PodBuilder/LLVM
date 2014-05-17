@@ -840,6 +840,12 @@
 		1F1FB55A19281191004EB0CA /* Trace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB52119281191004EB0CA /* Trace.cpp */; };
 		1F1FB55B19281191004EB0CA /* TypeBasedAliasAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB52219281191004EB0CA /* TypeBasedAliasAnalysis.cpp */; };
 		1F1FB55C19281191004EB0CA /* ValueTracking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB52319281191004EB0CA /* ValueTracking.cpp */; };
+		1F1FB56719281236004EB0CA /* LLLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB55F19281236004EB0CA /* LLLexer.cpp */; };
+		1F1FB56819281236004EB0CA /* LLLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB56019281236004EB0CA /* LLLexer.h */; };
+		1F1FB56919281236004EB0CA /* LLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB56119281236004EB0CA /* LLParser.cpp */; };
+		1F1FB56A19281236004EB0CA /* LLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB56219281236004EB0CA /* LLParser.h */; };
+		1F1FB56B19281236004EB0CA /* LLToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB56319281236004EB0CA /* LLToken.h */; };
+		1F1FB56D19281236004EB0CA /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB56619281236004EB0CA /* Parser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1668,6 +1674,12 @@
 		1F1FB52119281191004EB0CA /* Trace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Trace.cpp; sourceTree = "<group>"; };
 		1F1FB52219281191004EB0CA /* TypeBasedAliasAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TypeBasedAliasAnalysis.cpp; sourceTree = "<group>"; };
 		1F1FB52319281191004EB0CA /* ValueTracking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueTracking.cpp; sourceTree = "<group>"; };
+		1F1FB55F19281236004EB0CA /* LLLexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LLLexer.cpp; sourceTree = "<group>"; };
+		1F1FB56019281236004EB0CA /* LLLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLexer.h; sourceTree = "<group>"; };
+		1F1FB56119281236004EB0CA /* LLParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LLParser.cpp; sourceTree = "<group>"; };
+		1F1FB56219281236004EB0CA /* LLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLParser.h; sourceTree = "<group>"; };
+		1F1FB56319281236004EB0CA /* LLToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLToken.h; sourceTree = "<group>"; };
+		1F1FB56619281236004EB0CA /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2500,6 +2512,7 @@
 			isa = PBXGroup;
 			children = (
 				1F1FB4E919281190004EB0CA /* Analysis */,
+				1F1FB55D19281236004EB0CA /* AsmParser */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
@@ -2799,6 +2812,19 @@
 			path = IPA;
 			sourceTree = "<group>";
 		};
+		1F1FB55D19281236004EB0CA /* AsmParser */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB55F19281236004EB0CA /* LLLexer.cpp */,
+				1F1FB56019281236004EB0CA /* LLLexer.h */,
+				1F1FB56119281236004EB0CA /* LLParser.cpp */,
+				1F1FB56219281236004EB0CA /* LLParser.h */,
+				1F1FB56319281236004EB0CA /* LLToken.h */,
+				1F1FB56619281236004EB0CA /* Parser.cpp */,
+			);
+			path = AsmParser;
+			sourceTree = "<group>";
+		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -2900,6 +2926,7 @@
 				1F1FB0B819280BE9004EB0CA /* ValueMap.h in Headers */,
 				1F1FB1FE19280BE9004EB0CA /* CommandLine.h in Headers */,
 				1F1FB0CB19280BE9004EB0CA /* Dominators.h in Headers */,
+				1F1FB56819281236004EB0CA /* LLLexer.h in Headers */,
 				1F1FB0FA19280BE9004EB0CA /* ReaderWriter.h in Headers */,
 				1F1FB24C19280BE9004EB0CA /* TargetSelect.h in Headers */,
 				1F1FB12619280BE9004EB0CA /* MachineJumpTableInfo.h in Headers */,
@@ -3072,6 +3099,7 @@
 				1F1FB11B19280BE9004EB0CA /* MachineCodeEmitter.h in Headers */,
 				1F1FB1C219280BE9004EB0CA /* MCAsmParser.h in Headers */,
 				1F1FB22719280BE9004EB0CA /* Memory.h in Headers */,
+				1F1FB56A19281236004EB0CA /* LLParser.h in Headers */,
 				1F1FB21C19280BE9004EB0CA /* Host.h in Headers */,
 				1F1FB21F19280BE9004EB0CA /* LeakDetector.h in Headers */,
 				1F1FB1AD19280BE9004EB0CA /* MCInst.h in Headers */,
@@ -3121,6 +3149,7 @@
 				1F1FB09A19280BE9004EB0CA /* Optional.h in Headers */,
 				1F1FB29D19280BE9004EB0CA /* Scalar.h in Headers */,
 				1F1FB13119280BE9004EB0CA /* MachineSSAUpdater.h in Headers */,
+				1F1FB56B19281236004EB0CA /* LLToken.h in Headers */,
 				1F1FB1D019280BE9004EB0CA /* MCTargetAsmParser.h in Headers */,
 				1F1FB21319280BE9004EB0CA /* FEnv.h in Headers */,
 				1F1FB1FA19280BE9004EB0CA /* CFG.h in Headers */,
@@ -3633,6 +3662,7 @@
 				1F1FB33019280C8D004EB0CA /* Disassembler.cpp in Sources */,
 				1F1FB36A19280C8D004EB0CA /* system_error.cpp in Sources */,
 				1F1FB53419281191004EB0CA /* DominanceFrontier.cpp in Sources */,
+				1F1FB56D19281236004EB0CA /* Parser.cpp in Sources */,
 				1F1FB35619280C8D004EB0CA /* Regex.cpp in Sources */,
 				1F1FB55019281191004EB0CA /* PtrUseVisitor.cpp in Sources */,
 				1F1FB33C19280C8D004EB0CA /* IncludeFile.cpp in Sources */,
@@ -3646,6 +3676,7 @@
 				1F1FB52D19281191004EB0CA /* CaptureTracking.cpp in Sources */,
 				1F1FB35519280C8D004EB0CA /* regerror.c in Sources */,
 				1F1FB36F19280C8D004EB0CA /* Timer.cpp in Sources */,
+				1F1FB56719281236004EB0CA /* LLLexer.cpp in Sources */,
 				1F1FB34B19280C8D004EB0CA /* PluginLoader.cpp in Sources */,
 				1F1FB34219280C8D004EB0CA /* Locale.cpp in Sources */,
 				1F1FB32E19280C8D004EB0CA /* Debug.cpp in Sources */,
@@ -3738,6 +3769,7 @@
 				1F1FB34119280C8D004EB0CA /* IsNAN.cpp in Sources */,
 				1F1FB32F19280C8D004EB0CA /* DeltaAlgorithm.cpp in Sources */,
 				1F1FB55C19281191004EB0CA /* ValueTracking.cpp in Sources */,
+				1F1FB56919281236004EB0CA /* LLParser.cpp in Sources */,
 				1F1FB54D19281191004EB0CA /* NoAliasAnalysis.cpp in Sources */,
 				1F1FB54019281191004EB0CA /* IPA.cpp in Sources */,
 				1F1FB35D19280C8D004EB0CA /* RWMutex.cpp in Sources */,
