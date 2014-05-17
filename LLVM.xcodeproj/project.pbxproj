@@ -552,6 +552,100 @@
 		1F1FB29C19280BE9004EB0CA /* PassManagerBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB07B19280BE9004EB0CA /* PassManagerBuilder.h */; };
 		1F1FB29D19280BE9004EB0CA /* Scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB07C19280BE9004EB0CA /* Scalar.h */; };
 		1F1FB29E19280BE9004EB0CA /* Vectorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB07D19280BE9004EB0CA /* Vectorize.h */; };
+		1F1FB31D19280C8D004EB0CA /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A119280C8D004EB0CA /* Allocator.cpp */; };
+		1F1FB31E19280C8D004EB0CA /* APFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A219280C8D004EB0CA /* APFloat.cpp */; };
+		1F1FB31F19280C8D004EB0CA /* APInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A319280C8D004EB0CA /* APInt.cpp */; };
+		1F1FB32019280C8D004EB0CA /* APSInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A419280C8D004EB0CA /* APSInt.cpp */; };
+		1F1FB32119280C8D004EB0CA /* Atomic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A519280C8D004EB0CA /* Atomic.cpp */; };
+		1F1FB32219280C8D004EB0CA /* BlockFrequency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A619280C8D004EB0CA /* BlockFrequency.cpp */; };
+		1F1FB32319280C8D004EB0CA /* BranchProbability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A719280C8D004EB0CA /* BranchProbability.cpp */; };
+		1F1FB32419280C8D004EB0CA /* circular_raw_ostream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A819280C8D004EB0CA /* circular_raw_ostream.cpp */; };
+		1F1FB32519280C8D004EB0CA /* CommandLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A919280C8D004EB0CA /* CommandLine.cpp */; };
+		1F1FB32619280C8D004EB0CA /* Compression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AA19280C8D004EB0CA /* Compression.cpp */; };
+		1F1FB32719280C8D004EB0CA /* ConstantRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AB19280C8D004EB0CA /* ConstantRange.cpp */; };
+		1F1FB32819280C8D004EB0CA /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AC19280C8D004EB0CA /* ConvertUTF.c */; };
+		1F1FB32919280C8D004EB0CA /* ConvertUTFWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AD19280C8D004EB0CA /* ConvertUTFWrapper.cpp */; };
+		1F1FB32A19280C8D004EB0CA /* CrashRecoveryContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AF19280C8D004EB0CA /* CrashRecoveryContext.cpp */; };
+		1F1FB32B19280C8D004EB0CA /* DAGDeltaAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B019280C8D004EB0CA /* DAGDeltaAlgorithm.cpp */; };
+		1F1FB32C19280C8D004EB0CA /* DataExtractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B119280C8D004EB0CA /* DataExtractor.cpp */; };
+		1F1FB32D19280C8D004EB0CA /* DataStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B219280C8D004EB0CA /* DataStream.cpp */; };
+		1F1FB32E19280C8D004EB0CA /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B319280C8D004EB0CA /* Debug.cpp */; };
+		1F1FB32F19280C8D004EB0CA /* DeltaAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B419280C8D004EB0CA /* DeltaAlgorithm.cpp */; };
+		1F1FB33019280C8D004EB0CA /* Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B519280C8D004EB0CA /* Disassembler.cpp */; };
+		1F1FB33119280C8D004EB0CA /* Dwarf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B619280C8D004EB0CA /* Dwarf.cpp */; };
+		1F1FB33219280C8D004EB0CA /* DynamicLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B719280C8D004EB0CA /* DynamicLibrary.cpp */; };
+		1F1FB33319280C8D004EB0CA /* Errno.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B819280C8D004EB0CA /* Errno.cpp */; };
+		1F1FB33419280C8D004EB0CA /* ErrorHandling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B919280C8D004EB0CA /* ErrorHandling.cpp */; };
+		1F1FB33519280C8D004EB0CA /* FileOutputBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BA19280C8D004EB0CA /* FileOutputBuffer.cpp */; };
+		1F1FB33619280C8D004EB0CA /* FileUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BB19280C8D004EB0CA /* FileUtilities.cpp */; };
+		1F1FB33719280C8D004EB0CA /* FoldingSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BC19280C8D004EB0CA /* FoldingSet.cpp */; };
+		1F1FB33819280C8D004EB0CA /* FormattedStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BD19280C8D004EB0CA /* FormattedStream.cpp */; };
+		1F1FB33919280C8D004EB0CA /* GraphWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BE19280C8D004EB0CA /* GraphWriter.cpp */; };
+		1F1FB33A19280C8D004EB0CA /* Hashing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BF19280C8D004EB0CA /* Hashing.cpp */; };
+		1F1FB33B19280C8D004EB0CA /* Host.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C019280C8D004EB0CA /* Host.cpp */; };
+		1F1FB33C19280C8D004EB0CA /* IncludeFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C119280C8D004EB0CA /* IncludeFile.cpp */; };
+		1F1FB33D19280C8D004EB0CA /* IntEqClasses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C219280C8D004EB0CA /* IntEqClasses.cpp */; };
+		1F1FB33E19280C8D004EB0CA /* IntervalMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C319280C8D004EB0CA /* IntervalMap.cpp */; };
+		1F1FB33F19280C8D004EB0CA /* IntrusiveRefCntPtr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C419280C8D004EB0CA /* IntrusiveRefCntPtr.cpp */; };
+		1F1FB34019280C8D004EB0CA /* IsInf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C519280C8D004EB0CA /* IsInf.cpp */; };
+		1F1FB34119280C8D004EB0CA /* IsNAN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C619280C8D004EB0CA /* IsNAN.cpp */; };
+		1F1FB34219280C8D004EB0CA /* Locale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C719280C8D004EB0CA /* Locale.cpp */; };
+		1F1FB34319280C8D004EB0CA /* LockFileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C819280C8D004EB0CA /* LockFileManager.cpp */; };
+		1F1FB34419280C8D004EB0CA /* ManagedStatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C919280C8D004EB0CA /* ManagedStatic.cpp */; };
+		1F1FB34519280C8D004EB0CA /* MD5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CA19280C8D004EB0CA /* MD5.cpp */; };
+		1F1FB34619280C8D004EB0CA /* Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CB19280C8D004EB0CA /* Memory.cpp */; };
+		1F1FB34719280C8D004EB0CA /* MemoryBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CC19280C8D004EB0CA /* MemoryBuffer.cpp */; };
+		1F1FB34819280C8D004EB0CA /* MemoryObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CD19280C8D004EB0CA /* MemoryObject.cpp */; };
+		1F1FB34919280C8D004EB0CA /* Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CE19280C8D004EB0CA /* Mutex.cpp */; };
+		1F1FB34A19280C8D004EB0CA /* Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CF19280C8D004EB0CA /* Path.cpp */; };
+		1F1FB34B19280C8D004EB0CA /* PluginLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D019280C8D004EB0CA /* PluginLoader.cpp */; };
+		1F1FB34C19280C8D004EB0CA /* PrettyStackTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D119280C8D004EB0CA /* PrettyStackTrace.cpp */; };
+		1F1FB34D19280C8D004EB0CA /* Process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D219280C8D004EB0CA /* Process.cpp */; };
+		1F1FB34E19280C8D004EB0CA /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D319280C8D004EB0CA /* Program.cpp */; };
+		1F1FB34F19280C8D004EB0CA /* raw_os_ostream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D419280C8D004EB0CA /* raw_os_ostream.cpp */; };
+		1F1FB35019280C8D004EB0CA /* raw_ostream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D519280C8D004EB0CA /* raw_ostream.cpp */; };
+		1F1FB35119280C8D004EB0CA /* regcclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB2D619280C8D004EB0CA /* regcclass.h */; };
+		1F1FB35219280C8D004EB0CA /* regcname.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB2D719280C8D004EB0CA /* regcname.h */; };
+		1F1FB35319280C8D004EB0CA /* regcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D819280C8D004EB0CA /* regcomp.c */; };
+		1F1FB35519280C8D004EB0CA /* regerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2DA19280C8D004EB0CA /* regerror.c */; };
+		1F1FB35619280C8D004EB0CA /* Regex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2DB19280C8D004EB0CA /* Regex.cpp */; };
+		1F1FB35719280C8D004EB0CA /* regex2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB2DC19280C8D004EB0CA /* regex2.h */; };
+		1F1FB35819280C8D004EB0CA /* regex_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB2DD19280C8D004EB0CA /* regex_impl.h */; };
+		1F1FB35919280C8D004EB0CA /* regexec.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2DE19280C8D004EB0CA /* regexec.c */; };
+		1F1FB35A19280C8D004EB0CA /* regfree.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2DF19280C8D004EB0CA /* regfree.c */; };
+		1F1FB35B19280C8D004EB0CA /* regstrlcpy.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E019280C8D004EB0CA /* regstrlcpy.c */; };
+		1F1FB35C19280C8D004EB0CA /* regutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB2E119280C8D004EB0CA /* regutils.h */; };
+		1F1FB35D19280C8D004EB0CA /* RWMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E219280C8D004EB0CA /* RWMutex.cpp */; };
+		1F1FB35E19280C8D004EB0CA /* SearchForAddressOfSpecialSymbol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E319280C8D004EB0CA /* SearchForAddressOfSpecialSymbol.cpp */; };
+		1F1FB35F19280C8D004EB0CA /* Signals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E419280C8D004EB0CA /* Signals.cpp */; };
+		1F1FB36019280C8D004EB0CA /* SmallPtrSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E519280C8D004EB0CA /* SmallPtrSet.cpp */; };
+		1F1FB36119280C8D004EB0CA /* SmallVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E619280C8D004EB0CA /* SmallVector.cpp */; };
+		1F1FB36219280C8D004EB0CA /* SourceMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E719280C8D004EB0CA /* SourceMgr.cpp */; };
+		1F1FB36319280C8D004EB0CA /* Statistic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E819280C8D004EB0CA /* Statistic.cpp */; };
+		1F1FB36419280C8D004EB0CA /* StreamableMemoryObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E919280C8D004EB0CA /* StreamableMemoryObject.cpp */; };
+		1F1FB36519280C8D004EB0CA /* StringExtras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EA19280C8D004EB0CA /* StringExtras.cpp */; };
+		1F1FB36619280C8D004EB0CA /* StringMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EB19280C8D004EB0CA /* StringMap.cpp */; };
+		1F1FB36719280C8D004EB0CA /* StringPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EC19280C8D004EB0CA /* StringPool.cpp */; };
+		1F1FB36819280C8D004EB0CA /* StringRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2ED19280C8D004EB0CA /* StringRef.cpp */; };
+		1F1FB36919280C8D004EB0CA /* StringRefMemoryObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EE19280C8D004EB0CA /* StringRefMemoryObject.cpp */; };
+		1F1FB36A19280C8D004EB0CA /* system_error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EF19280C8D004EB0CA /* system_error.cpp */; };
+		1F1FB36B19280C8D004EB0CA /* SystemUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F019280C8D004EB0CA /* SystemUtils.cpp */; };
+		1F1FB36C19280C8D004EB0CA /* TargetRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F119280C8D004EB0CA /* TargetRegistry.cpp */; };
+		1F1FB36D19280C8D004EB0CA /* Threading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F219280C8D004EB0CA /* Threading.cpp */; };
+		1F1FB36E19280C8D004EB0CA /* ThreadLocal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F319280C8D004EB0CA /* ThreadLocal.cpp */; };
+		1F1FB36F19280C8D004EB0CA /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F419280C8D004EB0CA /* Timer.cpp */; };
+		1F1FB37019280C8D004EB0CA /* TimeValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F519280C8D004EB0CA /* TimeValue.cpp */; };
+		1F1FB37119280C8D004EB0CA /* ToolOutputFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F619280C8D004EB0CA /* ToolOutputFile.cpp */; };
+		1F1FB37219280C8D004EB0CA /* Triple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F719280C8D004EB0CA /* Triple.cpp */; };
+		1F1FB37319280C8D004EB0CA /* Twine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F819280C8D004EB0CA /* Twine.cpp */; };
+		1F1FB37419280C8D004EB0CA /* Unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F919280C8D004EB0CA /* Unicode.cpp */; };
+		1F1FB38019280C8D004EB0CA /* Unix.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB30719280C8D004EB0CA /* Unix.h */; };
+		1F1FB38219280C8D004EB0CA /* Valgrind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB30919280C8D004EB0CA /* Valgrind.cpp */; };
+		1F1FB38319280C8D004EB0CA /* Watchdog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB30A19280C8D004EB0CA /* Watchdog.cpp */; };
+		1F1FB39219280C8D004EB0CA /* Windows.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB31A19280C8D004EB0CA /* Windows.h */; };
+		1F1FB39319280C8D004EB0CA /* YAMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31B19280C8D004EB0CA /* YAMLParser.cpp */; };
+		1F1FB39419280C8D004EB0CA /* YAMLTraits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31C19280C8D004EB0CA /* YAMLTraits.cpp */; };
+		1F1FB39619280CF4004EB0CA /* DataTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB39519280CF4004EB0CA /* DataTypes.h */; };
 		1F8DEF7D1927F8B900138754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DEF7C1927F8B900138754 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -1129,6 +1223,129 @@
 		1F1FB07B19280BE9004EB0CA /* PassManagerBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassManagerBuilder.h; sourceTree = "<group>"; };
 		1F1FB07C19280BE9004EB0CA /* Scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scalar.h; sourceTree = "<group>"; };
 		1F1FB07D19280BE9004EB0CA /* Vectorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vectorize.h; sourceTree = "<group>"; };
+		1F1FB2A119280C8D004EB0CA /* Allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Allocator.cpp; sourceTree = "<group>"; };
+		1F1FB2A219280C8D004EB0CA /* APFloat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = APFloat.cpp; sourceTree = "<group>"; };
+		1F1FB2A319280C8D004EB0CA /* APInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = APInt.cpp; sourceTree = "<group>"; };
+		1F1FB2A419280C8D004EB0CA /* APSInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = APSInt.cpp; sourceTree = "<group>"; };
+		1F1FB2A519280C8D004EB0CA /* Atomic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Atomic.cpp; sourceTree = "<group>"; };
+		1F1FB2A619280C8D004EB0CA /* BlockFrequency.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockFrequency.cpp; sourceTree = "<group>"; };
+		1F1FB2A719280C8D004EB0CA /* BranchProbability.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BranchProbability.cpp; sourceTree = "<group>"; };
+		1F1FB2A819280C8D004EB0CA /* circular_raw_ostream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = circular_raw_ostream.cpp; sourceTree = "<group>"; };
+		1F1FB2A919280C8D004EB0CA /* CommandLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandLine.cpp; sourceTree = "<group>"; };
+		1F1FB2AA19280C8D004EB0CA /* Compression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Compression.cpp; sourceTree = "<group>"; };
+		1F1FB2AB19280C8D004EB0CA /* ConstantRange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConstantRange.cpp; sourceTree = "<group>"; };
+		1F1FB2AC19280C8D004EB0CA /* ConvertUTF.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ConvertUTF.c; sourceTree = "<group>"; };
+		1F1FB2AD19280C8D004EB0CA /* ConvertUTFWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvertUTFWrapper.cpp; sourceTree = "<group>"; };
+		1F1FB2AE19280C8D004EB0CA /* COPYRIGHT.regex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYRIGHT.regex; sourceTree = "<group>"; };
+		1F1FB2AF19280C8D004EB0CA /* CrashRecoveryContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrashRecoveryContext.cpp; sourceTree = "<group>"; };
+		1F1FB2B019280C8D004EB0CA /* DAGDeltaAlgorithm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DAGDeltaAlgorithm.cpp; sourceTree = "<group>"; };
+		1F1FB2B119280C8D004EB0CA /* DataExtractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataExtractor.cpp; sourceTree = "<group>"; };
+		1F1FB2B219280C8D004EB0CA /* DataStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataStream.cpp; sourceTree = "<group>"; };
+		1F1FB2B319280C8D004EB0CA /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
+		1F1FB2B419280C8D004EB0CA /* DeltaAlgorithm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeltaAlgorithm.cpp; sourceTree = "<group>"; };
+		1F1FB2B519280C8D004EB0CA /* Disassembler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Disassembler.cpp; sourceTree = "<group>"; };
+		1F1FB2B619280C8D004EB0CA /* Dwarf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dwarf.cpp; sourceTree = "<group>"; };
+		1F1FB2B719280C8D004EB0CA /* DynamicLibrary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicLibrary.cpp; sourceTree = "<group>"; };
+		1F1FB2B819280C8D004EB0CA /* Errno.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Errno.cpp; sourceTree = "<group>"; };
+		1F1FB2B919280C8D004EB0CA /* ErrorHandling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErrorHandling.cpp; sourceTree = "<group>"; };
+		1F1FB2BA19280C8D004EB0CA /* FileOutputBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileOutputBuffer.cpp; sourceTree = "<group>"; };
+		1F1FB2BB19280C8D004EB0CA /* FileUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileUtilities.cpp; sourceTree = "<group>"; };
+		1F1FB2BC19280C8D004EB0CA /* FoldingSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FoldingSet.cpp; sourceTree = "<group>"; };
+		1F1FB2BD19280C8D004EB0CA /* FormattedStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FormattedStream.cpp; sourceTree = "<group>"; };
+		1F1FB2BE19280C8D004EB0CA /* GraphWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphWriter.cpp; sourceTree = "<group>"; };
+		1F1FB2BF19280C8D004EB0CA /* Hashing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hashing.cpp; sourceTree = "<group>"; };
+		1F1FB2C019280C8D004EB0CA /* Host.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Host.cpp; sourceTree = "<group>"; };
+		1F1FB2C119280C8D004EB0CA /* IncludeFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IncludeFile.cpp; sourceTree = "<group>"; };
+		1F1FB2C219280C8D004EB0CA /* IntEqClasses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntEqClasses.cpp; sourceTree = "<group>"; };
+		1F1FB2C319280C8D004EB0CA /* IntervalMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntervalMap.cpp; sourceTree = "<group>"; };
+		1F1FB2C419280C8D004EB0CA /* IntrusiveRefCntPtr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntrusiveRefCntPtr.cpp; sourceTree = "<group>"; };
+		1F1FB2C519280C8D004EB0CA /* IsInf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IsInf.cpp; sourceTree = "<group>"; };
+		1F1FB2C619280C8D004EB0CA /* IsNAN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IsNAN.cpp; sourceTree = "<group>"; };
+		1F1FB2C719280C8D004EB0CA /* Locale.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Locale.cpp; sourceTree = "<group>"; };
+		1F1FB2C819280C8D004EB0CA /* LockFileManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LockFileManager.cpp; sourceTree = "<group>"; };
+		1F1FB2C919280C8D004EB0CA /* ManagedStatic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManagedStatic.cpp; sourceTree = "<group>"; };
+		1F1FB2CA19280C8D004EB0CA /* MD5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MD5.cpp; sourceTree = "<group>"; };
+		1F1FB2CB19280C8D004EB0CA /* Memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Memory.cpp; sourceTree = "<group>"; };
+		1F1FB2CC19280C8D004EB0CA /* MemoryBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryBuffer.cpp; sourceTree = "<group>"; };
+		1F1FB2CD19280C8D004EB0CA /* MemoryObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryObject.cpp; sourceTree = "<group>"; };
+		1F1FB2CE19280C8D004EB0CA /* Mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mutex.cpp; sourceTree = "<group>"; };
+		1F1FB2CF19280C8D004EB0CA /* Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Path.cpp; sourceTree = "<group>"; };
+		1F1FB2D019280C8D004EB0CA /* PluginLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginLoader.cpp; sourceTree = "<group>"; };
+		1F1FB2D119280C8D004EB0CA /* PrettyStackTrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PrettyStackTrace.cpp; sourceTree = "<group>"; };
+		1F1FB2D219280C8D004EB0CA /* Process.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Process.cpp; sourceTree = "<group>"; };
+		1F1FB2D319280C8D004EB0CA /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Program.cpp; sourceTree = "<group>"; };
+		1F1FB2D419280C8D004EB0CA /* raw_os_ostream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = raw_os_ostream.cpp; sourceTree = "<group>"; };
+		1F1FB2D519280C8D004EB0CA /* raw_ostream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = raw_ostream.cpp; sourceTree = "<group>"; };
+		1F1FB2D619280C8D004EB0CA /* regcclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regcclass.h; sourceTree = "<group>"; };
+		1F1FB2D719280C8D004EB0CA /* regcname.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regcname.h; sourceTree = "<group>"; };
+		1F1FB2D819280C8D004EB0CA /* regcomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = regcomp.c; sourceTree = "<group>"; };
+		1F1FB2D919280C8D004EB0CA /* regengine.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = regengine.inc; sourceTree = "<group>"; };
+		1F1FB2DA19280C8D004EB0CA /* regerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = regerror.c; sourceTree = "<group>"; };
+		1F1FB2DB19280C8D004EB0CA /* Regex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Regex.cpp; sourceTree = "<group>"; };
+		1F1FB2DC19280C8D004EB0CA /* regex2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regex2.h; sourceTree = "<group>"; };
+		1F1FB2DD19280C8D004EB0CA /* regex_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regex_impl.h; sourceTree = "<group>"; };
+		1F1FB2DE19280C8D004EB0CA /* regexec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = regexec.c; sourceTree = "<group>"; };
+		1F1FB2DF19280C8D004EB0CA /* regfree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = regfree.c; sourceTree = "<group>"; };
+		1F1FB2E019280C8D004EB0CA /* regstrlcpy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = regstrlcpy.c; sourceTree = "<group>"; };
+		1F1FB2E119280C8D004EB0CA /* regutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regutils.h; sourceTree = "<group>"; };
+		1F1FB2E219280C8D004EB0CA /* RWMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RWMutex.cpp; sourceTree = "<group>"; };
+		1F1FB2E319280C8D004EB0CA /* SearchForAddressOfSpecialSymbol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SearchForAddressOfSpecialSymbol.cpp; sourceTree = "<group>"; };
+		1F1FB2E419280C8D004EB0CA /* Signals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Signals.cpp; sourceTree = "<group>"; };
+		1F1FB2E519280C8D004EB0CA /* SmallPtrSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmallPtrSet.cpp; sourceTree = "<group>"; };
+		1F1FB2E619280C8D004EB0CA /* SmallVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmallVector.cpp; sourceTree = "<group>"; };
+		1F1FB2E719280C8D004EB0CA /* SourceMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SourceMgr.cpp; sourceTree = "<group>"; };
+		1F1FB2E819280C8D004EB0CA /* Statistic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Statistic.cpp; sourceTree = "<group>"; };
+		1F1FB2E919280C8D004EB0CA /* StreamableMemoryObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamableMemoryObject.cpp; sourceTree = "<group>"; };
+		1F1FB2EA19280C8D004EB0CA /* StringExtras.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringExtras.cpp; sourceTree = "<group>"; };
+		1F1FB2EB19280C8D004EB0CA /* StringMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringMap.cpp; sourceTree = "<group>"; };
+		1F1FB2EC19280C8D004EB0CA /* StringPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringPool.cpp; sourceTree = "<group>"; };
+		1F1FB2ED19280C8D004EB0CA /* StringRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringRef.cpp; sourceTree = "<group>"; };
+		1F1FB2EE19280C8D004EB0CA /* StringRefMemoryObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringRefMemoryObject.cpp; sourceTree = "<group>"; };
+		1F1FB2EF19280C8D004EB0CA /* system_error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = system_error.cpp; sourceTree = "<group>"; };
+		1F1FB2F019280C8D004EB0CA /* SystemUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SystemUtils.cpp; sourceTree = "<group>"; };
+		1F1FB2F119280C8D004EB0CA /* TargetRegistry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetRegistry.cpp; sourceTree = "<group>"; };
+		1F1FB2F219280C8D004EB0CA /* Threading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Threading.cpp; sourceTree = "<group>"; };
+		1F1FB2F319280C8D004EB0CA /* ThreadLocal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadLocal.cpp; sourceTree = "<group>"; };
+		1F1FB2F419280C8D004EB0CA /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		1F1FB2F519280C8D004EB0CA /* TimeValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeValue.cpp; sourceTree = "<group>"; };
+		1F1FB2F619280C8D004EB0CA /* ToolOutputFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToolOutputFile.cpp; sourceTree = "<group>"; };
+		1F1FB2F719280C8D004EB0CA /* Triple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triple.cpp; sourceTree = "<group>"; };
+		1F1FB2F819280C8D004EB0CA /* Twine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Twine.cpp; sourceTree = "<group>"; };
+		1F1FB2F919280C8D004EB0CA /* Unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unicode.cpp; sourceTree = "<group>"; };
+		1F1FB2FB19280C8D004EB0CA /* Host.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Host.inc; sourceTree = "<group>"; };
+		1F1FB2FC19280C8D004EB0CA /* Memory.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Memory.inc; sourceTree = "<group>"; };
+		1F1FB2FD19280C8D004EB0CA /* Mutex.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Mutex.inc; sourceTree = "<group>"; };
+		1F1FB2FE19280C8D004EB0CA /* Path.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Path.inc; sourceTree = "<group>"; };
+		1F1FB2FF19280C8D004EB0CA /* Process.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Process.inc; sourceTree = "<group>"; };
+		1F1FB30019280C8D004EB0CA /* Program.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Program.inc; sourceTree = "<group>"; };
+		1F1FB30119280C8D004EB0CA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1F1FB30219280C8D004EB0CA /* RWMutex.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = RWMutex.inc; sourceTree = "<group>"; };
+		1F1FB30319280C8D004EB0CA /* Signals.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Signals.inc; sourceTree = "<group>"; };
+		1F1FB30419280C8D004EB0CA /* system_error.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = system_error.inc; sourceTree = "<group>"; };
+		1F1FB30519280C8D004EB0CA /* ThreadLocal.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = ThreadLocal.inc; sourceTree = "<group>"; };
+		1F1FB30619280C8D004EB0CA /* TimeValue.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = TimeValue.inc; sourceTree = "<group>"; };
+		1F1FB30719280C8D004EB0CA /* Unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unix.h; sourceTree = "<group>"; };
+		1F1FB30819280C8D004EB0CA /* Watchdog.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Watchdog.inc; sourceTree = "<group>"; };
+		1F1FB30919280C8D004EB0CA /* Valgrind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Valgrind.cpp; sourceTree = "<group>"; };
+		1F1FB30A19280C8D004EB0CA /* Watchdog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Watchdog.cpp; sourceTree = "<group>"; };
+		1F1FB30C19280C8D004EB0CA /* DynamicLibrary.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = DynamicLibrary.inc; sourceTree = "<group>"; };
+		1F1FB30D19280C8D004EB0CA /* explicit_symbols.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = explicit_symbols.inc; sourceTree = "<group>"; };
+		1F1FB30E19280C8D004EB0CA /* Host.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Host.inc; sourceTree = "<group>"; };
+		1F1FB30F19280C8D004EB0CA /* Memory.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Memory.inc; sourceTree = "<group>"; };
+		1F1FB31019280C8D004EB0CA /* Mutex.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Mutex.inc; sourceTree = "<group>"; };
+		1F1FB31119280C8D004EB0CA /* Path.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Path.inc; sourceTree = "<group>"; };
+		1F1FB31219280C8D004EB0CA /* Process.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Process.inc; sourceTree = "<group>"; };
+		1F1FB31319280C8D004EB0CA /* Program.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Program.inc; sourceTree = "<group>"; };
+		1F1FB31419280C8D004EB0CA /* RWMutex.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = RWMutex.inc; sourceTree = "<group>"; };
+		1F1FB31519280C8D004EB0CA /* Signals.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Signals.inc; sourceTree = "<group>"; };
+		1F1FB31619280C8D004EB0CA /* system_error.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = system_error.inc; sourceTree = "<group>"; };
+		1F1FB31719280C8D004EB0CA /* ThreadLocal.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = ThreadLocal.inc; sourceTree = "<group>"; };
+		1F1FB31819280C8D004EB0CA /* TimeValue.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = TimeValue.inc; sourceTree = "<group>"; };
+		1F1FB31919280C8D004EB0CA /* Watchdog.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Watchdog.inc; sourceTree = "<group>"; };
+		1F1FB31A19280C8D004EB0CA /* Windows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Windows.h; sourceTree = "<group>"; };
+		1F1FB31B19280C8D004EB0CA /* YAMLParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YAMLParser.cpp; sourceTree = "<group>"; };
+		1F1FB31C19280C8D004EB0CA /* YAMLTraits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YAMLTraits.cpp; sourceTree = "<group>"; };
+		1F1FB39519280CF4004EB0CA /* DataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTypes.h; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1152,6 +1369,7 @@
 		1F176B1F1927F86A0003BFB8 = {
 			isa = PBXGroup;
 			children = (
+				1F1FB29F19280C8D004EB0CA /* Source Files */,
 				1F1FAE2619280BE8004EB0CA /* Header Files */,
 				1F8DEF7B1927F8B900138754 /* Frameworks */,
 				1F8DEF7A1927F8B900138754 /* Products */,
@@ -1732,6 +1950,7 @@
 				1F1FAFD519280BE8004EB0CA /* DataExtractor.h */,
 				1F1FAFD619280BE8004EB0CA /* DataFlow.h */,
 				1F1FAFD719280BE8004EB0CA /* DataStream.h */,
+				1F1FB39519280CF4004EB0CA /* DataTypes.h */,
 				1F1FAFD819280BE8004EB0CA /* DataTypes.h.cmake */,
 				1F1FAFD919280BE8004EB0CA /* DataTypes.h.in */,
 				1F1FAFDA19280BE8004EB0CA /* Debug.h */,
@@ -1947,6 +2166,160 @@
 			path = Transforms;
 			sourceTree = "<group>";
 		};
+		1F1FB29F19280C8D004EB0CA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB2A019280C8D004EB0CA /* Support */,
+			);
+			name = "Source Files";
+			path = lib;
+			sourceTree = "<group>";
+		};
+		1F1FB2A019280C8D004EB0CA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB2A119280C8D004EB0CA /* Allocator.cpp */,
+				1F1FB2A219280C8D004EB0CA /* APFloat.cpp */,
+				1F1FB2A319280C8D004EB0CA /* APInt.cpp */,
+				1F1FB2A419280C8D004EB0CA /* APSInt.cpp */,
+				1F1FB2A519280C8D004EB0CA /* Atomic.cpp */,
+				1F1FB2A619280C8D004EB0CA /* BlockFrequency.cpp */,
+				1F1FB2A719280C8D004EB0CA /* BranchProbability.cpp */,
+				1F1FB2A819280C8D004EB0CA /* circular_raw_ostream.cpp */,
+				1F1FB2A919280C8D004EB0CA /* CommandLine.cpp */,
+				1F1FB2AA19280C8D004EB0CA /* Compression.cpp */,
+				1F1FB2AB19280C8D004EB0CA /* ConstantRange.cpp */,
+				1F1FB2AC19280C8D004EB0CA /* ConvertUTF.c */,
+				1F1FB2AD19280C8D004EB0CA /* ConvertUTFWrapper.cpp */,
+				1F1FB2AE19280C8D004EB0CA /* COPYRIGHT.regex */,
+				1F1FB2AF19280C8D004EB0CA /* CrashRecoveryContext.cpp */,
+				1F1FB2B019280C8D004EB0CA /* DAGDeltaAlgorithm.cpp */,
+				1F1FB2B119280C8D004EB0CA /* DataExtractor.cpp */,
+				1F1FB2B219280C8D004EB0CA /* DataStream.cpp */,
+				1F1FB2B319280C8D004EB0CA /* Debug.cpp */,
+				1F1FB2B419280C8D004EB0CA /* DeltaAlgorithm.cpp */,
+				1F1FB2B519280C8D004EB0CA /* Disassembler.cpp */,
+				1F1FB2B619280C8D004EB0CA /* Dwarf.cpp */,
+				1F1FB2B719280C8D004EB0CA /* DynamicLibrary.cpp */,
+				1F1FB2B819280C8D004EB0CA /* Errno.cpp */,
+				1F1FB2B919280C8D004EB0CA /* ErrorHandling.cpp */,
+				1F1FB2BA19280C8D004EB0CA /* FileOutputBuffer.cpp */,
+				1F1FB2BB19280C8D004EB0CA /* FileUtilities.cpp */,
+				1F1FB2BC19280C8D004EB0CA /* FoldingSet.cpp */,
+				1F1FB2BD19280C8D004EB0CA /* FormattedStream.cpp */,
+				1F1FB2BE19280C8D004EB0CA /* GraphWriter.cpp */,
+				1F1FB2BF19280C8D004EB0CA /* Hashing.cpp */,
+				1F1FB2C019280C8D004EB0CA /* Host.cpp */,
+				1F1FB2C119280C8D004EB0CA /* IncludeFile.cpp */,
+				1F1FB2C219280C8D004EB0CA /* IntEqClasses.cpp */,
+				1F1FB2C319280C8D004EB0CA /* IntervalMap.cpp */,
+				1F1FB2C419280C8D004EB0CA /* IntrusiveRefCntPtr.cpp */,
+				1F1FB2C519280C8D004EB0CA /* IsInf.cpp */,
+				1F1FB2C619280C8D004EB0CA /* IsNAN.cpp */,
+				1F1FB2C719280C8D004EB0CA /* Locale.cpp */,
+				1F1FB2C819280C8D004EB0CA /* LockFileManager.cpp */,
+				1F1FB2C919280C8D004EB0CA /* ManagedStatic.cpp */,
+				1F1FB2CA19280C8D004EB0CA /* MD5.cpp */,
+				1F1FB2CB19280C8D004EB0CA /* Memory.cpp */,
+				1F1FB2CC19280C8D004EB0CA /* MemoryBuffer.cpp */,
+				1F1FB2CD19280C8D004EB0CA /* MemoryObject.cpp */,
+				1F1FB2CE19280C8D004EB0CA /* Mutex.cpp */,
+				1F1FB2CF19280C8D004EB0CA /* Path.cpp */,
+				1F1FB2D019280C8D004EB0CA /* PluginLoader.cpp */,
+				1F1FB2D119280C8D004EB0CA /* PrettyStackTrace.cpp */,
+				1F1FB2D219280C8D004EB0CA /* Process.cpp */,
+				1F1FB2D319280C8D004EB0CA /* Program.cpp */,
+				1F1FB2D419280C8D004EB0CA /* raw_os_ostream.cpp */,
+				1F1FB2D519280C8D004EB0CA /* raw_ostream.cpp */,
+				1F1FB2D619280C8D004EB0CA /* regcclass.h */,
+				1F1FB2D719280C8D004EB0CA /* regcname.h */,
+				1F1FB2D819280C8D004EB0CA /* regcomp.c */,
+				1F1FB2D919280C8D004EB0CA /* regengine.inc */,
+				1F1FB2DA19280C8D004EB0CA /* regerror.c */,
+				1F1FB2DB19280C8D004EB0CA /* Regex.cpp */,
+				1F1FB2DC19280C8D004EB0CA /* regex2.h */,
+				1F1FB2DD19280C8D004EB0CA /* regex_impl.h */,
+				1F1FB2DE19280C8D004EB0CA /* regexec.c */,
+				1F1FB2DF19280C8D004EB0CA /* regfree.c */,
+				1F1FB2E019280C8D004EB0CA /* regstrlcpy.c */,
+				1F1FB2E119280C8D004EB0CA /* regutils.h */,
+				1F1FB2E219280C8D004EB0CA /* RWMutex.cpp */,
+				1F1FB2E319280C8D004EB0CA /* SearchForAddressOfSpecialSymbol.cpp */,
+				1F1FB2E419280C8D004EB0CA /* Signals.cpp */,
+				1F1FB2E519280C8D004EB0CA /* SmallPtrSet.cpp */,
+				1F1FB2E619280C8D004EB0CA /* SmallVector.cpp */,
+				1F1FB2E719280C8D004EB0CA /* SourceMgr.cpp */,
+				1F1FB2E819280C8D004EB0CA /* Statistic.cpp */,
+				1F1FB2E919280C8D004EB0CA /* StreamableMemoryObject.cpp */,
+				1F1FB2EA19280C8D004EB0CA /* StringExtras.cpp */,
+				1F1FB2EB19280C8D004EB0CA /* StringMap.cpp */,
+				1F1FB2EC19280C8D004EB0CA /* StringPool.cpp */,
+				1F1FB2ED19280C8D004EB0CA /* StringRef.cpp */,
+				1F1FB2EE19280C8D004EB0CA /* StringRefMemoryObject.cpp */,
+				1F1FB2EF19280C8D004EB0CA /* system_error.cpp */,
+				1F1FB2F019280C8D004EB0CA /* SystemUtils.cpp */,
+				1F1FB2F119280C8D004EB0CA /* TargetRegistry.cpp */,
+				1F1FB2F219280C8D004EB0CA /* Threading.cpp */,
+				1F1FB2F319280C8D004EB0CA /* ThreadLocal.cpp */,
+				1F1FB2F419280C8D004EB0CA /* Timer.cpp */,
+				1F1FB2F519280C8D004EB0CA /* TimeValue.cpp */,
+				1F1FB2F619280C8D004EB0CA /* ToolOutputFile.cpp */,
+				1F1FB2F719280C8D004EB0CA /* Triple.cpp */,
+				1F1FB2F819280C8D004EB0CA /* Twine.cpp */,
+				1F1FB2F919280C8D004EB0CA /* Unicode.cpp */,
+				1F1FB2FA19280C8D004EB0CA /* Unix */,
+				1F1FB30919280C8D004EB0CA /* Valgrind.cpp */,
+				1F1FB30A19280C8D004EB0CA /* Watchdog.cpp */,
+				1F1FB30B19280C8D004EB0CA /* Windows */,
+				1F1FB31B19280C8D004EB0CA /* YAMLParser.cpp */,
+				1F1FB31C19280C8D004EB0CA /* YAMLTraits.cpp */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1F1FB2FA19280C8D004EB0CA /* Unix */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB2FB19280C8D004EB0CA /* Host.inc */,
+				1F1FB2FC19280C8D004EB0CA /* Memory.inc */,
+				1F1FB2FD19280C8D004EB0CA /* Mutex.inc */,
+				1F1FB2FE19280C8D004EB0CA /* Path.inc */,
+				1F1FB2FF19280C8D004EB0CA /* Process.inc */,
+				1F1FB30019280C8D004EB0CA /* Program.inc */,
+				1F1FB30119280C8D004EB0CA /* README.txt */,
+				1F1FB30219280C8D004EB0CA /* RWMutex.inc */,
+				1F1FB30319280C8D004EB0CA /* Signals.inc */,
+				1F1FB30419280C8D004EB0CA /* system_error.inc */,
+				1F1FB30519280C8D004EB0CA /* ThreadLocal.inc */,
+				1F1FB30619280C8D004EB0CA /* TimeValue.inc */,
+				1F1FB30719280C8D004EB0CA /* Unix.h */,
+				1F1FB30819280C8D004EB0CA /* Watchdog.inc */,
+			);
+			path = Unix;
+			sourceTree = "<group>";
+		};
+		1F1FB30B19280C8D004EB0CA /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB30C19280C8D004EB0CA /* DynamicLibrary.inc */,
+				1F1FB30D19280C8D004EB0CA /* explicit_symbols.inc */,
+				1F1FB30E19280C8D004EB0CA /* Host.inc */,
+				1F1FB30F19280C8D004EB0CA /* Memory.inc */,
+				1F1FB31019280C8D004EB0CA /* Mutex.inc */,
+				1F1FB31119280C8D004EB0CA /* Path.inc */,
+				1F1FB31219280C8D004EB0CA /* Process.inc */,
+				1F1FB31319280C8D004EB0CA /* Program.inc */,
+				1F1FB31419280C8D004EB0CA /* RWMutex.inc */,
+				1F1FB31519280C8D004EB0CA /* Signals.inc */,
+				1F1FB31619280C8D004EB0CA /* system_error.inc */,
+				1F1FB31719280C8D004EB0CA /* ThreadLocal.inc */,
+				1F1FB31819280C8D004EB0CA /* TimeValue.inc */,
+				1F1FB31919280C8D004EB0CA /* Watchdog.inc */,
+				1F1FB31A19280C8D004EB0CA /* Windows.h */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -2012,6 +2385,7 @@
 				1F1FB25819280BE9004EB0CA /* Win64EH.h in Headers */,
 				1F1FB14519280BE9004EB0CA /* ScheduleDFS.h in Headers */,
 				1F1FB24A19280BE9004EB0CA /* TargetFolder.h in Headers */,
+				1F1FB35819280C8D004EB0CA /* regex_impl.h in Headers */,
 				1F1FB12919280BE9004EB0CA /* MachineModuleInfo.h in Headers */,
 				1F1FB27919280BE9004EB0CA /* BypassSlowDivision.h in Headers */,
 				1F1FB19719280BE9004EB0CA /* MCAsmInfoCOFF.h in Headers */,
@@ -2033,6 +2407,7 @@
 				1F1FB10219280BE9004EB0CA /* EdgeBundles.h in Headers */,
 				1F1FB26219280BE9004EB0CA /* Mangler.h in Headers */,
 				1F1FB11319280BE9004EB0CA /* LiveRangeEdit.h in Headers */,
+				1F1FB35719280C8D004EB0CA /* regex2.h in Headers */,
 				1F1FB10A19280BE9004EB0CA /* ISDOpcodes.h in Headers */,
 				1F1FB26F19280BE9004EB0CA /* TargetSelectionDAGInfo.h in Headers */,
 				1F1FB16619280BE9004EB0CA /* RuntimeDyld.h in Headers */,
@@ -2075,6 +2450,7 @@
 				1F1FB1F019280BE9004EB0CA /* AlignOf.h in Headers */,
 				1F1FB28719280BE9004EB0CA /* SSAUpdaterImpl.h in Headers */,
 				1F1FB08719280BE9004EB0CA /* DenseSet.h in Headers */,
+				1F1FB39619280CF4004EB0CA /* DataTypes.h in Headers */,
 				1F1FB16819280BE9004EB0CA /* GVMaterializer.h in Headers */,
 				1F1FB0C419280BE9004EB0CA /* CFGPrinter.h in Headers */,
 				1F1FB11819280BE9004EB0CA /* MachineBasicBlock.h in Headers */,
@@ -2142,6 +2518,7 @@
 				1F1FB1D119280BE9004EB0CA /* MCValue.h in Headers */,
 				1F1FB18719280BE9004EB0CA /* Type.h in Headers */,
 				1F1FB0EA19280BE9004EB0CA /* ScalarEvolutionExpressions.h in Headers */,
+				1F1FB39219280C8D004EB0CA /* Windows.h in Headers */,
 				1F1FB26019280BE9004EB0CA /* TableGenBackend.h in Headers */,
 				1F1FB0F519280BE9004EB0CA /* AutoUpgrade.h in Headers */,
 				1F1FB1E519280BE9004EB0CA /* ArgList.h in Headers */,
@@ -2175,6 +2552,7 @@
 				1F1FB12419280BE9004EB0CA /* MachineInstrBuilder.h in Headers */,
 				1F1FB27019280BE9004EB0CA /* TargetSubtargetInfo.h in Headers */,
 				1F1FB16119280BE9004EB0CA /* ObjectBuffer.h in Headers */,
+				1F1FB35219280C8D004EB0CA /* regcname.h in Headers */,
 				1F1FB20119280BE9004EB0CA /* ConstantFolder.h in Headers */,
 				1F1FB13619280BE9004EB0CA /* HeuristicBase.h in Headers */,
 				1F1FB25119280BE9004EB0CA /* ToolOutputFile.h in Headers */,
@@ -2306,6 +2684,7 @@
 				1F1FB0CD19280BE9004EB0CA /* DOTGraphTraitsPass.h in Headers */,
 				1F1FB1EF19280BE9004EB0CA /* AIXDataTypesFix.h in Headers */,
 				1F1FB26519280BE9004EB0CA /* TargetInstrInfo.h in Headers */,
+				1F1FB35119280C8D004EB0CA /* regcclass.h in Headers */,
 				1F1FB25D19280BE9004EB0CA /* Record.h in Headers */,
 				1F1FB09C19280BE9004EB0CA /* PackedVector.h in Headers */,
 				1F1FB1A319280BE9004EB0CA /* MCELF.h in Headers */,
@@ -2356,6 +2735,7 @@
 				1F1FB11719280BE9004EB0CA /* LiveVariables.h in Headers */,
 				1F1FB20219280BE9004EB0CA /* ConstantRange.h in Headers */,
 				1F1FB1E919280BE9004EB0CA /* Pass.h in Headers */,
+				1F1FB38019280C8D004EB0CA /* Unix.h in Headers */,
 				1F1FB0C919280BE9004EB0CA /* DominanceFrontier.h in Headers */,
 				1F1FB23319280BE9004EB0CA /* PredIteratorCache.h in Headers */,
 				1F1FB23619280BE9004EB0CA /* Program.h in Headers */,
@@ -2447,6 +2827,7 @@
 				1F1FB12119280BE9004EB0CA /* MachineFunctionAnalysis.h in Headers */,
 				1F1FB1CF19280BE9004EB0CA /* MCSymbolizer.h in Headers */,
 				1F1FB09719280BE9004EB0CA /* IntrusiveRefCntPtr.h in Headers */,
+				1F1FB35C19280C8D004EB0CA /* regutils.h in Headers */,
 				1F1FB15A19280BE9004EB0CA /* ExecutionEngine.h in Headers */,
 				1F1FB10919280BE9004EB0CA /* IntrinsicLowering.h in Headers */,
 				1F1FB14919280BE9004EB0CA /* SelectionDAG.h in Headers */,
@@ -2582,6 +2963,92 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1FB37419280C8D004EB0CA /* Unicode.cpp in Sources */,
+				1F1FB32519280C8D004EB0CA /* CommandLine.cpp in Sources */,
+				1F1FB36019280C8D004EB0CA /* SmallPtrSet.cpp in Sources */,
+				1F1FB37119280C8D004EB0CA /* ToolOutputFile.cpp in Sources */,
+				1F1FB31D19280C8D004EB0CA /* Allocator.cpp in Sources */,
+				1F1FB34519280C8D004EB0CA /* MD5.cpp in Sources */,
+				1F1FB32D19280C8D004EB0CA /* DataStream.cpp in Sources */,
+				1F1FB35B19280C8D004EB0CA /* regstrlcpy.c in Sources */,
+				1F1FB33019280C8D004EB0CA /* Disassembler.cpp in Sources */,
+				1F1FB36A19280C8D004EB0CA /* system_error.cpp in Sources */,
+				1F1FB35619280C8D004EB0CA /* Regex.cpp in Sources */,
+				1F1FB33C19280C8D004EB0CA /* IncludeFile.cpp in Sources */,
+				1F1FB35919280C8D004EB0CA /* regexec.c in Sources */,
+				1F1FB32919280C8D004EB0CA /* ConvertUTFWrapper.cpp in Sources */,
+				1F1FB32419280C8D004EB0CA /* circular_raw_ostream.cpp in Sources */,
+				1F1FB34419280C8D004EB0CA /* ManagedStatic.cpp in Sources */,
+				1F1FB35519280C8D004EB0CA /* regerror.c in Sources */,
+				1F1FB36F19280C8D004EB0CA /* Timer.cpp in Sources */,
+				1F1FB34B19280C8D004EB0CA /* PluginLoader.cpp in Sources */,
+				1F1FB34219280C8D004EB0CA /* Locale.cpp in Sources */,
+				1F1FB32E19280C8D004EB0CA /* Debug.cpp in Sources */,
+				1F1FB33719280C8D004EB0CA /* FoldingSet.cpp in Sources */,
+				1F1FB31F19280C8D004EB0CA /* APInt.cpp in Sources */,
+				1F1FB32219280C8D004EB0CA /* BlockFrequency.cpp in Sources */,
+				1F1FB36319280C8D004EB0CA /* Statistic.cpp in Sources */,
+				1F1FB36819280C8D004EB0CA /* StringRef.cpp in Sources */,
+				1F1FB34319280C8D004EB0CA /* LockFileManager.cpp in Sources */,
+				1F1FB35019280C8D004EB0CA /* raw_ostream.cpp in Sources */,
+				1F1FB33519280C8D004EB0CA /* FileOutputBuffer.cpp in Sources */,
+				1F1FB33419280C8D004EB0CA /* ErrorHandling.cpp in Sources */,
+				1F1FB34819280C8D004EB0CA /* MemoryObject.cpp in Sources */,
+				1F1FB34919280C8D004EB0CA /* Mutex.cpp in Sources */,
+				1F1FB37319280C8D004EB0CA /* Twine.cpp in Sources */,
+				1F1FB33E19280C8D004EB0CA /* IntervalMap.cpp in Sources */,
+				1F1FB32B19280C8D004EB0CA /* DAGDeltaAlgorithm.cpp in Sources */,
+				1F1FB34019280C8D004EB0CA /* IsInf.cpp in Sources */,
+				1F1FB32819280C8D004EB0CA /* ConvertUTF.c in Sources */,
+				1F1FB33B19280C8D004EB0CA /* Host.cpp in Sources */,
+				1F1FB36C19280C8D004EB0CA /* TargetRegistry.cpp in Sources */,
+				1F1FB36719280C8D004EB0CA /* StringPool.cpp in Sources */,
+				1F1FB34F19280C8D004EB0CA /* raw_os_ostream.cpp in Sources */,
+				1F1FB33819280C8D004EB0CA /* FormattedStream.cpp in Sources */,
+				1F1FB38219280C8D004EB0CA /* Valgrind.cpp in Sources */,
+				1F1FB34D19280C8D004EB0CA /* Process.cpp in Sources */,
+				1F1FB39319280C8D004EB0CA /* YAMLParser.cpp in Sources */,
+				1F1FB36919280C8D004EB0CA /* StringRefMemoryObject.cpp in Sources */,
+				1F1FB38319280C8D004EB0CA /* Watchdog.cpp in Sources */,
+				1F1FB32C19280C8D004EB0CA /* DataExtractor.cpp in Sources */,
+				1F1FB34A19280C8D004EB0CA /* Path.cpp in Sources */,
+				1F1FB33619280C8D004EB0CA /* FileUtilities.cpp in Sources */,
+				1F1FB32119280C8D004EB0CA /* Atomic.cpp in Sources */,
+				1F1FB36619280C8D004EB0CA /* StringMap.cpp in Sources */,
+				1F1FB32619280C8D004EB0CA /* Compression.cpp in Sources */,
+				1F1FB36419280C8D004EB0CA /* StreamableMemoryObject.cpp in Sources */,
+				1F1FB32719280C8D004EB0CA /* ConstantRange.cpp in Sources */,
+				1F1FB33A19280C8D004EB0CA /* Hashing.cpp in Sources */,
+				1F1FB35319280C8D004EB0CA /* regcomp.c in Sources */,
+				1F1FB33319280C8D004EB0CA /* Errno.cpp in Sources */,
+				1F1FB36119280C8D004EB0CA /* SmallVector.cpp in Sources */,
+				1F1FB34C19280C8D004EB0CA /* PrettyStackTrace.cpp in Sources */,
+				1F1FB37219280C8D004EB0CA /* Triple.cpp in Sources */,
+				1F1FB34619280C8D004EB0CA /* Memory.cpp in Sources */,
+				1F1FB33D19280C8D004EB0CA /* IntEqClasses.cpp in Sources */,
+				1F1FB32019280C8D004EB0CA /* APSInt.cpp in Sources */,
+				1F1FB33919280C8D004EB0CA /* GraphWriter.cpp in Sources */,
+				1F1FB34E19280C8D004EB0CA /* Program.cpp in Sources */,
+				1F1FB35F19280C8D004EB0CA /* Signals.cpp in Sources */,
+				1F1FB32319280C8D004EB0CA /* BranchProbability.cpp in Sources */,
+				1F1FB39419280C8D004EB0CA /* YAMLTraits.cpp in Sources */,
+				1F1FB34119280C8D004EB0CA /* IsNAN.cpp in Sources */,
+				1F1FB32F19280C8D004EB0CA /* DeltaAlgorithm.cpp in Sources */,
+				1F1FB35D19280C8D004EB0CA /* RWMutex.cpp in Sources */,
+				1F1FB33F19280C8D004EB0CA /* IntrusiveRefCntPtr.cpp in Sources */,
+				1F1FB36219280C8D004EB0CA /* SourceMgr.cpp in Sources */,
+				1F1FB32A19280C8D004EB0CA /* CrashRecoveryContext.cpp in Sources */,
+				1F1FB34719280C8D004EB0CA /* MemoryBuffer.cpp in Sources */,
+				1F1FB36E19280C8D004EB0CA /* ThreadLocal.cpp in Sources */,
+				1F1FB35A19280C8D004EB0CA /* regfree.c in Sources */,
+				1F1FB36519280C8D004EB0CA /* StringExtras.cpp in Sources */,
+				1F1FB33219280C8D004EB0CA /* DynamicLibrary.cpp in Sources */,
+				1F1FB31E19280C8D004EB0CA /* APFloat.cpp in Sources */,
+				1F1FB36D19280C8D004EB0CA /* Threading.cpp in Sources */,
+				1F1FB35E19280C8D004EB0CA /* SearchForAddressOfSpecialSymbol.cpp in Sources */,
+				1F1FB37019280C8D004EB0CA /* TimeValue.cpp in Sources */,
+				1F1FB36B19280C8D004EB0CA /* SystemUtils.cpp in Sources */,
+				1F1FB33119280C8D004EB0CA /* Dwarf.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2591,12 +3058,20 @@
 		1F176B241927F86A0003BFB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+				);
 			};
 			name = Debug;
 		};
 		1F176B251927F86A0003BFB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+				);
 			};
 			name = Release;
 		};
@@ -2621,21 +3096,19 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
@@ -2660,15 +3133,20 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
