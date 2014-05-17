@@ -6,14 +6,113 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1F8DEF7D1927F8B900138754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DEF7C1927F8B900138754 /* Cocoa.framework */; };
+		1F8DEF871927F8B900138754 /* LLVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DEF861927F8B900138754 /* LLVM.m */; };
+		1F8DEFA11927F8DE00138754 /* LLVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F8DEF851927F8B900138754 /* LLVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1F8DEF811927F8B900138754 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1F8DEF851927F8B900138754 /* LLVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLVM.h; sourceTree = "<group>"; };
+		1F8DEF861927F8B900138754 /* LLVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLVM.m; sourceTree = "<group>"; };
+		1F8DEF8D1927F8B900138754 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F8DEF761927F8B900138754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DEF7D1927F8B900138754 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		1F176B1F1927F86A0003BFB8 = {
 			isa = PBXGroup;
 			children = (
+				1F8DEF821927F8B900138754 /* LLVM */,
+				1F8DEF7B1927F8B900138754 /* Frameworks */,
+				1F8DEF7A1927F8B900138754 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		1F8DEF7A1927F8B900138754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DEF791927F8B900138754 /* libLLVM.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F8DEF7B1927F8B900138754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DEF7C1927F8B900138754 /* Cocoa.framework */,
+				1F8DEF8D1927F8B900138754 /* XCTest.framework */,
+				1F8DEF7E1927F8B900138754 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F8DEF7E1927F8B900138754 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DEF7F1927F8B900138754 /* Foundation.framework */,
+				1F8DEF801927F8B900138754 /* CoreData.framework */,
+				1F8DEF811927F8B900138754 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1F8DEF821927F8B900138754 /* LLVM */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DEF851927F8B900138754 /* LLVM.h */,
+				1F8DEF861927F8B900138754 /* LLVM.m */,
+			);
+			path = LLVM;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F8DEF771927F8B900138754 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DEFA11927F8DE00138754 /* LLVM.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F8DEF781927F8B900138754 /* LLVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8DEF9F1927F8B900138754 /* Build configuration list for PBXNativeTarget "LLVM" */;
+			buildPhases = (
+				1F8DEF751927F8B900138754 /* Sources */,
+				1F8DEF761927F8B900138754 /* Frameworks */,
+				1F8DEF771927F8B900138754 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVM;
+			productName = LLVM;
+			productReference = 1F8DEF791927F8B900138754 /* libLLVM.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1F176B201927F86A0003BFB8 /* Project object */ = {
@@ -31,12 +130,25 @@
 				en,
 			);
 			mainGroup = 1F176B1F1927F86A0003BFB8;
+			productRefGroup = 1F8DEF7A1927F8B900138754 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				1F8DEF781927F8B900138754 /* LLVM */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F8DEF751927F8B900138754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DEF871927F8B900138754 /* LLVM.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		1F176B241927F86A0003BFB8 /* Debug */ = {
@@ -51,6 +163,78 @@
 			};
 			name = Release;
 		};
+		1F8DEF9B1927F8B900138754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F8DEF9C1927F8B900138754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -62,6 +246,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1F8DEF9F1927F8B900138754 /* Build configuration list for PBXNativeTarget "LLVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DEF9B1927F8B900138754 /* Debug */,
+				1F8DEF9C1927F8B900138754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
