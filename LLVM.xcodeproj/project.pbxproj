@@ -646,6 +646,15 @@
 		1F1FB39319280C8D004EB0CA /* YAMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31B19280C8D004EB0CA /* YAMLParser.cpp */; };
 		1F1FB39419280C8D004EB0CA /* YAMLTraits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31C19280C8D004EB0CA /* YAMLTraits.cpp */; };
 		1F1FB39619280CF4004EB0CA /* DataTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB39519280CF4004EB0CA /* DataTypes.h */; };
+		1F1FB3A419280D91004EB0CA /* Error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB39919280D91004EB0CA /* Error.cpp */; };
+		1F1FB3A519280D91004EB0CA /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB39B19280D91004EB0CA /* Main.cpp */; };
+		1F1FB3A719280D91004EB0CA /* Record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB39D19280D91004EB0CA /* Record.cpp */; };
+		1F1FB3A819280D91004EB0CA /* StringMatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB39E19280D91004EB0CA /* StringMatcher.cpp */; };
+		1F1FB3A919280D91004EB0CA /* TableGenBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB39F19280D91004EB0CA /* TableGenBackend.cpp */; };
+		1F1FB3AA19280D91004EB0CA /* TGLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB3A019280D91004EB0CA /* TGLexer.cpp */; };
+		1F1FB3AB19280D91004EB0CA /* TGLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB3A119280D91004EB0CA /* TGLexer.h */; };
+		1F1FB3AC19280D91004EB0CA /* TGParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB3A219280D91004EB0CA /* TGParser.cpp */; };
+		1F1FB3AD19280D91004EB0CA /* TGParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB3A319280D91004EB0CA /* TGParser.h */; };
 		1F8DEF7D1927F8B900138754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DEF7C1927F8B900138754 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -1346,6 +1355,15 @@
 		1F1FB31B19280C8D004EB0CA /* YAMLParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YAMLParser.cpp; sourceTree = "<group>"; };
 		1F1FB31C19280C8D004EB0CA /* YAMLTraits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YAMLTraits.cpp; sourceTree = "<group>"; };
 		1F1FB39519280CF4004EB0CA /* DataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTypes.h; sourceTree = "<group>"; };
+		1F1FB39919280D91004EB0CA /* Error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Error.cpp; sourceTree = "<group>"; };
+		1F1FB39B19280D91004EB0CA /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
+		1F1FB39D19280D91004EB0CA /* Record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Record.cpp; sourceTree = "<group>"; };
+		1F1FB39E19280D91004EB0CA /* StringMatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringMatcher.cpp; sourceTree = "<group>"; };
+		1F1FB39F19280D91004EB0CA /* TableGenBackend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TableGenBackend.cpp; sourceTree = "<group>"; };
+		1F1FB3A019280D91004EB0CA /* TGLexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TGLexer.cpp; sourceTree = "<group>"; };
+		1F1FB3A119280D91004EB0CA /* TGLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLexer.h; sourceTree = "<group>"; };
+		1F1FB3A219280D91004EB0CA /* TGParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TGParser.cpp; sourceTree = "<group>"; };
+		1F1FB3A319280D91004EB0CA /* TGParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGParser.h; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2169,6 +2187,7 @@
 		1F1FB29F19280C8D004EB0CA /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 			);
 			name = "Source Files";
@@ -2318,6 +2337,22 @@
 				1F1FB31A19280C8D004EB0CA /* Windows.h */,
 			);
 			path = Windows;
+			sourceTree = "<group>";
+		};
+		1F1FB39719280D91004EB0CA /* TableGen */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB39919280D91004EB0CA /* Error.cpp */,
+				1F1FB39B19280D91004EB0CA /* Main.cpp */,
+				1F1FB39D19280D91004EB0CA /* Record.cpp */,
+				1F1FB39E19280D91004EB0CA /* StringMatcher.cpp */,
+				1F1FB39F19280D91004EB0CA /* TableGenBackend.cpp */,
+				1F1FB3A019280D91004EB0CA /* TGLexer.cpp */,
+				1F1FB3A119280D91004EB0CA /* TGLexer.h */,
+				1F1FB3A219280D91004EB0CA /* TGParser.cpp */,
+				1F1FB3A319280D91004EB0CA /* TGParser.h */,
+			);
+			path = TableGen;
 			sourceTree = "<group>";
 		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
@@ -2561,6 +2596,7 @@
 				1F1FB0B219280BE9004EB0CA /* StringSet.h in Headers */,
 				1F1FB1DA19280BE9004EB0CA /* ELF.h in Headers */,
 				1F1FB20519280BE9004EB0CA /* DataExtractor.h in Headers */,
+				1F1FB3AB19280D91004EB0CA /* TGLexer.h in Headers */,
 				1F1FB17619280BE9004EB0CA /* GlobalAlias.h in Headers */,
 				1F1FB0A619280BE9004EB0CA /* SmallPtrSet.h in Headers */,
 				1F1FB11519280BE9004EB0CA /* LiveRegUnits.h in Headers */,
@@ -2714,6 +2750,7 @@
 				1F1FB17119280BE9004EB0CA /* DataLayout.h in Headers */,
 				1F1FB23E19280BE9004EB0CA /* RWMutex.h in Headers */,
 				1F1FB17419280BE9004EB0CA /* DiagnosticPrinter.h in Headers */,
+				1F1FB3AD19280D91004EB0CA /* TGParser.h in Headers */,
 				1F1FB1A419280BE9004EB0CA /* MCELFObjectWriter.h in Headers */,
 				1F1FB28F19280BE9004EB0CA /* Core.h in Headers */,
 				1F1FB25F19280BE9004EB0CA /* StringToOffsetTable.h in Headers */,
@@ -2969,6 +3006,7 @@
 				1F1FB37119280C8D004EB0CA /* ToolOutputFile.cpp in Sources */,
 				1F1FB31D19280C8D004EB0CA /* Allocator.cpp in Sources */,
 				1F1FB34519280C8D004EB0CA /* MD5.cpp in Sources */,
+				1F1FB3A519280D91004EB0CA /* Main.cpp in Sources */,
 				1F1FB32D19280C8D004EB0CA /* DataStream.cpp in Sources */,
 				1F1FB35B19280C8D004EB0CA /* regstrlcpy.c in Sources */,
 				1F1FB33019280C8D004EB0CA /* Disassembler.cpp in Sources */,
@@ -2990,9 +3028,11 @@
 				1F1FB36319280C8D004EB0CA /* Statistic.cpp in Sources */,
 				1F1FB36819280C8D004EB0CA /* StringRef.cpp in Sources */,
 				1F1FB34319280C8D004EB0CA /* LockFileManager.cpp in Sources */,
+				1F1FB3A719280D91004EB0CA /* Record.cpp in Sources */,
 				1F1FB35019280C8D004EB0CA /* raw_ostream.cpp in Sources */,
 				1F1FB33519280C8D004EB0CA /* FileOutputBuffer.cpp in Sources */,
 				1F1FB33419280C8D004EB0CA /* ErrorHandling.cpp in Sources */,
+				1F1FB3A819280D91004EB0CA /* StringMatcher.cpp in Sources */,
 				1F1FB34819280C8D004EB0CA /* MemoryObject.cpp in Sources */,
 				1F1FB34919280C8D004EB0CA /* Mutex.cpp in Sources */,
 				1F1FB37319280C8D004EB0CA /* Twine.cpp in Sources */,
@@ -3005,18 +3045,21 @@
 				1F1FB36719280C8D004EB0CA /* StringPool.cpp in Sources */,
 				1F1FB34F19280C8D004EB0CA /* raw_os_ostream.cpp in Sources */,
 				1F1FB33819280C8D004EB0CA /* FormattedStream.cpp in Sources */,
+				1F1FB3A919280D91004EB0CA /* TableGenBackend.cpp in Sources */,
 				1F1FB38219280C8D004EB0CA /* Valgrind.cpp in Sources */,
 				1F1FB34D19280C8D004EB0CA /* Process.cpp in Sources */,
 				1F1FB39319280C8D004EB0CA /* YAMLParser.cpp in Sources */,
 				1F1FB36919280C8D004EB0CA /* StringRefMemoryObject.cpp in Sources */,
 				1F1FB38319280C8D004EB0CA /* Watchdog.cpp in Sources */,
 				1F1FB32C19280C8D004EB0CA /* DataExtractor.cpp in Sources */,
+				1F1FB3AC19280D91004EB0CA /* TGParser.cpp in Sources */,
 				1F1FB34A19280C8D004EB0CA /* Path.cpp in Sources */,
 				1F1FB33619280C8D004EB0CA /* FileUtilities.cpp in Sources */,
 				1F1FB32119280C8D004EB0CA /* Atomic.cpp in Sources */,
 				1F1FB36619280C8D004EB0CA /* StringMap.cpp in Sources */,
 				1F1FB32619280C8D004EB0CA /* Compression.cpp in Sources */,
 				1F1FB36419280C8D004EB0CA /* StreamableMemoryObject.cpp in Sources */,
+				1F1FB3AA19280D91004EB0CA /* TGLexer.cpp in Sources */,
 				1F1FB32719280C8D004EB0CA /* ConstantRange.cpp in Sources */,
 				1F1FB33A19280C8D004EB0CA /* Hashing.cpp in Sources */,
 				1F1FB35319280C8D004EB0CA /* regcomp.c in Sources */,
@@ -3029,6 +3072,7 @@
 				1F1FB32019280C8D004EB0CA /* APSInt.cpp in Sources */,
 				1F1FB33919280C8D004EB0CA /* GraphWriter.cpp in Sources */,
 				1F1FB34E19280C8D004EB0CA /* Program.cpp in Sources */,
+				1F1FB3A419280D91004EB0CA /* Error.cpp in Sources */,
 				1F1FB35F19280C8D004EB0CA /* Signals.cpp in Sources */,
 				1F1FB32319280C8D004EB0CA /* BranchProbability.cpp in Sources */,
 				1F1FB39419280C8D004EB0CA /* YAMLTraits.cpp in Sources */,
