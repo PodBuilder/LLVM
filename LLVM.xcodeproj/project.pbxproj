@@ -994,14 +994,6 @@
 		1F74FF8D1928097C0037E692 /* ValueTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueTypes.h; sourceTree = "<group>"; };
 		1F74FF8E1928097C0037E692 /* ValueTypes.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ValueTypes.td; sourceTree = "<group>"; };
 		1F74FF8F1928097C0037E692 /* VirtRegMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtRegMap.h; sourceTree = "<group>"; };
-		1F74FF911928097C0037E692 /* AsmParsers.def.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AsmParsers.def.in; sourceTree = "<group>"; };
-		1F74FF921928097C0037E692 /* AsmPrinters.def.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AsmPrinters.def.in; sourceTree = "<group>"; };
-		1F74FF931928097C0037E692 /* config.h.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.cmake; sourceTree = "<group>"; };
-		1F74FF941928097C0037E692 /* config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
-		1F74FF951928097C0037E692 /* Disassemblers.def.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Disassemblers.def.in; sourceTree = "<group>"; };
-		1F74FF961928097C0037E692 /* llvm-config.h.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "llvm-config.h.cmake"; sourceTree = "<group>"; };
-		1F74FF971928097C0037E692 /* llvm-config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "llvm-config.h.in"; sourceTree = "<group>"; };
-		1F74FF981928097C0037E692 /* Targets.def.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Targets.def.in; sourceTree = "<group>"; };
 		1F74FF9A1928097C0037E692 /* DIContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIContext.h; sourceTree = "<group>"; };
 		1F74FF9B1928097C0037E692 /* DWARFFormValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFFormValue.h; sourceTree = "<group>"; };
 		1F74FF9C1928097C0037E692 /* DebugInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugInfo.h; sourceTree = "<group>"; };
@@ -1700,14 +1692,6 @@
 				1F740304192809EB0037E692 /* Disassemblers.def */,
 				1F740305192809EB0037E692 /* llvm-config.h */,
 				1F740306192809EB0037E692 /* Targets.def */,
-				1F74FF911928097C0037E692 /* AsmParsers.def.in */,
-				1F74FF921928097C0037E692 /* AsmPrinters.def.in */,
-				1F74FF931928097C0037E692 /* config.h.cmake */,
-				1F74FF941928097C0037E692 /* config.h.in */,
-				1F74FF951928097C0037E692 /* Disassemblers.def.in */,
-				1F74FF961928097C0037E692 /* llvm-config.h.cmake */,
-				1F74FF971928097C0037E692 /* llvm-config.h.in */,
-				1F74FF981928097C0037E692 /* Targets.def.in */,
 			);
 			path = Config;
 			sourceTree = "<group>";
