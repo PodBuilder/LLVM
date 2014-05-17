@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F8DEF7D1927F8B900138754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DEF7C1927F8B900138754 /* Cocoa.framework */; };
-		1F8DEF871927F8B900138754 /* LLVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DEF861927F8B900138754 /* LLVM.m */; };
-		1F8DEFA11927F8DE00138754 /* LLVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F8DEF851927F8B900138754 /* LLVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +16,6 @@
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1F8DEF811927F8B900138754 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		1F8DEF851927F8B900138754 /* LLVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLVM.h; sourceTree = "<group>"; };
-		1F8DEF861927F8B900138754 /* LLVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLVM.m; sourceTree = "<group>"; };
 		1F8DEF8D1927F8B900138754 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -38,7 +34,6 @@
 		1F176B1F1927F86A0003BFB8 = {
 			isa = PBXGroup;
 			children = (
-				1F8DEF821927F8B900138754 /* LLVM */,
 				1F8DEF7B1927F8B900138754 /* Frameworks */,
 				1F8DEF7A1927F8B900138754 /* Products */,
 			);
@@ -72,15 +67,6 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		1F8DEF821927F8B900138754 /* LLVM */ = {
-			isa = PBXGroup;
-			children = (
-				1F8DEF851927F8B900138754 /* LLVM.h */,
-				1F8DEF861927F8B900138754 /* LLVM.m */,
-			);
-			path = LLVM;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -88,7 +74,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F8DEFA11927F8DE00138754 /* LLVM.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +129,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F8DEF871927F8B900138754 /* LLVM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +238,7 @@
 				1F8DEF9C1927F8B900138754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
