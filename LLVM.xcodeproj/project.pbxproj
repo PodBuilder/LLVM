@@ -781,12 +781,19 @@
 		1F1FB46719280EB6004EB0CA /* Watchdog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB30A19280C8D004EB0CA /* Watchdog.cpp */; };
 		1F1FB46819280EB6004EB0CA /* YAMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31B19280C8D004EB0CA /* YAMLParser.cpp */; };
 		1F1FB46919280EB6004EB0CA /* YAMLTraits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31C19280C8D004EB0CA /* YAMLTraits.cpp */; };
-		1F1FB46C19280F46004EB0CA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46B19280F46004EB0CA /* libz.dylib */; };
-		1F1FB46E19280F4C004EB0CA /* libcurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46D19280F4C004EB0CA /* libcurses.dylib */; };
 		1F1FB46F19280F54004EB0CA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46B19280F46004EB0CA /* libz.dylib */; };
 		1F1FB47019280F58004EB0CA /* libcurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46D19280F4C004EB0CA /* libcurses.dylib */; };
-		1F8DEF7D1927F8B900138754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DEF7C1927F8B900138754 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F1FB4E519281030004EB0CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1F1FAE2919280BE8004EB0CA /* APFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APFloat.h; sourceTree = "<group>"; };
@@ -1546,6 +1553,7 @@
 		1F1FB46A19280F0F004EB0CA /* X86DisassemblerDecoderCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86DisassemblerDecoderCommon.h; sourceTree = "<group>"; };
 		1F1FB46B19280F46004EB0CA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		1F1FB46D19280F4C004EB0CA /* libcurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurses.dylib; path = usr/lib/libcurses.dylib; sourceTree = SDKROOT; };
+		1F1FB4E819281045004EB0CA /* run-tablegen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "run-tablegen.sh"; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1568,9 +1576,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1FB46E19280F4C004EB0CA /* libcurses.dylib in Frameworks */,
-				1F1FB46C19280F46004EB0CA /* libz.dylib in Frameworks */,
-				1F8DEF7D1927F8B900138754 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2382,6 +2387,7 @@
 			children = (
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
+				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
 			);
 			name = "Source Files";
 			path = lib;
@@ -3225,6 +3231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F8DEF9F1927F8B900138754 /* Build configuration list for PBXNativeTarget "LLVM" */;
 			buildPhases = (
+				1F1FB4E719281034004EB0CA /* Run TableGen */,
 				1F8DEF751927F8B900138754 /* Sources */,
 				1F8DEF761927F8B900138754 /* Frameworks */,
 				1F8DEF771927F8B900138754 /* Headers */,
@@ -3232,6 +3239,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1F1FB4E619281030004EB0CA /* PBXTargetDependency */,
 			);
 			name = LLVM;
 			productName = LLVM;
@@ -3265,6 +3273,24 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F1FB4E719281034004EB0CA /* Run TableGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run TableGen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/run-tablegen.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F1FB3AF19280E8C004EB0CA /* Sources */ = {
@@ -3501,6 +3527,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F1FB4E619281030004EB0CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
+			targetProxy = 1F1FB4E519281030004EB0CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1F176B241927F86A0003BFB8 /* Debug */ = {
