@@ -19,7 +19,9 @@
 		1F176B201927F86A0003BFB8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LLVM;
 				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "William Kent";
 			};
 			buildConfigurationList = 1F176B231927F86A0003BFB8 /* Build configuration list for PBXProject "LLVM" */;
 			compatibilityVersion = "Xcode 3.2";
