@@ -530,6 +530,9 @@
 		1F7402FC1928097D0037E692 /* UnrollLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7400F11928097D0037E692 /* UnrollLoop.h */; };
 		1F7402FD1928097D0037E692 /* ValueMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7400F21928097D0037E692 /* ValueMapper.h */; };
 		1F7402FE1928097D0037E692 /* Vectorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7400F31928097D0037E692 /* Vectorize.h */; };
+		1F740307192809EB0037E692 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F740302192809EB0037E692 /* config.h */; };
+		1F740308192809EB0037E692 /* DataTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F740303192809EB0037E692 /* DataTypes.h */; };
+		1F740309192809EB0037E692 /* llvm-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F740305192809EB0037E692 /* llvm-config.h */; };
 		1F8DEF7D1927F8B900138754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DEF7C1927F8B900138754 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -769,6 +772,13 @@
 		1F7400F11928097D0037E692 /* UnrollLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnrollLoop.h; sourceTree = "<group>"; };
 		1F7400F21928097D0037E692 /* ValueMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueMapper.h; sourceTree = "<group>"; };
 		1F7400F31928097D0037E692 /* Vectorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vectorize.h; sourceTree = "<group>"; };
+		1F740300192809EB0037E692 /* AsmParsers.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AsmParsers.def; sourceTree = "<group>"; };
+		1F740301192809EB0037E692 /* AsmPrinters.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AsmPrinters.def; sourceTree = "<group>"; };
+		1F740302192809EB0037E692 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		1F740303192809EB0037E692 /* DataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTypes.h; sourceTree = "<group>"; };
+		1F740304192809EB0037E692 /* Disassemblers.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Disassemblers.def; sourceTree = "<group>"; };
+		1F740305192809EB0037E692 /* llvm-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "llvm-config.h"; sourceTree = "<group>"; };
+		1F740306192809EB0037E692 /* Targets.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Targets.def; sourceTree = "<group>"; };
 		1F74FEB31928097C0037E692 /* APFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APFloat.h; sourceTree = "<group>"; };
 		1F74FEB41928097C0037E692 /* APInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APInt.h; sourceTree = "<group>"; };
 		1F74FEB51928097C0037E692 /* APSInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSInt.h; sourceTree = "<group>"; };
@@ -1683,6 +1693,13 @@
 		1F74FF901928097C0037E692 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				1F740300192809EB0037E692 /* AsmParsers.def */,
+				1F740301192809EB0037E692 /* AsmPrinters.def */,
+				1F740302192809EB0037E692 /* config.h */,
+				1F740303192809EB0037E692 /* DataTypes.h */,
+				1F740304192809EB0037E692 /* Disassemblers.def */,
+				1F740305192809EB0037E692 /* llvm-config.h */,
+				1F740306192809EB0037E692 /* Targets.def */,
 				1F74FF911928097C0037E692 /* AsmParsers.def.in */,
 				1F74FF921928097C0037E692 /* AsmPrinters.def.in */,
 				1F74FF931928097C0037E692 /* config.h.cmake */,
@@ -2029,6 +2046,7 @@
 				1F7401FA1928097D0037E692 /* Type.h in Headers */,
 				1F74029A1928097D0037E692 /* Memory.h in Headers */,
 				1F7401BD1928097D0037E692 /* SchedulerRegistry.h in Headers */,
+				1F740309192809EB0037E692 /* llvm-config.h in Headers */,
 				1F7401871928097D0037E692 /* LiveIntervalAnalysis.h in Headers */,
 				1F7402B61928097D0037E692 /* SourceMgr.h in Headers */,
 				1F7401221928097D0037E692 /* SparseSet.h in Headers */,
@@ -2058,6 +2076,7 @@
 				1F7402561928097D0037E692 /* YAML.h in Headers */,
 				1F7402351928097D0037E692 /* MCAsmParser.h in Headers */,
 				1F7402311928097D0037E692 /* MCObjectWriter.h in Headers */,
+				1F740308192809EB0037E692 /* DataTypes.h in Headers */,
 				1F7401321928097D0037E692 /* BlockFrequencyImpl.h in Headers */,
 				1F7401351928097D0037E692 /* CallGraph.h in Headers */,
 				1F74028D1928097D0037E692 /* GetElementPtrTypeIterator.h in Headers */,
@@ -2180,6 +2199,7 @@
 				1F7402D11928097D0037E692 /* StringMatcher.h in Headers */,
 				1F7401A71928097D0037E692 /* MachineSSAUpdater.h in Headers */,
 				1F74017A1928097D0037E692 /* FunctionLoweringInfo.h in Headers */,
+				1F740307192809EB0037E692 /* config.h in Headers */,
 				1F7401541928097D0037E692 /* MemoryBuiltins.h in Headers */,
 				1F7401741928097D0037E692 /* CallingConvLower.h in Headers */,
 				1F7400F81928097D0037E692 /* BitVector.h in Headers */,
