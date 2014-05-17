@@ -846,6 +846,15 @@
 		1F1FB56A19281236004EB0CA /* LLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB56219281236004EB0CA /* LLParser.h */; };
 		1F1FB56B19281236004EB0CA /* LLToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB56319281236004EB0CA /* LLToken.h */; };
 		1F1FB56D19281236004EB0CA /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB56619281236004EB0CA /* Parser.cpp */; };
+		1F1FB57A19281282004EB0CA /* BitcodeReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57019281282004EB0CA /* BitcodeReader.cpp */; };
+		1F1FB57B19281282004EB0CA /* BitcodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB57119281282004EB0CA /* BitcodeReader.h */; };
+		1F1FB57C19281282004EB0CA /* BitReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57219281282004EB0CA /* BitReader.cpp */; };
+		1F1FB57D19281282004EB0CA /* BitstreamReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57319281282004EB0CA /* BitstreamReader.cpp */; };
+		1F1FB57E19281282004EB0CA /* BitcodeWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57519281282004EB0CA /* BitcodeWriter.cpp */; };
+		1F1FB57F19281282004EB0CA /* BitcodeWriterPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57619281282004EB0CA /* BitcodeWriterPass.cpp */; };
+		1F1FB58019281282004EB0CA /* BitWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57719281282004EB0CA /* BitWriter.cpp */; };
+		1F1FB58119281282004EB0CA /* ValueEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57819281282004EB0CA /* ValueEnumerator.cpp */; };
+		1F1FB58219281282004EB0CA /* ValueEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FB57919281282004EB0CA /* ValueEnumerator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1680,6 +1689,15 @@
 		1F1FB56219281236004EB0CA /* LLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLParser.h; sourceTree = "<group>"; };
 		1F1FB56319281236004EB0CA /* LLToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLToken.h; sourceTree = "<group>"; };
 		1F1FB56619281236004EB0CA /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
+		1F1FB57019281282004EB0CA /* BitcodeReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitcodeReader.cpp; sourceTree = "<group>"; };
+		1F1FB57119281282004EB0CA /* BitcodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitcodeReader.h; sourceTree = "<group>"; };
+		1F1FB57219281282004EB0CA /* BitReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitReader.cpp; sourceTree = "<group>"; };
+		1F1FB57319281282004EB0CA /* BitstreamReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitstreamReader.cpp; sourceTree = "<group>"; };
+		1F1FB57519281282004EB0CA /* BitcodeWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitcodeWriter.cpp; sourceTree = "<group>"; };
+		1F1FB57619281282004EB0CA /* BitcodeWriterPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitcodeWriterPass.cpp; sourceTree = "<group>"; };
+		1F1FB57719281282004EB0CA /* BitWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitWriter.cpp; sourceTree = "<group>"; };
+		1F1FB57819281282004EB0CA /* ValueEnumerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueEnumerator.cpp; sourceTree = "<group>"; };
+		1F1FB57919281282004EB0CA /* ValueEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueEnumerator.h; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2513,6 +2531,7 @@
 			children = (
 				1F1FB4E919281190004EB0CA /* Analysis */,
 				1F1FB55D19281236004EB0CA /* AsmParser */,
+				1F1FB56E19281282004EB0CA /* Bitcode */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
@@ -2823,6 +2842,38 @@
 				1F1FB56619281236004EB0CA /* Parser.cpp */,
 			);
 			path = AsmParser;
+			sourceTree = "<group>";
+		};
+		1F1FB56E19281282004EB0CA /* Bitcode */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB56F19281282004EB0CA /* Reader */,
+				1F1FB57419281282004EB0CA /* Writer */,
+			);
+			path = Bitcode;
+			sourceTree = "<group>";
+		};
+		1F1FB56F19281282004EB0CA /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB57019281282004EB0CA /* BitcodeReader.cpp */,
+				1F1FB57119281282004EB0CA /* BitcodeReader.h */,
+				1F1FB57219281282004EB0CA /* BitReader.cpp */,
+				1F1FB57319281282004EB0CA /* BitstreamReader.cpp */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		1F1FB57419281282004EB0CA /* Writer */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB57519281282004EB0CA /* BitcodeWriter.cpp */,
+				1F1FB57619281282004EB0CA /* BitcodeWriterPass.cpp */,
+				1F1FB57719281282004EB0CA /* BitWriter.cpp */,
+				1F1FB57819281282004EB0CA /* ValueEnumerator.cpp */,
+				1F1FB57919281282004EB0CA /* ValueEnumerator.h */,
+			);
+			path = Writer;
 			sourceTree = "<group>";
 		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
@@ -3381,6 +3432,7 @@
 				1F1FB1DD19280BE9004EB0CA /* ELFYAML.h in Headers */,
 				1F1FB11019280BE9004EB0CA /* LiveInterval.h in Headers */,
 				1F1FB09D19280BE9004EB0CA /* PointerIntPair.h in Headers */,
+				1F1FB58219281282004EB0CA /* ValueEnumerator.h in Headers */,
 				1F1FB27819280BE9004EB0CA /* BuildLibCalls.h in Headers */,
 				1F1FB0C619280BE9004EB0CA /* ConstantFolding.h in Headers */,
 				1F1FB1FC19280BE9004EB0CA /* CodeGen.h in Headers */,
@@ -3395,6 +3447,7 @@
 				1F1FB18D19280BE9004EB0CA /* ValueSymbolTable.h in Headers */,
 				1F1FB26B19280BE9004EB0CA /* TargetMachine.h in Headers */,
 				1F1FB22819280BE9004EB0CA /* MemoryBuffer.h in Headers */,
+				1F1FB57B19281282004EB0CA /* BitcodeReader.h in Headers */,
 				1F1FB17D19280BE9004EB0CA /* IntrinsicInst.h in Headers */,
 				1F1FB0F619280BE9004EB0CA /* BitCodes.h in Headers */,
 				1F1FB0CE19280BE9004EB0CA /* FindUsedTypes.h in Headers */,
@@ -3657,6 +3710,7 @@
 				1F1FB31D19280C8D004EB0CA /* Allocator.cpp in Sources */,
 				1F1FB34519280C8D004EB0CA /* MD5.cpp in Sources */,
 				1F1FB3A519280D91004EB0CA /* Main.cpp in Sources */,
+				1F1FB58019281282004EB0CA /* BitWriter.cpp in Sources */,
 				1F1FB32D19280C8D004EB0CA /* DataStream.cpp in Sources */,
 				1F1FB35B19280C8D004EB0CA /* regstrlcpy.c in Sources */,
 				1F1FB33019280C8D004EB0CA /* Disassembler.cpp in Sources */,
@@ -3680,6 +3734,7 @@
 				1F1FB34B19280C8D004EB0CA /* PluginLoader.cpp in Sources */,
 				1F1FB34219280C8D004EB0CA /* Locale.cpp in Sources */,
 				1F1FB32E19280C8D004EB0CA /* Debug.cpp in Sources */,
+				1F1FB58119281282004EB0CA /* ValueEnumerator.cpp in Sources */,
 				1F1FB33719280C8D004EB0CA /* FoldingSet.cpp in Sources */,
 				1F1FB55419281191004EB0CA /* ScalarEvolution.cpp in Sources */,
 				1F1FB55819281191004EB0CA /* SparsePropagation.cpp in Sources */,
@@ -3729,8 +3784,11 @@
 				1F1FB55B19281191004EB0CA /* TypeBasedAliasAnalysis.cpp in Sources */,
 				1F1FB53C19281191004EB0CA /* CallPrinter.cpp in Sources */,
 				1F1FB38319280C8D004EB0CA /* Watchdog.cpp in Sources */,
+				1F1FB57A19281282004EB0CA /* BitcodeReader.cpp in Sources */,
 				1F1FB53219281191004EB0CA /* CostModel.cpp in Sources */,
 				1F1FB52C19281191004EB0CA /* BranchProbabilityInfo.cpp in Sources */,
+				1F1FB57D19281282004EB0CA /* BitstreamReader.cpp in Sources */,
+				1F1FB57E19281282004EB0CA /* BitcodeWriter.cpp in Sources */,
 				1F1FB32C19280C8D004EB0CA /* DataExtractor.cpp in Sources */,
 				1F1FB3AC19280D91004EB0CA /* TGParser.cpp in Sources */,
 				1F1FB34A19280C8D004EB0CA /* Path.cpp in Sources */,
@@ -3761,6 +3819,7 @@
 				1F1FB32019280C8D004EB0CA /* APSInt.cpp in Sources */,
 				1F1FB33919280C8D004EB0CA /* GraphWriter.cpp in Sources */,
 				1F1FB34E19280C8D004EB0CA /* Program.cpp in Sources */,
+				1F1FB57C19281282004EB0CA /* BitReader.cpp in Sources */,
 				1F1FB53B19281191004EB0CA /* CallGraphSCCPass.cpp in Sources */,
 				1F1FB3A419280D91004EB0CA /* Error.cpp in Sources */,
 				1F1FB35F19280C8D004EB0CA /* Signals.cpp in Sources */,
@@ -3768,6 +3827,7 @@
 				1F1FB39419280C8D004EB0CA /* YAMLTraits.cpp in Sources */,
 				1F1FB34119280C8D004EB0CA /* IsNAN.cpp in Sources */,
 				1F1FB32F19280C8D004EB0CA /* DeltaAlgorithm.cpp in Sources */,
+				1F1FB57F19281282004EB0CA /* BitcodeWriterPass.cpp in Sources */,
 				1F1FB55C19281191004EB0CA /* ValueTracking.cpp in Sources */,
 				1F1FB56919281236004EB0CA /* LLParser.cpp in Sources */,
 				1F1FB54D19281191004EB0CA /* NoAliasAnalysis.cpp in Sources */,
