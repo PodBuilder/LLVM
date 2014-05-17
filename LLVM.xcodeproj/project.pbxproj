@@ -783,6 +783,63 @@
 		1F1FB46919280EB6004EB0CA /* YAMLTraits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31C19280C8D004EB0CA /* YAMLTraits.cpp */; };
 		1F1FB46F19280F54004EB0CA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46B19280F46004EB0CA /* libz.dylib */; };
 		1F1FB47019280F58004EB0CA /* libcurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46D19280F4C004EB0CA /* libcurses.dylib */; };
+		1F1FB52419281191004EB0CA /* AliasAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4EA19281190004EB0CA /* AliasAnalysis.cpp */; };
+		1F1FB52519281191004EB0CA /* AliasAnalysisCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4EB19281190004EB0CA /* AliasAnalysisCounter.cpp */; };
+		1F1FB52619281191004EB0CA /* AliasAnalysisEvaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4EC19281190004EB0CA /* AliasAnalysisEvaluator.cpp */; };
+		1F1FB52719281191004EB0CA /* AliasDebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4ED19281190004EB0CA /* AliasDebugger.cpp */; };
+		1F1FB52819281191004EB0CA /* AliasSetTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4EE19281190004EB0CA /* AliasSetTracker.cpp */; };
+		1F1FB52919281191004EB0CA /* Analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4EF19281190004EB0CA /* Analysis.cpp */; };
+		1F1FB52A19281191004EB0CA /* BasicAliasAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F019281190004EB0CA /* BasicAliasAnalysis.cpp */; };
+		1F1FB52B19281191004EB0CA /* BlockFrequencyInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F119281190004EB0CA /* BlockFrequencyInfo.cpp */; };
+		1F1FB52C19281191004EB0CA /* BranchProbabilityInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F219281190004EB0CA /* BranchProbabilityInfo.cpp */; };
+		1F1FB52D19281191004EB0CA /* CaptureTracking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F319281190004EB0CA /* CaptureTracking.cpp */; };
+		1F1FB52E19281191004EB0CA /* CFG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F419281190004EB0CA /* CFG.cpp */; };
+		1F1FB52F19281191004EB0CA /* CFGPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F519281190004EB0CA /* CFGPrinter.cpp */; };
+		1F1FB53019281191004EB0CA /* CodeMetrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F619281190004EB0CA /* CodeMetrics.cpp */; };
+		1F1FB53119281191004EB0CA /* ConstantFolding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F719281190004EB0CA /* ConstantFolding.cpp */; };
+		1F1FB53219281191004EB0CA /* CostModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F819281190004EB0CA /* CostModel.cpp */; };
+		1F1FB53319281191004EB0CA /* DependenceAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4F919281190004EB0CA /* DependenceAnalysis.cpp */; };
+		1F1FB53419281191004EB0CA /* DominanceFrontier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4FA19281190004EB0CA /* DominanceFrontier.cpp */; };
+		1F1FB53519281191004EB0CA /* DomPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4FB19281190004EB0CA /* DomPrinter.cpp */; };
+		1F1FB53619281191004EB0CA /* InstCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4FC19281190004EB0CA /* InstCount.cpp */; };
+		1F1FB53719281191004EB0CA /* InstructionSimplify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4FD19281190004EB0CA /* InstructionSimplify.cpp */; };
+		1F1FB53819281191004EB0CA /* Interval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4FE19281190004EB0CA /* Interval.cpp */; };
+		1F1FB53919281191004EB0CA /* IntervalPartition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB4FF19281190004EB0CA /* IntervalPartition.cpp */; };
+		1F1FB53A19281191004EB0CA /* CallGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50119281190004EB0CA /* CallGraph.cpp */; };
+		1F1FB53B19281191004EB0CA /* CallGraphSCCPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50219281190004EB0CA /* CallGraphSCCPass.cpp */; };
+		1F1FB53C19281191004EB0CA /* CallPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50319281190004EB0CA /* CallPrinter.cpp */; };
+		1F1FB53D19281191004EB0CA /* FindUsedTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50419281190004EB0CA /* FindUsedTypes.cpp */; };
+		1F1FB53E19281191004EB0CA /* GlobalsModRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50519281190004EB0CA /* GlobalsModRef.cpp */; };
+		1F1FB53F19281191004EB0CA /* InlineCost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50619281190004EB0CA /* InlineCost.cpp */; };
+		1F1FB54019281191004EB0CA /* IPA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50719281190004EB0CA /* IPA.cpp */; };
+		1F1FB54119281191004EB0CA /* IVUsers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50819281190004EB0CA /* IVUsers.cpp */; };
+		1F1FB54219281191004EB0CA /* LazyValueInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50919281190004EB0CA /* LazyValueInfo.cpp */; };
+		1F1FB54319281191004EB0CA /* LibCallAliasAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50A19281190004EB0CA /* LibCallAliasAnalysis.cpp */; };
+		1F1FB54419281191004EB0CA /* LibCallSemantics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50B19281190004EB0CA /* LibCallSemantics.cpp */; };
+		1F1FB54519281191004EB0CA /* Lint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50C19281190004EB0CA /* Lint.cpp */; };
+		1F1FB54619281191004EB0CA /* Loads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50D19281190004EB0CA /* Loads.cpp */; };
+		1F1FB54719281191004EB0CA /* LoopInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50E19281190004EB0CA /* LoopInfo.cpp */; };
+		1F1FB54819281191004EB0CA /* LoopPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB50F19281190004EB0CA /* LoopPass.cpp */; };
+		1F1FB54919281191004EB0CA /* MemDepPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51019281190004EB0CA /* MemDepPrinter.cpp */; };
+		1F1FB54A19281191004EB0CA /* MemoryBuiltins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51119281190004EB0CA /* MemoryBuiltins.cpp */; };
+		1F1FB54B19281191004EB0CA /* MemoryDependenceAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51219281190004EB0CA /* MemoryDependenceAnalysis.cpp */; };
+		1F1FB54C19281191004EB0CA /* ModuleDebugInfoPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51319281190004EB0CA /* ModuleDebugInfoPrinter.cpp */; };
+		1F1FB54D19281191004EB0CA /* NoAliasAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51419281190004EB0CA /* NoAliasAnalysis.cpp */; };
+		1F1FB54E19281191004EB0CA /* PHITransAddr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51519281190004EB0CA /* PHITransAddr.cpp */; };
+		1F1FB54F19281191004EB0CA /* PostDominators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51619281190004EB0CA /* PostDominators.cpp */; };
+		1F1FB55019281191004EB0CA /* PtrUseVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51719281190004EB0CA /* PtrUseVisitor.cpp */; };
+		1F1FB55119281191004EB0CA /* RegionInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51819281190004EB0CA /* RegionInfo.cpp */; };
+		1F1FB55219281191004EB0CA /* RegionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51919281190004EB0CA /* RegionPass.cpp */; };
+		1F1FB55319281191004EB0CA /* RegionPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51A19281190004EB0CA /* RegionPrinter.cpp */; };
+		1F1FB55419281191004EB0CA /* ScalarEvolution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51B19281190004EB0CA /* ScalarEvolution.cpp */; };
+		1F1FB55519281191004EB0CA /* ScalarEvolutionAliasAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51C19281191004EB0CA /* ScalarEvolutionAliasAnalysis.cpp */; };
+		1F1FB55619281191004EB0CA /* ScalarEvolutionExpander.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51D19281191004EB0CA /* ScalarEvolutionExpander.cpp */; };
+		1F1FB55719281191004EB0CA /* ScalarEvolutionNormalization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51E19281191004EB0CA /* ScalarEvolutionNormalization.cpp */; };
+		1F1FB55819281191004EB0CA /* SparsePropagation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB51F19281191004EB0CA /* SparsePropagation.cpp */; };
+		1F1FB55919281191004EB0CA /* TargetTransformInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB52019281191004EB0CA /* TargetTransformInfo.cpp */; };
+		1F1FB55A19281191004EB0CA /* Trace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB52119281191004EB0CA /* Trace.cpp */; };
+		1F1FB55B19281191004EB0CA /* TypeBasedAliasAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB52219281191004EB0CA /* TypeBasedAliasAnalysis.cpp */; };
+		1F1FB55C19281191004EB0CA /* ValueTracking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB52319281191004EB0CA /* ValueTracking.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1554,6 +1611,63 @@
 		1F1FB46B19280F46004EB0CA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		1F1FB46D19280F4C004EB0CA /* libcurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurses.dylib; path = usr/lib/libcurses.dylib; sourceTree = SDKROOT; };
 		1F1FB4E819281045004EB0CA /* run-tablegen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "run-tablegen.sh"; sourceTree = "<group>"; };
+		1F1FB4EA19281190004EB0CA /* AliasAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AliasAnalysis.cpp; sourceTree = "<group>"; };
+		1F1FB4EB19281190004EB0CA /* AliasAnalysisCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AliasAnalysisCounter.cpp; sourceTree = "<group>"; };
+		1F1FB4EC19281190004EB0CA /* AliasAnalysisEvaluator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AliasAnalysisEvaluator.cpp; sourceTree = "<group>"; };
+		1F1FB4ED19281190004EB0CA /* AliasDebugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AliasDebugger.cpp; sourceTree = "<group>"; };
+		1F1FB4EE19281190004EB0CA /* AliasSetTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AliasSetTracker.cpp; sourceTree = "<group>"; };
+		1F1FB4EF19281190004EB0CA /* Analysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Analysis.cpp; sourceTree = "<group>"; };
+		1F1FB4F019281190004EB0CA /* BasicAliasAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicAliasAnalysis.cpp; sourceTree = "<group>"; };
+		1F1FB4F119281190004EB0CA /* BlockFrequencyInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockFrequencyInfo.cpp; sourceTree = "<group>"; };
+		1F1FB4F219281190004EB0CA /* BranchProbabilityInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BranchProbabilityInfo.cpp; sourceTree = "<group>"; };
+		1F1FB4F319281190004EB0CA /* CaptureTracking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CaptureTracking.cpp; sourceTree = "<group>"; };
+		1F1FB4F419281190004EB0CA /* CFG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CFG.cpp; sourceTree = "<group>"; };
+		1F1FB4F519281190004EB0CA /* CFGPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CFGPrinter.cpp; sourceTree = "<group>"; };
+		1F1FB4F619281190004EB0CA /* CodeMetrics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CodeMetrics.cpp; sourceTree = "<group>"; };
+		1F1FB4F719281190004EB0CA /* ConstantFolding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConstantFolding.cpp; sourceTree = "<group>"; };
+		1F1FB4F819281190004EB0CA /* CostModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CostModel.cpp; sourceTree = "<group>"; };
+		1F1FB4F919281190004EB0CA /* DependenceAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DependenceAnalysis.cpp; sourceTree = "<group>"; };
+		1F1FB4FA19281190004EB0CA /* DominanceFrontier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DominanceFrontier.cpp; sourceTree = "<group>"; };
+		1F1FB4FB19281190004EB0CA /* DomPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DomPrinter.cpp; sourceTree = "<group>"; };
+		1F1FB4FC19281190004EB0CA /* InstCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InstCount.cpp; sourceTree = "<group>"; };
+		1F1FB4FD19281190004EB0CA /* InstructionSimplify.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InstructionSimplify.cpp; sourceTree = "<group>"; };
+		1F1FB4FE19281190004EB0CA /* Interval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interval.cpp; sourceTree = "<group>"; };
+		1F1FB4FF19281190004EB0CA /* IntervalPartition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntervalPartition.cpp; sourceTree = "<group>"; };
+		1F1FB50119281190004EB0CA /* CallGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CallGraph.cpp; sourceTree = "<group>"; };
+		1F1FB50219281190004EB0CA /* CallGraphSCCPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CallGraphSCCPass.cpp; sourceTree = "<group>"; };
+		1F1FB50319281190004EB0CA /* CallPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CallPrinter.cpp; sourceTree = "<group>"; };
+		1F1FB50419281190004EB0CA /* FindUsedTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FindUsedTypes.cpp; sourceTree = "<group>"; };
+		1F1FB50519281190004EB0CA /* GlobalsModRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlobalsModRef.cpp; sourceTree = "<group>"; };
+		1F1FB50619281190004EB0CA /* InlineCost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InlineCost.cpp; sourceTree = "<group>"; };
+		1F1FB50719281190004EB0CA /* IPA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IPA.cpp; sourceTree = "<group>"; };
+		1F1FB50819281190004EB0CA /* IVUsers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IVUsers.cpp; sourceTree = "<group>"; };
+		1F1FB50919281190004EB0CA /* LazyValueInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LazyValueInfo.cpp; sourceTree = "<group>"; };
+		1F1FB50A19281190004EB0CA /* LibCallAliasAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LibCallAliasAnalysis.cpp; sourceTree = "<group>"; };
+		1F1FB50B19281190004EB0CA /* LibCallSemantics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LibCallSemantics.cpp; sourceTree = "<group>"; };
+		1F1FB50C19281190004EB0CA /* Lint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lint.cpp; sourceTree = "<group>"; };
+		1F1FB50D19281190004EB0CA /* Loads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Loads.cpp; sourceTree = "<group>"; };
+		1F1FB50E19281190004EB0CA /* LoopInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoopInfo.cpp; sourceTree = "<group>"; };
+		1F1FB50F19281190004EB0CA /* LoopPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoopPass.cpp; sourceTree = "<group>"; };
+		1F1FB51019281190004EB0CA /* MemDepPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemDepPrinter.cpp; sourceTree = "<group>"; };
+		1F1FB51119281190004EB0CA /* MemoryBuiltins.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryBuiltins.cpp; sourceTree = "<group>"; };
+		1F1FB51219281190004EB0CA /* MemoryDependenceAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryDependenceAnalysis.cpp; sourceTree = "<group>"; };
+		1F1FB51319281190004EB0CA /* ModuleDebugInfoPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModuleDebugInfoPrinter.cpp; sourceTree = "<group>"; };
+		1F1FB51419281190004EB0CA /* NoAliasAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoAliasAnalysis.cpp; sourceTree = "<group>"; };
+		1F1FB51519281190004EB0CA /* PHITransAddr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PHITransAddr.cpp; sourceTree = "<group>"; };
+		1F1FB51619281190004EB0CA /* PostDominators.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PostDominators.cpp; sourceTree = "<group>"; };
+		1F1FB51719281190004EB0CA /* PtrUseVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PtrUseVisitor.cpp; sourceTree = "<group>"; };
+		1F1FB51819281190004EB0CA /* RegionInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegionInfo.cpp; sourceTree = "<group>"; };
+		1F1FB51919281190004EB0CA /* RegionPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegionPass.cpp; sourceTree = "<group>"; };
+		1F1FB51A19281190004EB0CA /* RegionPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegionPrinter.cpp; sourceTree = "<group>"; };
+		1F1FB51B19281190004EB0CA /* ScalarEvolution.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScalarEvolution.cpp; sourceTree = "<group>"; };
+		1F1FB51C19281191004EB0CA /* ScalarEvolutionAliasAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScalarEvolutionAliasAnalysis.cpp; sourceTree = "<group>"; };
+		1F1FB51D19281191004EB0CA /* ScalarEvolutionExpander.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScalarEvolutionExpander.cpp; sourceTree = "<group>"; };
+		1F1FB51E19281191004EB0CA /* ScalarEvolutionNormalization.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScalarEvolutionNormalization.cpp; sourceTree = "<group>"; };
+		1F1FB51F19281191004EB0CA /* SparsePropagation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SparsePropagation.cpp; sourceTree = "<group>"; };
+		1F1FB52019281191004EB0CA /* TargetTransformInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetTransformInfo.cpp; sourceTree = "<group>"; };
+		1F1FB52119281191004EB0CA /* Trace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Trace.cpp; sourceTree = "<group>"; };
+		1F1FB52219281191004EB0CA /* TypeBasedAliasAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TypeBasedAliasAnalysis.cpp; sourceTree = "<group>"; };
+		1F1FB52319281191004EB0CA /* ValueTracking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueTracking.cpp; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2385,6 +2499,7 @@
 		1F1FB29F19280C8D004EB0CA /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F1FB4E919281190004EB0CA /* Analysis */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
@@ -2610,6 +2725,78 @@
 			);
 			name = "Tool Sources";
 			path = "llvm-tblgen";
+			sourceTree = "<group>";
+		};
+		1F1FB4E919281190004EB0CA /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB4EA19281190004EB0CA /* AliasAnalysis.cpp */,
+				1F1FB4EB19281190004EB0CA /* AliasAnalysisCounter.cpp */,
+				1F1FB4EC19281190004EB0CA /* AliasAnalysisEvaluator.cpp */,
+				1F1FB4ED19281190004EB0CA /* AliasDebugger.cpp */,
+				1F1FB4EE19281190004EB0CA /* AliasSetTracker.cpp */,
+				1F1FB4EF19281190004EB0CA /* Analysis.cpp */,
+				1F1FB4F019281190004EB0CA /* BasicAliasAnalysis.cpp */,
+				1F1FB4F119281190004EB0CA /* BlockFrequencyInfo.cpp */,
+				1F1FB4F219281190004EB0CA /* BranchProbabilityInfo.cpp */,
+				1F1FB4F319281190004EB0CA /* CaptureTracking.cpp */,
+				1F1FB4F419281190004EB0CA /* CFG.cpp */,
+				1F1FB4F519281190004EB0CA /* CFGPrinter.cpp */,
+				1F1FB4F619281190004EB0CA /* CodeMetrics.cpp */,
+				1F1FB4F719281190004EB0CA /* ConstantFolding.cpp */,
+				1F1FB4F819281190004EB0CA /* CostModel.cpp */,
+				1F1FB4F919281190004EB0CA /* DependenceAnalysis.cpp */,
+				1F1FB4FA19281190004EB0CA /* DominanceFrontier.cpp */,
+				1F1FB4FB19281190004EB0CA /* DomPrinter.cpp */,
+				1F1FB4FC19281190004EB0CA /* InstCount.cpp */,
+				1F1FB4FD19281190004EB0CA /* InstructionSimplify.cpp */,
+				1F1FB4FE19281190004EB0CA /* Interval.cpp */,
+				1F1FB4FF19281190004EB0CA /* IntervalPartition.cpp */,
+				1F1FB50019281190004EB0CA /* IPA */,
+				1F1FB50819281190004EB0CA /* IVUsers.cpp */,
+				1F1FB50919281190004EB0CA /* LazyValueInfo.cpp */,
+				1F1FB50A19281190004EB0CA /* LibCallAliasAnalysis.cpp */,
+				1F1FB50B19281190004EB0CA /* LibCallSemantics.cpp */,
+				1F1FB50C19281190004EB0CA /* Lint.cpp */,
+				1F1FB50D19281190004EB0CA /* Loads.cpp */,
+				1F1FB50E19281190004EB0CA /* LoopInfo.cpp */,
+				1F1FB50F19281190004EB0CA /* LoopPass.cpp */,
+				1F1FB51019281190004EB0CA /* MemDepPrinter.cpp */,
+				1F1FB51119281190004EB0CA /* MemoryBuiltins.cpp */,
+				1F1FB51219281190004EB0CA /* MemoryDependenceAnalysis.cpp */,
+				1F1FB51319281190004EB0CA /* ModuleDebugInfoPrinter.cpp */,
+				1F1FB51419281190004EB0CA /* NoAliasAnalysis.cpp */,
+				1F1FB51519281190004EB0CA /* PHITransAddr.cpp */,
+				1F1FB51619281190004EB0CA /* PostDominators.cpp */,
+				1F1FB51719281190004EB0CA /* PtrUseVisitor.cpp */,
+				1F1FB51819281190004EB0CA /* RegionInfo.cpp */,
+				1F1FB51919281190004EB0CA /* RegionPass.cpp */,
+				1F1FB51A19281190004EB0CA /* RegionPrinter.cpp */,
+				1F1FB51B19281190004EB0CA /* ScalarEvolution.cpp */,
+				1F1FB51C19281191004EB0CA /* ScalarEvolutionAliasAnalysis.cpp */,
+				1F1FB51D19281191004EB0CA /* ScalarEvolutionExpander.cpp */,
+				1F1FB51E19281191004EB0CA /* ScalarEvolutionNormalization.cpp */,
+				1F1FB51F19281191004EB0CA /* SparsePropagation.cpp */,
+				1F1FB52019281191004EB0CA /* TargetTransformInfo.cpp */,
+				1F1FB52119281191004EB0CA /* Trace.cpp */,
+				1F1FB52219281191004EB0CA /* TypeBasedAliasAnalysis.cpp */,
+				1F1FB52319281191004EB0CA /* ValueTracking.cpp */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		1F1FB50019281190004EB0CA /* IPA */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FB50119281190004EB0CA /* CallGraph.cpp */,
+				1F1FB50219281190004EB0CA /* CallGraphSCCPass.cpp */,
+				1F1FB50319281190004EB0CA /* CallPrinter.cpp */,
+				1F1FB50419281190004EB0CA /* FindUsedTypes.cpp */,
+				1F1FB50519281190004EB0CA /* GlobalsModRef.cpp */,
+				1F1FB50619281190004EB0CA /* InlineCost.cpp */,
+				1F1FB50719281190004EB0CA /* IPA.cpp */,
+			);
+			path = IPA;
 			sourceTree = "<group>";
 		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
@@ -3433,7 +3620,11 @@
 				1F1FB37419280C8D004EB0CA /* Unicode.cpp in Sources */,
 				1F1FB32519280C8D004EB0CA /* CommandLine.cpp in Sources */,
 				1F1FB36019280C8D004EB0CA /* SmallPtrSet.cpp in Sources */,
+				1F1FB54119281191004EB0CA /* IVUsers.cpp in Sources */,
 				1F1FB37119280C8D004EB0CA /* ToolOutputFile.cpp in Sources */,
+				1F1FB54E19281191004EB0CA /* PHITransAddr.cpp in Sources */,
+				1F1FB54319281191004EB0CA /* LibCallAliasAnalysis.cpp in Sources */,
+				1F1FB53A19281191004EB0CA /* CallGraph.cpp in Sources */,
 				1F1FB31D19280C8D004EB0CA /* Allocator.cpp in Sources */,
 				1F1FB34519280C8D004EB0CA /* MD5.cpp in Sources */,
 				1F1FB3A519280D91004EB0CA /* Main.cpp in Sources */,
@@ -3441,88 +3632,141 @@
 				1F1FB35B19280C8D004EB0CA /* regstrlcpy.c in Sources */,
 				1F1FB33019280C8D004EB0CA /* Disassembler.cpp in Sources */,
 				1F1FB36A19280C8D004EB0CA /* system_error.cpp in Sources */,
+				1F1FB53419281191004EB0CA /* DominanceFrontier.cpp in Sources */,
 				1F1FB35619280C8D004EB0CA /* Regex.cpp in Sources */,
+				1F1FB55019281191004EB0CA /* PtrUseVisitor.cpp in Sources */,
 				1F1FB33C19280C8D004EB0CA /* IncludeFile.cpp in Sources */,
 				1F1FB35919280C8D004EB0CA /* regexec.c in Sources */,
+				1F1FB52719281191004EB0CA /* AliasDebugger.cpp in Sources */,
 				1F1FB32919280C8D004EB0CA /* ConvertUTFWrapper.cpp in Sources */,
 				1F1FB32419280C8D004EB0CA /* circular_raw_ostream.cpp in Sources */,
 				1F1FB34419280C8D004EB0CA /* ManagedStatic.cpp in Sources */,
+				1F1FB54719281191004EB0CA /* LoopInfo.cpp in Sources */,
+				1F1FB53019281191004EB0CA /* CodeMetrics.cpp in Sources */,
+				1F1FB52D19281191004EB0CA /* CaptureTracking.cpp in Sources */,
 				1F1FB35519280C8D004EB0CA /* regerror.c in Sources */,
 				1F1FB36F19280C8D004EB0CA /* Timer.cpp in Sources */,
 				1F1FB34B19280C8D004EB0CA /* PluginLoader.cpp in Sources */,
 				1F1FB34219280C8D004EB0CA /* Locale.cpp in Sources */,
 				1F1FB32E19280C8D004EB0CA /* Debug.cpp in Sources */,
 				1F1FB33719280C8D004EB0CA /* FoldingSet.cpp in Sources */,
+				1F1FB55419281191004EB0CA /* ScalarEvolution.cpp in Sources */,
+				1F1FB55819281191004EB0CA /* SparsePropagation.cpp in Sources */,
 				1F1FB31F19280C8D004EB0CA /* APInt.cpp in Sources */,
 				1F1FB32219280C8D004EB0CA /* BlockFrequency.cpp in Sources */,
+				1F1FB54B19281191004EB0CA /* MemoryDependenceAnalysis.cpp in Sources */,
 				1F1FB36319280C8D004EB0CA /* Statistic.cpp in Sources */,
 				1F1FB36819280C8D004EB0CA /* StringRef.cpp in Sources */,
+				1F1FB52F19281191004EB0CA /* CFGPrinter.cpp in Sources */,
+				1F1FB54419281191004EB0CA /* LibCallSemantics.cpp in Sources */,
 				1F1FB34319280C8D004EB0CA /* LockFileManager.cpp in Sources */,
 				1F1FB3A719280D91004EB0CA /* Record.cpp in Sources */,
 				1F1FB35019280C8D004EB0CA /* raw_ostream.cpp in Sources */,
 				1F1FB33519280C8D004EB0CA /* FileOutputBuffer.cpp in Sources */,
+				1F1FB55119281191004EB0CA /* RegionInfo.cpp in Sources */,
 				1F1FB33419280C8D004EB0CA /* ErrorHandling.cpp in Sources */,
 				1F1FB3A819280D91004EB0CA /* StringMatcher.cpp in Sources */,
 				1F1FB34819280C8D004EB0CA /* MemoryObject.cpp in Sources */,
 				1F1FB34919280C8D004EB0CA /* Mutex.cpp in Sources */,
 				1F1FB37319280C8D004EB0CA /* Twine.cpp in Sources */,
+				1F1FB52B19281191004EB0CA /* BlockFrequencyInfo.cpp in Sources */,
+				1F1FB54F19281191004EB0CA /* PostDominators.cpp in Sources */,
 				1F1FB33E19280C8D004EB0CA /* IntervalMap.cpp in Sources */,
+				1F1FB52819281191004EB0CA /* AliasSetTracker.cpp in Sources */,
 				1F1FB32B19280C8D004EB0CA /* DAGDeltaAlgorithm.cpp in Sources */,
+				1F1FB54A19281191004EB0CA /* MemoryBuiltins.cpp in Sources */,
+				1F1FB55919281191004EB0CA /* TargetTransformInfo.cpp in Sources */,
 				1F1FB34019280C8D004EB0CA /* IsInf.cpp in Sources */,
 				1F1FB32819280C8D004EB0CA /* ConvertUTF.c in Sources */,
+				1F1FB55319281191004EB0CA /* RegionPrinter.cpp in Sources */,
 				1F1FB33B19280C8D004EB0CA /* Host.cpp in Sources */,
+				1F1FB53519281191004EB0CA /* DomPrinter.cpp in Sources */,
 				1F1FB36C19280C8D004EB0CA /* TargetRegistry.cpp in Sources */,
+				1F1FB52419281191004EB0CA /* AliasAnalysis.cpp in Sources */,
+				1F1FB54C19281191004EB0CA /* ModuleDebugInfoPrinter.cpp in Sources */,
 				1F1FB36719280C8D004EB0CA /* StringPool.cpp in Sources */,
+				1F1FB52619281191004EB0CA /* AliasAnalysisEvaluator.cpp in Sources */,
+				1F1FB54219281191004EB0CA /* LazyValueInfo.cpp in Sources */,
 				1F1FB34F19280C8D004EB0CA /* raw_os_ostream.cpp in Sources */,
 				1F1FB33819280C8D004EB0CA /* FormattedStream.cpp in Sources */,
 				1F1FB3A919280D91004EB0CA /* TableGenBackend.cpp in Sources */,
 				1F1FB38219280C8D004EB0CA /* Valgrind.cpp in Sources */,
 				1F1FB34D19280C8D004EB0CA /* Process.cpp in Sources */,
 				1F1FB39319280C8D004EB0CA /* YAMLParser.cpp in Sources */,
+				1F1FB52519281191004EB0CA /* AliasAnalysisCounter.cpp in Sources */,
 				1F1FB36919280C8D004EB0CA /* StringRefMemoryObject.cpp in Sources */,
+				1F1FB55B19281191004EB0CA /* TypeBasedAliasAnalysis.cpp in Sources */,
+				1F1FB53C19281191004EB0CA /* CallPrinter.cpp in Sources */,
 				1F1FB38319280C8D004EB0CA /* Watchdog.cpp in Sources */,
+				1F1FB53219281191004EB0CA /* CostModel.cpp in Sources */,
+				1F1FB52C19281191004EB0CA /* BranchProbabilityInfo.cpp in Sources */,
 				1F1FB32C19280C8D004EB0CA /* DataExtractor.cpp in Sources */,
 				1F1FB3AC19280D91004EB0CA /* TGParser.cpp in Sources */,
 				1F1FB34A19280C8D004EB0CA /* Path.cpp in Sources */,
 				1F1FB33619280C8D004EB0CA /* FileUtilities.cpp in Sources */,
 				1F1FB32119280C8D004EB0CA /* Atomic.cpp in Sources */,
+				1F1FB53619281191004EB0CA /* InstCount.cpp in Sources */,
+				1F1FB52E19281191004EB0CA /* CFG.cpp in Sources */,
 				1F1FB36619280C8D004EB0CA /* StringMap.cpp in Sources */,
+				1F1FB55219281191004EB0CA /* RegionPass.cpp in Sources */,
 				1F1FB32619280C8D004EB0CA /* Compression.cpp in Sources */,
 				1F1FB36419280C8D004EB0CA /* StreamableMemoryObject.cpp in Sources */,
 				1F1FB3AA19280D91004EB0CA /* TGLexer.cpp in Sources */,
+				1F1FB54819281191004EB0CA /* LoopPass.cpp in Sources */,
 				1F1FB32719280C8D004EB0CA /* ConstantRange.cpp in Sources */,
+				1F1FB55619281191004EB0CA /* ScalarEvolutionExpander.cpp in Sources */,
 				1F1FB33A19280C8D004EB0CA /* Hashing.cpp in Sources */,
 				1F1FB35319280C8D004EB0CA /* regcomp.c in Sources */,
 				1F1FB33319280C8D004EB0CA /* Errno.cpp in Sources */,
 				1F1FB36119280C8D004EB0CA /* SmallVector.cpp in Sources */,
 				1F1FB34C19280C8D004EB0CA /* PrettyStackTrace.cpp in Sources */,
 				1F1FB37219280C8D004EB0CA /* Triple.cpp in Sources */,
+				1F1FB53D19281191004EB0CA /* FindUsedTypes.cpp in Sources */,
+				1F1FB53319281191004EB0CA /* DependenceAnalysis.cpp in Sources */,
 				1F1FB34619280C8D004EB0CA /* Memory.cpp in Sources */,
 				1F1FB33D19280C8D004EB0CA /* IntEqClasses.cpp in Sources */,
+				1F1FB53119281191004EB0CA /* ConstantFolding.cpp in Sources */,
+				1F1FB53819281191004EB0CA /* Interval.cpp in Sources */,
 				1F1FB32019280C8D004EB0CA /* APSInt.cpp in Sources */,
 				1F1FB33919280C8D004EB0CA /* GraphWriter.cpp in Sources */,
 				1F1FB34E19280C8D004EB0CA /* Program.cpp in Sources */,
+				1F1FB53B19281191004EB0CA /* CallGraphSCCPass.cpp in Sources */,
 				1F1FB3A419280D91004EB0CA /* Error.cpp in Sources */,
 				1F1FB35F19280C8D004EB0CA /* Signals.cpp in Sources */,
 				1F1FB32319280C8D004EB0CA /* BranchProbability.cpp in Sources */,
 				1F1FB39419280C8D004EB0CA /* YAMLTraits.cpp in Sources */,
 				1F1FB34119280C8D004EB0CA /* IsNAN.cpp in Sources */,
 				1F1FB32F19280C8D004EB0CA /* DeltaAlgorithm.cpp in Sources */,
+				1F1FB55C19281191004EB0CA /* ValueTracking.cpp in Sources */,
+				1F1FB54D19281191004EB0CA /* NoAliasAnalysis.cpp in Sources */,
+				1F1FB54019281191004EB0CA /* IPA.cpp in Sources */,
 				1F1FB35D19280C8D004EB0CA /* RWMutex.cpp in Sources */,
+				1F1FB53F19281191004EB0CA /* InlineCost.cpp in Sources */,
 				1F1FB33F19280C8D004EB0CA /* IntrusiveRefCntPtr.cpp in Sources */,
 				1F1FB36219280C8D004EB0CA /* SourceMgr.cpp in Sources */,
+				1F1FB55A19281191004EB0CA /* Trace.cpp in Sources */,
+				1F1FB54619281191004EB0CA /* Loads.cpp in Sources */,
 				1F1FB32A19280C8D004EB0CA /* CrashRecoveryContext.cpp in Sources */,
+				1F1FB53919281191004EB0CA /* IntervalPartition.cpp in Sources */,
+				1F1FB55719281191004EB0CA /* ScalarEvolutionNormalization.cpp in Sources */,
+				1F1FB55519281191004EB0CA /* ScalarEvolutionAliasAnalysis.cpp in Sources */,
+				1F1FB54519281191004EB0CA /* Lint.cpp in Sources */,
 				1F1FB34719280C8D004EB0CA /* MemoryBuffer.cpp in Sources */,
 				1F1FB36E19280C8D004EB0CA /* ThreadLocal.cpp in Sources */,
 				1F1FB35A19280C8D004EB0CA /* regfree.c in Sources */,
 				1F1FB36519280C8D004EB0CA /* StringExtras.cpp in Sources */,
 				1F1FB33219280C8D004EB0CA /* DynamicLibrary.cpp in Sources */,
+				1F1FB53719281191004EB0CA /* InstructionSimplify.cpp in Sources */,
 				1F1FB31E19280C8D004EB0CA /* APFloat.cpp in Sources */,
 				1F1FB36D19280C8D004EB0CA /* Threading.cpp in Sources */,
 				1F1FB35E19280C8D004EB0CA /* SearchForAddressOfSpecialSymbol.cpp in Sources */,
 				1F1FB37019280C8D004EB0CA /* TimeValue.cpp in Sources */,
+				1F1FB53E19281191004EB0CA /* GlobalsModRef.cpp in Sources */,
 				1F1FB36B19280C8D004EB0CA /* SystemUtils.cpp in Sources */,
 				1F1FB33119280C8D004EB0CA /* Dwarf.cpp in Sources */,
+				1F1FB52919281191004EB0CA /* Analysis.cpp in Sources */,
+				1F1FB54919281191004EB0CA /* MemDepPrinter.cpp in Sources */,
+				1F1FB52A19281191004EB0CA /* BasicAliasAnalysis.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
