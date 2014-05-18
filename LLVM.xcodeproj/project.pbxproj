@@ -234,6 +234,7 @@
 		1F5620E2192958FE00776A54 /* IRReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80B7192924B300D9BD62 /* IRReader.cpp */; };
 		1F5620EB1929593200776A54 /* LTOCodeGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80BF1929252500D9BD62 /* LTOCodeGenerator.cpp */; };
 		1F5620EC1929593200776A54 /* LTOModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80C01929252500D9BD62 /* LTOModule.cpp */; };
+		1F5620F51929595D00776A54 /* LinkModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80C6192925ED00D9BD62 /* LinkModules.cpp */; };
 		1FDB0A2D192950CB00D07D2C /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A119280C8D004EB0CA /* Allocator.cpp */; };
 		1FDB0A2E192950CB00D07D2C /* APFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A219280C8D004EB0CA /* APFloat.cpp */; };
 		1FDB0A2F192950CB00D07D2C /* APInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A319280C8D004EB0CA /* APInt.cpp */; };
@@ -1788,6 +1789,7 @@
 		1F5620A41929589A00776A54 /* libLLVMCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5620DE192958EF00776A54 /* libLLVMIRReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMIRReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5620E71929591F00776A54 /* libLLVMLTO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMLTO.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5620F11929594F00776A54 /* libLLVMLinker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMLinker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -1899,6 +1901,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F5620E41929591F00776A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5620EE1929594F00776A54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3798,6 +3807,7 @@
 				1F5620A41929589A00776A54 /* libLLVMCore.a */,
 				1F5620DE192958EF00776A54 /* libLLVMIRReader.a */,
 				1F5620E71929591F00776A54 /* libLLVMLTO.a */,
+				1F5620F11929594F00776A54 /* libLLVMLinker.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4061,6 +4071,22 @@
 			productReference = 1F5620E71929591F00776A54 /* libLLVMLTO.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F5620F01929594F00776A54 /* LLVMLinker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5620F21929594F00776A54 /* Build configuration list for PBXNativeTarget "LLVMLinker" */;
+			buildPhases = (
+				1F5620ED1929594F00776A54 /* Sources */,
+				1F5620EE1929594F00776A54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVMLinker;
+			productName = LLVMLinker;
+			productReference = 1F5620F11929594F00776A54 /* libLLVMLinker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FDB0A281929509D00D07D2C /* LLVMSupport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FDB0A2A1929509D00D07D2C /* Build configuration list for PBXNativeTarget "LLVMSupport" */;
@@ -4197,6 +4223,7 @@
 				1F5620741929578000776A54 /* LLVMInterpreter */,
 				1F5620DD192958EF00776A54 /* LLVMIRReader */,
 				1F562082192957DE00776A54 /* LLVMJIT */,
+				1F5620F01929594F00776A54 /* LLVMLinker */,
 				1F5620E61929591F00776A54 /* LLVMLTO */,
 				1F56208D1929582100776A54 /* LLVMMCJIT */,
 				1F5620971929585A00776A54 /* LLVMRuntimeDyld */,
@@ -4685,6 +4712,14 @@
 			files = (
 				1F5620EB1929593200776A54 /* LTOCodeGenerator.cpp in Sources */,
 				1F5620EC1929593200776A54 /* LTOModule.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5620ED1929594F00776A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5620F51929595D00776A54 /* LinkModules.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5966,6 +6001,78 @@
 			};
 			name = Release;
 		};
+		1F5620F31929594F00776A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F5620F41929594F00776A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1FDB0A2B1929509D00D07D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6520,6 +6627,14 @@
 			buildConfigurations = (
 				1F5620E91929591F00776A54 /* Debug */,
 				1F5620EA1929591F00776A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F5620F21929594F00776A54 /* Build configuration list for PBXNativeTarget "LLVMLinker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5620F31929594F00776A54 /* Debug */,
+				1F5620F41929594F00776A54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
