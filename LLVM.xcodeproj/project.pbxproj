@@ -3627,23 +3627,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		1F561F661929552000776A54 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F561F721929555C00776A54 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		1F1FB3B219280E8C004EB0CA /* llvm-tblgen */ = {
 			isa = PBXNativeTarget;
@@ -3667,7 +3650,6 @@
 			buildPhases = (
 				1F561F641929552000776A54 /* Sources */,
 				1F561F651929552000776A54 /* Frameworks */,
-				1F561F661929552000776A54 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -3685,7 +3667,6 @@
 				1F561F7C1929557300776A54 /* Generate Intrinsics.gen */,
 				1F561F701929555C00776A54 /* Sources */,
 				1F561F711929555C00776A54 /* Frameworks */,
-				1F561F721929555C00776A54 /* Headers */,
 			);
 			buildRules = (
 			);
