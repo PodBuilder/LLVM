@@ -897,7 +897,6 @@
 		1F1FB46A19280F0F004EB0CA /* X86DisassemblerDecoderCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86DisassemblerDecoderCommon.h; sourceTree = "<group>"; };
 		1F1FB46B19280F46004EB0CA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		1F1FB46D19280F4C004EB0CA /* libcurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurses.dylib; path = usr/lib/libcurses.dylib; sourceTree = SDKROOT; };
-		1F1FB4E819281045004EB0CA /* run-tablegen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "run-tablegen.sh"; sourceTree = "<group>"; };
 		1F1FB4EA19281190004EB0CA /* AliasAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AliasAnalysis.cpp; sourceTree = "<group>"; };
 		1F1FB4EB19281190004EB0CA /* AliasAnalysisCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AliasAnalysisCounter.cpp; sourceTree = "<group>"; };
 		1F1FB4EC19281190004EB0CA /* AliasAnalysisEvaluator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AliasAnalysisEvaluator.cpp; sourceTree = "<group>"; };
@@ -2286,7 +2285,6 @@
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F4A81811929289400D9BD62 /* Target */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
-				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
 			);
 			name = "Source Files";
 			path = lib;
