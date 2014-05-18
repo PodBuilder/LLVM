@@ -2360,7 +2360,7 @@ static Value *SimplifyICmpInst(unsigned Predicate, Value *LHS, Value *RHS,
   // Simplify comparisons involving max/min.
   Value *A, *B;
   CmpInst::Predicate P = CmpInst::BAD_ICMP_PREDICATE;
-  CmpInst::Predicate EqP; // Chosen so that "A == max/min(A,B)" iff "A EqP B".
+  CmpInst::Predicate EqP = CmpInst::BAD_ICMP_PREDICATE; // Chosen so that "A == max/min(A,B)" iff "A EqP B".
 
   // Signed variants on "max(a,b)>=a -> true".
   if (match(LHS, m_SMax(m_Value(A), m_Value(B))) && (A == RHS || B == RHS)) {
