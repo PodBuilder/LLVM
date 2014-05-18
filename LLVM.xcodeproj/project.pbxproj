@@ -235,6 +235,58 @@
 		1F5620EB1929593200776A54 /* LTOCodeGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80BF1929252500D9BD62 /* LTOCodeGenerator.cpp */; };
 		1F5620EC1929593200776A54 /* LTOModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80C01929252500D9BD62 /* LTOModule.cpp */; };
 		1F5620F51929595D00776A54 /* LinkModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80C6192925ED00D9BD62 /* LinkModules.cpp */; };
+		1F5620FE1929599200776A54 /* ELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80CA1929264200D9BD62 /* ELFObjectWriter.cpp */; };
+		1F5620FF1929599200776A54 /* MachObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80CC1929264200D9BD62 /* MachObjectWriter.cpp */; };
+		1F5621001929599200776A54 /* MCAsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80CE1929264200D9BD62 /* MCAsmBackend.cpp */; };
+		1F5621011929599200776A54 /* MCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80CF1929264200D9BD62 /* MCAsmInfo.cpp */; };
+		1F5621021929599200776A54 /* MCAsmInfoCOFF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80D01929264200D9BD62 /* MCAsmInfoCOFF.cpp */; };
+		1F5621031929599200776A54 /* MCAsmInfoDarwin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80D11929264200D9BD62 /* MCAsmInfoDarwin.cpp */; };
+		1F5621041929599200776A54 /* MCAsmInfoELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80D21929264200D9BD62 /* MCAsmInfoELF.cpp */; };
+		1F5621051929599200776A54 /* MCAsmStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80D31929264200D9BD62 /* MCAsmStreamer.cpp */; };
+		1F5621061929599200776A54 /* MCAssembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80D41929264200D9BD62 /* MCAssembler.cpp */; };
+		1F5621071929599200776A54 /* MCAtom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80D51929264200D9BD62 /* MCAtom.cpp */; };
+		1F5621081929599200776A54 /* MCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80D61929264200D9BD62 /* MCCodeEmitter.cpp */; };
+		1F5621091929599200776A54 /* MCCodeGenInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80D71929264200D9BD62 /* MCCodeGenInfo.cpp */; };
+		1F56210A1929599200776A54 /* MCContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80D81929264200D9BD62 /* MCContext.cpp */; };
+		1F56210B1929599200776A54 /* MCDisassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80DF1929264200D9BD62 /* MCDisassembler.cpp */; };
+		1F56210C1929599200776A54 /* MCDwarf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E01929264200D9BD62 /* MCDwarf.cpp */; };
+		1F56210D1929599200776A54 /* MCELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E11929264200D9BD62 /* MCELF.cpp */; };
+		1F56210E1929599200776A54 /* MCELFObjectTargetWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E21929264200D9BD62 /* MCELFObjectTargetWriter.cpp */; };
+		1F56210F1929599200776A54 /* MCELFStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E31929264200D9BD62 /* MCELFStreamer.cpp */; };
+		1F5621101929599200776A54 /* MCExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E41929264200D9BD62 /* MCExpr.cpp */; };
+		1F5621111929599200776A54 /* MCExternalSymbolizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E51929264200D9BD62 /* MCExternalSymbolizer.cpp */; };
+		1F5621121929599200776A54 /* MCFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E61929264200D9BD62 /* MCFunction.cpp */; };
+		1F5621131929599200776A54 /* MCInst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E71929264200D9BD62 /* MCInst.cpp */; };
+		1F5621141929599200776A54 /* MCInstPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E81929264200D9BD62 /* MCInstPrinter.cpp */; };
+		1F5621151929599200776A54 /* MCInstrAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80E91929264200D9BD62 /* MCInstrAnalysis.cpp */; };
+		1F5621161929599200776A54 /* MCLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80EA1929264200D9BD62 /* MCLabel.cpp */; };
+		1F5621171929599200776A54 /* MCLinkerOptimizationHint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80EB1929264200D9BD62 /* MCLinkerOptimizationHint.cpp */; };
+		1F5621181929599200776A54 /* MCMachObjectTargetWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80EC1929264200D9BD62 /* MCMachObjectTargetWriter.cpp */; };
+		1F5621191929599200776A54 /* MCMachOStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80ED1929264200D9BD62 /* MCMachOStreamer.cpp */; };
+		1F56211A1929599200776A54 /* MCModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80EE1929264200D9BD62 /* MCModule.cpp */; };
+		1F56211B1929599200776A54 /* MCModuleYAML.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80EF1929264200D9BD62 /* MCModuleYAML.cpp */; };
+		1F56211C1929599200776A54 /* MCNullStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80F01929264200D9BD62 /* MCNullStreamer.cpp */; };
+		1F56211D1929599200776A54 /* MCObjectDisassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80F11929264200D9BD62 /* MCObjectDisassembler.cpp */; };
+		1F56211E1929599200776A54 /* MCObjectFileInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80F21929264200D9BD62 /* MCObjectFileInfo.cpp */; };
+		1F56211F1929599200776A54 /* MCObjectStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80F31929264200D9BD62 /* MCObjectStreamer.cpp */; };
+		1F5621201929599200776A54 /* MCObjectSymbolizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80F41929264200D9BD62 /* MCObjectSymbolizer.cpp */; };
+		1F5621211929599200776A54 /* MCObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80F51929264200D9BD62 /* MCObjectWriter.cpp */; };
+		1F5621221929599200776A54 /* MCPureStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81031929264200D9BD62 /* MCPureStreamer.cpp */; };
+		1F5621231929599200776A54 /* MCRegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81041929264200D9BD62 /* MCRegisterInfo.cpp */; };
+		1F5621241929599200776A54 /* MCRelocationInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81051929264200D9BD62 /* MCRelocationInfo.cpp */; };
+		1F5621251929599200776A54 /* MCSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81061929264200D9BD62 /* MCSection.cpp */; };
+		1F5621261929599200776A54 /* MCSectionCOFF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81071929264200D9BD62 /* MCSectionCOFF.cpp */; };
+		1F5621271929599200776A54 /* MCSectionELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81081929264200D9BD62 /* MCSectionELF.cpp */; };
+		1F5621281929599200776A54 /* MCSectionMachO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81091929264200D9BD62 /* MCSectionMachO.cpp */; };
+		1F5621291929599200776A54 /* MCStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A810A1929264200D9BD62 /* MCStreamer.cpp */; };
+		1F56212A1929599200776A54 /* MCSubtargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A810B1929264200D9BD62 /* MCSubtargetInfo.cpp */; };
+		1F56212B1929599200776A54 /* MCSymbol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A810C1929264200D9BD62 /* MCSymbol.cpp */; };
+		1F56212C1929599200776A54 /* MCSymbolizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A810D1929264200D9BD62 /* MCSymbolizer.cpp */; };
+		1F56212D1929599200776A54 /* MCValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A810E1929264200D9BD62 /* MCValue.cpp */; };
+		1F56212E1929599200776A54 /* MCWin64EH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A810F1929264200D9BD62 /* MCWin64EH.cpp */; };
+		1F56212F1929599200776A54 /* SubtargetFeature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81101929264200D9BD62 /* SubtargetFeature.cpp */; };
+		1F5621301929599200776A54 /* WinCOFFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81111929264200D9BD62 /* WinCOFFObjectWriter.cpp */; };
+		1F5621311929599200776A54 /* WinCOFFStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81121929264200D9BD62 /* WinCOFFStreamer.cpp */; };
 		1FDB0A2D192950CB00D07D2C /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A119280C8D004EB0CA /* Allocator.cpp */; };
 		1FDB0A2E192950CB00D07D2C /* APFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A219280C8D004EB0CA /* APFloat.cpp */; };
 		1FDB0A2F192950CB00D07D2C /* APInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A319280C8D004EB0CA /* APInt.cpp */; };
@@ -1790,6 +1842,7 @@
 		1F5620DE192958EF00776A54 /* libLLVMIRReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMIRReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5620E71929591F00776A54 /* libLLVMLTO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMLTO.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5620F11929594F00776A54 /* libLLVMLinker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMLinker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5620FA1929598000776A54 /* libLLVMMC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMMC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -1908,6 +1961,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F5620EE1929594F00776A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5620F71929598000776A54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3808,6 +3868,7 @@
 				1F5620DE192958EF00776A54 /* libLLVMIRReader.a */,
 				1F5620E71929591F00776A54 /* libLLVMLTO.a */,
 				1F5620F11929594F00776A54 /* libLLVMLinker.a */,
+				1F5620FA1929598000776A54 /* libLLVMMC.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4087,6 +4148,22 @@
 			productReference = 1F5620F11929594F00776A54 /* libLLVMLinker.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F5620F91929598000776A54 /* LLVMMC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5620FB1929598000776A54 /* Build configuration list for PBXNativeTarget "LLVMMC" */;
+			buildPhases = (
+				1F5620F61929598000776A54 /* Sources */,
+				1F5620F71929598000776A54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVMMC;
+			productName = LLVMMC;
+			productReference = 1F5620FA1929598000776A54 /* libLLVMMC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FDB0A281929509D00D07D2C /* LLVMSupport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FDB0A2A1929509D00D07D2C /* Build configuration list for PBXNativeTarget "LLVMSupport" */;
@@ -4225,6 +4302,7 @@
 				1F562082192957DE00776A54 /* LLVMJIT */,
 				1F5620F01929594F00776A54 /* LLVMLinker */,
 				1F5620E61929591F00776A54 /* LLVMLTO */,
+				1F5620F91929598000776A54 /* LLVMMC */,
 				1F56208D1929582100776A54 /* LLVMMCJIT */,
 				1F5620971929585A00776A54 /* LLVMRuntimeDyld */,
 				1F561FFD1929561F00776A54 /* LLVMSelectionDAG */,
@@ -4720,6 +4798,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5620F51929595D00776A54 /* LinkModules.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5620F61929598000776A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5620FE1929599200776A54 /* ELFObjectWriter.cpp in Sources */,
+				1F5620FF1929599200776A54 /* MachObjectWriter.cpp in Sources */,
+				1F5621001929599200776A54 /* MCAsmBackend.cpp in Sources */,
+				1F5621011929599200776A54 /* MCAsmInfo.cpp in Sources */,
+				1F5621021929599200776A54 /* MCAsmInfoCOFF.cpp in Sources */,
+				1F5621031929599200776A54 /* MCAsmInfoDarwin.cpp in Sources */,
+				1F5621041929599200776A54 /* MCAsmInfoELF.cpp in Sources */,
+				1F5621051929599200776A54 /* MCAsmStreamer.cpp in Sources */,
+				1F5621061929599200776A54 /* MCAssembler.cpp in Sources */,
+				1F5621071929599200776A54 /* MCAtom.cpp in Sources */,
+				1F5621081929599200776A54 /* MCCodeEmitter.cpp in Sources */,
+				1F5621091929599200776A54 /* MCCodeGenInfo.cpp in Sources */,
+				1F56210A1929599200776A54 /* MCContext.cpp in Sources */,
+				1F56210B1929599200776A54 /* MCDisassembler.cpp in Sources */,
+				1F56210C1929599200776A54 /* MCDwarf.cpp in Sources */,
+				1F56210D1929599200776A54 /* MCELF.cpp in Sources */,
+				1F56210E1929599200776A54 /* MCELFObjectTargetWriter.cpp in Sources */,
+				1F56210F1929599200776A54 /* MCELFStreamer.cpp in Sources */,
+				1F5621101929599200776A54 /* MCExpr.cpp in Sources */,
+				1F5621111929599200776A54 /* MCExternalSymbolizer.cpp in Sources */,
+				1F5621121929599200776A54 /* MCFunction.cpp in Sources */,
+				1F5621131929599200776A54 /* MCInst.cpp in Sources */,
+				1F5621141929599200776A54 /* MCInstPrinter.cpp in Sources */,
+				1F5621151929599200776A54 /* MCInstrAnalysis.cpp in Sources */,
+				1F5621161929599200776A54 /* MCLabel.cpp in Sources */,
+				1F5621171929599200776A54 /* MCLinkerOptimizationHint.cpp in Sources */,
+				1F5621181929599200776A54 /* MCMachObjectTargetWriter.cpp in Sources */,
+				1F5621191929599200776A54 /* MCMachOStreamer.cpp in Sources */,
+				1F56211A1929599200776A54 /* MCModule.cpp in Sources */,
+				1F56211B1929599200776A54 /* MCModuleYAML.cpp in Sources */,
+				1F56211C1929599200776A54 /* MCNullStreamer.cpp in Sources */,
+				1F56211D1929599200776A54 /* MCObjectDisassembler.cpp in Sources */,
+				1F56211E1929599200776A54 /* MCObjectFileInfo.cpp in Sources */,
+				1F56211F1929599200776A54 /* MCObjectStreamer.cpp in Sources */,
+				1F5621201929599200776A54 /* MCObjectSymbolizer.cpp in Sources */,
+				1F5621211929599200776A54 /* MCObjectWriter.cpp in Sources */,
+				1F5621221929599200776A54 /* MCPureStreamer.cpp in Sources */,
+				1F5621231929599200776A54 /* MCRegisterInfo.cpp in Sources */,
+				1F5621241929599200776A54 /* MCRelocationInfo.cpp in Sources */,
+				1F5621251929599200776A54 /* MCSection.cpp in Sources */,
+				1F5621261929599200776A54 /* MCSectionCOFF.cpp in Sources */,
+				1F5621271929599200776A54 /* MCSectionELF.cpp in Sources */,
+				1F5621281929599200776A54 /* MCSectionMachO.cpp in Sources */,
+				1F5621291929599200776A54 /* MCStreamer.cpp in Sources */,
+				1F56212A1929599200776A54 /* MCSubtargetInfo.cpp in Sources */,
+				1F56212B1929599200776A54 /* MCSymbol.cpp in Sources */,
+				1F56212C1929599200776A54 /* MCSymbolizer.cpp in Sources */,
+				1F56212D1929599200776A54 /* MCValue.cpp in Sources */,
+				1F56212E1929599200776A54 /* MCWin64EH.cpp in Sources */,
+				1F56212F1929599200776A54 /* SubtargetFeature.cpp in Sources */,
+				1F5621301929599200776A54 /* WinCOFFObjectWriter.cpp in Sources */,
+				1F5621311929599200776A54 /* WinCOFFStreamer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6073,6 +6210,78 @@
 			};
 			name = Release;
 		};
+		1F5620FC1929598000776A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F5620FD1929598000776A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1FDB0A2B1929509D00D07D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6635,6 +6844,14 @@
 			buildConfigurations = (
 				1F5620F31929594F00776A54 /* Debug */,
 				1F5620F41929594F00776A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F5620FB1929598000776A54 /* Build configuration list for PBXNativeTarget "LLVMMC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5620FC1929598000776A54 /* Debug */,
+				1F5620FD1929598000776A54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
