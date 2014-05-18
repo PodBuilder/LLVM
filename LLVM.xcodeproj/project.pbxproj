@@ -297,6 +297,19 @@
 		1F562141192959CE00776A54 /* MCAsmParserExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81011929264200D9BD62 /* MCAsmParserExtension.cpp */; };
 		1F562142192959CE00776A54 /* MCTargetAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81021929264200D9BD62 /* MCTargetAsmParser.cpp */; };
 		1FCF505B19297548000122C0 /* Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80DB1929264200D9BD62 /* Disassembler.cpp */; };
+		1FCF50641929759C000122C0 /* Archive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8156192926D600D9BD62 /* Archive.cpp */; };
+		1FCF50651929759C000122C0 /* Binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8157192926D600D9BD62 /* Binary.cpp */; };
+		1FCF50661929759C000122C0 /* COFFObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8159192926D600D9BD62 /* COFFObjectFile.cpp */; };
+		1FCF50671929759C000122C0 /* COFFYAML.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815A192926D600D9BD62 /* COFFYAML.cpp */; };
+		1FCF50681929759C000122C0 /* ELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815B192926D600D9BD62 /* ELF.cpp */; };
+		1FCF50691929759C000122C0 /* ELFObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815C192926D600D9BD62 /* ELFObjectFile.cpp */; };
+		1FCF506A1929759C000122C0 /* ELFYAML.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815D192926D600D9BD62 /* ELFYAML.cpp */; };
+		1FCF506B1929759C000122C0 /* Error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815E192926D600D9BD62 /* Error.cpp */; };
+		1FCF506C1929759C000122C0 /* MachOObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8160192926D600D9BD62 /* MachOObjectFile.cpp */; };
+		1FCF506D1929759C000122C0 /* MachOUniversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8161192926D600D9BD62 /* MachOUniversal.cpp */; };
+		1FCF506E1929759C000122C0 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8163192926D600D9BD62 /* Object.cpp */; };
+		1FCF506F1929759C000122C0 /* ObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8164192926D600D9BD62 /* ObjectFile.cpp */; };
+		1FCF50701929759C000122C0 /* YAML.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8165192926D600D9BD62 /* YAML.cpp */; };
 		1FDB0A2D192950CB00D07D2C /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A119280C8D004EB0CA /* Allocator.cpp */; };
 		1FDB0A2E192950CB00D07D2C /* APFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A219280C8D004EB0CA /* APFloat.cpp */; };
 		1FDB0A2F192950CB00D07D2C /* APInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A319280C8D004EB0CA /* APInt.cpp */; };
@@ -1860,6 +1873,7 @@
 		1F8DEF811927F8B900138754 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1F8DEF8D1927F8B900138754 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1FCF505719297538000122C0 /* libLLVMMCDisassembler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMMCDisassembler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCF50601929758C000122C0 /* libLLVMObject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMObject.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDB0A291929509D00D07D2C /* libLLVMSupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMSupport.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDB0A871929511700D07D2C /* libLLVMTableGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMTableGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDB0AC9192951E800D07D2C /* libLLVMAnalysis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMAnalysis.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1994,6 +2008,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1FCF505419297538000122C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCF505D1929758C000122C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3897,6 +3918,7 @@
 				1F5620FA1929598000776A54 /* libLLVMMC.a */,
 				1F562136192959BE00776A54 /* libLLVMMCParser.a */,
 				1FCF505719297538000122C0 /* libLLVMMCDisassembler.a */,
+				1FCF50601929758C000122C0 /* libLLVMObject.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4224,6 +4246,22 @@
 			productReference = 1FCF505719297538000122C0 /* libLLVMMCDisassembler.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1FCF505F1929758C000122C0 /* LLVMObject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FCF50611929758C000122C0 /* Build configuration list for PBXNativeTarget "LLVMObject" */;
+			buildPhases = (
+				1FCF505C1929758C000122C0 /* Sources */,
+				1FCF505D1929758C000122C0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVMObject;
+			productName = LLVMObject;
+			productReference = 1FCF50601929758C000122C0 /* libLLVMObject.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FDB0A281929509D00D07D2C /* LLVMSupport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FDB0A2A1929509D00D07D2C /* Build configuration list for PBXNativeTarget "LLVMSupport" */;
@@ -4366,6 +4404,7 @@
 				1FCF505619297538000122C0 /* LLVMMCDisassembler */,
 				1F56208D1929582100776A54 /* LLVMMCJIT */,
 				1F562135192959BE00776A54 /* LLVMMCParser */,
+				1FCF505F1929758C000122C0 /* LLVMObject */,
 				1F5620971929585A00776A54 /* LLVMRuntimeDyld */,
 				1F561FFD1929561F00776A54 /* LLVMSelectionDAG */,
 				1FDB0A281929509D00D07D2C /* LLVMSupport */,
@@ -4943,6 +4982,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FCF505B19297548000122C0 /* Disassembler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCF505C1929758C000122C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCF50641929759C000122C0 /* Archive.cpp in Sources */,
+				1FCF50651929759C000122C0 /* Binary.cpp in Sources */,
+				1FCF50661929759C000122C0 /* COFFObjectFile.cpp in Sources */,
+				1FCF50671929759C000122C0 /* COFFYAML.cpp in Sources */,
+				1FCF50681929759C000122C0 /* ELF.cpp in Sources */,
+				1FCF50691929759C000122C0 /* ELFObjectFile.cpp in Sources */,
+				1FCF506A1929759C000122C0 /* ELFYAML.cpp in Sources */,
+				1FCF506B1929759C000122C0 /* Error.cpp in Sources */,
+				1FCF506C1929759C000122C0 /* MachOObjectFile.cpp in Sources */,
+				1FCF506D1929759C000122C0 /* MachOUniversal.cpp in Sources */,
+				1FCF506E1929759C000122C0 /* Object.cpp in Sources */,
+				1FCF506F1929759C000122C0 /* ObjectFile.cpp in Sources */,
+				1FCF50701929759C000122C0 /* YAML.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6512,6 +6571,78 @@
 			};
 			name = Release;
 		};
+		1FCF50621929758C000122C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1FCF50631929758C000122C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1FDB0A2B1929509D00D07D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7114,6 +7245,14 @@
 			buildConfigurations = (
 				1FCF505819297538000122C0 /* Debug */,
 				1FCF505919297538000122C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FCF50611929758C000122C0 /* Build configuration list for PBXNativeTarget "LLVMObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCF50621929758C000122C0 /* Debug */,
+				1FCF50631929758C000122C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
