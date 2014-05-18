@@ -1057,6 +1057,31 @@
 		1F4A800A192922BF00D9BD62 /* DWARFTypeUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FED192922BF00D9BD62 /* DWARFTypeUnit.h */; };
 		1F4A800B192922BF00D9BD62 /* DWARFUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FEE192922BF00D9BD62 /* DWARFUnit.cpp */; };
 		1F4A800C192922BF00D9BD62 /* DWARFUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FEF192922BF00D9BD62 /* DWARFUnit.h */; };
+		1F4A80351929235600D9BD62 /* EventListenerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A800E1929235600D9BD62 /* EventListenerCommon.h */; };
+		1F4A80361929235600D9BD62 /* ExecutionEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A800F1929235600D9BD62 /* ExecutionEngine.cpp */; };
+		1F4A80371929235600D9BD62 /* ExecutionEngineBindings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80101929235600D9BD62 /* ExecutionEngineBindings.cpp */; };
+		1F4A803E1929235600D9BD62 /* Execution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80191929235600D9BD62 /* Execution.cpp */; };
+		1F4A803F1929235600D9BD62 /* ExternalFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A801A1929235600D9BD62 /* ExternalFunctions.cpp */; };
+		1F4A80401929235600D9BD62 /* Interpreter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A801B1929235600D9BD62 /* Interpreter.cpp */; };
+		1F4A80411929235600D9BD62 /* Interpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A801C1929235600D9BD62 /* Interpreter.h */; };
+		1F4A80421929235600D9BD62 /* JIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A801E1929235600D9BD62 /* JIT.cpp */; };
+		1F4A80431929235600D9BD62 /* JIT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A801F1929235600D9BD62 /* JIT.h */; };
+		1F4A80441929235600D9BD62 /* JITEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80201929235600D9BD62 /* JITEmitter.cpp */; };
+		1F4A80451929235600D9BD62 /* JITMemoryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80211929235600D9BD62 /* JITMemoryManager.cpp */; };
+		1F4A80461929235600D9BD62 /* MCJIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80231929235600D9BD62 /* MCJIT.cpp */; };
+		1F4A80471929235600D9BD62 /* MCJIT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A80241929235600D9BD62 /* MCJIT.h */; };
+		1F4A80481929235600D9BD62 /* SectionMemoryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80251929235600D9BD62 /* SectionMemoryManager.cpp */; };
+		1F4A804B1929235600D9BD62 /* RTDyldMemoryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80291929235600D9BD62 /* RTDyldMemoryManager.cpp */; };
+		1F4A804C1929235600D9BD62 /* GDBRegistrar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A802B1929235600D9BD62 /* GDBRegistrar.cpp */; };
+		1F4A804D1929235600D9BD62 /* JITRegistrar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A802C1929235600D9BD62 /* JITRegistrar.h */; };
+		1F4A804E1929235600D9BD62 /* ObjectImageCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A802D1929235600D9BD62 /* ObjectImageCommon.h */; };
+		1F4A804F1929235600D9BD62 /* RuntimeDyld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A802E1929235600D9BD62 /* RuntimeDyld.cpp */; };
+		1F4A80501929235600D9BD62 /* RuntimeDyldELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A802F1929235600D9BD62 /* RuntimeDyldELF.cpp */; };
+		1F4A80511929235600D9BD62 /* RuntimeDyldELF.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A80301929235600D9BD62 /* RuntimeDyldELF.h */; };
+		1F4A80521929235600D9BD62 /* RuntimeDyldImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A80311929235600D9BD62 /* RuntimeDyldImpl.h */; };
+		1F4A80531929235600D9BD62 /* RuntimeDyldMachO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80321929235600D9BD62 /* RuntimeDyldMachO.cpp */; };
+		1F4A80541929235600D9BD62 /* RuntimeDyldMachO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A80331929235600D9BD62 /* RuntimeDyldMachO.h */; };
+		1F4A80551929235600D9BD62 /* TargetSelect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80341929235600D9BD62 /* TargetSelect.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2102,6 +2127,31 @@
 		1F4A7FED192922BF00D9BD62 /* DWARFTypeUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFTypeUnit.h; sourceTree = "<group>"; };
 		1F4A7FEE192922BF00D9BD62 /* DWARFUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFUnit.cpp; sourceTree = "<group>"; };
 		1F4A7FEF192922BF00D9BD62 /* DWARFUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFUnit.h; sourceTree = "<group>"; };
+		1F4A800E1929235600D9BD62 /* EventListenerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListenerCommon.h; sourceTree = "<group>"; };
+		1F4A800F1929235600D9BD62 /* ExecutionEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExecutionEngine.cpp; sourceTree = "<group>"; };
+		1F4A80101929235600D9BD62 /* ExecutionEngineBindings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExecutionEngineBindings.cpp; sourceTree = "<group>"; };
+		1F4A80191929235600D9BD62 /* Execution.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Execution.cpp; sourceTree = "<group>"; };
+		1F4A801A1929235600D9BD62 /* ExternalFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExternalFunctions.cpp; sourceTree = "<group>"; };
+		1F4A801B1929235600D9BD62 /* Interpreter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interpreter.cpp; sourceTree = "<group>"; };
+		1F4A801C1929235600D9BD62 /* Interpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interpreter.h; sourceTree = "<group>"; };
+		1F4A801E1929235600D9BD62 /* JIT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JIT.cpp; sourceTree = "<group>"; };
+		1F4A801F1929235600D9BD62 /* JIT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIT.h; sourceTree = "<group>"; };
+		1F4A80201929235600D9BD62 /* JITEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JITEmitter.cpp; sourceTree = "<group>"; };
+		1F4A80211929235600D9BD62 /* JITMemoryManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JITMemoryManager.cpp; sourceTree = "<group>"; };
+		1F4A80231929235600D9BD62 /* MCJIT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MCJIT.cpp; sourceTree = "<group>"; };
+		1F4A80241929235600D9BD62 /* MCJIT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJIT.h; sourceTree = "<group>"; };
+		1F4A80251929235600D9BD62 /* SectionMemoryManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SectionMemoryManager.cpp; sourceTree = "<group>"; };
+		1F4A80291929235600D9BD62 /* RTDyldMemoryManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTDyldMemoryManager.cpp; sourceTree = "<group>"; };
+		1F4A802B1929235600D9BD62 /* GDBRegistrar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GDBRegistrar.cpp; sourceTree = "<group>"; };
+		1F4A802C1929235600D9BD62 /* JITRegistrar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JITRegistrar.h; sourceTree = "<group>"; };
+		1F4A802D1929235600D9BD62 /* ObjectImageCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectImageCommon.h; sourceTree = "<group>"; };
+		1F4A802E1929235600D9BD62 /* RuntimeDyld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeDyld.cpp; sourceTree = "<group>"; };
+		1F4A802F1929235600D9BD62 /* RuntimeDyldELF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeDyldELF.cpp; sourceTree = "<group>"; };
+		1F4A80301929235600D9BD62 /* RuntimeDyldELF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeDyldELF.h; sourceTree = "<group>"; };
+		1F4A80311929235600D9BD62 /* RuntimeDyldImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeDyldImpl.h; sourceTree = "<group>"; };
+		1F4A80321929235600D9BD62 /* RuntimeDyldMachO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeDyldMachO.cpp; sourceTree = "<group>"; };
+		1F4A80331929235600D9BD62 /* RuntimeDyldMachO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeDyldMachO.h; sourceTree = "<group>"; };
+		1F4A80341929235600D9BD62 /* TargetSelect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetSelect.cpp; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2938,6 +2988,7 @@
 				1F1FB56E19281282004EB0CA /* Bitcode */,
 				1F1FB583192812DB004EB0CA /* CodeGen */,
 				1F4A7FD2192922BF00D9BD62 /* DebugInfo */,
+				1F4A800D1929235600D9BD62 /* ExecutionEngine */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
@@ -3514,6 +3565,70 @@
 			path = DebugInfo;
 			sourceTree = "<group>";
 		};
+		1F4A800D1929235600D9BD62 /* ExecutionEngine */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A80181929235600D9BD62 /* Interpreter */,
+				1F4A801D1929235600D9BD62 /* JIT */,
+				1F4A80221929235600D9BD62 /* MCJIT */,
+				1F4A802A1929235600D9BD62 /* RuntimeDyld */,
+				1F4A800E1929235600D9BD62 /* EventListenerCommon.h */,
+				1F4A800F1929235600D9BD62 /* ExecutionEngine.cpp */,
+				1F4A80101929235600D9BD62 /* ExecutionEngineBindings.cpp */,
+				1F4A80291929235600D9BD62 /* RTDyldMemoryManager.cpp */,
+				1F4A80341929235600D9BD62 /* TargetSelect.cpp */,
+			);
+			path = ExecutionEngine;
+			sourceTree = "<group>";
+		};
+		1F4A80181929235600D9BD62 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A80191929235600D9BD62 /* Execution.cpp */,
+				1F4A801A1929235600D9BD62 /* ExternalFunctions.cpp */,
+				1F4A801B1929235600D9BD62 /* Interpreter.cpp */,
+				1F4A801C1929235600D9BD62 /* Interpreter.h */,
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		1F4A801D1929235600D9BD62 /* JIT */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A801E1929235600D9BD62 /* JIT.cpp */,
+				1F4A801F1929235600D9BD62 /* JIT.h */,
+				1F4A80201929235600D9BD62 /* JITEmitter.cpp */,
+				1F4A80211929235600D9BD62 /* JITMemoryManager.cpp */,
+			);
+			path = JIT;
+			sourceTree = "<group>";
+		};
+		1F4A80221929235600D9BD62 /* MCJIT */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A80231929235600D9BD62 /* MCJIT.cpp */,
+				1F4A80241929235600D9BD62 /* MCJIT.h */,
+				1F4A80251929235600D9BD62 /* SectionMemoryManager.cpp */,
+			);
+			path = MCJIT;
+			sourceTree = "<group>";
+		};
+		1F4A802A1929235600D9BD62 /* RuntimeDyld */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A802B1929235600D9BD62 /* GDBRegistrar.cpp */,
+				1F4A802C1929235600D9BD62 /* JITRegistrar.h */,
+				1F4A802D1929235600D9BD62 /* ObjectImageCommon.h */,
+				1F4A802E1929235600D9BD62 /* RuntimeDyld.cpp */,
+				1F4A802F1929235600D9BD62 /* RuntimeDyldELF.cpp */,
+				1F4A80301929235600D9BD62 /* RuntimeDyldELF.h */,
+				1F4A80311929235600D9BD62 /* RuntimeDyldImpl.h */,
+				1F4A80321929235600D9BD62 /* RuntimeDyldMachO.cpp */,
+				1F4A80331929235600D9BD62 /* RuntimeDyldMachO.h */,
+			);
+			path = RuntimeDyld;
+			sourceTree = "<group>";
+		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -3592,6 +3707,7 @@
 				1F1FB697192812DC004EB0CA /* PHIEliminationUtils.h in Headers */,
 				1F1FB19719280BE9004EB0CA /* MCAsmInfoCOFF.h in Headers */,
 				1F1FB24E19280BE9004EB0CA /* ThreadLocal.h in Headers */,
+				1F4A80351929235600D9BD62 /* EventListenerCommon.h in Headers */,
 				1F1FB09019280BE9004EB0CA /* ImmutableIntervalMap.h in Headers */,
 				1F1FB28119280BE9004EB0CA /* ModuleUtils.h in Headers */,
 				1F1FB08319280BE9004EB0CA /* DAGDeltaAlgorithm.h in Headers */,
@@ -3729,6 +3845,7 @@
 				1F1FB0EA19280BE9004EB0CA /* ScalarEvolutionExpressions.h in Headers */,
 				1F1FB39219280C8D004EB0CA /* Windows.h in Headers */,
 				1F1FB26019280BE9004EB0CA /* TableGenBackend.h in Headers */,
+				1F4A80521929235600D9BD62 /* RuntimeDyldImpl.h in Headers */,
 				1F1FB0F519280BE9004EB0CA /* AutoUpgrade.h in Headers */,
 				1F1FB1E519280BE9004EB0CA /* ArgList.h in Headers */,
 				1F1FB1EB19280BE9004EB0CA /* PassManager.h in Headers */,
@@ -3916,6 +4033,7 @@
 				1F1FB20319280BE9004EB0CA /* ConvertUTF.h in Headers */,
 				1F1FB17E19280BE9004EB0CA /* Intrinsics.h in Headers */,
 				1F1FB29019280BE9004EB0CA /* Disassembler.h in Headers */,
+				1F4A80511929235600D9BD62 /* RuntimeDyldELF.h in Headers */,
 				1F1FB28D19280BE9004EB0CA /* BitReader.h in Headers */,
 				1F1FB0DB19280BE9004EB0CA /* LoopInfoImpl.h in Headers */,
 				1F1FB25619280BE9004EB0CA /* ValueHandle.h in Headers */,
@@ -3978,12 +4096,14 @@
 				1F1FB08419280BE9004EB0CA /* DeltaAlgorithm.h in Headers */,
 				1F1FB11E19280BE9004EB0CA /* MachineDominators.h in Headers */,
 				1F1FB1EA19280BE9004EB0CA /* PassAnalysisSupport.h in Headers */,
+				1F4A80541929235600D9BD62 /* RuntimeDyldMachO.h in Headers */,
 				1F1FB29919280BE9004EB0CA /* Target.h in Headers */,
 				1F1FB19D19280BE9004EB0CA /* MCCodeEmitter.h in Headers */,
 				1F1FB0E919280BE9004EB0CA /* ScalarEvolutionExpander.h in Headers */,
 				1F1FB15F19280BE9004EB0CA /* JITMemoryManager.h in Headers */,
 				1F1FB27219280BE9004EB0CA /* InlinerPass.h in Headers */,
 				1F1FB1C719280BE9004EB0CA /* MCSchedule.h in Headers */,
+				1F4A80431929235600D9BD62 /* JIT.h in Headers */,
 				1F1FB1DF19280BE9004EB0CA /* MachO.h in Headers */,
 				1F1FB1A119280BE9004EB0CA /* MCDisassembler.h in Headers */,
 				1F1FB29719280BE9004EB0CA /* Object.h in Headers */,
@@ -4047,6 +4167,7 @@
 				1F1FB0EB19280BE9004EB0CA /* ScalarEvolutionNormalization.h in Headers */,
 				1F1FB645192812DB004EB0CA /* DwarfCompileUnit.h in Headers */,
 				1F1FB0EF19280BE9004EB0CA /* ValueTracking.h in Headers */,
+				1F4A80471929235600D9BD62 /* MCJIT.h in Headers */,
 				1F1FB1EE19280BE9004EB0CA /* PassSupport.h in Headers */,
 				1F1FB1FD19280BE9004EB0CA /* COFF.h in Headers */,
 				1F1FB0F319280BE9004EB0CA /* PrintModulePass.h in Headers */,
@@ -4065,6 +4186,8 @@
 				1F1FB1CF19280BE9004EB0CA /* MCSymbolizer.h in Headers */,
 				1F1FB09719280BE9004EB0CA /* IntrusiveRefCntPtr.h in Headers */,
 				1F1FB35C19280C8D004EB0CA /* regutils.h in Headers */,
+				1F4A804D1929235600D9BD62 /* JITRegistrar.h in Headers */,
+				1F4A80411929235600D9BD62 /* Interpreter.h in Headers */,
 				1F1FB15A19280BE9004EB0CA /* ExecutionEngine.h in Headers */,
 				1F1FB10919280BE9004EB0CA /* IntrinsicLowering.h in Headers */,
 				1F1FB14919280BE9004EB0CA /* SelectionDAG.h in Headers */,
@@ -4119,6 +4242,7 @@
 				1F1FB1F319280BE9004EB0CA /* Atomic.h in Headers */,
 				1F1FB23719280BE9004EB0CA /* raw_os_ostream.h in Headers */,
 				1F1FB0FD19280BE9004EB0CA /* CalcSpillWeights.h in Headers */,
+				1F4A804E1929235600D9BD62 /* ObjectImageCommon.h in Headers */,
 				1F1FB0C719280BE9004EB0CA /* ConstantsScanner.h in Headers */,
 				1F1FB18D19280BE9004EB0CA /* ValueSymbolTable.h in Headers */,
 				1F1FB640192812DB004EB0CA /* DIEHash.h in Headers */,
@@ -4417,6 +4541,7 @@
 				1F1FB691192812DC004EB0CA /* OcamlGC.cpp in Sources */,
 				1F4A7FFB192922BF00D9BD62 /* DWARFDebugArangeSet.cpp in Sources */,
 				1F4A7FF0192922BF00D9BD62 /* DIContext.cpp in Sources */,
+				1F4A80401929235600D9BD62 /* Interpreter.cpp in Sources */,
 				1F1FB33C19280C8D004EB0CA /* IncludeFile.cpp in Sources */,
 				1F1FB35919280C8D004EB0CA /* regexec.c in Sources */,
 				1F1FB52719281191004EB0CA /* AliasDebugger.cpp in Sources */,
@@ -4443,6 +4568,7 @@
 				1F1FB34B19280C8D004EB0CA /* PluginLoader.cpp in Sources */,
 				1F1FB34219280C8D004EB0CA /* Locale.cpp in Sources */,
 				1F1FB69F192812DC004EB0CA /* RegAllocBasic.cpp in Sources */,
+				1F4A80461929235600D9BD62 /* MCJIT.cpp in Sources */,
 				1F1FB6BC192812DC004EB0CA /* ScheduleDAGSDNodes.cpp in Sources */,
 				1F1FB635192812DB004EB0CA /* AllocationOrder.cpp in Sources */,
 				1F1FB6D3192812DC004EB0CA /* StackProtector.cpp in Sources */,
@@ -4462,9 +4588,11 @@
 				1F1FB68C192812DC004EB0CA /* MachineScheduler.cpp in Sources */,
 				1F1FB6C8192812DC004EB0CA /* ShadowStackGC.cpp in Sources */,
 				1F1FB641192812DB004EB0CA /* DwarfAccelTable.cpp in Sources */,
+				1F4A804F1929235600D9BD62 /* RuntimeDyld.cpp in Sources */,
 				1F1FB657192812DC004EB0CA /* DwarfEHPrepare.cpp in Sources */,
 				1F1FB66E192812DC004EB0CA /* LiveRangeCalc.cpp in Sources */,
 				1F1FB54B19281191004EB0CA /* MemoryDependenceAnalysis.cpp in Sources */,
+				1F4A80371929235600D9BD62 /* ExecutionEngineBindings.cpp in Sources */,
 				1F1FB36319280C8D004EB0CA /* Statistic.cpp in Sources */,
 				1F1FB36819280C8D004EB0CA /* StringRef.cpp in Sources */,
 				1F1FB52F19281191004EB0CA /* CFGPrinter.cpp in Sources */,
@@ -4488,6 +4616,7 @@
 				1F1FB3A819280D91004EB0CA /* StringMatcher.cpp in Sources */,
 				1F1FB34819280C8D004EB0CA /* MemoryObject.cpp in Sources */,
 				1F1FB34919280C8D004EB0CA /* Mutex.cpp in Sources */,
+				1F4A80361929235600D9BD62 /* ExecutionEngine.cpp in Sources */,
 				1F1FB678192812DC004EB0CA /* MachineBlockFrequencyInfo.cpp in Sources */,
 				1F1FB6B4192812DC004EB0CA /* LegalizeTypes.cpp in Sources */,
 				1F1FB6DD192812DC004EB0CA /* TwoAddressInstructionPass.cpp in Sources */,
@@ -4509,6 +4638,7 @@
 				1F1FB694192812DC004EB0CA /* PeepholeOptimizer.cpp in Sources */,
 				1F1FB64E192812DB004EB0CA /* BranchFolding.cpp in Sources */,
 				1F1FB55319281191004EB0CA /* RegionPrinter.cpp in Sources */,
+				1F4A80531929235600D9BD62 /* RuntimeDyldMachO.cpp in Sources */,
 				1F1FB33B19280C8D004EB0CA /* Host.cpp in Sources */,
 				1F1FB53519281191004EB0CA /* DomPrinter.cpp in Sources */,
 				1F1FB36C19280C8D004EB0CA /* TargetRegistry.cpp in Sources */,
@@ -4536,6 +4666,7 @@
 				1F1FB3A919280D91004EB0CA /* TableGenBackend.cpp in Sources */,
 				1F1FB38219280C8D004EB0CA /* Valgrind.cpp in Sources */,
 				1F1FB34D19280C8D004EB0CA /* Process.cpp in Sources */,
+				1F4A803F1929235600D9BD62 /* ExternalFunctions.cpp in Sources */,
 				1F1FB39319280C8D004EB0CA /* YAMLParser.cpp in Sources */,
 				1F1FB67B192812DC004EB0CA /* MachineCodeEmitter.cpp in Sources */,
 				1F1FB6BA192812DC004EB0CA /* ScheduleDAGFast.cpp in Sources */,
@@ -4560,6 +4691,7 @@
 				1F1FB57E19281282004EB0CA /* BitcodeWriter.cpp in Sources */,
 				1F1FB64C192812DB004EB0CA /* Win64Exception.cpp in Sources */,
 				1F1FB32C19280C8D004EB0CA /* DataExtractor.cpp in Sources */,
+				1F4A80421929235600D9BD62 /* JIT.cpp in Sources */,
 				1F1FB3AC19280D91004EB0CA /* TGParser.cpp in Sources */,
 				1F1FB687192812DC004EB0CA /* MachineModuleInfo.cpp in Sources */,
 				1F1FB34A19280C8D004EB0CA /* Path.cpp in Sources */,
@@ -4573,10 +4705,13 @@
 				1F1FB69A192812DC004EB0CA /* PrologEpilogInserter.cpp in Sources */,
 				1F1FB6A9192812DC004EB0CA /* ScheduleDAGInstrs.cpp in Sources */,
 				1F1FB36619280C8D004EB0CA /* StringMap.cpp in Sources */,
+				1F4A80441929235600D9BD62 /* JITEmitter.cpp in Sources */,
+				1F4A80451929235600D9BD62 /* JITMemoryManager.cpp in Sources */,
 				1F4A7FF5192922BF00D9BD62 /* DWARFContext.cpp in Sources */,
 				1F1FB680192812DC004EB0CA /* MachineFunctionAnalysis.cpp in Sources */,
 				1F1FB6D4192812DC004EB0CA /* StackSlotColoring.cpp in Sources */,
 				1F1FB695192812DC004EB0CA /* PHIElimination.cpp in Sources */,
+				1F4A804B1929235600D9BD62 /* RTDyldMemoryManager.cpp in Sources */,
 				1F1FB55219281191004EB0CA /* RegionPass.cpp in Sources */,
 				1F1FB6AF192812DC004EB0CA /* InstrEmitter.cpp in Sources */,
 				1F1FB6C9192812DC004EB0CA /* SjLjEHPrepare.cpp in Sources */,
@@ -4600,6 +4735,7 @@
 				1F4A8003192922BF00D9BD62 /* DWARFDebugLoc.cpp in Sources */,
 				1F1FB36119280C8D004EB0CA /* SmallVector.cpp in Sources */,
 				1F1FB662192812DC004EB0CA /* InlineSpiller.cpp in Sources */,
+				1F4A804C1929235600D9BD62 /* GDBRegistrar.cpp in Sources */,
 				1F1FB6B6192812DC004EB0CA /* LegalizeTypesGeneric.cpp in Sources */,
 				1F1FB653192812DB004EB0CA /* CriticalAntiDepBreaker.cpp in Sources */,
 				1F1FB34C19280C8D004EB0CA /* PrettyStackTrace.cpp in Sources */,
@@ -4625,9 +4761,11 @@
 				1F1FB34E19280C8D004EB0CA /* Program.cpp in Sources */,
 				1F1FB57C19281282004EB0CA /* BitReader.cpp in Sources */,
 				1F1FB53B19281191004EB0CA /* CallGraphSCCPass.cpp in Sources */,
+				1F4A80481929235600D9BD62 /* SectionMemoryManager.cpp in Sources */,
 				1F1FB6DE192812DC004EB0CA /* UnreachableBlockElim.cpp in Sources */,
 				1F1FB3A419280D91004EB0CA /* Error.cpp in Sources */,
 				1F1FB35F19280C8D004EB0CA /* Signals.cpp in Sources */,
+				1F4A803E1929235600D9BD62 /* Execution.cpp in Sources */,
 				1F1FB32319280C8D004EB0CA /* BranchProbability.cpp in Sources */,
 				1F1FB68E192812DC004EB0CA /* MachineSSAUpdater.cpp in Sources */,
 				1F1FB39419280C8D004EB0CA /* YAMLTraits.cpp in Sources */,
@@ -4640,6 +4778,7 @@
 				1F1FB6B2192812DC004EB0CA /* LegalizeFloatTypes.cpp in Sources */,
 				1F1FB55C19281191004EB0CA /* ValueTracking.cpp in Sources */,
 				1F1FB6DA192812DC004EB0CA /* TargetOptionsImpl.cpp in Sources */,
+				1F4A80501929235600D9BD62 /* RuntimeDyldELF.cpp in Sources */,
 				1F1FB56919281236004EB0CA /* LLParser.cpp in Sources */,
 				1F1FB54D19281191004EB0CA /* NoAliasAnalysis.cpp in Sources */,
 				1F1FB54019281191004EB0CA /* IPA.cpp in Sources */,
@@ -4679,6 +4818,7 @@
 				1F1FB36519280C8D004EB0CA /* StringExtras.cpp in Sources */,
 				1F1FB33219280C8D004EB0CA /* DynamicLibrary.cpp in Sources */,
 				1F1FB53719281191004EB0CA /* InstructionSimplify.cpp in Sources */,
+				1F4A80551929235600D9BD62 /* TargetSelect.cpp in Sources */,
 				1F1FB31E19280C8D004EB0CA /* APFloat.cpp in Sources */,
 				1F1FB667192812DC004EB0CA /* LatencyPriorityQueue.cpp in Sources */,
 				1F1FB36D19280C8D004EB0CA /* Threading.cpp in Sources */,
