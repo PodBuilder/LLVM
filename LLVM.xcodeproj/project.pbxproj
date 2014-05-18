@@ -1129,6 +1129,7 @@
 		1F4A80B21929241B00D9BD62 /* ValueSymbolTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80831929241B00D9BD62 /* ValueSymbolTable.cpp */; };
 		1F4A80B31929241B00D9BD62 /* ValueTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80841929241B00D9BD62 /* ValueTypes.cpp */; };
 		1F4A80B41929241B00D9BD62 /* Verifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80851929241B00D9BD62 /* Verifier.cpp */; };
+		1F4A80BA192924B300D9BD62 /* IRReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80B7192924B300D9BD62 /* IRReader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2246,6 +2247,7 @@
 		1F4A80831929241B00D9BD62 /* ValueSymbolTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueSymbolTable.cpp; sourceTree = "<group>"; };
 		1F4A80841929241B00D9BD62 /* ValueTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueTypes.cpp; sourceTree = "<group>"; };
 		1F4A80851929241B00D9BD62 /* Verifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Verifier.cpp; sourceTree = "<group>"; };
+		1F4A80B7192924B300D9BD62 /* IRReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRReader.cpp; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -3084,6 +3086,7 @@
 				1F4A7FD2192922BF00D9BD62 /* DebugInfo */,
 				1F4A800D1929235600D9BD62 /* ExecutionEngine */,
 				1F4A80561929241B00D9BD62 /* IR */,
+				1F4A80B5192924B300D9BD62 /* IRReader */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
@@ -3776,6 +3779,14 @@
 				1F4A80851929241B00D9BD62 /* Verifier.cpp */,
 			);
 			path = IR;
+			sourceTree = "<group>";
+		};
+		1F4A80B5192924B300D9BD62 /* IRReader */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A80B7192924B300D9BD62 /* IRReader.cpp */,
+			);
+			path = IRReader;
 			sourceTree = "<group>";
 		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
@@ -4870,6 +4881,7 @@
 				1F4A80AE1929241B00D9BD62 /* TypeFinder.cpp in Sources */,
 				1F1FB690192812DC004EB0CA /* MachineVerifier.cpp in Sources */,
 				1F1FB57E19281282004EB0CA /* BitcodeWriter.cpp in Sources */,
+				1F4A80BA192924B300D9BD62 /* IRReader.cpp in Sources */,
 				1F1FB64C192812DB004EB0CA /* Win64Exception.cpp in Sources */,
 				1F1FB32C19280C8D004EB0CA /* DataExtractor.cpp in Sources */,
 				1F4A80421929235600D9BD62 /* JIT.cpp in Sources */,
