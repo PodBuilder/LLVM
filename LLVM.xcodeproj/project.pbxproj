@@ -1213,6 +1213,15 @@
 		1F4A817D1929277300D9BD62 /* ArgList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81761929277300D9BD62 /* ArgList.cpp */; };
 		1F4A817F1929277300D9BD62 /* Option.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A817A1929277300D9BD62 /* Option.cpp */; };
 		1F4A81801929277300D9BD62 /* OptTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A817B1929277300D9BD62 /* OptTable.cpp */; };
+		1F4A818B192928B300D9BD62 /* Mangler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8182192928B300D9BD62 /* Mangler.cpp */; };
+		1F4A818C192928B300D9BD62 /* Target.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8183192928B300D9BD62 /* Target.cpp */; };
+		1F4A818D192928B300D9BD62 /* TargetIntrinsicInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8184192928B300D9BD62 /* TargetIntrinsicInfo.cpp */; };
+		1F4A818E192928B300D9BD62 /* TargetJITInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8185192928B300D9BD62 /* TargetJITInfo.cpp */; };
+		1F4A818F192928B300D9BD62 /* TargetLibraryInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8186192928B300D9BD62 /* TargetLibraryInfo.cpp */; };
+		1F4A8190192928B300D9BD62 /* TargetLoweringObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8187192928B300D9BD62 /* TargetLoweringObjectFile.cpp */; };
+		1F4A8191192928B300D9BD62 /* TargetMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8188192928B300D9BD62 /* TargetMachine.cpp */; };
+		1F4A8192192928B300D9BD62 /* TargetMachineC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8189192928B300D9BD62 /* TargetMachineC.cpp */; };
+		1F4A8193192928B300D9BD62 /* TargetSubtargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A818A192928B300D9BD62 /* TargetSubtargetInfo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2414,6 +2423,15 @@
 		1F4A81761929277300D9BD62 /* ArgList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArgList.cpp; sourceTree = "<group>"; };
 		1F4A817A1929277300D9BD62 /* Option.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Option.cpp; sourceTree = "<group>"; };
 		1F4A817B1929277300D9BD62 /* OptTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OptTable.cpp; sourceTree = "<group>"; };
+		1F4A8182192928B300D9BD62 /* Mangler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mangler.cpp; sourceTree = "<group>"; };
+		1F4A8183192928B300D9BD62 /* Target.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Target.cpp; sourceTree = "<group>"; };
+		1F4A8184192928B300D9BD62 /* TargetIntrinsicInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetIntrinsicInfo.cpp; sourceTree = "<group>"; };
+		1F4A8185192928B300D9BD62 /* TargetJITInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetJITInfo.cpp; sourceTree = "<group>"; };
+		1F4A8186192928B300D9BD62 /* TargetLibraryInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetLibraryInfo.cpp; sourceTree = "<group>"; };
+		1F4A8187192928B300D9BD62 /* TargetLoweringObjectFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetLoweringObjectFile.cpp; sourceTree = "<group>"; };
+		1F4A8188192928B300D9BD62 /* TargetMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetMachine.cpp; sourceTree = "<group>"; };
+		1F4A8189192928B300D9BD62 /* TargetMachineC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetMachineC.cpp; sourceTree = "<group>"; };
+		1F4A818A192928B300D9BD62 /* TargetSubtargetInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetSubtargetInfo.cpp; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -3259,6 +3277,7 @@
 				1F4A8155192926D600D9BD62 /* Object */,
 				1F4A81741929277300D9BD62 /* Option */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
+				1F4A81811929289400D9BD62 /* Target */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
 			);
@@ -4092,6 +4111,22 @@
 				1F4A817B1929277300D9BD62 /* OptTable.cpp */,
 			);
 			path = Option;
+			sourceTree = "<group>";
+		};
+		1F4A81811929289400D9BD62 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A8182192928B300D9BD62 /* Mangler.cpp */,
+				1F4A8183192928B300D9BD62 /* Target.cpp */,
+				1F4A8184192928B300D9BD62 /* TargetIntrinsicInfo.cpp */,
+				1F4A8185192928B300D9BD62 /* TargetJITInfo.cpp */,
+				1F4A8186192928B300D9BD62 /* TargetLibraryInfo.cpp */,
+				1F4A8187192928B300D9BD62 /* TargetLoweringObjectFile.cpp */,
+				1F4A8188192928B300D9BD62 /* TargetMachine.cpp */,
+				1F4A8189192928B300D9BD62 /* TargetMachineC.cpp */,
+				1F4A818A192928B300D9BD62 /* TargetSubtargetInfo.cpp */,
+			);
+			path = Target;
 			sourceTree = "<group>";
 		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
@@ -5083,6 +5118,7 @@
 				1F4A81141929264200D9BD62 /* MachObjectWriter.cpp in Sources */,
 				1F1FB32E19280C8D004EB0CA /* Debug.cpp in Sources */,
 				1F4A80911929241B00D9BD62 /* DataLayout.cpp in Sources */,
+				1F4A818C192928B300D9BD62 /* Target.cpp in Sources */,
 				1F4A80B31929241B00D9BD62 /* ValueTypes.cpp in Sources */,
 				1F1FB648192812DB004EB0CA /* DwarfException.cpp in Sources */,
 				1F1FB58119281282004EB0CA /* ValueEnumerator.cpp in Sources */,
@@ -5141,6 +5177,7 @@
 				1F4A81451929264200D9BD62 /* MCPureStreamer.cpp in Sources */,
 				1F1FB678192812DC004EB0CA /* MachineBlockFrequencyInfo.cpp in Sources */,
 				1F1FB6B4192812DC004EB0CA /* LegalizeTypes.cpp in Sources */,
+				1F4A818F192928B300D9BD62 /* TargetLibraryInfo.cpp in Sources */,
 				1F1FB6DD192812DC004EB0CA /* TwoAddressInstructionPass.cpp in Sources */,
 				1F1FB37319280C8D004EB0CA /* Twine.cpp in Sources */,
 				1F1FB52B19281191004EB0CA /* BlockFrequencyInfo.cpp in Sources */,
@@ -5179,6 +5216,7 @@
 				1F4A814C1929264200D9BD62 /* MCStreamer.cpp in Sources */,
 				1F1FB52419281191004EB0CA /* AliasAnalysis.cpp in Sources */,
 				1F1FB54C19281191004EB0CA /* ModuleDebugInfoPrinter.cpp in Sources */,
+				1F4A818D192928B300D9BD62 /* TargetIntrinsicInfo.cpp in Sources */,
 				1F1FB36719280C8D004EB0CA /* StringPool.cpp in Sources */,
 				1F4A81371929264200D9BD62 /* MCObjectFileInfo.cpp in Sources */,
 				1F1FB696192812DC004EB0CA /* PHIEliminationUtils.cpp in Sources */,
@@ -5265,6 +5303,7 @@
 				1F4A811C1929264200D9BD62 /* MCAssembler.cpp in Sources */,
 				1F4A80441929235600D9BD62 /* JITEmitter.cpp in Sources */,
 				1F4A80451929235600D9BD62 /* JITMemoryManager.cpp in Sources */,
+				1F4A8190192928B300D9BD62 /* TargetLoweringObjectFile.cpp in Sources */,
 				1F4A811B1929264200D9BD62 /* MCAsmStreamer.cpp in Sources */,
 				1F4A7FF5192922BF00D9BD62 /* DWARFContext.cpp in Sources */,
 				1F1FB680192812DC004EB0CA /* MachineFunctionAnalysis.cpp in Sources */,
@@ -5276,6 +5315,7 @@
 				1F4A81381929264200D9BD62 /* MCObjectStreamer.cpp in Sources */,
 				1F1FB6C9192812DC004EB0CA /* SjLjEHPrepare.cpp in Sources */,
 				1F1FB64B192812DB004EB0CA /* OcamlGCPrinter.cpp in Sources */,
+				1F4A818E192928B300D9BD62 /* TargetJITInfo.cpp in Sources */,
 				1F1FB32619280C8D004EB0CA /* Compression.cpp in Sources */,
 				1F4A81251929264200D9BD62 /* MCDwarf.cpp in Sources */,
 				1F1FB36419280C8D004EB0CA /* StreamableMemoryObject.cpp in Sources */,
@@ -5290,6 +5330,7 @@
 				1F1FB55619281191004EB0CA /* ScalarEvolutionExpander.cpp in Sources */,
 				1F1FB6A2192812DC004EB0CA /* RegAllocPBQP.cpp in Sources */,
 				1F4A812B1929264200D9BD62 /* MCFunction.cpp in Sources */,
+				1F4A8192192928B300D9BD62 /* TargetMachineC.cpp in Sources */,
 				1F1FB6BB192812DC004EB0CA /* ScheduleDAGRRList.cpp in Sources */,
 				1F1FB33A19280C8D004EB0CA /* Hashing.cpp in Sources */,
 				1F1FB35319280C8D004EB0CA /* regcomp.c in Sources */,
@@ -5336,6 +5377,7 @@
 				1F1FB3A419280D91004EB0CA /* Error.cpp in Sources */,
 				1F1FB35F19280C8D004EB0CA /* Signals.cpp in Sources */,
 				1F4A81181929264200D9BD62 /* MCAsmInfoCOFF.cpp in Sources */,
+				1F4A8193192928B300D9BD62 /* TargetSubtargetInfo.cpp in Sources */,
 				1F4A803E1929235600D9BD62 /* Execution.cpp in Sources */,
 				1F1FB32319280C8D004EB0CA /* BranchProbability.cpp in Sources */,
 				1F1FB68E192812DC004EB0CA /* MachineSSAUpdater.cpp in Sources */,
@@ -5358,6 +5400,7 @@
 				1F4A80AA1929241B00D9BD62 /* PassRegistry.cpp in Sources */,
 				1F1FB54D19281191004EB0CA /* NoAliasAnalysis.cpp in Sources */,
 				1F1FB54019281191004EB0CA /* IPA.cpp in Sources */,
+				1F4A818B192928B300D9BD62 /* Mangler.cpp in Sources */,
 				1F4A8007192922BF00D9BD62 /* DWARFFormValue.cpp in Sources */,
 				1F4A809B1929241B00D9BD62 /* GVMaterializer.cpp in Sources */,
 				1F1FB6DF192812DC004EB0CA /* VirtRegMap.cpp in Sources */,
@@ -5406,6 +5449,7 @@
 				1F1FB68F192812DC004EB0CA /* MachineTraceMetrics.cpp in Sources */,
 				1F4A80891929241B00D9BD62 /* Attributes.cpp in Sources */,
 				1F1FB35A19280C8D004EB0CA /* regfree.c in Sources */,
+				1F4A8191192928B300D9BD62 /* TargetMachine.cpp in Sources */,
 				1F1FB36519280C8D004EB0CA /* StringExtras.cpp in Sources */,
 				1F1FB33219280C8D004EB0CA /* DynamicLibrary.cpp in Sources */,
 				1F1FB53719281191004EB0CA /* InstructionSimplify.cpp in Sources */,
