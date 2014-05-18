@@ -197,6 +197,9 @@
 		1FDB0B1E1929543600D07D2C /* LLLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB55F19281236004EB0CA /* LLLexer.cpp */; };
 		1FDB0B1F1929543600D07D2C /* LLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB56119281236004EB0CA /* LLParser.cpp */; };
 		1FDB0B201929543600D07D2C /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB56619281236004EB0CA /* Parser.cpp */; };
+		1FDB0B2C1929549800D07D2C /* BitcodeReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57019281282004EB0CA /* BitcodeReader.cpp */; };
+		1FDB0B2D1929549800D07D2C /* BitReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57219281282004EB0CA /* BitReader.cpp */; };
+		1FDB0B2E1929549800D07D2C /* BitstreamReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57319281282004EB0CA /* BitstreamReader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +211,13 @@
 			remoteInfo = "llvm-tblgen";
 		};
 		1FDB0B13192953B200D07D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
+		};
+		1FDB0B2A1929548800D07D2C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
 			proxyType = 1;
@@ -1516,6 +1526,7 @@
 		1FDB0B001929523D00D07D2C /* tablegen-intrinsics.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "tablegen-intrinsics.sh"; sourceTree = "<group>"; };
 		1FDB0B081929539200D07D2C /* libLLVMipa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMipa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDB0B1A1929542600D07D2C /* libLLVMAsmParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMAsmParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDB0B251929547300D07D2C /* libLLVMBitReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMBitReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1559,6 +1570,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1FDB0B171929542600D07D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FDB0B221929547300D07D2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3402,6 +3420,7 @@
 				1FDB0AC9192951E800D07D2C /* libLLVMAnalysis.a */,
 				1FDB0B081929539200D07D2C /* libLLVMipa.a */,
 				1FDB0B1A1929542600D07D2C /* libLLVMAsmParser.a */,
+				1FDB0B251929547300D07D2C /* libLLVMBitReader.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3531,6 +3550,24 @@
 			productReference = 1FDB0B1A1929542600D07D2C /* libLLVMAsmParser.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1FDB0B241929547300D07D2C /* LLVMBitReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FDB0B261929547300D07D2C /* Build configuration list for PBXNativeTarget "LLVMBitReader" */;
+			buildPhases = (
+				1FDB0B291929547C00D07D2C /* Generate Intrinsics.gen */,
+				1FDB0B211929547300D07D2C /* Sources */,
+				1FDB0B221929547300D07D2C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FDB0B2B1929548800D07D2C /* PBXTargetDependency */,
+			);
+			name = LLVMBitReader;
+			productName = LLVMBitReader;
+			productReference = 1FDB0B251929547300D07D2C /* libLLVMBitReader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -3555,6 +3592,7 @@
 			targets = (
 				1FDB0AC8192951E800D07D2C /* LLVMAnalysis */,
 				1FDB0B191929542600D07D2C /* LLVMAsmParser */,
+				1FDB0B241929547300D07D2C /* LLVMBitReader */,
 				1FDB0A281929509D00D07D2C /* LLVMSupport */,
 				1FDB0A861929511700D07D2C /* LLVMTableGen */,
 				1FDB0B071929539200D07D2C /* LLVMipa */,
@@ -3593,6 +3631,20 @@
 			shellPath = /bin/sh;
 			shellScript = ". \"${SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
 			showEnvVarsInLog = 0;
+		};
+		1FDB0B291929547C00D07D2C /* Generate Intrinsics.gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Intrinsics.gen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3825,6 +3877,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FDB0B211929547300D07D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDB0B2C1929549800D07D2C /* BitcodeReader.cpp in Sources */,
+				1FDB0B2D1929549800D07D2C /* BitReader.cpp in Sources */,
+				1FDB0B2E1929549800D07D2C /* BitstreamReader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -3837,6 +3899,11 @@
 			isa = PBXTargetDependency;
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
 			targetProxy = 1FDB0B13192953B200D07D2C /* PBXContainerItemProxy */;
+		};
+		1FDB0B2B1929548800D07D2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
+			targetProxy = 1FDB0B2A1929548800D07D2C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4294,6 +4361,78 @@
 			};
 			name = Release;
 		};
+		1FDB0B271929547300D07D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1FDB0B281929547300D07D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4352,6 +4491,14 @@
 			buildConfigurations = (
 				1FDB0B1C1929542600D07D2C /* Debug */,
 				1FDB0B1D1929542600D07D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FDB0B261929547300D07D2C /* Build configuration list for PBXNativeTarget "LLVMBitReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDB0B271929547300D07D2C /* Debug */,
+				1FDB0B281929547300D07D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
