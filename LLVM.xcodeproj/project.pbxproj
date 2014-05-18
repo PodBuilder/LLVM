@@ -1222,6 +1222,70 @@
 		1F4A8191192928B300D9BD62 /* TargetMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8188192928B300D9BD62 /* TargetMachine.cpp */; };
 		1F4A8192192928B300D9BD62 /* TargetMachineC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8189192928B300D9BD62 /* TargetMachineC.cpp */; };
 		1F4A8193192928B300D9BD62 /* TargetSubtargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A818A192928B300D9BD62 /* TargetSubtargetInfo.cpp */; };
+		1F4A81D51929294F00D9BD62 /* X86.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81951929294F00D9BD62 /* X86.h */; };
+		1F4A81D61929294F00D9BD62 /* X86AsmPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81971929294F00D9BD62 /* X86AsmPrinter.cpp */; };
+		1F4A81D71929294F00D9BD62 /* X86AsmPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81981929294F00D9BD62 /* X86AsmPrinter.h */; };
+		1F4A81D81929294F00D9BD62 /* X86CodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A819A1929294F00D9BD62 /* X86CodeEmitter.cpp */; };
+		1F4A81D91929294F00D9BD62 /* X86COFFMachineModuleInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A819B1929294F00D9BD62 /* X86COFFMachineModuleInfo.cpp */; };
+		1F4A81DA1929294F00D9BD62 /* X86COFFMachineModuleInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A819C1929294F00D9BD62 /* X86COFFMachineModuleInfo.h */; };
+		1F4A81DB1929294F00D9BD62 /* X86FastISel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A819D1929294F00D9BD62 /* X86FastISel.cpp */; };
+		1F4A81DC1929294F00D9BD62 /* X86FixupLEAs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A819E1929294F00D9BD62 /* X86FixupLEAs.cpp */; };
+		1F4A81DD1929294F00D9BD62 /* X86FloatingPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A819F1929294F00D9BD62 /* X86FloatingPoint.cpp */; };
+		1F4A81DE1929294F00D9BD62 /* X86FrameLowering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81A01929294F00D9BD62 /* X86FrameLowering.cpp */; };
+		1F4A81DF1929294F00D9BD62 /* X86FrameLowering.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81A11929294F00D9BD62 /* X86FrameLowering.h */; };
+		1F4A81E01929294F00D9BD62 /* X86InstrBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81A51929294F00D9BD62 /* X86InstrBuilder.h */; };
+		1F4A81E11929294F00D9BD62 /* X86InstrInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81AE1929294F00D9BD62 /* X86InstrInfo.cpp */; };
+		1F4A81E21929294F00D9BD62 /* X86InstrInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81AF1929294F00D9BD62 /* X86InstrInfo.h */; };
+		1F4A81E31929294F00D9BD62 /* X86ISelDAGToDAG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81B91929294F00D9BD62 /* X86ISelDAGToDAG.cpp */; };
+		1F4A81E41929294F00D9BD62 /* X86ISelLowering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81BA1929294F00D9BD62 /* X86ISelLowering.cpp */; };
+		1F4A81E51929294F00D9BD62 /* X86ISelLowering.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81BB1929294F00D9BD62 /* X86ISelLowering.h */; };
+		1F4A81E61929294F00D9BD62 /* X86JITInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81BC1929294F00D9BD62 /* X86JITInfo.cpp */; };
+		1F4A81E71929294F00D9BD62 /* X86JITInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81BD1929294F00D9BD62 /* X86JITInfo.h */; };
+		1F4A81E81929294F00D9BD62 /* X86MachineFunctionInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81BE1929294F00D9BD62 /* X86MachineFunctionInfo.cpp */; };
+		1F4A81E91929294F00D9BD62 /* X86MachineFunctionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81BF1929294F00D9BD62 /* X86MachineFunctionInfo.h */; };
+		1F4A81EA1929294F00D9BD62 /* X86MCInstLower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81C01929294F00D9BD62 /* X86MCInstLower.cpp */; };
+		1F4A81EB1929294F00D9BD62 /* X86PadShortFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81C11929294F00D9BD62 /* X86PadShortFunction.cpp */; };
+		1F4A81EC1929294F00D9BD62 /* X86RegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81C21929294F00D9BD62 /* X86RegisterInfo.cpp */; };
+		1F4A81ED1929294F00D9BD62 /* X86RegisterInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81C31929294F00D9BD62 /* X86RegisterInfo.h */; };
+		1F4A81EE1929294F00D9BD62 /* X86Relocations.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81C51929294F00D9BD62 /* X86Relocations.h */; };
+		1F4A81EF1929294F00D9BD62 /* X86SelectionDAGInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81CB1929294F00D9BD62 /* X86SelectionDAGInfo.cpp */; };
+		1F4A81F01929294F00D9BD62 /* X86SelectionDAGInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81CC1929294F00D9BD62 /* X86SelectionDAGInfo.h */; };
+		1F4A81F11929294F00D9BD62 /* X86Subtarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81CD1929294F00D9BD62 /* X86Subtarget.cpp */; };
+		1F4A81F21929294F00D9BD62 /* X86Subtarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81CE1929294F00D9BD62 /* X86Subtarget.h */; };
+		1F4A81F31929294F00D9BD62 /* X86TargetMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81CF1929294F00D9BD62 /* X86TargetMachine.cpp */; };
+		1F4A81F41929294F00D9BD62 /* X86TargetMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81D01929294F00D9BD62 /* X86TargetMachine.h */; };
+		1F4A81F51929294F00D9BD62 /* X86TargetObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81D11929294F00D9BD62 /* X86TargetObjectFile.cpp */; };
+		1F4A81F61929294F00D9BD62 /* X86TargetObjectFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A81D21929294F00D9BD62 /* X86TargetObjectFile.h */; };
+		1F4A81F71929294F00D9BD62 /* X86TargetTransformInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81D31929294F00D9BD62 /* X86TargetTransformInfo.cpp */; };
+		1F4A81F81929294F00D9BD62 /* X86VZeroUpper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81D41929294F00D9BD62 /* X86VZeroUpper.cpp */; };
+		1F4A822F19292B5400D9BD62 /* X86AsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81FE19292B5400D9BD62 /* X86AsmParser.cpp */; };
+		1F4A823119292B5500D9BD62 /* X86Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A820319292B5400D9BD62 /* X86Disassembler.cpp */; };
+		1F4A823219292B5500D9BD62 /* X86Disassembler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A820419292B5400D9BD62 /* X86Disassembler.h */; };
+		1F4A823319292B5500D9BD62 /* X86DisassemblerDecoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A820519292B5400D9BD62 /* X86DisassemblerDecoder.c */; };
+		1F4A823419292B5500D9BD62 /* X86DisassemblerDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A820619292B5400D9BD62 /* X86DisassemblerDecoder.h */; };
+		1F4A823519292B5500D9BD62 /* X86DisassemblerDecoderCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A820719292B5400D9BD62 /* X86DisassemblerDecoderCommon.h */; };
+		1F4A823719292B5500D9BD62 /* X86ATTInstPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A820C19292B5400D9BD62 /* X86ATTInstPrinter.cpp */; };
+		1F4A823819292B5500D9BD62 /* X86ATTInstPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A820D19292B5400D9BD62 /* X86ATTInstPrinter.h */; };
+		1F4A823919292B5500D9BD62 /* X86InstComments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A820E19292B5400D9BD62 /* X86InstComments.cpp */; };
+		1F4A823A19292B5500D9BD62 /* X86InstComments.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A820F19292B5400D9BD62 /* X86InstComments.h */; };
+		1F4A823B19292B5500D9BD62 /* X86IntelInstPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821019292B5400D9BD62 /* X86IntelInstPrinter.cpp */; };
+		1F4A823C19292B5500D9BD62 /* X86IntelInstPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A821119292B5400D9BD62 /* X86IntelInstPrinter.h */; };
+		1F4A823E19292B5500D9BD62 /* X86AsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821619292B5400D9BD62 /* X86AsmBackend.cpp */; };
+		1F4A823F19292B5500D9BD62 /* X86BaseInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A821719292B5400D9BD62 /* X86BaseInfo.h */; };
+		1F4A824019292B5500D9BD62 /* X86ELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821819292B5400D9BD62 /* X86ELFObjectWriter.cpp */; };
+		1F4A824119292B5500D9BD62 /* X86ELFRelocationInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821919292B5400D9BD62 /* X86ELFRelocationInfo.cpp */; };
+		1F4A824219292B5500D9BD62 /* X86FixupKinds.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A821A19292B5400D9BD62 /* X86FixupKinds.h */; };
+		1F4A824319292B5500D9BD62 /* X86MachObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821B19292B5400D9BD62 /* X86MachObjectWriter.cpp */; };
+		1F4A824419292B5500D9BD62 /* X86MachORelocationInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821C19292B5400D9BD62 /* X86MachORelocationInfo.cpp */; };
+		1F4A824519292B5500D9BD62 /* X86MCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821D19292B5400D9BD62 /* X86MCAsmInfo.cpp */; };
+		1F4A824619292B5500D9BD62 /* X86MCAsmInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A821E19292B5400D9BD62 /* X86MCAsmInfo.h */; };
+		1F4A824719292B5500D9BD62 /* X86MCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821F19292B5400D9BD62 /* X86MCCodeEmitter.cpp */; };
+		1F4A824819292B5500D9BD62 /* X86MCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A822019292B5400D9BD62 /* X86MCTargetDesc.cpp */; };
+		1F4A824919292B5500D9BD62 /* X86MCTargetDesc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A822119292B5400D9BD62 /* X86MCTargetDesc.h */; };
+		1F4A824A19292B5500D9BD62 /* X86WinCOFFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A822219292B5400D9BD62 /* X86WinCOFFObjectWriter.cpp */; };
+		1F4A824C19292B5500D9BD62 /* X86TargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A822719292B5400D9BD62 /* X86TargetInfo.cpp */; };
+		1F4A824E19292B5500D9BD62 /* X86ShuffleDecode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A822C19292B5400D9BD62 /* X86ShuffleDecode.cpp */; };
+		1F4A824F19292B5500D9BD62 /* X86ShuffleDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A822D19292B5400D9BD62 /* X86ShuffleDecode.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2432,6 +2496,98 @@
 		1F4A8188192928B300D9BD62 /* TargetMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetMachine.cpp; sourceTree = "<group>"; };
 		1F4A8189192928B300D9BD62 /* TargetMachineC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetMachineC.cpp; sourceTree = "<group>"; };
 		1F4A818A192928B300D9BD62 /* TargetSubtargetInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetSubtargetInfo.cpp; sourceTree = "<group>"; };
+		1F4A81951929294F00D9BD62 /* X86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86.h; sourceTree = "<group>"; };
+		1F4A81961929294F00D9BD62 /* X86.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86.td; sourceTree = "<group>"; };
+		1F4A81971929294F00D9BD62 /* X86AsmPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86AsmPrinter.cpp; sourceTree = "<group>"; };
+		1F4A81981929294F00D9BD62 /* X86AsmPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86AsmPrinter.h; sourceTree = "<group>"; };
+		1F4A81991929294F00D9BD62 /* X86CallingConv.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86CallingConv.td; sourceTree = "<group>"; };
+		1F4A819A1929294F00D9BD62 /* X86CodeEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86CodeEmitter.cpp; sourceTree = "<group>"; };
+		1F4A819B1929294F00D9BD62 /* X86COFFMachineModuleInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86COFFMachineModuleInfo.cpp; sourceTree = "<group>"; };
+		1F4A819C1929294F00D9BD62 /* X86COFFMachineModuleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86COFFMachineModuleInfo.h; sourceTree = "<group>"; };
+		1F4A819D1929294F00D9BD62 /* X86FastISel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86FastISel.cpp; sourceTree = "<group>"; };
+		1F4A819E1929294F00D9BD62 /* X86FixupLEAs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86FixupLEAs.cpp; sourceTree = "<group>"; };
+		1F4A819F1929294F00D9BD62 /* X86FloatingPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86FloatingPoint.cpp; sourceTree = "<group>"; };
+		1F4A81A01929294F00D9BD62 /* X86FrameLowering.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86FrameLowering.cpp; sourceTree = "<group>"; };
+		1F4A81A11929294F00D9BD62 /* X86FrameLowering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86FrameLowering.h; sourceTree = "<group>"; };
+		1F4A81A21929294F00D9BD62 /* X86Instr3DNow.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86Instr3DNow.td; sourceTree = "<group>"; };
+		1F4A81A31929294F00D9BD62 /* X86InstrArithmetic.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrArithmetic.td; sourceTree = "<group>"; };
+		1F4A81A41929294F00D9BD62 /* X86InstrAVX512.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrAVX512.td; sourceTree = "<group>"; };
+		1F4A81A51929294F00D9BD62 /* X86InstrBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86InstrBuilder.h; sourceTree = "<group>"; };
+		1F4A81A61929294F00D9BD62 /* X86InstrCMovSetCC.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrCMovSetCC.td; sourceTree = "<group>"; };
+		1F4A81A71929294F00D9BD62 /* X86InstrCompiler.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrCompiler.td; sourceTree = "<group>"; };
+		1F4A81A81929294F00D9BD62 /* X86InstrControl.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrControl.td; sourceTree = "<group>"; };
+		1F4A81A91929294F00D9BD62 /* X86InstrExtension.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrExtension.td; sourceTree = "<group>"; };
+		1F4A81AA1929294F00D9BD62 /* X86InstrFMA.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrFMA.td; sourceTree = "<group>"; };
+		1F4A81AB1929294F00D9BD62 /* X86InstrFormats.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrFormats.td; sourceTree = "<group>"; };
+		1F4A81AC1929294F00D9BD62 /* X86InstrFPStack.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrFPStack.td; sourceTree = "<group>"; };
+		1F4A81AD1929294F00D9BD62 /* X86InstrFragmentsSIMD.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrFragmentsSIMD.td; sourceTree = "<group>"; };
+		1F4A81AE1929294F00D9BD62 /* X86InstrInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86InstrInfo.cpp; sourceTree = "<group>"; };
+		1F4A81AF1929294F00D9BD62 /* X86InstrInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86InstrInfo.h; sourceTree = "<group>"; };
+		1F4A81B01929294F00D9BD62 /* X86InstrInfo.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrInfo.td; sourceTree = "<group>"; };
+		1F4A81B11929294F00D9BD62 /* X86InstrMMX.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrMMX.td; sourceTree = "<group>"; };
+		1F4A81B21929294F00D9BD62 /* X86InstrShiftRotate.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrShiftRotate.td; sourceTree = "<group>"; };
+		1F4A81B31929294F00D9BD62 /* X86InstrSSE.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrSSE.td; sourceTree = "<group>"; };
+		1F4A81B41929294F00D9BD62 /* X86InstrSVM.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrSVM.td; sourceTree = "<group>"; };
+		1F4A81B51929294F00D9BD62 /* X86InstrSystem.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrSystem.td; sourceTree = "<group>"; };
+		1F4A81B61929294F00D9BD62 /* X86InstrTSX.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrTSX.td; sourceTree = "<group>"; };
+		1F4A81B71929294F00D9BD62 /* X86InstrVMX.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrVMX.td; sourceTree = "<group>"; };
+		1F4A81B81929294F00D9BD62 /* X86InstrXOP.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86InstrXOP.td; sourceTree = "<group>"; };
+		1F4A81B91929294F00D9BD62 /* X86ISelDAGToDAG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86ISelDAGToDAG.cpp; sourceTree = "<group>"; };
+		1F4A81BA1929294F00D9BD62 /* X86ISelLowering.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86ISelLowering.cpp; sourceTree = "<group>"; };
+		1F4A81BB1929294F00D9BD62 /* X86ISelLowering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86ISelLowering.h; sourceTree = "<group>"; };
+		1F4A81BC1929294F00D9BD62 /* X86JITInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86JITInfo.cpp; sourceTree = "<group>"; };
+		1F4A81BD1929294F00D9BD62 /* X86JITInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86JITInfo.h; sourceTree = "<group>"; };
+		1F4A81BE1929294F00D9BD62 /* X86MachineFunctionInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86MachineFunctionInfo.cpp; sourceTree = "<group>"; };
+		1F4A81BF1929294F00D9BD62 /* X86MachineFunctionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86MachineFunctionInfo.h; sourceTree = "<group>"; };
+		1F4A81C01929294F00D9BD62 /* X86MCInstLower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86MCInstLower.cpp; sourceTree = "<group>"; };
+		1F4A81C11929294F00D9BD62 /* X86PadShortFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86PadShortFunction.cpp; sourceTree = "<group>"; };
+		1F4A81C21929294F00D9BD62 /* X86RegisterInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86RegisterInfo.cpp; sourceTree = "<group>"; };
+		1F4A81C31929294F00D9BD62 /* X86RegisterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86RegisterInfo.h; sourceTree = "<group>"; };
+		1F4A81C41929294F00D9BD62 /* X86RegisterInfo.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86RegisterInfo.td; sourceTree = "<group>"; };
+		1F4A81C51929294F00D9BD62 /* X86Relocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86Relocations.h; sourceTree = "<group>"; };
+		1F4A81C61929294F00D9BD62 /* X86SchedHaswell.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86SchedHaswell.td; sourceTree = "<group>"; };
+		1F4A81C71929294F00D9BD62 /* X86SchedSandyBridge.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86SchedSandyBridge.td; sourceTree = "<group>"; };
+		1F4A81C81929294F00D9BD62 /* X86Schedule.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86Schedule.td; sourceTree = "<group>"; };
+		1F4A81C91929294F00D9BD62 /* X86ScheduleAtom.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86ScheduleAtom.td; sourceTree = "<group>"; };
+		1F4A81CA1929294F00D9BD62 /* X86ScheduleSLM.td */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = X86ScheduleSLM.td; sourceTree = "<group>"; };
+		1F4A81CB1929294F00D9BD62 /* X86SelectionDAGInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86SelectionDAGInfo.cpp; sourceTree = "<group>"; };
+		1F4A81CC1929294F00D9BD62 /* X86SelectionDAGInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86SelectionDAGInfo.h; sourceTree = "<group>"; };
+		1F4A81CD1929294F00D9BD62 /* X86Subtarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86Subtarget.cpp; sourceTree = "<group>"; };
+		1F4A81CE1929294F00D9BD62 /* X86Subtarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86Subtarget.h; sourceTree = "<group>"; };
+		1F4A81CF1929294F00D9BD62 /* X86TargetMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86TargetMachine.cpp; sourceTree = "<group>"; };
+		1F4A81D01929294F00D9BD62 /* X86TargetMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86TargetMachine.h; sourceTree = "<group>"; };
+		1F4A81D11929294F00D9BD62 /* X86TargetObjectFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86TargetObjectFile.cpp; sourceTree = "<group>"; };
+		1F4A81D21929294F00D9BD62 /* X86TargetObjectFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86TargetObjectFile.h; sourceTree = "<group>"; };
+		1F4A81D31929294F00D9BD62 /* X86TargetTransformInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86TargetTransformInfo.cpp; sourceTree = "<group>"; };
+		1F4A81D41929294F00D9BD62 /* X86VZeroUpper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86VZeroUpper.cpp; sourceTree = "<group>"; };
+		1F4A81FE19292B5400D9BD62 /* X86AsmParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86AsmParser.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A820319292B5400D9BD62 /* X86Disassembler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86Disassembler.cpp; sourceTree = "<group>"; };
+		1F4A820419292B5400D9BD62 /* X86Disassembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86Disassembler.h; sourceTree = "<group>"; };
+		1F4A820519292B5400D9BD62 /* X86DisassemblerDecoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = X86DisassemblerDecoder.c; sourceTree = "<group>"; };
+		1F4A820619292B5400D9BD62 /* X86DisassemblerDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86DisassemblerDecoder.h; sourceTree = "<group>"; };
+		1F4A820719292B5400D9BD62 /* X86DisassemblerDecoderCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86DisassemblerDecoderCommon.h; sourceTree = "<group>"; };
+		1F4A820C19292B5400D9BD62 /* X86ATTInstPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86ATTInstPrinter.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A820D19292B5400D9BD62 /* X86ATTInstPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86ATTInstPrinter.h; sourceTree = "<group>"; };
+		1F4A820E19292B5400D9BD62 /* X86InstComments.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86InstComments.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A820F19292B5400D9BD62 /* X86InstComments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86InstComments.h; sourceTree = "<group>"; };
+		1F4A821019292B5400D9BD62 /* X86IntelInstPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86IntelInstPrinter.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A821119292B5400D9BD62 /* X86IntelInstPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86IntelInstPrinter.h; sourceTree = "<group>"; };
+		1F4A821619292B5400D9BD62 /* X86AsmBackend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86AsmBackend.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A821719292B5400D9BD62 /* X86BaseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86BaseInfo.h; sourceTree = "<group>"; };
+		1F4A821819292B5400D9BD62 /* X86ELFObjectWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86ELFObjectWriter.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A821919292B5400D9BD62 /* X86ELFRelocationInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86ELFRelocationInfo.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A821A19292B5400D9BD62 /* X86FixupKinds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86FixupKinds.h; sourceTree = "<group>"; };
+		1F4A821B19292B5400D9BD62 /* X86MachObjectWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86MachObjectWriter.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A821C19292B5400D9BD62 /* X86MachORelocationInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86MachORelocationInfo.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A821D19292B5400D9BD62 /* X86MCAsmInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86MCAsmInfo.cpp; sourceTree = "<group>"; };
+		1F4A821E19292B5400D9BD62 /* X86MCAsmInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86MCAsmInfo.h; sourceTree = "<group>"; };
+		1F4A821F19292B5400D9BD62 /* X86MCCodeEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86MCCodeEmitter.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A822019292B5400D9BD62 /* X86MCTargetDesc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86MCTargetDesc.cpp; sourceTree = "<group>"; };
+		1F4A822119292B5400D9BD62 /* X86MCTargetDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86MCTargetDesc.h; sourceTree = "<group>"; };
+		1F4A822219292B5400D9BD62 /* X86WinCOFFObjectWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86WinCOFFObjectWriter.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A822719292B5400D9BD62 /* X86TargetInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = X86TargetInfo.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		1F4A822C19292B5400D9BD62 /* X86ShuffleDecode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86ShuffleDecode.cpp; sourceTree = "<group>"; };
+		1F4A822D19292B5400D9BD62 /* X86ShuffleDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86ShuffleDecode.h; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -4116,6 +4272,7 @@
 		1F4A81811929289400D9BD62 /* Target */ = {
 			isa = PBXGroup;
 			children = (
+				1F4A81941929292800D9BD62 /* X86 */,
 				1F4A8182192928B300D9BD62 /* Mangler.cpp */,
 				1F4A8183192928B300D9BD62 /* Target.cpp */,
 				1F4A8184192928B300D9BD62 /* TargetIntrinsicInfo.cpp */,
@@ -4127,6 +4284,161 @@
 				1F4A818A192928B300D9BD62 /* TargetSubtargetInfo.cpp */,
 			);
 			path = Target;
+			sourceTree = "<group>";
+		};
+		1F4A81941929292800D9BD62 /* X86 */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A81FA19292B5400D9BD62 /* AsmParser */,
+				1F4A81FF19292B5400D9BD62 /* Disassembler */,
+				1F4A820819292B5400D9BD62 /* InstPrinter */,
+				1F4A821219292B5400D9BD62 /* MCTargetDesc */,
+				1F4A822319292B5400D9BD62 /* TargetInfo */,
+				1F4A822819292B5400D9BD62 /* Utils */,
+				1F4A81F91929296B00D9BD62 /* TableGen Files */,
+				1F4A81951929294F00D9BD62 /* X86.h */,
+				1F4A81971929294F00D9BD62 /* X86AsmPrinter.cpp */,
+				1F4A81981929294F00D9BD62 /* X86AsmPrinter.h */,
+				1F4A819A1929294F00D9BD62 /* X86CodeEmitter.cpp */,
+				1F4A819B1929294F00D9BD62 /* X86COFFMachineModuleInfo.cpp */,
+				1F4A819C1929294F00D9BD62 /* X86COFFMachineModuleInfo.h */,
+				1F4A819D1929294F00D9BD62 /* X86FastISel.cpp */,
+				1F4A819E1929294F00D9BD62 /* X86FixupLEAs.cpp */,
+				1F4A819F1929294F00D9BD62 /* X86FloatingPoint.cpp */,
+				1F4A81A01929294F00D9BD62 /* X86FrameLowering.cpp */,
+				1F4A81A11929294F00D9BD62 /* X86FrameLowering.h */,
+				1F4A81A51929294F00D9BD62 /* X86InstrBuilder.h */,
+				1F4A81AE1929294F00D9BD62 /* X86InstrInfo.cpp */,
+				1F4A81AF1929294F00D9BD62 /* X86InstrInfo.h */,
+				1F4A81B91929294F00D9BD62 /* X86ISelDAGToDAG.cpp */,
+				1F4A81BA1929294F00D9BD62 /* X86ISelLowering.cpp */,
+				1F4A81BB1929294F00D9BD62 /* X86ISelLowering.h */,
+				1F4A81BC1929294F00D9BD62 /* X86JITInfo.cpp */,
+				1F4A81BD1929294F00D9BD62 /* X86JITInfo.h */,
+				1F4A81BE1929294F00D9BD62 /* X86MachineFunctionInfo.cpp */,
+				1F4A81BF1929294F00D9BD62 /* X86MachineFunctionInfo.h */,
+				1F4A81C01929294F00D9BD62 /* X86MCInstLower.cpp */,
+				1F4A81C11929294F00D9BD62 /* X86PadShortFunction.cpp */,
+				1F4A81C21929294F00D9BD62 /* X86RegisterInfo.cpp */,
+				1F4A81C31929294F00D9BD62 /* X86RegisterInfo.h */,
+				1F4A81C51929294F00D9BD62 /* X86Relocations.h */,
+				1F4A81CB1929294F00D9BD62 /* X86SelectionDAGInfo.cpp */,
+				1F4A81CC1929294F00D9BD62 /* X86SelectionDAGInfo.h */,
+				1F4A81CD1929294F00D9BD62 /* X86Subtarget.cpp */,
+				1F4A81CE1929294F00D9BD62 /* X86Subtarget.h */,
+				1F4A81CF1929294F00D9BD62 /* X86TargetMachine.cpp */,
+				1F4A81D01929294F00D9BD62 /* X86TargetMachine.h */,
+				1F4A81D11929294F00D9BD62 /* X86TargetObjectFile.cpp */,
+				1F4A81D21929294F00D9BD62 /* X86TargetObjectFile.h */,
+				1F4A81D31929294F00D9BD62 /* X86TargetTransformInfo.cpp */,
+				1F4A81D41929294F00D9BD62 /* X86VZeroUpper.cpp */,
+			);
+			path = X86;
+			sourceTree = "<group>";
+		};
+		1F4A81F91929296B00D9BD62 /* TableGen Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A81961929294F00D9BD62 /* X86.td */,
+				1F4A81991929294F00D9BD62 /* X86CallingConv.td */,
+				1F4A81A21929294F00D9BD62 /* X86Instr3DNow.td */,
+				1F4A81A31929294F00D9BD62 /* X86InstrArithmetic.td */,
+				1F4A81A41929294F00D9BD62 /* X86InstrAVX512.td */,
+				1F4A81A61929294F00D9BD62 /* X86InstrCMovSetCC.td */,
+				1F4A81A71929294F00D9BD62 /* X86InstrCompiler.td */,
+				1F4A81A81929294F00D9BD62 /* X86InstrControl.td */,
+				1F4A81A91929294F00D9BD62 /* X86InstrExtension.td */,
+				1F4A81AA1929294F00D9BD62 /* X86InstrFMA.td */,
+				1F4A81AB1929294F00D9BD62 /* X86InstrFormats.td */,
+				1F4A81AC1929294F00D9BD62 /* X86InstrFPStack.td */,
+				1F4A81AD1929294F00D9BD62 /* X86InstrFragmentsSIMD.td */,
+				1F4A81B01929294F00D9BD62 /* X86InstrInfo.td */,
+				1F4A81B11929294F00D9BD62 /* X86InstrMMX.td */,
+				1F4A81B21929294F00D9BD62 /* X86InstrShiftRotate.td */,
+				1F4A81B31929294F00D9BD62 /* X86InstrSSE.td */,
+				1F4A81B41929294F00D9BD62 /* X86InstrSVM.td */,
+				1F4A81B51929294F00D9BD62 /* X86InstrSystem.td */,
+				1F4A81B61929294F00D9BD62 /* X86InstrTSX.td */,
+				1F4A81B71929294F00D9BD62 /* X86InstrVMX.td */,
+				1F4A81B81929294F00D9BD62 /* X86InstrXOP.td */,
+				1F4A81C41929294F00D9BD62 /* X86RegisterInfo.td */,
+				1F4A81C61929294F00D9BD62 /* X86SchedHaswell.td */,
+				1F4A81C71929294F00D9BD62 /* X86SchedSandyBridge.td */,
+				1F4A81C81929294F00D9BD62 /* X86Schedule.td */,
+				1F4A81C91929294F00D9BD62 /* X86ScheduleAtom.td */,
+				1F4A81CA1929294F00D9BD62 /* X86ScheduleSLM.td */,
+			);
+			name = "TableGen Files";
+			sourceTree = "<group>";
+		};
+		1F4A81FA19292B5400D9BD62 /* AsmParser */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A81FE19292B5400D9BD62 /* X86AsmParser.cpp */,
+			);
+			path = AsmParser;
+			sourceTree = "<group>";
+		};
+		1F4A81FF19292B5400D9BD62 /* Disassembler */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A820319292B5400D9BD62 /* X86Disassembler.cpp */,
+				1F4A820419292B5400D9BD62 /* X86Disassembler.h */,
+				1F4A820519292B5400D9BD62 /* X86DisassemblerDecoder.c */,
+				1F4A820619292B5400D9BD62 /* X86DisassemblerDecoder.h */,
+				1F4A820719292B5400D9BD62 /* X86DisassemblerDecoderCommon.h */,
+			);
+			path = Disassembler;
+			sourceTree = "<group>";
+		};
+		1F4A820819292B5400D9BD62 /* InstPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A820C19292B5400D9BD62 /* X86ATTInstPrinter.cpp */,
+				1F4A820D19292B5400D9BD62 /* X86ATTInstPrinter.h */,
+				1F4A820E19292B5400D9BD62 /* X86InstComments.cpp */,
+				1F4A820F19292B5400D9BD62 /* X86InstComments.h */,
+				1F4A821019292B5400D9BD62 /* X86IntelInstPrinter.cpp */,
+				1F4A821119292B5400D9BD62 /* X86IntelInstPrinter.h */,
+			);
+			path = InstPrinter;
+			sourceTree = "<group>";
+		};
+		1F4A821219292B5400D9BD62 /* MCTargetDesc */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A821619292B5400D9BD62 /* X86AsmBackend.cpp */,
+				1F4A821719292B5400D9BD62 /* X86BaseInfo.h */,
+				1F4A821819292B5400D9BD62 /* X86ELFObjectWriter.cpp */,
+				1F4A821919292B5400D9BD62 /* X86ELFRelocationInfo.cpp */,
+				1F4A821A19292B5400D9BD62 /* X86FixupKinds.h */,
+				1F4A821B19292B5400D9BD62 /* X86MachObjectWriter.cpp */,
+				1F4A821C19292B5400D9BD62 /* X86MachORelocationInfo.cpp */,
+				1F4A821D19292B5400D9BD62 /* X86MCAsmInfo.cpp */,
+				1F4A821E19292B5400D9BD62 /* X86MCAsmInfo.h */,
+				1F4A821F19292B5400D9BD62 /* X86MCCodeEmitter.cpp */,
+				1F4A822019292B5400D9BD62 /* X86MCTargetDesc.cpp */,
+				1F4A822119292B5400D9BD62 /* X86MCTargetDesc.h */,
+				1F4A822219292B5400D9BD62 /* X86WinCOFFObjectWriter.cpp */,
+			);
+			path = MCTargetDesc;
+			sourceTree = "<group>";
+		};
+		1F4A822319292B5400D9BD62 /* TargetInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A822719292B5400D9BD62 /* X86TargetInfo.cpp */,
+			);
+			path = TargetInfo;
+			sourceTree = "<group>";
+		};
+		1F4A822819292B5400D9BD62 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A822C19292B5400D9BD62 /* X86ShuffleDecode.cpp */,
+				1F4A822D19292B5400D9BD62 /* X86ShuffleDecode.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
@@ -4170,6 +4482,7 @@
 				1F1FB1CE19280BE9004EB0CA /* MCSymbol.h in Headers */,
 				1F1FB14119280BE9004EB0CA /* ResourcePriorityQueue.h in Headers */,
 				1F1FB26A19280BE9004EB0CA /* TargetLoweringObjectFile.h in Headers */,
+				1F4A81F21929294F00D9BD62 /* X86Subtarget.h in Headers */,
 				1F1FB0D819280BE9004EB0CA /* Lint.h in Headers */,
 				1F1FB16519280BE9004EB0CA /* RTDyldMemoryManager.h in Headers */,
 				1F1FB1F219280BE9004EB0CA /* ArrayRecycler.h in Headers */,
@@ -4194,6 +4507,7 @@
 				1F1FB1D519280BE9004EB0CA /* SubtargetFeature.h in Headers */,
 				1F1FB20A19280BE9004EB0CA /* Disassembler.h in Headers */,
 				1F1FB26119280BE9004EB0CA /* CostTable.h in Headers */,
+				1F4A81D71929294F00D9BD62 /* X86AsmPrinter.h in Headers */,
 				1F1FB0B119280BE9004EB0CA /* StringRef.h in Headers */,
 				1F1FB27719280BE9004EB0CA /* BasicBlockUtils.h in Headers */,
 				1F1FB29319280BE9004EB0CA /* IRReader.h in Headers */,
@@ -4209,6 +4523,7 @@
 				1F1FB24E19280BE9004EB0CA /* ThreadLocal.h in Headers */,
 				1F4A80351929235600D9BD62 /* EventListenerCommon.h in Headers */,
 				1F1FB09019280BE9004EB0CA /* ImmutableIntervalMap.h in Headers */,
+				1F4A81DA1929294F00D9BD62 /* X86COFFMachineModuleInfo.h in Headers */,
 				1F1FB28119280BE9004EB0CA /* ModuleUtils.h in Headers */,
 				1F1FB08319280BE9004EB0CA /* DAGDeltaAlgorithm.h in Headers */,
 				1F1FB1D419280BE9004EB0CA /* SectionKind.h in Headers */,
@@ -4236,6 +4551,7 @@
 				1F1FB27F19280BE9004EB0CA /* Local.h in Headers */,
 				1F1FB11A19280BE9004EB0CA /* MachineBranchProbabilityInfo.h in Headers */,
 				1F1FB0F119280BE9004EB0CA /* AssemblyAnnotationWriter.h in Headers */,
+				1F4A81DF1929294F00D9BD62 /* X86FrameLowering.h in Headers */,
 				1F1FB0B819280BE9004EB0CA /* ValueMap.h in Headers */,
 				1F1FB1FE19280BE9004EB0CA /* CommandLine.h in Headers */,
 				1F1FB0CB19280BE9004EB0CA /* Dominators.h in Headers */,
@@ -4261,6 +4577,8 @@
 				1F1FB0E319280BE9004EB0CA /* PtrUseVisitor.h in Headers */,
 				1F1FB18019280BE9004EB0CA /* LLVMContext.h in Headers */,
 				1F1FB10D19280BE9004EB0CA /* LexicalScopes.h in Headers */,
+				1F4A823819292B5500D9BD62 /* X86ATTInstPrinter.h in Headers */,
+				1F4A824919292B5500D9BD62 /* X86MCTargetDesc.h in Headers */,
 				1F1FB15819280BE9004EB0CA /* DebugInfo.h in Headers */,
 				1F1FB0EE19280BE9004EB0CA /* Trace.h in Headers */,
 				1F1FB17519280BE9004EB0CA /* Function.h in Headers */,
@@ -4279,6 +4597,7 @@
 				1F1FB647192812DB004EB0CA /* DwarfDebug.h in Headers */,
 				1F1FB11819280BE9004EB0CA /* MachineBasicBlock.h in Headers */,
 				1F1FB13A19280BE9004EB0CA /* Solution.h in Headers */,
+				1F4A823219292B5500D9BD62 /* X86Disassembler.h in Headers */,
 				1F1FB0BA19280BE9004EB0CA /* AliasAnalysis.h in Headers */,
 				1F1FB1F419280BE9004EB0CA /* BlockFrequency.h in Headers */,
 				1F1FB0F219280BE9004EB0CA /* Parser.h in Headers */,
@@ -4311,6 +4630,7 @@
 				1F1FB26319280BE9004EB0CA /* TargetCallingConv.h in Headers */,
 				1F1FB12A19280BE9004EB0CA /* MachineModuleInfoImpls.h in Headers */,
 				1F1FB14F19280BE9004EB0CA /* TargetLoweringObjectFileImpl.h in Headers */,
+				1F4A81E91929294F00D9BD62 /* X86MachineFunctionInfo.h in Headers */,
 				1F1FB0B719280BE9004EB0CA /* UniqueVector.h in Headers */,
 				1F1FB14219280BE9004EB0CA /* RuntimeLibcalls.h in Headers */,
 				1F1FB09819280BE9004EB0CA /* MapVector.h in Headers */,
@@ -4332,6 +4652,7 @@
 				1F1FB26619280BE9004EB0CA /* TargetIntrinsicInfo.h in Headers */,
 				1F1FB09219280BE9004EB0CA /* ImmutableMap.h in Headers */,
 				1F1FB19F19280BE9004EB0CA /* MCContext.h in Headers */,
+				1F4A823A19292B5500D9BD62 /* X86InstComments.h in Headers */,
 				1F1FB20019280BE9004EB0CA /* Compression.h in Headers */,
 				1F1FB15619280BE9004EB0CA /* DIContext.h in Headers */,
 				1F1FB29219280BE9004EB0CA /* Initialization.h in Headers */,
@@ -4383,6 +4704,7 @@
 				1F1FB18C19280BE9004EB0CA /* Value.h in Headers */,
 				1F1FB12419280BE9004EB0CA /* MachineInstrBuilder.h in Headers */,
 				1F1FB27019280BE9004EB0CA /* TargetSubtargetInfo.h in Headers */,
+				1F4A824619292B5500D9BD62 /* X86MCAsmInfo.h in Headers */,
 				1F1FB16119280BE9004EB0CA /* ObjectBuffer.h in Headers */,
 				1F1FB35219280C8D004EB0CA /* regcname.h in Headers */,
 				1F1FB20119280BE9004EB0CA /* ConstantFolder.h in Headers */,
@@ -4399,11 +4721,13 @@
 				1F1FB17619280BE9004EB0CA /* GlobalAlias.h in Headers */,
 				1F1FB0A619280BE9004EB0CA /* SmallPtrSet.h in Headers */,
 				1F1FB11519280BE9004EB0CA /* LiveRegUnits.h in Headers */,
+				1F4A824219292B5500D9BD62 /* X86FixupKinds.h in Headers */,
 				1F1FB1B519280BE9004EB0CA /* MCLinkerOptimizationHint.h in Headers */,
 				1F1FB15219280BE9004EB0CA /* VirtRegMap.h in Headers */,
 				1F1FB0D519280BE9004EB0CA /* LazyValueInfo.h in Headers */,
 				1F4A8000192922BF00D9BD62 /* DWARFDebugInfoEntry.h in Headers */,
 				1F1FB11419280BE9004EB0CA /* LiveRegMatrix.h in Headers */,
+				1F4A81D51929294F00D9BD62 /* X86.h in Headers */,
 				1F1FB22B19280BE9004EB0CA /* MutexGuard.h in Headers */,
 				1F1FB0B019280BE9004EB0CA /* StringMap.h in Headers */,
 				1F1FB13D19280BE9004EB0CA /* RegAllocRegistry.h in Headers */,
@@ -4423,6 +4747,7 @@
 				1F1FB1AB19280BE9004EB0CA /* MCFixupKindInfo.h in Headers */,
 				1F1FB0FB19280BE9004EB0CA /* Analysis.h in Headers */,
 				1F1FB11B19280BE9004EB0CA /* MachineCodeEmitter.h in Headers */,
+				1F4A823C19292B5500D9BD62 /* X86IntelInstPrinter.h in Headers */,
 				1F1FB1C219280BE9004EB0CA /* MCAsmParser.h in Headers */,
 				1F1FB22719280BE9004EB0CA /* Memory.h in Headers */,
 				1F1FB56A19281236004EB0CA /* LLParser.h in Headers */,
@@ -4456,6 +4781,7 @@
 				1F1FB17A19280BE9004EB0CA /* InstrTypes.h in Headers */,
 				1F1FB09F19280BE9004EB0CA /* PostOrderIterator.h in Headers */,
 				1F1FB1E019280BE9004EB0CA /* MachOUniversal.h in Headers */,
+				1F4A824F19292B5500D9BD62 /* X86ShuffleDecode.h in Headers */,
 				1F1FB0D619280BE9004EB0CA /* LibCallAliasAnalysis.h in Headers */,
 				1F1FB17019280BE9004EB0CA /* Constants.h in Headers */,
 				1F1FB09519280BE9004EB0CA /* IntEqClasses.h in Headers */,
@@ -4468,6 +4794,7 @@
 				1F1FB15B19280BE9004EB0CA /* GenericValue.h in Headers */,
 				1F1FB08019280BE9004EB0CA /* APSInt.h in Headers */,
 				1F1FB18519280BE9004EB0CA /* Operator.h in Headers */,
+				1F4A81E51929294F00D9BD62 /* X86ISelLowering.h in Headers */,
 				1F1FB25519280BE9004EB0CA /* Valgrind.h in Headers */,
 				1F1FB24819280BE9004EB0CA /* system_error.h in Headers */,
 				1F1FB29C19280BE9004EB0CA /* PassManagerBuilder.h in Headers */,
@@ -4486,7 +4813,9 @@
 				1F1FB10419280BE9004EB0CA /* FunctionLoweringInfo.h in Headers */,
 				1F1FB0DE19280BE9004EB0CA /* MemoryBuiltins.h in Headers */,
 				1F1FB25219280BE9004EB0CA /* type_traits.h in Headers */,
+				1F4A81ED1929294F00D9BD62 /* X86RegisterInfo.h in Headers */,
 				1F1FB20619280BE9004EB0CA /* DataFlow.h in Headers */,
+				1F4A81EE1929294F00D9BD62 /* X86Relocations.h in Headers */,
 				1F1FB0FE19280BE9004EB0CA /* CallingConvLower.h in Headers */,
 				1F1FB23119280BE9004EB0CA /* PluginLoader.h in Headers */,
 				1F4A808D1929241B00D9BD62 /* ConstantFold.h in Headers */,
@@ -4512,6 +4841,7 @@
 				1F1FB27C19280BE9004EB0CA /* CodeExtractor.h in Headers */,
 				1F1FB0E419280BE9004EB0CA /* RegionInfo.h in Headers */,
 				1F1FB1F919280BE9004EB0CA /* CBindingWrapping.h in Headers */,
+				1F4A81F41929294F00D9BD62 /* X86TargetMachine.h in Headers */,
 				1F4A808F1929241B00D9BD62 /* ConstantsContext.h in Headers */,
 				1F1FB29419280BE9004EB0CA /* Linker.h in Headers */,
 				1F1FB6B5192812DC004EB0CA /* LegalizeTypes.h in Headers */,
@@ -4520,6 +4850,7 @@
 				1F1FB13219280BE9004EB0CA /* MachineTraceMetrics.h in Headers */,
 				1F1FB24D19280BE9004EB0CA /* Threading.h in Headers */,
 				1F1FB12E19280BE9004EB0CA /* MachineRegisterInfo.h in Headers */,
+				1F4A823F19292B5500D9BD62 /* X86BaseInfo.h in Headers */,
 				1F1FB18219280BE9004EB0CA /* Metadata.h in Headers */,
 				1F1FB23B19280BE9004EB0CA /* Regex.h in Headers */,
 				1F1FB0B919280BE9004EB0CA /* VariadicFunction.h in Headers */,
@@ -4584,6 +4915,7 @@
 				1F1FB08919280BE9004EB0CA /* edit_distance.h in Headers */,
 				1F1FB10719280BE9004EB0CA /* GCs.h in Headers */,
 				1F1FB11719280BE9004EB0CA /* LiveVariables.h in Headers */,
+				1F4A81F01929294F00D9BD62 /* X86SelectionDAGInfo.h in Headers */,
 				1F1FB20219280BE9004EB0CA /* ConstantRange.h in Headers */,
 				1F1FB1E919280BE9004EB0CA /* Pass.h in Headers */,
 				1F1FB38019280C8D004EB0CA /* Unix.h in Headers */,
@@ -4639,8 +4971,10 @@
 				1F1FB12219280BE9004EB0CA /* MachineFunctionPass.h in Headers */,
 				1F1FB28A19280BE9004EB0CA /* ValueMapper.h in Headers */,
 				1F1FB0D919280BE9004EB0CA /* Loads.h in Headers */,
+				1F4A823519292B5500D9BD62 /* X86DisassemblerDecoderCommon.h in Headers */,
 				1F4A8006192922BF00D9BD62 /* DWARFDebugRangeList.h in Headers */,
 				1F1FB1B319280BE9004EB0CA /* MCInstrItineraries.h in Headers */,
+				1F4A81E01929294F00D9BD62 /* X86InstrBuilder.h in Headers */,
 				1F1FB27B19280BE9004EB0CA /* CmpInstAnalysis.h in Headers */,
 				1F1FB22C19280BE9004EB0CA /* NoFolder.h in Headers */,
 				1F1FB13419280BE9004EB0CA /* Passes.h in Headers */,
@@ -4650,6 +4984,7 @@
 				1F1FB1D319280BE9004EB0CA /* MCWinCOFFObjectWriter.h in Headers */,
 				1F1FB66A192812DC004EB0CA /* LiveDebugVariables.h in Headers */,
 				1F4A80881929241B00D9BD62 /* AttributeImpl.h in Headers */,
+				1F4A81F61929294F00D9BD62 /* X86TargetObjectFile.h in Headers */,
 				1F1FB24619280BE9004EB0CA /* StringRefMemoryObject.h in Headers */,
 				1F1FB18619280BE9004EB0CA /* SymbolTableListTraits.h in Headers */,
 				1F1FB13319280BE9004EB0CA /* MachORelocation.h in Headers */,
@@ -4658,6 +4993,7 @@
 				1F1FB0D219280BE9004EB0CA /* IntervalIterator.h in Headers */,
 				1F1FB09E19280BE9004EB0CA /* PointerUnion.h in Headers */,
 				1F1FB19019280BE9004EB0CA /* LinkAllPasses.h in Headers */,
+				1F4A81E71929294F00D9BD62 /* X86JITInfo.h in Headers */,
 				1F1FB15419280BE9004EB0CA /* DataTypes.h in Headers */,
 				1F1FB0F419280BE9004EB0CA /* Writer.h in Headers */,
 				1F1FB0A319280BE9004EB0CA /* SetOperations.h in Headers */,
@@ -4680,6 +5016,7 @@
 				1F1FB0F319280BE9004EB0CA /* PrintModulePass.h in Headers */,
 				1F1FB27A19280BE9004EB0CA /* Cloning.h in Headers */,
 				1F1FB28519280BE9004EB0CA /* SpecialCaseList.h in Headers */,
+				1F4A823419292B5500D9BD62 /* X86DisassemblerDecoder.h in Headers */,
 				1F1FB654192812DB004EB0CA /* CriticalAntiDepBreaker.h in Headers */,
 				1F1FB29619280BE9004EB0CA /* lto.h in Headers */,
 				1F1FB21419280BE9004EB0CA /* FileOutputBuffer.h in Headers */,
@@ -4693,6 +5030,7 @@
 				1F1FB1CF19280BE9004EB0CA /* MCSymbolizer.h in Headers */,
 				1F1FB09719280BE9004EB0CA /* IntrusiveRefCntPtr.h in Headers */,
 				1F1FB35C19280C8D004EB0CA /* regutils.h in Headers */,
+				1F4A81E21929294F00D9BD62 /* X86InstrInfo.h in Headers */,
 				1F4A804D1929235600D9BD62 /* JITRegistrar.h in Headers */,
 				1F4A80411929235600D9BD62 /* Interpreter.h in Headers */,
 				1F1FB15A19280BE9004EB0CA /* ExecutionEngine.h in Headers */,
@@ -5013,10 +5351,12 @@
 				1F4A808A1929241B00D9BD62 /* AutoUpgrade.cpp in Sources */,
 				1F1FB37419280C8D004EB0CA /* Unicode.cpp in Sources */,
 				1F1FB67F192812DC004EB0CA /* MachineFunction.cpp in Sources */,
+				1F4A823B19292B5500D9BD62 /* X86IntelInstPrinter.cpp in Sources */,
 				1F1FB32519280C8D004EB0CA /* CommandLine.cpp in Sources */,
 				1F4A814F1929264200D9BD62 /* MCSymbolizer.cpp in Sources */,
 				1F1FB36019280C8D004EB0CA /* SmallPtrSet.cpp in Sources */,
 				1F1FB54119281191004EB0CA /* IVUsers.cpp in Sources */,
+				1F4A81F71929294F00D9BD62 /* X86TargetTransformInfo.cpp in Sources */,
 				1F1FB37119280C8D004EB0CA /* ToolOutputFile.cpp in Sources */,
 				1F4A80B11929241B00D9BD62 /* Value.cpp in Sources */,
 				1F1FB66C192812DC004EB0CA /* LiveIntervalAnalysis.cpp in Sources */,
@@ -5041,6 +5381,7 @@
 				1F1FB35B19280C8D004EB0CA /* regstrlcpy.c in Sources */,
 				1F1FB6C6192812DC004EB0CA /* TargetLowering.cpp in Sources */,
 				1F4A80AF1929241B00D9BD62 /* Use.cpp in Sources */,
+				1F4A81D91929294F00D9BD62 /* X86COFFMachineModuleInfo.cpp in Sources */,
 				1F4A81801929277300D9BD62 /* OptTable.cpp in Sources */,
 				1F4A7FF3192922BF00D9BD62 /* DWARFCompileUnit.cpp in Sources */,
 				1F1FB33019280C8D004EB0CA /* Disassembler.cpp in Sources */,
@@ -5057,6 +5398,7 @@
 				1F1FB63F192812DB004EB0CA /* DIEHash.cpp in Sources */,
 				1F1FB6CA192812DC004EB0CA /* SlotIndexes.cpp in Sources */,
 				1F1FB681192812DC004EB0CA /* MachineFunctionPass.cpp in Sources */,
+				1F4A823319292B5500D9BD62 /* X86DisassemblerDecoder.c in Sources */,
 				1F1FB69D192812DC004EB0CA /* RegAllocBase.cpp in Sources */,
 				1F1FB655192812DB004EB0CA /* DeadMachineInstructionElim.cpp in Sources */,
 				1F1FB56D19281236004EB0CA /* Parser.cpp in Sources */,
@@ -5070,6 +5412,7 @@
 				1F4A80401929235600D9BD62 /* Interpreter.cpp in Sources */,
 				1F1FB33C19280C8D004EB0CA /* IncludeFile.cpp in Sources */,
 				1F4A81471929264200D9BD62 /* MCRelocationInfo.cpp in Sources */,
+				1F4A81E41929294F00D9BD62 /* X86ISelLowering.cpp in Sources */,
 				1F1FB35919280C8D004EB0CA /* regexec.c in Sources */,
 				1F4A811E1929264200D9BD62 /* MCCodeEmitter.cpp in Sources */,
 				1F1FB52719281191004EB0CA /* AliasDebugger.cpp in Sources */,
@@ -5077,6 +5420,7 @@
 				1F1FB669192812DC004EB0CA /* LiveDebugVariables.cpp in Sources */,
 				1F4A814A1929264200D9BD62 /* MCSectionELF.cpp in Sources */,
 				1F1FB659192812DC004EB0CA /* EdgeBundles.cpp in Sources */,
+				1F4A81DB1929294F00D9BD62 /* X86FastISel.cpp in Sources */,
 				1F1FB699192812DC004EB0CA /* ProcessImplicitDefs.cpp in Sources */,
 				1F1FB32919280C8D004EB0CA /* ConvertUTFWrapper.cpp in Sources */,
 				1F1FB6B8192812DC004EB0CA /* LegalizeVectorTypes.cpp in Sources */,
@@ -5089,9 +5433,11 @@
 				1F1FB6A6192812DC004EB0CA /* RegisterPressure.cpp in Sources */,
 				1F4A817F1929277300D9BD62 /* Option.cpp in Sources */,
 				1F4A7FF9192922BF00D9BD62 /* DWARFDebugAranges.cpp in Sources */,
+				1F4A81E31929294F00D9BD62 /* X86ISelDAGToDAG.cpp in Sources */,
 				1F1FB34419280C8D004EB0CA /* ManagedStatic.cpp in Sources */,
 				1F1FB54719281191004EB0CA /* LoopInfo.cpp in Sources */,
 				1F1FB63B192812DB004EB0CA /* AsmPrinterDwarf.cpp in Sources */,
+				1F4A81F31929294F00D9BD62 /* X86TargetMachine.cpp in Sources */,
 				1F1FB53019281191004EB0CA /* CodeMetrics.cpp in Sources */,
 				1F1FB67C192812DC004EB0CA /* MachineCopyPropagation.cpp in Sources */,
 				1F1FB679192812DC004EB0CA /* MachineBlockPlacement.cpp in Sources */,
@@ -5111,9 +5457,11 @@
 				1F1FB6BC192812DC004EB0CA /* ScheduleDAGSDNodes.cpp in Sources */,
 				1F1FB635192812DB004EB0CA /* AllocationOrder.cpp in Sources */,
 				1F1FB6D3192812DC004EB0CA /* StackProtector.cpp in Sources */,
+				1F4A822F19292B5400D9BD62 /* X86AsmParser.cpp in Sources */,
 				1F1FB6AA192812DC004EB0CA /* ScheduleDAGPrinter.cpp in Sources */,
 				1F1FB6B3192812DC004EB0CA /* LegalizeIntegerTypes.cpp in Sources */,
 				1F4A81191929264200D9BD62 /* MCAsmInfoDarwin.cpp in Sources */,
+				1F4A81F51929294F00D9BD62 /* X86TargetObjectFile.cpp in Sources */,
 				1F1FB651192812DB004EB0CA /* CallingConvLower.cpp in Sources */,
 				1F4A81141929264200D9BD62 /* MachObjectWriter.cpp in Sources */,
 				1F1FB32E19280C8D004EB0CA /* Debug.cpp in Sources */,
@@ -5128,6 +5476,7 @@
 				1F1FB55419281191004EB0CA /* ScalarEvolution.cpp in Sources */,
 				1F1FB55819281191004EB0CA /* SparsePropagation.cpp in Sources */,
 				1F1FB670192812DC004EB0CA /* LiveRangeEdit.cpp in Sources */,
+				1F4A824019292B5500D9BD62 /* X86ELFObjectWriter.cpp in Sources */,
 				1F1FB31F19280C8D004EB0CA /* APInt.cpp in Sources */,
 				1F1FB32219280C8D004EB0CA /* BlockFrequency.cpp in Sources */,
 				1F1FB68C192812DC004EB0CA /* MachineScheduler.cpp in Sources */,
@@ -5206,10 +5555,13 @@
 				1F1FB64E192812DB004EB0CA /* BranchFolding.cpp in Sources */,
 				1F4A816A192926D600D9BD62 /* ELF.cpp in Sources */,
 				1F1FB55319281191004EB0CA /* RegionPrinter.cpp in Sources */,
+				1F4A824319292B5500D9BD62 /* X86MachObjectWriter.cpp in Sources */,
+				1F4A824119292B5500D9BD62 /* X86ELFRelocationInfo.cpp in Sources */,
 				1F4A80531929235600D9BD62 /* RuntimeDyldMachO.cpp in Sources */,
 				1F1FB33B19280C8D004EB0CA /* Host.cpp in Sources */,
 				1F1FB53519281191004EB0CA /* DomPrinter.cpp in Sources */,
 				1F1FB36C19280C8D004EB0CA /* TargetRegistry.cpp in Sources */,
+				1F4A81EB1929294F00D9BD62 /* X86PadShortFunction.cpp in Sources */,
 				1F4A7FF1192922BF00D9BD62 /* DWARFAbbreviationDeclaration.cpp in Sources */,
 				1F1FB67E192812DC004EB0CA /* MachineDominators.cpp in Sources */,
 				1F4A811D1929264200D9BD62 /* MCAtom.cpp in Sources */,
@@ -5217,6 +5569,7 @@
 				1F1FB52419281191004EB0CA /* AliasAnalysis.cpp in Sources */,
 				1F1FB54C19281191004EB0CA /* ModuleDebugInfoPrinter.cpp in Sources */,
 				1F4A818D192928B300D9BD62 /* TargetIntrinsicInfo.cpp in Sources */,
+				1F4A81F11929294F00D9BD62 /* X86Subtarget.cpp in Sources */,
 				1F1FB36719280C8D004EB0CA /* StringPool.cpp in Sources */,
 				1F4A81371929264200D9BD62 /* MCObjectFileInfo.cpp in Sources */,
 				1F1FB696192812DC004EB0CA /* PHIEliminationUtils.cpp in Sources */,
@@ -5230,6 +5583,7 @@
 				1F1FB52619281191004EB0CA /* AliasAnalysisEvaluator.cpp in Sources */,
 				1F1FB54219281191004EB0CA /* LazyValueInfo.cpp in Sources */,
 				1F1FB34F19280C8D004EB0CA /* raw_os_ostream.cpp in Sources */,
+				1F4A81EA1929294F00D9BD62 /* X86MCInstLower.cpp in Sources */,
 				1F4A80961929241B00D9BD62 /* DIBuilder.cpp in Sources */,
 				1F1FB6C5192812DC004EB0CA /* SelectionDAGPrinter.cpp in Sources */,
 				1F1FB65F192812DC004EB0CA /* GCMetadataPrinter.cpp in Sources */,
@@ -5241,14 +5595,19 @@
 				1F1FB3A919280D91004EB0CA /* TableGenBackend.cpp in Sources */,
 				1F1FB38219280C8D004EB0CA /* Valgrind.cpp in Sources */,
 				1F1FB34D19280C8D004EB0CA /* Process.cpp in Sources */,
+				1F4A823E19292B5500D9BD62 /* X86AsmBackend.cpp in Sources */,
 				1F4A803F1929235600D9BD62 /* ExternalFunctions.cpp in Sources */,
+				1F4A824719292B5500D9BD62 /* X86MCCodeEmitter.cpp in Sources */,
 				1F1FB39319280C8D004EB0CA /* YAMLParser.cpp in Sources */,
 				1F4A811F1929264200D9BD62 /* MCCodeGenInfo.cpp in Sources */,
 				1F1FB67B192812DC004EB0CA /* MachineCodeEmitter.cpp in Sources */,
 				1F4A81491929264200D9BD62 /* MCSectionCOFF.cpp in Sources */,
 				1F4A809C1929241B00D9BD62 /* InlineAsm.cpp in Sources */,
+				1F4A823919292B5500D9BD62 /* X86InstComments.cpp in Sources */,
 				1F4A80A71929241B00D9BD62 /* Module.cpp in Sources */,
 				1F1FB6BA192812DC004EB0CA /* ScheduleDAGFast.cpp in Sources */,
+				1F4A824A19292B5500D9BD62 /* X86WinCOFFObjectWriter.cpp in Sources */,
+				1F4A824E19292B5500D9BD62 /* X86ShuffleDecode.cpp in Sources */,
 				1F4A809E1929241B00D9BD62 /* Instructions.cpp in Sources */,
 				1F1FB52519281191004EB0CA /* AliasAnalysisCounter.cpp in Sources */,
 				1F4A81501929264200D9BD62 /* MCValue.cpp in Sources */,
@@ -5272,6 +5631,7 @@
 				1F4A80AE1929241B00D9BD62 /* TypeFinder.cpp in Sources */,
 				1F4A81521929264200D9BD62 /* SubtargetFeature.cpp in Sources */,
 				1F1FB690192812DC004EB0CA /* MachineVerifier.cpp in Sources */,
+				1F4A824519292B5500D9BD62 /* X86MCAsmInfo.cpp in Sources */,
 				1F1FB57E19281282004EB0CA /* BitcodeWriter.cpp in Sources */,
 				1F4A80BA192924B300D9BD62 /* IRReader.cpp in Sources */,
 				1F1FB64C192812DB004EB0CA /* Win64Exception.cpp in Sources */,
@@ -5279,6 +5639,7 @@
 				1F4A812D1929264200D9BD62 /* MCInstPrinter.cpp in Sources */,
 				1F4A80421929235600D9BD62 /* JIT.cpp in Sources */,
 				1F1FB3AC19280D91004EB0CA /* TGParser.cpp in Sources */,
+				1F4A81F81929294F00D9BD62 /* X86VZeroUpper.cpp in Sources */,
 				1F4A813D1929264200D9BD62 /* COFFAsmParser.cpp in Sources */,
 				1F4A813B1929264200D9BD62 /* AsmLexer.cpp in Sources */,
 				1F1FB687192812DC004EB0CA /* MachineModuleInfo.cpp in Sources */,
@@ -5291,11 +5652,14 @@
 				1F1FB53619281191004EB0CA /* InstCount.cpp in Sources */,
 				1F1FB52E19281191004EB0CA /* CFG.cpp in Sources */,
 				1F4A81441929264200D9BD62 /* MCTargetAsmParser.cpp in Sources */,
+				1F4A823119292B5500D9BD62 /* X86Disassembler.cpp in Sources */,
 				1F1FB6C0192812DC004EB0CA /* SelectionDAG.cpp in Sources */,
 				1F4A808E1929241B00D9BD62 /* Constants.cpp in Sources */,
+				1F4A81E61929294F00D9BD62 /* X86JITInfo.cpp in Sources */,
 				1F1FB68B192812DC004EB0CA /* MachineRegisterInfo.cpp in Sources */,
 				1F1FB69A192812DC004EB0CA /* PrologEpilogInserter.cpp in Sources */,
 				1F4A81431929264200D9BD62 /* MCAsmParserExtension.cpp in Sources */,
+				1F4A824C19292B5500D9BD62 /* X86TargetInfo.cpp in Sources */,
 				1F4A80AB1929241B00D9BD62 /* PrintModulePass.cpp in Sources */,
 				1F4A81311929264200D9BD62 /* MCMachObjectTargetWriter.cpp in Sources */,
 				1F1FB6A9192812DC004EB0CA /* ScheduleDAGInstrs.cpp in Sources */,
@@ -5312,6 +5676,7 @@
 				1F4A804B1929235600D9BD62 /* RTDyldMemoryManager.cpp in Sources */,
 				1F1FB55219281191004EB0CA /* RegionPass.cpp in Sources */,
 				1F1FB6AF192812DC004EB0CA /* InstrEmitter.cpp in Sources */,
+				1F4A81E81929294F00D9BD62 /* X86MachineFunctionInfo.cpp in Sources */,
 				1F4A81381929264200D9BD62 /* MCObjectStreamer.cpp in Sources */,
 				1F1FB6C9192812DC004EB0CA /* SjLjEHPrepare.cpp in Sources */,
 				1F1FB64B192812DB004EB0CA /* OcamlGCPrinter.cpp in Sources */,
@@ -5320,20 +5685,25 @@
 				1F4A81251929264200D9BD62 /* MCDwarf.cpp in Sources */,
 				1F1FB36419280C8D004EB0CA /* StreamableMemoryObject.cpp in Sources */,
 				1F1FB69C192812DC004EB0CA /* PseudoSourceValue.cpp in Sources */,
+				1F4A81DE1929294F00D9BD62 /* X86FrameLowering.cpp in Sources */,
 				1F4A80C31929252500D9BD62 /* LTOModule.cpp in Sources */,
 				1F1FB3AA19280D91004EB0CA /* TGLexer.cpp in Sources */,
 				1F1FB685192812DC004EB0CA /* MachineLICM.cpp in Sources */,
 				1F1FB64A192812DB004EB0CA /* ErlangGCPrinter.cpp in Sources */,
 				1F1FB68A192812DC004EB0CA /* MachinePostDominators.cpp in Sources */,
 				1F1FB54819281191004EB0CA /* LoopPass.cpp in Sources */,
+				1F4A823719292B5500D9BD62 /* X86ATTInstPrinter.cpp in Sources */,
 				1F1FB32719280C8D004EB0CA /* ConstantRange.cpp in Sources */,
+				1F4A81D81929294F00D9BD62 /* X86CodeEmitter.cpp in Sources */,
 				1F1FB55619281191004EB0CA /* ScalarEvolutionExpander.cpp in Sources */,
 				1F1FB6A2192812DC004EB0CA /* RegAllocPBQP.cpp in Sources */,
 				1F4A812B1929264200D9BD62 /* MCFunction.cpp in Sources */,
 				1F4A8192192928B300D9BD62 /* TargetMachineC.cpp in Sources */,
+				1F4A81DD1929294F00D9BD62 /* X86FloatingPoint.cpp in Sources */,
 				1F1FB6BB192812DC004EB0CA /* ScheduleDAGRRList.cpp in Sources */,
 				1F1FB33A19280C8D004EB0CA /* Hashing.cpp in Sources */,
 				1F1FB35319280C8D004EB0CA /* regcomp.c in Sources */,
+				1F4A824419292B5500D9BD62 /* X86MachORelocationInfo.cpp in Sources */,
 				1F4A80A61929241B00D9BD62 /* Metadata.cpp in Sources */,
 				1F1FB33319280C8D004EB0CA /* Errno.cpp in Sources */,
 				1F1FB65D192812DC004EB0CA /* ExpandPostRAPseudos.cpp in Sources */,
@@ -5347,6 +5717,7 @@
 				1F1FB653192812DB004EB0CA /* CriticalAntiDepBreaker.cpp in Sources */,
 				1F1FB34C19280C8D004EB0CA /* PrettyStackTrace.cpp in Sources */,
 				1F1FB37219280C8D004EB0CA /* Triple.cpp in Sources */,
+				1F4A81DC1929294F00D9BD62 /* X86FixupLEAs.cpp in Sources */,
 				1F4A812F1929264200D9BD62 /* MCLabel.cpp in Sources */,
 				1F4A80B01929241B00D9BD62 /* User.cpp in Sources */,
 				1F1FB53D19281191004EB0CA /* FindUsedTypes.cpp in Sources */,
@@ -5402,6 +5773,8 @@
 				1F1FB54019281191004EB0CA /* IPA.cpp in Sources */,
 				1F4A818B192928B300D9BD62 /* Mangler.cpp in Sources */,
 				1F4A8007192922BF00D9BD62 /* DWARFFormValue.cpp in Sources */,
+				1F4A81E11929294F00D9BD62 /* X86InstrInfo.cpp in Sources */,
+				1F4A81EF1929294F00D9BD62 /* X86SelectionDAGInfo.cpp in Sources */,
 				1F4A809B1929241B00D9BD62 /* GVMaterializer.cpp in Sources */,
 				1F1FB6DF192812DC004EB0CA /* VirtRegMap.cpp in Sources */,
 				1F1FB6A1192812DC004EB0CA /* RegAllocGreedy.cpp in Sources */,
@@ -5438,12 +5811,14 @@
 				1F1FB34719280C8D004EB0CA /* MemoryBuffer.cpp in Sources */,
 				1F1FB65E192812DC004EB0CA /* GCMetadata.cpp in Sources */,
 				1F1FB36E19280C8D004EB0CA /* ThreadLocal.cpp in Sources */,
+				1F4A81EC1929294F00D9BD62 /* X86RegisterInfo.cpp in Sources */,
 				1F4A80971929241B00D9BD62 /* Dominators.cpp in Sources */,
 				1F1FB6A0192812DC004EB0CA /* RegAllocFast.cpp in Sources */,
 				1F4A80C21929252500D9BD62 /* LTOCodeGenerator.cpp in Sources */,
 				1F1FB672192812DC004EB0CA /* LiveRegUnits.cpp in Sources */,
 				1F1FB643192812DB004EB0CA /* DwarfCFIException.cpp in Sources */,
 				1F4A7FFD192922BF00D9BD62 /* DWARFDebugFrame.cpp in Sources */,
+				1F4A81D61929294F00D9BD62 /* X86AsmPrinter.cpp in Sources */,
 				1F4A80981929241B00D9BD62 /* Function.cpp in Sources */,
 				1F1FB698192812DC004EB0CA /* PostRASchedulerList.cpp in Sources */,
 				1F1FB68F192812DC004EB0CA /* MachineTraceMetrics.cpp in Sources */,
@@ -5452,6 +5827,7 @@
 				1F4A8191192928B300D9BD62 /* TargetMachine.cpp in Sources */,
 				1F1FB36519280C8D004EB0CA /* StringExtras.cpp in Sources */,
 				1F1FB33219280C8D004EB0CA /* DynamicLibrary.cpp in Sources */,
+				1F4A824819292B5500D9BD62 /* X86MCTargetDesc.cpp in Sources */,
 				1F1FB53719281191004EB0CA /* InstructionSimplify.cpp in Sources */,
 				1F4A813A1929264200D9BD62 /* MCObjectWriter.cpp in Sources */,
 				1F4A80551929235600D9BD62 /* TargetSelect.cpp in Sources */,
@@ -5614,6 +5990,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/include\"",
+					"\"$(SRCROOT)/lib/Target/X86\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5653,6 +6033,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/include\"",
+					"\"$(SRCROOT)/lib/Target/X86\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
