@@ -1028,6 +1028,35 @@
 		1F1FB6DD192812DC004EB0CA /* TwoAddressInstructionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB630192812DB004EB0CA /* TwoAddressInstructionPass.cpp */; };
 		1F1FB6DE192812DC004EB0CA /* UnreachableBlockElim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB631192812DB004EB0CA /* UnreachableBlockElim.cpp */; };
 		1F1FB6DF192812DC004EB0CA /* VirtRegMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB632192812DB004EB0CA /* VirtRegMap.cpp */; };
+		1F4A7FF0192922BF00D9BD62 /* DIContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FD3192922BF00D9BD62 /* DIContext.cpp */; };
+		1F4A7FF1192922BF00D9BD62 /* DWARFAbbreviationDeclaration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FD4192922BF00D9BD62 /* DWARFAbbreviationDeclaration.cpp */; };
+		1F4A7FF2192922BF00D9BD62 /* DWARFAbbreviationDeclaration.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FD5192922BF00D9BD62 /* DWARFAbbreviationDeclaration.h */; };
+		1F4A7FF3192922BF00D9BD62 /* DWARFCompileUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FD6192922BF00D9BD62 /* DWARFCompileUnit.cpp */; };
+		1F4A7FF4192922BF00D9BD62 /* DWARFCompileUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FD7192922BF00D9BD62 /* DWARFCompileUnit.h */; };
+		1F4A7FF5192922BF00D9BD62 /* DWARFContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FD8192922BF00D9BD62 /* DWARFContext.cpp */; };
+		1F4A7FF6192922BF00D9BD62 /* DWARFContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FD9192922BF00D9BD62 /* DWARFContext.h */; };
+		1F4A7FF7192922BF00D9BD62 /* DWARFDebugAbbrev.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FDA192922BF00D9BD62 /* DWARFDebugAbbrev.cpp */; };
+		1F4A7FF8192922BF00D9BD62 /* DWARFDebugAbbrev.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FDB192922BF00D9BD62 /* DWARFDebugAbbrev.h */; };
+		1F4A7FF9192922BF00D9BD62 /* DWARFDebugAranges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FDC192922BF00D9BD62 /* DWARFDebugAranges.cpp */; };
+		1F4A7FFA192922BF00D9BD62 /* DWARFDebugAranges.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FDD192922BF00D9BD62 /* DWARFDebugAranges.h */; };
+		1F4A7FFB192922BF00D9BD62 /* DWARFDebugArangeSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FDE192922BF00D9BD62 /* DWARFDebugArangeSet.cpp */; };
+		1F4A7FFC192922BF00D9BD62 /* DWARFDebugArangeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FDF192922BF00D9BD62 /* DWARFDebugArangeSet.h */; };
+		1F4A7FFD192922BF00D9BD62 /* DWARFDebugFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FE0192922BF00D9BD62 /* DWARFDebugFrame.cpp */; };
+		1F4A7FFE192922BF00D9BD62 /* DWARFDebugFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FE1192922BF00D9BD62 /* DWARFDebugFrame.h */; };
+		1F4A7FFF192922BF00D9BD62 /* DWARFDebugInfoEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FE2192922BF00D9BD62 /* DWARFDebugInfoEntry.cpp */; };
+		1F4A8000192922BF00D9BD62 /* DWARFDebugInfoEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FE3192922BF00D9BD62 /* DWARFDebugInfoEntry.h */; };
+		1F4A8001192922BF00D9BD62 /* DWARFDebugLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FE4192922BF00D9BD62 /* DWARFDebugLine.cpp */; };
+		1F4A8002192922BF00D9BD62 /* DWARFDebugLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FE5192922BF00D9BD62 /* DWARFDebugLine.h */; };
+		1F4A8003192922BF00D9BD62 /* DWARFDebugLoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FE6192922BF00D9BD62 /* DWARFDebugLoc.cpp */; };
+		1F4A8004192922BF00D9BD62 /* DWARFDebugLoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FE7192922BF00D9BD62 /* DWARFDebugLoc.h */; };
+		1F4A8005192922BF00D9BD62 /* DWARFDebugRangeList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FE8192922BF00D9BD62 /* DWARFDebugRangeList.cpp */; };
+		1F4A8006192922BF00D9BD62 /* DWARFDebugRangeList.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FE9192922BF00D9BD62 /* DWARFDebugRangeList.h */; };
+		1F4A8007192922BF00D9BD62 /* DWARFFormValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FEA192922BF00D9BD62 /* DWARFFormValue.cpp */; };
+		1F4A8008192922BF00D9BD62 /* DWARFRelocMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FEB192922BF00D9BD62 /* DWARFRelocMap.h */; };
+		1F4A8009192922BF00D9BD62 /* DWARFTypeUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FEC192922BF00D9BD62 /* DWARFTypeUnit.cpp */; };
+		1F4A800A192922BF00D9BD62 /* DWARFTypeUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FED192922BF00D9BD62 /* DWARFTypeUnit.h */; };
+		1F4A800B192922BF00D9BD62 /* DWARFUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7FEE192922BF00D9BD62 /* DWARFUnit.cpp */; };
+		1F4A800C192922BF00D9BD62 /* DWARFUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A7FEF192922BF00D9BD62 /* DWARFUnit.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2044,6 +2073,35 @@
 		1F1FB630192812DB004EB0CA /* TwoAddressInstructionPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwoAddressInstructionPass.cpp; sourceTree = "<group>"; };
 		1F1FB631192812DB004EB0CA /* UnreachableBlockElim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnreachableBlockElim.cpp; sourceTree = "<group>"; };
 		1F1FB632192812DB004EB0CA /* VirtRegMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VirtRegMap.cpp; sourceTree = "<group>"; };
+		1F4A7FD3192922BF00D9BD62 /* DIContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DIContext.cpp; sourceTree = "<group>"; };
+		1F4A7FD4192922BF00D9BD62 /* DWARFAbbreviationDeclaration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFAbbreviationDeclaration.cpp; sourceTree = "<group>"; };
+		1F4A7FD5192922BF00D9BD62 /* DWARFAbbreviationDeclaration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFAbbreviationDeclaration.h; sourceTree = "<group>"; };
+		1F4A7FD6192922BF00D9BD62 /* DWARFCompileUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFCompileUnit.cpp; sourceTree = "<group>"; };
+		1F4A7FD7192922BF00D9BD62 /* DWARFCompileUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFCompileUnit.h; sourceTree = "<group>"; };
+		1F4A7FD8192922BF00D9BD62 /* DWARFContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFContext.cpp; sourceTree = "<group>"; };
+		1F4A7FD9192922BF00D9BD62 /* DWARFContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFContext.h; sourceTree = "<group>"; };
+		1F4A7FDA192922BF00D9BD62 /* DWARFDebugAbbrev.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFDebugAbbrev.cpp; sourceTree = "<group>"; };
+		1F4A7FDB192922BF00D9BD62 /* DWARFDebugAbbrev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFDebugAbbrev.h; sourceTree = "<group>"; };
+		1F4A7FDC192922BF00D9BD62 /* DWARFDebugAranges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFDebugAranges.cpp; sourceTree = "<group>"; };
+		1F4A7FDD192922BF00D9BD62 /* DWARFDebugAranges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFDebugAranges.h; sourceTree = "<group>"; };
+		1F4A7FDE192922BF00D9BD62 /* DWARFDebugArangeSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFDebugArangeSet.cpp; sourceTree = "<group>"; };
+		1F4A7FDF192922BF00D9BD62 /* DWARFDebugArangeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFDebugArangeSet.h; sourceTree = "<group>"; };
+		1F4A7FE0192922BF00D9BD62 /* DWARFDebugFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFDebugFrame.cpp; sourceTree = "<group>"; };
+		1F4A7FE1192922BF00D9BD62 /* DWARFDebugFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFDebugFrame.h; sourceTree = "<group>"; };
+		1F4A7FE2192922BF00D9BD62 /* DWARFDebugInfoEntry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFDebugInfoEntry.cpp; sourceTree = "<group>"; };
+		1F4A7FE3192922BF00D9BD62 /* DWARFDebugInfoEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFDebugInfoEntry.h; sourceTree = "<group>"; };
+		1F4A7FE4192922BF00D9BD62 /* DWARFDebugLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFDebugLine.cpp; sourceTree = "<group>"; };
+		1F4A7FE5192922BF00D9BD62 /* DWARFDebugLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFDebugLine.h; sourceTree = "<group>"; };
+		1F4A7FE6192922BF00D9BD62 /* DWARFDebugLoc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFDebugLoc.cpp; sourceTree = "<group>"; };
+		1F4A7FE7192922BF00D9BD62 /* DWARFDebugLoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFDebugLoc.h; sourceTree = "<group>"; };
+		1F4A7FE8192922BF00D9BD62 /* DWARFDebugRangeList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFDebugRangeList.cpp; sourceTree = "<group>"; };
+		1F4A7FE9192922BF00D9BD62 /* DWARFDebugRangeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFDebugRangeList.h; sourceTree = "<group>"; };
+		1F4A7FEA192922BF00D9BD62 /* DWARFFormValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFFormValue.cpp; sourceTree = "<group>"; };
+		1F4A7FEB192922BF00D9BD62 /* DWARFRelocMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFRelocMap.h; sourceTree = "<group>"; };
+		1F4A7FEC192922BF00D9BD62 /* DWARFTypeUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFTypeUnit.cpp; sourceTree = "<group>"; };
+		1F4A7FED192922BF00D9BD62 /* DWARFTypeUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFTypeUnit.h; sourceTree = "<group>"; };
+		1F4A7FEE192922BF00D9BD62 /* DWARFUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFUnit.cpp; sourceTree = "<group>"; };
+		1F4A7FEF192922BF00D9BD62 /* DWARFUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFUnit.h; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2879,6 +2937,7 @@
 				1F1FB55D19281236004EB0CA /* AsmParser */,
 				1F1FB56E19281282004EB0CA /* Bitcode */,
 				1F1FB583192812DB004EB0CA /* CodeGen */,
+				1F4A7FD2192922BF00D9BD62 /* DebugInfo */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
@@ -3419,6 +3478,42 @@
 			path = SelectionDAG;
 			sourceTree = "<group>";
 		};
+		1F4A7FD2192922BF00D9BD62 /* DebugInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A7FD3192922BF00D9BD62 /* DIContext.cpp */,
+				1F4A7FD4192922BF00D9BD62 /* DWARFAbbreviationDeclaration.cpp */,
+				1F4A7FD5192922BF00D9BD62 /* DWARFAbbreviationDeclaration.h */,
+				1F4A7FD6192922BF00D9BD62 /* DWARFCompileUnit.cpp */,
+				1F4A7FD7192922BF00D9BD62 /* DWARFCompileUnit.h */,
+				1F4A7FD8192922BF00D9BD62 /* DWARFContext.cpp */,
+				1F4A7FD9192922BF00D9BD62 /* DWARFContext.h */,
+				1F4A7FDA192922BF00D9BD62 /* DWARFDebugAbbrev.cpp */,
+				1F4A7FDB192922BF00D9BD62 /* DWARFDebugAbbrev.h */,
+				1F4A7FDC192922BF00D9BD62 /* DWARFDebugAranges.cpp */,
+				1F4A7FDD192922BF00D9BD62 /* DWARFDebugAranges.h */,
+				1F4A7FDE192922BF00D9BD62 /* DWARFDebugArangeSet.cpp */,
+				1F4A7FDF192922BF00D9BD62 /* DWARFDebugArangeSet.h */,
+				1F4A7FE0192922BF00D9BD62 /* DWARFDebugFrame.cpp */,
+				1F4A7FE1192922BF00D9BD62 /* DWARFDebugFrame.h */,
+				1F4A7FE2192922BF00D9BD62 /* DWARFDebugInfoEntry.cpp */,
+				1F4A7FE3192922BF00D9BD62 /* DWARFDebugInfoEntry.h */,
+				1F4A7FE4192922BF00D9BD62 /* DWARFDebugLine.cpp */,
+				1F4A7FE5192922BF00D9BD62 /* DWARFDebugLine.h */,
+				1F4A7FE6192922BF00D9BD62 /* DWARFDebugLoc.cpp */,
+				1F4A7FE7192922BF00D9BD62 /* DWARFDebugLoc.h */,
+				1F4A7FE8192922BF00D9BD62 /* DWARFDebugRangeList.cpp */,
+				1F4A7FE9192922BF00D9BD62 /* DWARFDebugRangeList.h */,
+				1F4A7FEA192922BF00D9BD62 /* DWARFFormValue.cpp */,
+				1F4A7FEB192922BF00D9BD62 /* DWARFRelocMap.h */,
+				1F4A7FEC192922BF00D9BD62 /* DWARFTypeUnit.cpp */,
+				1F4A7FED192922BF00D9BD62 /* DWARFTypeUnit.h */,
+				1F4A7FEE192922BF00D9BD62 /* DWARFUnit.cpp */,
+				1F4A7FEF192922BF00D9BD62 /* DWARFUnit.h */,
+			);
+			path = DebugInfo;
+			sourceTree = "<group>";
+		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -3505,6 +3600,7 @@
 				1F1FB0A919280BE9004EB0CA /* SmallVector.h in Headers */,
 				1F1FB12D19280BE9004EB0CA /* MachinePostDominators.h in Headers */,
 				1F1FB16D19280BE9004EB0CA /* BasicBlock.h in Headers */,
+				1F4A8008192922BF00D9BD62 /* DWARFRelocMap.h in Headers */,
 				1F1FB16319280BE9004EB0CA /* ObjectImage.h in Headers */,
 				1F1FB25C19280BE9004EB0CA /* Main.h in Headers */,
 				1F1FB0B419280BE9004EB0CA /* TinyPtrVector.h in Headers */,
@@ -3514,9 +3610,11 @@
 				1F1FB10219280BE9004EB0CA /* EdgeBundles.h in Headers */,
 				1F1FB26219280BE9004EB0CA /* Mangler.h in Headers */,
 				1F1FB11319280BE9004EB0CA /* LiveRangeEdit.h in Headers */,
+				1F4A7FF4192922BF00D9BD62 /* DWARFCompileUnit.h in Headers */,
 				1F1FB35719280C8D004EB0CA /* regex2.h in Headers */,
 				1F1FB10A19280BE9004EB0CA /* ISDOpcodes.h in Headers */,
 				1F1FB26F19280BE9004EB0CA /* TargetSelectionDAGInfo.h in Headers */,
+				1F4A7FFA192922BF00D9BD62 /* DWARFDebugAranges.h in Headers */,
 				1F1FB16619280BE9004EB0CA /* RuntimeDyld.h in Headers */,
 				1F1FB1C319280BE9004EB0CA /* MCAsmParserExtension.h in Headers */,
 				1F1FB27F19280BE9004EB0CA /* Local.h in Headers */,
@@ -3571,6 +3669,7 @@
 				1F1FB15C19280BE9004EB0CA /* Interpreter.h in Headers */,
 				1F1FB1E619280BE9004EB0CA /* Option.h in Headers */,
 				1F1FB24219280BE9004EB0CA /* Solaris.h in Headers */,
+				1F4A800C192922BF00D9BD62 /* DWARFUnit.h in Headers */,
 				1F1FB17319280BE9004EB0CA /* DiagnosticInfo.h in Headers */,
 				1F1FB1DE19280BE9004EB0CA /* Error.h in Headers */,
 				1F1FB13719280BE9004EB0CA /* Briggs.h in Headers */,
@@ -3670,6 +3769,7 @@
 				1F1FB13619280BE9004EB0CA /* HeuristicBase.h in Headers */,
 				1F1FB25119280BE9004EB0CA /* ToolOutputFile.h in Headers */,
 				1F1FB1CB19280BE9004EB0CA /* MCSectionMachO.h in Headers */,
+				1F4A800A192922BF00D9BD62 /* DWARFTypeUnit.h in Headers */,
 				1F1FB07E19280BE9004EB0CA /* APFloat.h in Headers */,
 				1F1FB0B219280BE9004EB0CA /* StringSet.h in Headers */,
 				1F1FB1DA19280BE9004EB0CA /* ELF.h in Headers */,
@@ -3681,6 +3781,7 @@
 				1F1FB1B519280BE9004EB0CA /* MCLinkerOptimizationHint.h in Headers */,
 				1F1FB15219280BE9004EB0CA /* VirtRegMap.h in Headers */,
 				1F1FB0D519280BE9004EB0CA /* LazyValueInfo.h in Headers */,
+				1F4A8000192922BF00D9BD62 /* DWARFDebugInfoEntry.h in Headers */,
 				1F1FB11419280BE9004EB0CA /* LiveRegMatrix.h in Headers */,
 				1F1FB22B19280BE9004EB0CA /* MutexGuard.h in Headers */,
 				1F1FB0B019280BE9004EB0CA /* StringMap.h in Headers */,
@@ -3741,6 +3842,7 @@
 				1F1FB1A819280BE9004EB0CA /* MCExternalSymbolizer.h in Headers */,
 				1F1FB6CC192812DC004EB0CA /* Spiller.h in Headers */,
 				1F1FB0D119280BE9004EB0CA /* Interval.h in Headers */,
+				1F4A7FFE192922BF00D9BD62 /* DWARFDebugFrame.h in Headers */,
 				1F1FB6B0192812DC004EB0CA /* InstrEmitter.h in Headers */,
 				1F1FB15B19280BE9004EB0CA /* GenericValue.h in Headers */,
 				1F1FB08019280BE9004EB0CA /* APSInt.h in Headers */,
@@ -3826,6 +3928,7 @@
 				1F1FB22419280BE9004EB0CA /* ManagedStatic.h in Headers */,
 				1F1FB08E19280BE9004EB0CA /* ilist.h in Headers */,
 				1F1FB6A5192812DC004EB0CA /* RegisterCoalescer.h in Headers */,
+				1F4A7FF2192922BF00D9BD62 /* DWARFAbbreviationDeclaration.h in Headers */,
 				1F1FB22619280BE9004EB0CA /* MD5.h in Headers */,
 				1F1FB1CD19280BE9004EB0CA /* MCSubtargetInfo.h in Headers */,
 				1F1FB13019280BE9004EB0CA /* MachineScheduler.h in Headers */,
@@ -3868,6 +3971,7 @@
 				1F1FB22919280BE9004EB0CA /* MemoryObject.h in Headers */,
 				1F1FB1A019280BE9004EB0CA /* MCDirectives.h in Headers */,
 				1F1FB24319280BE9004EB0CA /* SourceMgr.h in Headers */,
+				1F4A7FF8192922BF00D9BD62 /* DWARFDebugAbbrev.h in Headers */,
 				1F1FB09B19280BE9004EB0CA /* OwningPtr.h in Headers */,
 				1F1FB0BB19280BE9004EB0CA /* AliasSetTracker.h in Headers */,
 				1F1FB1C519280BE9004EB0CA /* MCRegisterInfo.h in Headers */,
@@ -3885,6 +3989,7 @@
 				1F1FB29719280BE9004EB0CA /* Object.h in Headers */,
 				1F1FB16419280BE9004EB0CA /* OProfileWrapper.h in Headers */,
 				1F1FB26D19280BE9004EB0CA /* TargetOptions.h in Headers */,
+				1F4A8004192922BF00D9BD62 /* DWARFDebugLoc.h in Headers */,
 				1F1FB08A19280BE9004EB0CA /* EquivalenceClasses.h in Headers */,
 				1F1FB22119280BE9004EB0CA /* Locale.h in Headers */,
 				1F1FB0C219280BE9004EB0CA /* CaptureTracking.h in Headers */,
@@ -3896,6 +4001,7 @@
 				1F1FB26919280BE9004EB0CA /* TargetLowering.h in Headers */,
 				1F1FB25B19280BE9004EB0CA /* Error.h in Headers */,
 				1F1FB29A19280BE9004EB0CA /* TargetMachine.h in Headers */,
+				1F4A7FF6192922BF00D9BD62 /* DWARFContext.h in Headers */,
 				1F1FB0AE19280BE9004EB0CA /* STLExtras.h in Headers */,
 				1F1FB0CC19280BE9004EB0CA /* DomPrinter.h in Headers */,
 				1F1FB19A19280BE9004EB0CA /* MCAsmLayout.h in Headers */,
@@ -3907,6 +4013,7 @@
 				1F1FB12219280BE9004EB0CA /* MachineFunctionPass.h in Headers */,
 				1F1FB28A19280BE9004EB0CA /* ValueMapper.h in Headers */,
 				1F1FB0D919280BE9004EB0CA /* Loads.h in Headers */,
+				1F4A8006192922BF00D9BD62 /* DWARFDebugRangeList.h in Headers */,
 				1F1FB1B319280BE9004EB0CA /* MCInstrItineraries.h in Headers */,
 				1F1FB27B19280BE9004EB0CA /* CmpInstAnalysis.h in Headers */,
 				1F1FB22C19280BE9004EB0CA /* NoFolder.h in Headers */,
@@ -3964,6 +4071,7 @@
 				1F1FB19319280BE9004EB0CA /* LTOModule.h in Headers */,
 				1F1FB10319280BE9004EB0CA /* FastISel.h in Headers */,
 				1F1FB20B19280BE9004EB0CA /* DOTGraphTraits.h in Headers */,
+				1F4A7FFC192922BF00D9BD62 /* DWARFDebugArangeSet.h in Headers */,
 				1F1FB17219280BE9004EB0CA /* DerivedTypes.h in Headers */,
 				1F1FB0F919280BE9004EB0CA /* LLVMBitCodes.h in Headers */,
 				1F1FB16219280BE9004EB0CA /* ObjectCache.h in Headers */,
@@ -3983,6 +4091,7 @@
 				1F1FB1BF19280BE9004EB0CA /* AsmCond.h in Headers */,
 				1F1FB24419280BE9004EB0CA /* StreamableMemoryObject.h in Headers */,
 				1F1FB11C19280BE9004EB0CA /* MachineCodeInfo.h in Headers */,
+				1F4A8002192922BF00D9BD62 /* DWARFDebugLine.h in Headers */,
 				1F1FB09119280BE9004EB0CA /* ImmutableList.h in Headers */,
 				1F1FB15119280BE9004EB0CA /* ValueTypes.h in Headers */,
 				1F1FB13919280BE9004EB0CA /* Math.h in Headers */,
@@ -4290,9 +4399,11 @@
 				1F1FB32D19280C8D004EB0CA /* DataStream.cpp in Sources */,
 				1F1FB35B19280C8D004EB0CA /* regstrlcpy.c in Sources */,
 				1F1FB6C6192812DC004EB0CA /* TargetLowering.cpp in Sources */,
+				1F4A7FF3192922BF00D9BD62 /* DWARFCompileUnit.cpp in Sources */,
 				1F1FB33019280C8D004EB0CA /* Disassembler.cpp in Sources */,
 				1F1FB36A19280C8D004EB0CA /* system_error.cpp in Sources */,
 				1F1FB6D8192812DC004EB0CA /* TargetLoweringBase.cpp in Sources */,
+				1F4A800B192922BF00D9BD62 /* DWARFUnit.cpp in Sources */,
 				1F1FB53419281191004EB0CA /* DominanceFrontier.cpp in Sources */,
 				1F1FB65B192812DC004EB0CA /* ExecutionDepsFix.cpp in Sources */,
 				1F1FB63F192812DB004EB0CA /* DIEHash.cpp in Sources */,
@@ -4304,6 +4415,8 @@
 				1F1FB35619280C8D004EB0CA /* Regex.cpp in Sources */,
 				1F1FB55019281191004EB0CA /* PtrUseVisitor.cpp in Sources */,
 				1F1FB691192812DC004EB0CA /* OcamlGC.cpp in Sources */,
+				1F4A7FFB192922BF00D9BD62 /* DWARFDebugArangeSet.cpp in Sources */,
+				1F4A7FF0192922BF00D9BD62 /* DIContext.cpp in Sources */,
 				1F1FB33C19280C8D004EB0CA /* IncludeFile.cpp in Sources */,
 				1F1FB35919280C8D004EB0CA /* regexec.c in Sources */,
 				1F1FB52719281191004EB0CA /* AliasDebugger.cpp in Sources */,
@@ -4314,7 +4427,9 @@
 				1F1FB6B8192812DC004EB0CA /* LegalizeVectorTypes.cpp in Sources */,
 				1F1FB32419280C8D004EB0CA /* circular_raw_ostream.cpp in Sources */,
 				1F1FB66D192812DC004EB0CA /* LiveIntervalUnion.cpp in Sources */,
+				1F4A7FFF192922BF00D9BD62 /* DWARFDebugInfoEntry.cpp in Sources */,
 				1F1FB6A6192812DC004EB0CA /* RegisterPressure.cpp in Sources */,
+				1F4A7FF9192922BF00D9BD62 /* DWARFDebugAranges.cpp in Sources */,
 				1F1FB34419280C8D004EB0CA /* ManagedStatic.cpp in Sources */,
 				1F1FB54719281191004EB0CA /* LoopInfo.cpp in Sources */,
 				1F1FB63B192812DB004EB0CA /* AsmPrinterDwarf.cpp in Sources */,
@@ -4363,7 +4478,9 @@
 				1F1FB6D5192812DC004EB0CA /* TailDuplication.cpp in Sources */,
 				1F1FB6A3192812DC004EB0CA /* RegisterClassInfo.cpp in Sources */,
 				1F1FB35019280C8D004EB0CA /* raw_ostream.cpp in Sources */,
+				1F4A8001192922BF00D9BD62 /* DWARFDebugLine.cpp in Sources */,
 				1F1FB33519280C8D004EB0CA /* FileOutputBuffer.cpp in Sources */,
+				1F4A7FF7192922BF00D9BD62 /* DWARFDebugAbbrev.cpp in Sources */,
 				1F1FB646192812DB004EB0CA /* DwarfDebug.cpp in Sources */,
 				1F1FB55119281191004EB0CA /* RegionInfo.cpp in Sources */,
 				1F1FB639192812DB004EB0CA /* ARMException.cpp in Sources */,
@@ -4395,6 +4512,7 @@
 				1F1FB33B19280C8D004EB0CA /* Host.cpp in Sources */,
 				1F1FB53519281191004EB0CA /* DomPrinter.cpp in Sources */,
 				1F1FB36C19280C8D004EB0CA /* TargetRegistry.cpp in Sources */,
+				1F4A7FF1192922BF00D9BD62 /* DWARFAbbreviationDeclaration.cpp in Sources */,
 				1F1FB67E192812DC004EB0CA /* MachineDominators.cpp in Sources */,
 				1F1FB52419281191004EB0CA /* AliasAnalysis.cpp in Sources */,
 				1F1FB54C19281191004EB0CA /* ModuleDebugInfoPrinter.cpp in Sources */,
@@ -4411,6 +4529,7 @@
 				1F1FB34F19280C8D004EB0CA /* raw_os_ostream.cpp in Sources */,
 				1F1FB6C5192812DC004EB0CA /* SelectionDAGPrinter.cpp in Sources */,
 				1F1FB65F192812DC004EB0CA /* GCMetadataPrinter.cpp in Sources */,
+				1F4A8009192922BF00D9BD62 /* DWARFTypeUnit.cpp in Sources */,
 				1F1FB6D6192812DC004EB0CA /* TargetFrameLoweringImpl.cpp in Sources */,
 				1F1FB33819280C8D004EB0CA /* FormattedStream.cpp in Sources */,
 				1F1FB671192812DC004EB0CA /* LiveRegMatrix.cpp in Sources */,
@@ -4425,6 +4544,7 @@
 				1F1FB661192812DC004EB0CA /* IfConversion.cpp in Sources */,
 				1F1FB36919280C8D004EB0CA /* StringRefMemoryObject.cpp in Sources */,
 				1F1FB6D1192812DC004EB0CA /* StackColoring.cpp in Sources */,
+				1F4A8005192922BF00D9BD62 /* DWARFDebugRangeList.cpp in Sources */,
 				1F1FB63A192812DB004EB0CA /* AsmPrinter.cpp in Sources */,
 				1F1FB55B19281191004EB0CA /* TypeBasedAliasAnalysis.cpp in Sources */,
 				1F1FB53C19281191004EB0CA /* CallPrinter.cpp in Sources */,
@@ -4453,6 +4573,7 @@
 				1F1FB69A192812DC004EB0CA /* PrologEpilogInserter.cpp in Sources */,
 				1F1FB6A9192812DC004EB0CA /* ScheduleDAGInstrs.cpp in Sources */,
 				1F1FB36619280C8D004EB0CA /* StringMap.cpp in Sources */,
+				1F4A7FF5192922BF00D9BD62 /* DWARFContext.cpp in Sources */,
 				1F1FB680192812DC004EB0CA /* MachineFunctionAnalysis.cpp in Sources */,
 				1F1FB6D4192812DC004EB0CA /* StackSlotColoring.cpp in Sources */,
 				1F1FB695192812DC004EB0CA /* PHIElimination.cpp in Sources */,
@@ -4476,6 +4597,7 @@
 				1F1FB35319280C8D004EB0CA /* regcomp.c in Sources */,
 				1F1FB33319280C8D004EB0CA /* Errno.cpp in Sources */,
 				1F1FB65D192812DC004EB0CA /* ExpandPostRAPseudos.cpp in Sources */,
+				1F4A8003192922BF00D9BD62 /* DWARFDebugLoc.cpp in Sources */,
 				1F1FB36119280C8D004EB0CA /* SmallVector.cpp in Sources */,
 				1F1FB662192812DC004EB0CA /* InlineSpiller.cpp in Sources */,
 				1F1FB6B6192812DC004EB0CA /* LegalizeTypesGeneric.cpp in Sources */,
@@ -4521,6 +4643,7 @@
 				1F1FB56919281236004EB0CA /* LLParser.cpp in Sources */,
 				1F1FB54D19281191004EB0CA /* NoAliasAnalysis.cpp in Sources */,
 				1F1FB54019281191004EB0CA /* IPA.cpp in Sources */,
+				1F4A8007192922BF00D9BD62 /* DWARFFormValue.cpp in Sources */,
 				1F1FB6DF192812DC004EB0CA /* VirtRegMap.cpp in Sources */,
 				1F1FB6A1192812DC004EB0CA /* RegAllocGreedy.cpp in Sources */,
 				1F1FB35D19280C8D004EB0CA /* RWMutex.cpp in Sources */,
@@ -4549,6 +4672,7 @@
 				1F1FB6A0192812DC004EB0CA /* RegAllocFast.cpp in Sources */,
 				1F1FB672192812DC004EB0CA /* LiveRegUnits.cpp in Sources */,
 				1F1FB643192812DB004EB0CA /* DwarfCFIException.cpp in Sources */,
+				1F4A7FFD192922BF00D9BD62 /* DWARFDebugFrame.cpp in Sources */,
 				1F1FB698192812DC004EB0CA /* PostRASchedulerList.cpp in Sources */,
 				1F1FB68F192812DC004EB0CA /* MachineTraceMetrics.cpp in Sources */,
 				1F1FB35A19280C8D004EB0CA /* regfree.c in Sources */,
@@ -4776,6 +4900,7 @@
 				1F1FB3BB19280E8C004EB0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F8DEF9F1927F8B900138754 /* Build configuration list for PBXNativeTarget "LLVM" */ = {
 			isa = XCConfigurationList;
