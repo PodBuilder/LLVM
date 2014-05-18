@@ -3418,37 +3418,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		1FDB0A271929509D00D07D2C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FDB0A851929511700D07D2C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FDB0AC7192951E800D07D2C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FDB0B061929539200D07D2C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		1F1FB3B219280E8C004EB0CA /* llvm-tblgen */ = {
 			isa = PBXNativeTarget;
@@ -3472,7 +3441,6 @@
 			buildPhases = (
 				1FDB0A251929509D00D07D2C /* Sources */,
 				1FDB0A261929509D00D07D2C /* Frameworks */,
-				1FDB0A271929509D00D07D2C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -3489,7 +3457,6 @@
 			buildPhases = (
 				1FDB0A831929511700D07D2C /* Sources */,
 				1FDB0A841929511700D07D2C /* Frameworks */,
-				1FDB0A851929511700D07D2C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -3507,7 +3474,6 @@
 				1FDB0B01192952DF00D07D2C /* Generate Intrinsics.gen */,
 				1FDB0AC5192951E800D07D2C /* Sources */,
 				1FDB0AC6192951E800D07D2C /* Frameworks */,
-				1FDB0AC7192951E800D07D2C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -3526,7 +3492,6 @@
 				1FDB0B15192953B700D07D2C /* Generate Intrinsics.gen */,
 				1FDB0B041929539200D07D2C /* Sources */,
 				1FDB0B051929539200D07D2C /* Frameworks */,
-				1FDB0B061929539200D07D2C /* Headers */,
 			);
 			buildRules = (
 			);
