@@ -1196,6 +1196,19 @@
 		1F4A81521929264200D9BD62 /* SubtargetFeature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81101929264200D9BD62 /* SubtargetFeature.cpp */; };
 		1F4A81531929264200D9BD62 /* WinCOFFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81111929264200D9BD62 /* WinCOFFObjectWriter.cpp */; };
 		1F4A81541929264200D9BD62 /* WinCOFFStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A81121929264200D9BD62 /* WinCOFFStreamer.cpp */; };
+		1F4A8166192926D600D9BD62 /* Archive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8156192926D600D9BD62 /* Archive.cpp */; };
+		1F4A8167192926D600D9BD62 /* Binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8157192926D600D9BD62 /* Binary.cpp */; };
+		1F4A8168192926D600D9BD62 /* COFFObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8159192926D600D9BD62 /* COFFObjectFile.cpp */; };
+		1F4A8169192926D600D9BD62 /* COFFYAML.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815A192926D600D9BD62 /* COFFYAML.cpp */; };
+		1F4A816A192926D600D9BD62 /* ELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815B192926D600D9BD62 /* ELF.cpp */; };
+		1F4A816B192926D600D9BD62 /* ELFObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815C192926D600D9BD62 /* ELFObjectFile.cpp */; };
+		1F4A816C192926D600D9BD62 /* ELFYAML.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815D192926D600D9BD62 /* ELFYAML.cpp */; };
+		1F4A816D192926D600D9BD62 /* Error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A815E192926D600D9BD62 /* Error.cpp */; };
+		1F4A816E192926D600D9BD62 /* MachOObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8160192926D600D9BD62 /* MachOObjectFile.cpp */; };
+		1F4A816F192926D600D9BD62 /* MachOUniversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8161192926D600D9BD62 /* MachOUniversal.cpp */; };
+		1F4A8171192926D600D9BD62 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8163192926D600D9BD62 /* Object.cpp */; };
+		1F4A8172192926D600D9BD62 /* ObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8164192926D600D9BD62 /* ObjectFile.cpp */; };
+		1F4A8173192926D600D9BD62 /* YAML.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8165192926D600D9BD62 /* YAML.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2380,6 +2393,19 @@
 		1F4A81101929264200D9BD62 /* SubtargetFeature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubtargetFeature.cpp; sourceTree = "<group>"; };
 		1F4A81111929264200D9BD62 /* WinCOFFObjectWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WinCOFFObjectWriter.cpp; sourceTree = "<group>"; };
 		1F4A81121929264200D9BD62 /* WinCOFFStreamer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WinCOFFStreamer.cpp; sourceTree = "<group>"; };
+		1F4A8156192926D600D9BD62 /* Archive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Archive.cpp; sourceTree = "<group>"; };
+		1F4A8157192926D600D9BD62 /* Binary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Binary.cpp; sourceTree = "<group>"; };
+		1F4A8159192926D600D9BD62 /* COFFObjectFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = COFFObjectFile.cpp; sourceTree = "<group>"; };
+		1F4A815A192926D600D9BD62 /* COFFYAML.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = COFFYAML.cpp; sourceTree = "<group>"; };
+		1F4A815B192926D600D9BD62 /* ELF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ELF.cpp; sourceTree = "<group>"; };
+		1F4A815C192926D600D9BD62 /* ELFObjectFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ELFObjectFile.cpp; sourceTree = "<group>"; };
+		1F4A815D192926D600D9BD62 /* ELFYAML.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ELFYAML.cpp; sourceTree = "<group>"; };
+		1F4A815E192926D600D9BD62 /* Error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Error.cpp; sourceTree = "<group>"; };
+		1F4A8160192926D600D9BD62 /* MachOObjectFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MachOObjectFile.cpp; sourceTree = "<group>"; };
+		1F4A8161192926D600D9BD62 /* MachOUniversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MachOUniversal.cpp; sourceTree = "<group>"; };
+		1F4A8163192926D600D9BD62 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		1F4A8164192926D600D9BD62 /* ObjectFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectFile.cpp; sourceTree = "<group>"; };
+		1F4A8165192926D600D9BD62 /* YAML.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YAML.cpp; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -3222,6 +3248,7 @@
 				1F4A80C5192925ED00D9BD62 /* Linker */,
 				1F4A80BC1929252500D9BD62 /* LTO */,
 				1F4A80C81929264200D9BD62 /* MC */,
+				1F4A8155192926D600D9BD62 /* Object */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
@@ -4025,6 +4052,26 @@
 				1F4A81021929264200D9BD62 /* MCTargetAsmParser.cpp */,
 			);
 			path = MCParser;
+			sourceTree = "<group>";
+		};
+		1F4A8155192926D600D9BD62 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A8156192926D600D9BD62 /* Archive.cpp */,
+				1F4A8157192926D600D9BD62 /* Binary.cpp */,
+				1F4A8159192926D600D9BD62 /* COFFObjectFile.cpp */,
+				1F4A815A192926D600D9BD62 /* COFFYAML.cpp */,
+				1F4A815B192926D600D9BD62 /* ELF.cpp */,
+				1F4A815C192926D600D9BD62 /* ELFObjectFile.cpp */,
+				1F4A815D192926D600D9BD62 /* ELFYAML.cpp */,
+				1F4A815E192926D600D9BD62 /* Error.cpp */,
+				1F4A8160192926D600D9BD62 /* MachOObjectFile.cpp */,
+				1F4A8161192926D600D9BD62 /* MachOUniversal.cpp */,
+				1F4A8163192926D600D9BD62 /* Object.cpp */,
+				1F4A8164192926D600D9BD62 /* ObjectFile.cpp */,
+				1F4A8165192926D600D9BD62 /* YAML.cpp */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
@@ -4927,18 +4974,21 @@
 				1F4A814B1929264200D9BD62 /* MCSectionMachO.cpp in Sources */,
 				1F1FB689192812DC004EB0CA /* MachinePassRegistry.cpp in Sources */,
 				1F1FB34519280C8D004EB0CA /* MD5.cpp in Sources */,
+				1F4A816D192926D600D9BD62 /* Error.cpp in Sources */,
 				1F1FB64D192812DB004EB0CA /* BasicTargetTransformInfo.cpp in Sources */,
 				1F1FB3A519280D91004EB0CA /* Main.cpp in Sources */,
 				1F1FB58019281282004EB0CA /* BitWriter.cpp in Sources */,
 				1F1FB6CD192812DC004EB0CA /* SpillPlacement.cpp in Sources */,
 				1F1FB65C192812DC004EB0CA /* ExpandISelPseudos.cpp in Sources */,
 				1F1FB32D19280C8D004EB0CA /* DataStream.cpp in Sources */,
+				1F4A816B192926D600D9BD62 /* ELFObjectFile.cpp in Sources */,
 				1F1FB35B19280C8D004EB0CA /* regstrlcpy.c in Sources */,
 				1F1FB6C6192812DC004EB0CA /* TargetLowering.cpp in Sources */,
 				1F4A80AF1929241B00D9BD62 /* Use.cpp in Sources */,
 				1F4A7FF3192922BF00D9BD62 /* DWARFCompileUnit.cpp in Sources */,
 				1F1FB33019280C8D004EB0CA /* Disassembler.cpp in Sources */,
 				1F1FB36A19280C8D004EB0CA /* system_error.cpp in Sources */,
+				1F4A816F192926D600D9BD62 /* MachOUniversal.cpp in Sources */,
 				1F1FB6D8192812DC004EB0CA /* TargetLoweringBase.cpp in Sources */,
 				1F4A80A11929241B00D9BD62 /* LeakDetector.cpp in Sources */,
 				1F4A814D1929264200D9BD62 /* MCSubtargetInfo.cpp in Sources */,
@@ -4954,6 +5004,7 @@
 				1F1FB655192812DB004EB0CA /* DeadMachineInstructionElim.cpp in Sources */,
 				1F1FB56D19281236004EB0CA /* Parser.cpp in Sources */,
 				1F1FB35619280C8D004EB0CA /* Regex.cpp in Sources */,
+				1F4A8171192926D600D9BD62 /* Object.cpp in Sources */,
 				1F4A813F1929264200D9BD62 /* ELFAsmParser.cpp in Sources */,
 				1F1FB55019281191004EB0CA /* PtrUseVisitor.cpp in Sources */,
 				1F1FB691192812DC004EB0CA /* OcamlGC.cpp in Sources */,
@@ -4977,6 +5028,7 @@
 				1F1FB66D192812DC004EB0CA /* LiveIntervalUnion.cpp in Sources */,
 				1F4A7FFF192922BF00D9BD62 /* DWARFDebugInfoEntry.cpp in Sources */,
 				1F4A814E1929264200D9BD62 /* MCSymbol.cpp in Sources */,
+				1F4A816E192926D600D9BD62 /* MachOObjectFile.cpp in Sources */,
 				1F1FB6A6192812DC004EB0CA /* RegisterPressure.cpp in Sources */,
 				1F4A7FF9192922BF00D9BD62 /* DWARFDebugAranges.cpp in Sources */,
 				1F1FB34419280C8D004EB0CA /* ManagedStatic.cpp in Sources */,
@@ -4985,6 +5037,7 @@
 				1F1FB53019281191004EB0CA /* CodeMetrics.cpp in Sources */,
 				1F1FB67C192812DC004EB0CA /* MachineCopyPropagation.cpp in Sources */,
 				1F1FB679192812DC004EB0CA /* MachineBlockPlacement.cpp in Sources */,
+				1F4A8169192926D600D9BD62 /* COFFYAML.cpp in Sources */,
 				1F1FB52D19281191004EB0CA /* CaptureTracking.cpp in Sources */,
 				1F4A81361929264200D9BD62 /* MCObjectDisassembler.cpp in Sources */,
 				1F1FB35519280C8D004EB0CA /* regerror.c in Sources */,
@@ -5025,6 +5078,7 @@
 				1F1FB657192812DC004EB0CA /* DwarfEHPrepare.cpp in Sources */,
 				1F1FB66E192812DC004EB0CA /* LiveRangeCalc.cpp in Sources */,
 				1F1FB54B19281191004EB0CA /* MemoryDependenceAnalysis.cpp in Sources */,
+				1F4A8172192926D600D9BD62 /* ObjectFile.cpp in Sources */,
 				1F4A80371929235600D9BD62 /* ExecutionEngineBindings.cpp in Sources */,
 				1F1FB36319280C8D004EB0CA /* Statistic.cpp in Sources */,
 				1F4A80941929241B00D9BD62 /* DiagnosticInfo.cpp in Sources */,
@@ -5057,6 +5111,7 @@
 				1F1FB639192812DB004EB0CA /* ARMException.cpp in Sources */,
 				1F1FB33419280C8D004EB0CA /* ErrorHandling.cpp in Sources */,
 				1F1FB3A819280D91004EB0CA /* StringMatcher.cpp in Sources */,
+				1F4A8173192926D600D9BD62 /* YAML.cpp in Sources */,
 				1F1FB34819280C8D004EB0CA /* MemoryObject.cpp in Sources */,
 				1F1FB34919280C8D004EB0CA /* Mutex.cpp in Sources */,
 				1F4A80361929235600D9BD62 /* ExecutionEngine.cpp in Sources */,
@@ -5087,7 +5142,9 @@
 				1F1FB32819280C8D004EB0CA /* ConvertUTF.c in Sources */,
 				1F1FB694192812DC004EB0CA /* PeepholeOptimizer.cpp in Sources */,
 				1F4A80A91929241B00D9BD62 /* PassManager.cpp in Sources */,
+				1F4A8167192926D600D9BD62 /* Binary.cpp in Sources */,
 				1F1FB64E192812DB004EB0CA /* BranchFolding.cpp in Sources */,
+				1F4A816A192926D600D9BD62 /* ELF.cpp in Sources */,
 				1F1FB55319281191004EB0CA /* RegionPrinter.cpp in Sources */,
 				1F4A80531929235600D9BD62 /* RuntimeDyldMachO.cpp in Sources */,
 				1F1FB33B19280C8D004EB0CA /* Host.cpp in Sources */,
@@ -5270,6 +5327,7 @@
 				1F1FB6B2192812DC004EB0CA /* LegalizeFloatTypes.cpp in Sources */,
 				1F4A812C1929264200D9BD62 /* MCInst.cpp in Sources */,
 				1F1FB55C19281191004EB0CA /* ValueTracking.cpp in Sources */,
+				1F4A816C192926D600D9BD62 /* ELFYAML.cpp in Sources */,
 				1F4A81291929264200D9BD62 /* MCExpr.cpp in Sources */,
 				1F1FB6DA192812DC004EB0CA /* TargetOptionsImpl.cpp in Sources */,
 				1F4A80501929235600D9BD62 /* RuntimeDyldELF.cpp in Sources */,
@@ -5289,6 +5347,7 @@
 				1F4A81541929264200D9BD62 /* WinCOFFStreamer.cpp in Sources */,
 				1F1FB6B9192812DC004EB0CA /* ResourcePriorityQueue.cpp in Sources */,
 				1F1FB33F19280C8D004EB0CA /* IntrusiveRefCntPtr.cpp in Sources */,
+				1F4A8168192926D600D9BD62 /* COFFObjectFile.cpp in Sources */,
 				1F1FB36219280C8D004EB0CA /* SourceMgr.cpp in Sources */,
 				1F1FB55A19281191004EB0CA /* Trace.cpp in Sources */,
 				1F1FB683192812DC004EB0CA /* MachineInstr.cpp in Sources */,
@@ -5335,6 +5394,7 @@
 				1F1FB665192812DC004EB0CA /* IntrinsicLowering.cpp in Sources */,
 				1F4A812E1929264200D9BD62 /* MCInstrAnalysis.cpp in Sources */,
 				1F1FB35E19280C8D004EB0CA /* SearchForAddressOfSpecialSymbol.cpp in Sources */,
+				1F4A8166192926D600D9BD62 /* Archive.cpp in Sources */,
 				1F1FB686192812DC004EB0CA /* MachineLoopInfo.cpp in Sources */,
 				1F4A813C1929264200D9BD62 /* AsmParser.cpp in Sources */,
 				1F1FB6D7192812DC004EB0CA /* TargetInstrInfo.cpp in Sources */,
