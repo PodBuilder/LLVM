@@ -13,6 +13,116 @@
 		1F561F6D1929553E00776A54 /* BitcodeWriterPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57619281282004EB0CA /* BitcodeWriterPass.cpp */; };
 		1F561F6E1929553E00776A54 /* BitWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57719281282004EB0CA /* BitWriter.cpp */; };
 		1F561F6F1929553E00776A54 /* ValueEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57819281282004EB0CA /* ValueEnumerator.cpp */; };
+		1F561F7D1929558700776A54 /* AggressiveAntiDepBreaker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB584192812DB004EB0CA /* AggressiveAntiDepBreaker.cpp */; };
+		1F561F7F1929558700776A54 /* AllocationOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB586192812DB004EB0CA /* AllocationOrder.cpp */; };
+		1F561F811929558700776A54 /* Analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB588192812DB004EB0CA /* Analysis.cpp */; };
+		1F561F831929558700776A54 /* BasicTargetTransformInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB59F192812DB004EB0CA /* BasicTargetTransformInfo.cpp */; };
+		1F561F841929558700776A54 /* BranchFolding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5A0192812DB004EB0CA /* BranchFolding.cpp */; };
+		1F561F861929558700776A54 /* CalcSpillWeights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5A2192812DB004EB0CA /* CalcSpillWeights.cpp */; };
+		1F561F871929558700776A54 /* CallingConvLower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5A3192812DB004EB0CA /* CallingConvLower.cpp */; };
+		1F561F881929558700776A54 /* CodeGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5A4192812DB004EB0CA /* CodeGen.cpp */; };
+		1F561F891929558700776A54 /* CriticalAntiDepBreaker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5A5192812DB004EB0CA /* CriticalAntiDepBreaker.cpp */; };
+		1F561F8B1929558700776A54 /* DeadMachineInstructionElim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5A7192812DB004EB0CA /* DeadMachineInstructionElim.cpp */; };
+		1F561F8C1929558700776A54 /* DFAPacketizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5A8192812DB004EB0CA /* DFAPacketizer.cpp */; };
+		1F561F8D1929558700776A54 /* DwarfEHPrepare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5A9192812DB004EB0CA /* DwarfEHPrepare.cpp */; };
+		1F561F8E1929558700776A54 /* EarlyIfConversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5AA192812DB004EB0CA /* EarlyIfConversion.cpp */; };
+		1F561F8F1929558700776A54 /* EdgeBundles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5AB192812DB004EB0CA /* EdgeBundles.cpp */; };
+		1F561F901929558700776A54 /* ErlangGC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5AC192812DB004EB0CA /* ErlangGC.cpp */; };
+		1F561F911929558700776A54 /* ExecutionDepsFix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5AD192812DB004EB0CA /* ExecutionDepsFix.cpp */; };
+		1F561F921929558700776A54 /* ExpandISelPseudos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5AE192812DB004EB0CA /* ExpandISelPseudos.cpp */; };
+		1F561F931929558700776A54 /* ExpandPostRAPseudos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5AF192812DB004EB0CA /* ExpandPostRAPseudos.cpp */; };
+		1F561F941929558700776A54 /* GCMetadata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5B0192812DB004EB0CA /* GCMetadata.cpp */; };
+		1F561F951929558700776A54 /* GCMetadataPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5B1192812DB004EB0CA /* GCMetadataPrinter.cpp */; };
+		1F561F961929558700776A54 /* GCStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5B2192812DB004EB0CA /* GCStrategy.cpp */; };
+		1F561F971929558700776A54 /* IfConversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5B3192812DB004EB0CA /* IfConversion.cpp */; };
+		1F561F981929558700776A54 /* InlineSpiller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5B4192812DB004EB0CA /* InlineSpiller.cpp */; };
+		1F561F991929558700776A54 /* InterferenceCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5B5192812DB004EB0CA /* InterferenceCache.cpp */; };
+		1F561F9B1929558700776A54 /* IntrinsicLowering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5B7192812DB004EB0CA /* IntrinsicLowering.cpp */; };
+		1F561F9C1929558700776A54 /* JITCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5B8192812DB004EB0CA /* JITCodeEmitter.cpp */; };
+		1F561F9D1929558700776A54 /* LatencyPriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5B9192812DB004EB0CA /* LatencyPriorityQueue.cpp */; };
+		1F561F9E1929558700776A54 /* LexicalScopes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5BA192812DB004EB0CA /* LexicalScopes.cpp */; };
+		1F561F9F1929558700776A54 /* LiveDebugVariables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5BB192812DB004EB0CA /* LiveDebugVariables.cpp */; };
+		1F561FA11929558700776A54 /* LiveInterval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5BD192812DB004EB0CA /* LiveInterval.cpp */; };
+		1F561FA21929558700776A54 /* LiveIntervalAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5BE192812DB004EB0CA /* LiveIntervalAnalysis.cpp */; };
+		1F561FA31929558700776A54 /* LiveIntervalUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5BF192812DB004EB0CA /* LiveIntervalUnion.cpp */; };
+		1F561FA41929558700776A54 /* LiveRangeCalc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5C0192812DB004EB0CA /* LiveRangeCalc.cpp */; };
+		1F561FA61929558700776A54 /* LiveRangeEdit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5C2192812DB004EB0CA /* LiveRangeEdit.cpp */; };
+		1F561FA71929558700776A54 /* LiveRegMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5C3192812DB004EB0CA /* LiveRegMatrix.cpp */; };
+		1F561FA81929558700776A54 /* LiveRegUnits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5C4192812DB004EB0CA /* LiveRegUnits.cpp */; };
+		1F561FA91929558700776A54 /* LiveStackAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5C5192812DB004EB0CA /* LiveStackAnalysis.cpp */; };
+		1F561FAA1929558700776A54 /* LiveVariables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5C6192812DB004EB0CA /* LiveVariables.cpp */; };
+		1F561FAB1929558700776A54 /* LLVMTargetMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5C7192812DB004EB0CA /* LLVMTargetMachine.cpp */; };
+		1F561FAC1929558700776A54 /* LocalStackSlotAllocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5C8192812DB004EB0CA /* LocalStackSlotAllocation.cpp */; };
+		1F561FAD1929558700776A54 /* MachineBasicBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5C9192812DB004EB0CA /* MachineBasicBlock.cpp */; };
+		1F561FAE1929558700776A54 /* MachineBlockFrequencyInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5CA192812DB004EB0CA /* MachineBlockFrequencyInfo.cpp */; };
+		1F561FAF1929558700776A54 /* MachineBlockPlacement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5CB192812DB004EB0CA /* MachineBlockPlacement.cpp */; };
+		1F561FB01929558700776A54 /* MachineBranchProbabilityInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5CC192812DB004EB0CA /* MachineBranchProbabilityInfo.cpp */; };
+		1F561FB11929558700776A54 /* MachineCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5CD192812DB004EB0CA /* MachineCodeEmitter.cpp */; };
+		1F561FB21929558700776A54 /* MachineCopyPropagation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5CE192812DB004EB0CA /* MachineCopyPropagation.cpp */; };
+		1F561FB31929558700776A54 /* MachineCSE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5CF192812DB004EB0CA /* MachineCSE.cpp */; };
+		1F561FB41929558700776A54 /* MachineDominators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D0192812DB004EB0CA /* MachineDominators.cpp */; };
+		1F561FB51929558700776A54 /* MachineFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D1192812DB004EB0CA /* MachineFunction.cpp */; };
+		1F561FB61929558700776A54 /* MachineFunctionAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D2192812DB004EB0CA /* MachineFunctionAnalysis.cpp */; };
+		1F561FB71929558700776A54 /* MachineFunctionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D3192812DB004EB0CA /* MachineFunctionPass.cpp */; };
+		1F561FB81929558700776A54 /* MachineFunctionPrinterPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D4192812DB004EB0CA /* MachineFunctionPrinterPass.cpp */; };
+		1F561FB91929558700776A54 /* MachineInstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D5192812DB004EB0CA /* MachineInstr.cpp */; };
+		1F561FBA1929558700776A54 /* MachineInstrBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D6192812DB004EB0CA /* MachineInstrBundle.cpp */; };
+		1F561FBB1929558700776A54 /* MachineLICM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D7192812DB004EB0CA /* MachineLICM.cpp */; };
+		1F561FBC1929558700776A54 /* MachineLoopInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D8192812DB004EB0CA /* MachineLoopInfo.cpp */; };
+		1F561FBD1929558700776A54 /* MachineModuleInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5D9192812DB004EB0CA /* MachineModuleInfo.cpp */; };
+		1F561FBE1929558700776A54 /* MachineModuleInfoImpls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5DA192812DB004EB0CA /* MachineModuleInfoImpls.cpp */; };
+		1F561FBF1929558700776A54 /* MachinePassRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5DB192812DB004EB0CA /* MachinePassRegistry.cpp */; };
+		1F561FC01929558700776A54 /* MachinePostDominators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5DC192812DB004EB0CA /* MachinePostDominators.cpp */; };
+		1F561FC11929558700776A54 /* MachineRegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5DD192812DB004EB0CA /* MachineRegisterInfo.cpp */; };
+		1F561FC21929558700776A54 /* MachineScheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5DE192812DB004EB0CA /* MachineScheduler.cpp */; };
+		1F561FC31929558700776A54 /* MachineSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5DF192812DB004EB0CA /* MachineSink.cpp */; };
+		1F561FC41929558700776A54 /* MachineSSAUpdater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5E0192812DB004EB0CA /* MachineSSAUpdater.cpp */; };
+		1F561FC51929558700776A54 /* MachineTraceMetrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5E1192812DB004EB0CA /* MachineTraceMetrics.cpp */; };
+		1F561FC61929558700776A54 /* MachineVerifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5E2192812DB004EB0CA /* MachineVerifier.cpp */; };
+		1F561FC71929558700776A54 /* OcamlGC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5E3192812DB004EB0CA /* OcamlGC.cpp */; };
+		1F561FC81929558700776A54 /* OptimizePHIs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5E4192812DB004EB0CA /* OptimizePHIs.cpp */; };
+		1F561FC91929558700776A54 /* Passes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5E5192812DB004EB0CA /* Passes.cpp */; };
+		1F561FCA1929558700776A54 /* PeepholeOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5E6192812DB004EB0CA /* PeepholeOptimizer.cpp */; };
+		1F561FCB1929558700776A54 /* PHIElimination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5E7192812DB004EB0CA /* PHIElimination.cpp */; };
+		1F561FCC1929558700776A54 /* PHIEliminationUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5E8192812DB004EB0CA /* PHIEliminationUtils.cpp */; };
+		1F561FCE1929558700776A54 /* PostRASchedulerList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5EA192812DB004EB0CA /* PostRASchedulerList.cpp */; };
+		1F561FCF1929558700776A54 /* ProcessImplicitDefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5EB192812DB004EB0CA /* ProcessImplicitDefs.cpp */; };
+		1F561FD01929558700776A54 /* PrologEpilogInserter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5EC192812DB004EB0CA /* PrologEpilogInserter.cpp */; };
+		1F561FD21929558700776A54 /* PseudoSourceValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5EE192812DB004EB0CA /* PseudoSourceValue.cpp */; };
+		1F561FD31929558700776A54 /* RegAllocBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5EF192812DB004EB0CA /* RegAllocBase.cpp */; };
+		1F561FD51929558700776A54 /* RegAllocBasic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5F1192812DB004EB0CA /* RegAllocBasic.cpp */; };
+		1F561FD61929558700776A54 /* RegAllocFast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5F2192812DB004EB0CA /* RegAllocFast.cpp */; };
+		1F561FD71929558700776A54 /* RegAllocGreedy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5F3192812DB004EB0CA /* RegAllocGreedy.cpp */; };
+		1F561FD81929558700776A54 /* RegAllocPBQP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5F4192812DB004EB0CA /* RegAllocPBQP.cpp */; };
+		1F561FD91929558700776A54 /* RegisterClassInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5F5192812DB004EB0CA /* RegisterClassInfo.cpp */; };
+		1F561FDA1929558700776A54 /* RegisterCoalescer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5F6192812DB004EB0CA /* RegisterCoalescer.cpp */; };
+		1F561FDC1929558700776A54 /* RegisterPressure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5F8192812DB004EB0CA /* RegisterPressure.cpp */; };
+		1F561FDD1929558700776A54 /* RegisterScavenging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5F9192812DB004EB0CA /* RegisterScavenging.cpp */; };
+		1F561FDE1929558700776A54 /* ScheduleDAG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5FA192812DB004EB0CA /* ScheduleDAG.cpp */; };
+		1F561FDF1929558700776A54 /* ScheduleDAGInstrs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5FB192812DB004EB0CA /* ScheduleDAGInstrs.cpp */; };
+		1F561FE01929558700776A54 /* ScheduleDAGPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5FC192812DB004EB0CA /* ScheduleDAGPrinter.cpp */; };
+		1F561FE11929558700776A54 /* ScoreboardHazardRecognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5FD192812DB004EB0CA /* ScoreboardHazardRecognizer.cpp */; };
+		1F561FE21929558700776A54 /* ShadowStackGC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB61B192812DB004EB0CA /* ShadowStackGC.cpp */; };
+		1F561FE31929558700776A54 /* SjLjEHPrepare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB61C192812DB004EB0CA /* SjLjEHPrepare.cpp */; };
+		1F561FE41929558700776A54 /* SlotIndexes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB61D192812DB004EB0CA /* SlotIndexes.cpp */; };
+		1F561FE51929558700776A54 /* Spiller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB61E192812DB004EB0CA /* Spiller.cpp */; };
+		1F561FE71929558700776A54 /* SpillPlacement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB620192812DB004EB0CA /* SpillPlacement.cpp */; };
+		1F561FE91929558700776A54 /* SplitKit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB622192812DB004EB0CA /* SplitKit.cpp */; };
+		1F561FEB1929558700776A54 /* StackColoring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB624192812DB004EB0CA /* StackColoring.cpp */; };
+		1F561FEC1929558700776A54 /* StackMaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB625192812DB004EB0CA /* StackMaps.cpp */; };
+		1F561FED1929558700776A54 /* StackProtector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB626192812DB004EB0CA /* StackProtector.cpp */; };
+		1F561FEE1929558700776A54 /* StackSlotColoring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB627192812DB004EB0CA /* StackSlotColoring.cpp */; };
+		1F561FEF1929558700776A54 /* TailDuplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB628192812DB004EB0CA /* TailDuplication.cpp */; };
+		1F561FF01929558700776A54 /* TargetFrameLoweringImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB629192812DB004EB0CA /* TargetFrameLoweringImpl.cpp */; };
+		1F561FF11929558700776A54 /* TargetInstrInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB62A192812DB004EB0CA /* TargetInstrInfo.cpp */; };
+		1F561FF21929558700776A54 /* TargetLoweringBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB62B192812DB004EB0CA /* TargetLoweringBase.cpp */; };
+		1F561FF31929558700776A54 /* TargetLoweringObjectFileImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB62C192812DB004EB0CA /* TargetLoweringObjectFileImpl.cpp */; };
+		1F561FF41929558700776A54 /* TargetOptionsImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB62D192812DB004EB0CA /* TargetOptionsImpl.cpp */; };
+		1F561FF51929558700776A54 /* TargetRegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB62E192812DB004EB0CA /* TargetRegisterInfo.cpp */; };
+		1F561FF61929558700776A54 /* TargetSchedule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB62F192812DB004EB0CA /* TargetSchedule.cpp */; };
+		1F561FF71929558700776A54 /* TwoAddressInstructionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB630192812DB004EB0CA /* TwoAddressInstructionPass.cpp */; };
+		1F561FF81929558700776A54 /* UnreachableBlockElim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB631192812DB004EB0CA /* UnreachableBlockElim.cpp */; };
+		1F561FF91929558700776A54 /* VirtRegMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB632192812DB004EB0CA /* VirtRegMap.cpp */; };
 		1FDB0A2D192950CB00D07D2C /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A119280C8D004EB0CA /* Allocator.cpp */; };
 		1FDB0A2E192950CB00D07D2C /* APFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A219280C8D004EB0CA /* APFloat.cpp */; };
 		1FDB0A2F192950CB00D07D2C /* APInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A319280C8D004EB0CA /* APInt.cpp */; };
@@ -207,6 +317,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F561F7A1929556F00776A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
+		};
 		1FDB0B021929530A00D07D2C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
@@ -1520,6 +1637,7 @@
 		1F4A822C19292B5400D9BD62 /* X86ShuffleDecode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86ShuffleDecode.cpp; sourceTree = "<group>"; };
 		1F4A822D19292B5400D9BD62 /* X86ShuffleDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86ShuffleDecode.h; sourceTree = "<group>"; };
 		1F561F681929552000776A54 /* libLLVMBitWriter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMBitWriter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F561F741929555C00776A54 /* libLLVMCodeGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMCodeGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -1547,6 +1665,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F561F651929552000776A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F561F711929555C00776A54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3434,6 +3559,7 @@
 				1FDB0B1A1929542600D07D2C /* libLLVMAsmParser.a */,
 				1FDB0B251929547300D07D2C /* libLLVMBitReader.a */,
 				1F561F681929552000776A54 /* libLLVMBitWriter.a */,
+				1F561F741929555C00776A54 /* libLLVMCodeGen.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3464,6 +3590,13 @@
 
 /* Begin PBXHeadersBuildPhase section */
 		1F561F661929552000776A54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F561F721929555C00776A54 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3504,6 +3637,25 @@
 			name = LLVMBitWriter;
 			productName = LLVMBitWriter;
 			productReference = 1F561F681929552000776A54 /* libLLVMBitWriter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1F561F731929555C00776A54 /* LLVMCodeGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F561F751929555C00776A54 /* Build configuration list for PBXNativeTarget "LLVMCodeGen" */;
+			buildPhases = (
+				1F561F7C1929557300776A54 /* Generate Intrinsics.gen */,
+				1F561F701929555C00776A54 /* Sources */,
+				1F561F711929555C00776A54 /* Frameworks */,
+				1F561F721929555C00776A54 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F561F7B1929556F00776A54 /* PBXTargetDependency */,
+			);
+			name = LLVMCodeGen;
+			productName = LLVMCodeGen;
+			productReference = 1F561F741929555C00776A54 /* libLLVMCodeGen.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1FDB0A281929509D00D07D2C /* LLVMSupport */ = {
@@ -3634,6 +3786,7 @@
 				1FDB0B191929542600D07D2C /* LLVMAsmParser */,
 				1FDB0B241929547300D07D2C /* LLVMBitReader */,
 				1F561F671929552000776A54 /* LLVMBitWriter */,
+				1F561F731929555C00776A54 /* LLVMCodeGen */,
 				1FDB0A281929509D00D07D2C /* LLVMSupport */,
 				1FDB0A861929511700D07D2C /* LLVMTableGen */,
 				1FDB0B071929539200D07D2C /* LLVMipa */,
@@ -3643,6 +3796,21 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F561F7C1929557300776A54 /* Generate Intrinsics.gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Intrinsics.gen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
+			showEnvVarsInLog = 0;
+		};
 		1FDB0B01192952DF00D07D2C /* Generate Intrinsics.gen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3738,6 +3906,123 @@
 				1F561F6D1929553E00776A54 /* BitcodeWriterPass.cpp in Sources */,
 				1F561F6E1929553E00776A54 /* BitWriter.cpp in Sources */,
 				1F561F6F1929553E00776A54 /* ValueEnumerator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F561F701929555C00776A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F561F7D1929558700776A54 /* AggressiveAntiDepBreaker.cpp in Sources */,
+				1F561F7F1929558700776A54 /* AllocationOrder.cpp in Sources */,
+				1F561F811929558700776A54 /* Analysis.cpp in Sources */,
+				1F561F831929558700776A54 /* BasicTargetTransformInfo.cpp in Sources */,
+				1F561F841929558700776A54 /* BranchFolding.cpp in Sources */,
+				1F561F861929558700776A54 /* CalcSpillWeights.cpp in Sources */,
+				1F561F871929558700776A54 /* CallingConvLower.cpp in Sources */,
+				1F561F881929558700776A54 /* CodeGen.cpp in Sources */,
+				1F561F891929558700776A54 /* CriticalAntiDepBreaker.cpp in Sources */,
+				1F561F8B1929558700776A54 /* DeadMachineInstructionElim.cpp in Sources */,
+				1F561F8C1929558700776A54 /* DFAPacketizer.cpp in Sources */,
+				1F561F8D1929558700776A54 /* DwarfEHPrepare.cpp in Sources */,
+				1F561F8E1929558700776A54 /* EarlyIfConversion.cpp in Sources */,
+				1F561F8F1929558700776A54 /* EdgeBundles.cpp in Sources */,
+				1F561F901929558700776A54 /* ErlangGC.cpp in Sources */,
+				1F561F911929558700776A54 /* ExecutionDepsFix.cpp in Sources */,
+				1F561F921929558700776A54 /* ExpandISelPseudos.cpp in Sources */,
+				1F561F931929558700776A54 /* ExpandPostRAPseudos.cpp in Sources */,
+				1F561F941929558700776A54 /* GCMetadata.cpp in Sources */,
+				1F561F951929558700776A54 /* GCMetadataPrinter.cpp in Sources */,
+				1F561F961929558700776A54 /* GCStrategy.cpp in Sources */,
+				1F561F971929558700776A54 /* IfConversion.cpp in Sources */,
+				1F561F981929558700776A54 /* InlineSpiller.cpp in Sources */,
+				1F561F991929558700776A54 /* InterferenceCache.cpp in Sources */,
+				1F561F9B1929558700776A54 /* IntrinsicLowering.cpp in Sources */,
+				1F561F9C1929558700776A54 /* JITCodeEmitter.cpp in Sources */,
+				1F561F9D1929558700776A54 /* LatencyPriorityQueue.cpp in Sources */,
+				1F561F9E1929558700776A54 /* LexicalScopes.cpp in Sources */,
+				1F561F9F1929558700776A54 /* LiveDebugVariables.cpp in Sources */,
+				1F561FA11929558700776A54 /* LiveInterval.cpp in Sources */,
+				1F561FA21929558700776A54 /* LiveIntervalAnalysis.cpp in Sources */,
+				1F561FA31929558700776A54 /* LiveIntervalUnion.cpp in Sources */,
+				1F561FA41929558700776A54 /* LiveRangeCalc.cpp in Sources */,
+				1F561FA61929558700776A54 /* LiveRangeEdit.cpp in Sources */,
+				1F561FA71929558700776A54 /* LiveRegMatrix.cpp in Sources */,
+				1F561FA81929558700776A54 /* LiveRegUnits.cpp in Sources */,
+				1F561FA91929558700776A54 /* LiveStackAnalysis.cpp in Sources */,
+				1F561FAA1929558700776A54 /* LiveVariables.cpp in Sources */,
+				1F561FAB1929558700776A54 /* LLVMTargetMachine.cpp in Sources */,
+				1F561FAC1929558700776A54 /* LocalStackSlotAllocation.cpp in Sources */,
+				1F561FAD1929558700776A54 /* MachineBasicBlock.cpp in Sources */,
+				1F561FAE1929558700776A54 /* MachineBlockFrequencyInfo.cpp in Sources */,
+				1F561FAF1929558700776A54 /* MachineBlockPlacement.cpp in Sources */,
+				1F561FB01929558700776A54 /* MachineBranchProbabilityInfo.cpp in Sources */,
+				1F561FB11929558700776A54 /* MachineCodeEmitter.cpp in Sources */,
+				1F561FB21929558700776A54 /* MachineCopyPropagation.cpp in Sources */,
+				1F561FB31929558700776A54 /* MachineCSE.cpp in Sources */,
+				1F561FB41929558700776A54 /* MachineDominators.cpp in Sources */,
+				1F561FB51929558700776A54 /* MachineFunction.cpp in Sources */,
+				1F561FB61929558700776A54 /* MachineFunctionAnalysis.cpp in Sources */,
+				1F561FB71929558700776A54 /* MachineFunctionPass.cpp in Sources */,
+				1F561FB81929558700776A54 /* MachineFunctionPrinterPass.cpp in Sources */,
+				1F561FB91929558700776A54 /* MachineInstr.cpp in Sources */,
+				1F561FBA1929558700776A54 /* MachineInstrBundle.cpp in Sources */,
+				1F561FBB1929558700776A54 /* MachineLICM.cpp in Sources */,
+				1F561FBC1929558700776A54 /* MachineLoopInfo.cpp in Sources */,
+				1F561FBD1929558700776A54 /* MachineModuleInfo.cpp in Sources */,
+				1F561FBE1929558700776A54 /* MachineModuleInfoImpls.cpp in Sources */,
+				1F561FBF1929558700776A54 /* MachinePassRegistry.cpp in Sources */,
+				1F561FC01929558700776A54 /* MachinePostDominators.cpp in Sources */,
+				1F561FC11929558700776A54 /* MachineRegisterInfo.cpp in Sources */,
+				1F561FC21929558700776A54 /* MachineScheduler.cpp in Sources */,
+				1F561FC31929558700776A54 /* MachineSink.cpp in Sources */,
+				1F561FC41929558700776A54 /* MachineSSAUpdater.cpp in Sources */,
+				1F561FC51929558700776A54 /* MachineTraceMetrics.cpp in Sources */,
+				1F561FC61929558700776A54 /* MachineVerifier.cpp in Sources */,
+				1F561FC71929558700776A54 /* OcamlGC.cpp in Sources */,
+				1F561FC81929558700776A54 /* OptimizePHIs.cpp in Sources */,
+				1F561FC91929558700776A54 /* Passes.cpp in Sources */,
+				1F561FCA1929558700776A54 /* PeepholeOptimizer.cpp in Sources */,
+				1F561FCB1929558700776A54 /* PHIElimination.cpp in Sources */,
+				1F561FCC1929558700776A54 /* PHIEliminationUtils.cpp in Sources */,
+				1F561FCE1929558700776A54 /* PostRASchedulerList.cpp in Sources */,
+				1F561FCF1929558700776A54 /* ProcessImplicitDefs.cpp in Sources */,
+				1F561FD01929558700776A54 /* PrologEpilogInserter.cpp in Sources */,
+				1F561FD21929558700776A54 /* PseudoSourceValue.cpp in Sources */,
+				1F561FD31929558700776A54 /* RegAllocBase.cpp in Sources */,
+				1F561FD51929558700776A54 /* RegAllocBasic.cpp in Sources */,
+				1F561FD61929558700776A54 /* RegAllocFast.cpp in Sources */,
+				1F561FD71929558700776A54 /* RegAllocGreedy.cpp in Sources */,
+				1F561FD81929558700776A54 /* RegAllocPBQP.cpp in Sources */,
+				1F561FD91929558700776A54 /* RegisterClassInfo.cpp in Sources */,
+				1F561FDA1929558700776A54 /* RegisterCoalescer.cpp in Sources */,
+				1F561FDC1929558700776A54 /* RegisterPressure.cpp in Sources */,
+				1F561FDD1929558700776A54 /* RegisterScavenging.cpp in Sources */,
+				1F561FDE1929558700776A54 /* ScheduleDAG.cpp in Sources */,
+				1F561FDF1929558700776A54 /* ScheduleDAGInstrs.cpp in Sources */,
+				1F561FE01929558700776A54 /* ScheduleDAGPrinter.cpp in Sources */,
+				1F561FE11929558700776A54 /* ScoreboardHazardRecognizer.cpp in Sources */,
+				1F561FE21929558700776A54 /* ShadowStackGC.cpp in Sources */,
+				1F561FE31929558700776A54 /* SjLjEHPrepare.cpp in Sources */,
+				1F561FE41929558700776A54 /* SlotIndexes.cpp in Sources */,
+				1F561FE51929558700776A54 /* Spiller.cpp in Sources */,
+				1F561FE71929558700776A54 /* SpillPlacement.cpp in Sources */,
+				1F561FE91929558700776A54 /* SplitKit.cpp in Sources */,
+				1F561FEB1929558700776A54 /* StackColoring.cpp in Sources */,
+				1F561FEC1929558700776A54 /* StackMaps.cpp in Sources */,
+				1F561FED1929558700776A54 /* StackProtector.cpp in Sources */,
+				1F561FEE1929558700776A54 /* StackSlotColoring.cpp in Sources */,
+				1F561FEF1929558700776A54 /* TailDuplication.cpp in Sources */,
+				1F561FF01929558700776A54 /* TargetFrameLoweringImpl.cpp in Sources */,
+				1F561FF11929558700776A54 /* TargetInstrInfo.cpp in Sources */,
+				1F561FF21929558700776A54 /* TargetLoweringBase.cpp in Sources */,
+				1F561FF31929558700776A54 /* TargetLoweringObjectFileImpl.cpp in Sources */,
+				1F561FF41929558700776A54 /* TargetOptionsImpl.cpp in Sources */,
+				1F561FF51929558700776A54 /* TargetRegisterInfo.cpp in Sources */,
+				1F561FF61929558700776A54 /* TargetSchedule.cpp in Sources */,
+				1F561FF71929558700776A54 /* TwoAddressInstructionPass.cpp in Sources */,
+				1F561FF81929558700776A54 /* UnreachableBlockElim.cpp in Sources */,
+				1F561FF91929558700776A54 /* VirtRegMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3942,6 +4227,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F561F7B1929556F00776A54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
+			targetProxy = 1F561F7A1929556F00776A54 /* PBXContainerItemProxy */;
+		};
 		1FDB0B031929530A00D07D2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
@@ -4089,6 +4379,78 @@
 			name = Debug;
 		};
 		1F561F6A1929552000776A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F561F761929555C00776A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F561F771929555C00776A54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -4583,6 +4945,14 @@
 			buildConfigurations = (
 				1F561F691929552000776A54 /* Debug */,
 				1F561F6A1929552000776A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F561F751929555C00776A54 /* Build configuration list for PBXNativeTarget "LLVMCodeGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F561F761929555C00776A54 /* Debug */,
+				1F561F771929555C00776A54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
