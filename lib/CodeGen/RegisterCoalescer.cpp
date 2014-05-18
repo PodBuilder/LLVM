@@ -818,7 +818,7 @@ bool RegisterCoalescer::reMaterializeTrivialDef(CoalescerPair &CP,
 
   if (TargetRegisterInfo::isVirtualRegister(DstReg)) {
     unsigned NewIdx = NewMI->getOperand(0).getSubReg();
-    const TargetRegisterClass *RCForInst;
+    const TargetRegisterClass *RCForInst = nullptr;
     if (NewIdx)
       RCForInst = TRI->getMatchingSuperRegClass(MRI->getRegClass(DstReg), DefRC,
                                                 NewIdx);

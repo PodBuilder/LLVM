@@ -445,8 +445,8 @@ bool PeepholeOptimizer::optimizeCopyOrBitcast(MachineInstr *MI) {
   const TargetRegisterClass *DefRC = MRI->getRegClass(Def);
   unsigned DefSubReg = MODef.getSubReg();
 
-  unsigned Src;
-  unsigned SrcSubReg;
+  unsigned Src = 0;
+  unsigned SrcSubReg = 0;
   bool ShouldRewrite = false;
   MachineInstr *Copy = MI;
   const TargetRegisterInfo &TRI = *TM->getRegisterInfo();
