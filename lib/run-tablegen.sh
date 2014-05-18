@@ -17,7 +17,11 @@ LLVM_TBLGEN=${BUILT_PRODUCTS_DIR}/llvm-tblgen
 TableGen () {
     # usage: $0 input.td output.h "-flags -flags -flags"
     mkdir -p `dirname $2`
-    $LLVM_TBLGEN $3 -I ${DERIVED_FILE_DIR}/generated-include -I ${SRCROOT}/include -o $2 $1
+    
+    if [ "$1" -nt "$2" ]; then
+        echo Processing $1
+        $LLVM_TBLGEN $3 -I ${DERIVED_FILE_DIR}/generated-include -I ${SRCROOT}/include -o $2 $1
+    fi
 }
 
 TableGen "${SRCROOT}/include/llvm/IR/Intrinsics.td" "${DERIVED_FILE_DIR}/llvm/IR/Intrinsics.gen" "-gen-intrinsic"
