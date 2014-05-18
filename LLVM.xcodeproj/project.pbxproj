@@ -135,6 +135,92 @@
 		1F1FB46919280EB6004EB0CA /* YAMLTraits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31C19280C8D004EB0CA /* YAMLTraits.cpp */; };
 		1F1FB46F19280F54004EB0CA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46B19280F46004EB0CA /* libz.dylib */; };
 		1F1FB47019280F58004EB0CA /* libcurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46D19280F4C004EB0CA /* libcurses.dylib */; };
+		1FDB0A2D192950CB00D07D2C /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A119280C8D004EB0CA /* Allocator.cpp */; };
+		1FDB0A2E192950CB00D07D2C /* APFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A219280C8D004EB0CA /* APFloat.cpp */; };
+		1FDB0A2F192950CB00D07D2C /* APInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A319280C8D004EB0CA /* APInt.cpp */; };
+		1FDB0A30192950CB00D07D2C /* APSInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A419280C8D004EB0CA /* APSInt.cpp */; };
+		1FDB0A31192950CB00D07D2C /* Atomic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A519280C8D004EB0CA /* Atomic.cpp */; };
+		1FDB0A32192950CB00D07D2C /* BlockFrequency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A619280C8D004EB0CA /* BlockFrequency.cpp */; };
+		1FDB0A33192950CB00D07D2C /* BranchProbability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A719280C8D004EB0CA /* BranchProbability.cpp */; };
+		1FDB0A34192950CB00D07D2C /* circular_raw_ostream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A819280C8D004EB0CA /* circular_raw_ostream.cpp */; };
+		1FDB0A35192950CB00D07D2C /* CommandLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A919280C8D004EB0CA /* CommandLine.cpp */; };
+		1FDB0A36192950CB00D07D2C /* Compression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AA19280C8D004EB0CA /* Compression.cpp */; };
+		1FDB0A37192950CB00D07D2C /* ConstantRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AB19280C8D004EB0CA /* ConstantRange.cpp */; };
+		1FDB0A38192950CB00D07D2C /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AC19280C8D004EB0CA /* ConvertUTF.c */; };
+		1FDB0A39192950CB00D07D2C /* ConvertUTFWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AD19280C8D004EB0CA /* ConvertUTFWrapper.cpp */; };
+		1FDB0A3A192950CB00D07D2C /* CrashRecoveryContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2AF19280C8D004EB0CA /* CrashRecoveryContext.cpp */; };
+		1FDB0A3B192950CB00D07D2C /* DAGDeltaAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B019280C8D004EB0CA /* DAGDeltaAlgorithm.cpp */; };
+		1FDB0A3C192950CB00D07D2C /* DataExtractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B119280C8D004EB0CA /* DataExtractor.cpp */; };
+		1FDB0A3D192950CB00D07D2C /* DataStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B219280C8D004EB0CA /* DataStream.cpp */; };
+		1FDB0A3E192950CB00D07D2C /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B319280C8D004EB0CA /* Debug.cpp */; };
+		1FDB0A3F192950CB00D07D2C /* DeltaAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B419280C8D004EB0CA /* DeltaAlgorithm.cpp */; };
+		1FDB0A40192950CB00D07D2C /* Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B519280C8D004EB0CA /* Disassembler.cpp */; };
+		1FDB0A41192950CB00D07D2C /* Dwarf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B619280C8D004EB0CA /* Dwarf.cpp */; };
+		1FDB0A42192950CB00D07D2C /* DynamicLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B719280C8D004EB0CA /* DynamicLibrary.cpp */; };
+		1FDB0A43192950CB00D07D2C /* Errno.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B819280C8D004EB0CA /* Errno.cpp */; };
+		1FDB0A44192950CC00D07D2C /* ErrorHandling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2B919280C8D004EB0CA /* ErrorHandling.cpp */; };
+		1FDB0A45192950CC00D07D2C /* FileOutputBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BA19280C8D004EB0CA /* FileOutputBuffer.cpp */; };
+		1FDB0A46192950CC00D07D2C /* FileUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BB19280C8D004EB0CA /* FileUtilities.cpp */; };
+		1FDB0A47192950CC00D07D2C /* FoldingSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BC19280C8D004EB0CA /* FoldingSet.cpp */; };
+		1FDB0A48192950CC00D07D2C /* FormattedStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BD19280C8D004EB0CA /* FormattedStream.cpp */; };
+		1FDB0A49192950CC00D07D2C /* GraphWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BE19280C8D004EB0CA /* GraphWriter.cpp */; };
+		1FDB0A4A192950CC00D07D2C /* Hashing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2BF19280C8D004EB0CA /* Hashing.cpp */; };
+		1FDB0A4B192950CC00D07D2C /* Host.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C019280C8D004EB0CA /* Host.cpp */; };
+		1FDB0A4C192950CC00D07D2C /* IncludeFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C119280C8D004EB0CA /* IncludeFile.cpp */; };
+		1FDB0A4D192950CC00D07D2C /* IntEqClasses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C219280C8D004EB0CA /* IntEqClasses.cpp */; };
+		1FDB0A4E192950CC00D07D2C /* IntervalMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C319280C8D004EB0CA /* IntervalMap.cpp */; };
+		1FDB0A4F192950CC00D07D2C /* IntrusiveRefCntPtr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C419280C8D004EB0CA /* IntrusiveRefCntPtr.cpp */; };
+		1FDB0A50192950CC00D07D2C /* IsInf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C519280C8D004EB0CA /* IsInf.cpp */; };
+		1FDB0A51192950CC00D07D2C /* IsNAN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C619280C8D004EB0CA /* IsNAN.cpp */; };
+		1FDB0A52192950CC00D07D2C /* Locale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C719280C8D004EB0CA /* Locale.cpp */; };
+		1FDB0A53192950CC00D07D2C /* LockFileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C819280C8D004EB0CA /* LockFileManager.cpp */; };
+		1FDB0A54192950CC00D07D2C /* ManagedStatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2C919280C8D004EB0CA /* ManagedStatic.cpp */; };
+		1FDB0A55192950CC00D07D2C /* MD5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CA19280C8D004EB0CA /* MD5.cpp */; };
+		1FDB0A56192950CC00D07D2C /* Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CB19280C8D004EB0CA /* Memory.cpp */; };
+		1FDB0A57192950CC00D07D2C /* MemoryBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CC19280C8D004EB0CA /* MemoryBuffer.cpp */; };
+		1FDB0A58192950CC00D07D2C /* MemoryObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CD19280C8D004EB0CA /* MemoryObject.cpp */; };
+		1FDB0A59192950CC00D07D2C /* Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CE19280C8D004EB0CA /* Mutex.cpp */; };
+		1FDB0A5A192950CC00D07D2C /* Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2CF19280C8D004EB0CA /* Path.cpp */; };
+		1FDB0A5B192950CC00D07D2C /* PluginLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D019280C8D004EB0CA /* PluginLoader.cpp */; };
+		1FDB0A5C192950CC00D07D2C /* PrettyStackTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D119280C8D004EB0CA /* PrettyStackTrace.cpp */; };
+		1FDB0A5D192950CC00D07D2C /* Process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D219280C8D004EB0CA /* Process.cpp */; };
+		1FDB0A5E192950CC00D07D2C /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D319280C8D004EB0CA /* Program.cpp */; };
+		1FDB0A5F192950CC00D07D2C /* raw_os_ostream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D419280C8D004EB0CA /* raw_os_ostream.cpp */; };
+		1FDB0A60192950CC00D07D2C /* raw_ostream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D519280C8D004EB0CA /* raw_ostream.cpp */; };
+		1FDB0A61192950CC00D07D2C /* regcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2D819280C8D004EB0CA /* regcomp.c */; };
+		1FDB0A62192950CC00D07D2C /* regerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2DA19280C8D004EB0CA /* regerror.c */; };
+		1FDB0A63192950CC00D07D2C /* Regex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2DB19280C8D004EB0CA /* Regex.cpp */; };
+		1FDB0A64192950CC00D07D2C /* regexec.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2DE19280C8D004EB0CA /* regexec.c */; };
+		1FDB0A65192950CC00D07D2C /* regfree.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2DF19280C8D004EB0CA /* regfree.c */; };
+		1FDB0A66192950CC00D07D2C /* regstrlcpy.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E019280C8D004EB0CA /* regstrlcpy.c */; };
+		1FDB0A67192950CC00D07D2C /* RWMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E219280C8D004EB0CA /* RWMutex.cpp */; };
+		1FDB0A68192950CC00D07D2C /* SearchForAddressOfSpecialSymbol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E319280C8D004EB0CA /* SearchForAddressOfSpecialSymbol.cpp */; };
+		1FDB0A69192950CC00D07D2C /* Signals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E419280C8D004EB0CA /* Signals.cpp */; };
+		1FDB0A6A192950CC00D07D2C /* SmallPtrSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E519280C8D004EB0CA /* SmallPtrSet.cpp */; };
+		1FDB0A6B192950CC00D07D2C /* SmallVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E619280C8D004EB0CA /* SmallVector.cpp */; };
+		1FDB0A6C192950CC00D07D2C /* SourceMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E719280C8D004EB0CA /* SourceMgr.cpp */; };
+		1FDB0A6D192950CC00D07D2C /* Statistic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E819280C8D004EB0CA /* Statistic.cpp */; };
+		1FDB0A6E192950CC00D07D2C /* StreamableMemoryObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2E919280C8D004EB0CA /* StreamableMemoryObject.cpp */; };
+		1FDB0A6F192950CC00D07D2C /* StringExtras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EA19280C8D004EB0CA /* StringExtras.cpp */; };
+		1FDB0A70192950CC00D07D2C /* StringMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EB19280C8D004EB0CA /* StringMap.cpp */; };
+		1FDB0A71192950CC00D07D2C /* StringPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EC19280C8D004EB0CA /* StringPool.cpp */; };
+		1FDB0A72192950CC00D07D2C /* StringRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2ED19280C8D004EB0CA /* StringRef.cpp */; };
+		1FDB0A73192950CC00D07D2C /* StringRefMemoryObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EE19280C8D004EB0CA /* StringRefMemoryObject.cpp */; };
+		1FDB0A74192950CC00D07D2C /* system_error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2EF19280C8D004EB0CA /* system_error.cpp */; };
+		1FDB0A75192950CC00D07D2C /* SystemUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F019280C8D004EB0CA /* SystemUtils.cpp */; };
+		1FDB0A76192950CC00D07D2C /* TargetRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F119280C8D004EB0CA /* TargetRegistry.cpp */; };
+		1FDB0A77192950CC00D07D2C /* Threading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F219280C8D004EB0CA /* Threading.cpp */; };
+		1FDB0A78192950CC00D07D2C /* ThreadLocal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F319280C8D004EB0CA /* ThreadLocal.cpp */; };
+		1FDB0A79192950CC00D07D2C /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F419280C8D004EB0CA /* Timer.cpp */; };
+		1FDB0A7A192950CC00D07D2C /* TimeValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F519280C8D004EB0CA /* TimeValue.cpp */; };
+		1FDB0A7B192950CC00D07D2C /* ToolOutputFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F619280C8D004EB0CA /* ToolOutputFile.cpp */; };
+		1FDB0A7C192950CC00D07D2C /* Triple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F719280C8D004EB0CA /* Triple.cpp */; };
+		1FDB0A7D192950CC00D07D2C /* Twine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F819280C8D004EB0CA /* Twine.cpp */; };
+		1FDB0A7E192950CC00D07D2C /* Unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2F919280C8D004EB0CA /* Unicode.cpp */; };
+		1FDB0A7F192950CC00D07D2C /* Valgrind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB30919280C8D004EB0CA /* Valgrind.cpp */; };
+		1FDB0A80192950CC00D07D2C /* Watchdog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB30A19280C8D004EB0CA /* Watchdog.cpp */; };
+		1FDB0A81192950CC00D07D2C /* YAMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31B19280C8D004EB0CA /* YAMLParser.cpp */; };
+		1FDB0A82192950CC00D07D2C /* YAMLTraits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB31C19280C8D004EB0CA /* YAMLTraits.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1432,6 +1518,7 @@
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1F8DEF811927F8B900138754 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1F8DEF8D1927F8B900138754 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1FDB0A291929509D00D07D2C /* libLLVMSupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMSupport.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1441,6 +1528,13 @@
 			files = (
 				1F1FB47019280F58004EB0CA /* libcurses.dylib in Frameworks */,
 				1F1FB46F19280F54004EB0CA /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FDB0A261929509D00D07D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3276,6 +3370,7 @@
 			isa = PBXGroup;
 			children = (
 				1F1FB3B319280E8C004EB0CA /* llvm-tblgen */,
+				1FDB0A291929509D00D07D2C /* libLLVMSupport.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3304,6 +3399,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1FDB0A271929509D00D07D2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1F1FB3B219280E8C004EB0CA /* llvm-tblgen */ = {
 			isa = PBXNativeTarget;
@@ -3320,6 +3425,23 @@
 			productName = "llvm-tblgen";
 			productReference = 1F1FB3B319280E8C004EB0CA /* llvm-tblgen */;
 			productType = "com.apple.product-type.tool";
+		};
+		1FDB0A281929509D00D07D2C /* LLVMSupport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FDB0A2A1929509D00D07D2C /* Build configuration list for PBXNativeTarget "LLVMSupport" */;
+			buildPhases = (
+				1FDB0A251929509D00D07D2C /* Sources */,
+				1FDB0A261929509D00D07D2C /* Frameworks */,
+				1FDB0A271929509D00D07D2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVMSupport;
+			productName = LLVMSupport;
+			productReference = 1FDB0A291929509D00D07D2C /* libLLVMSupport.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -3343,6 +3465,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				1FDB0A281929509D00D07D2C /* LLVMSupport */,
 				1F1FB3B219280E8C004EB0CA /* llvm-tblgen */,
 			);
 		};
@@ -3482,6 +3605,99 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FDB0A251929509D00D07D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDB0A2D192950CB00D07D2C /* Allocator.cpp in Sources */,
+				1FDB0A2E192950CB00D07D2C /* APFloat.cpp in Sources */,
+				1FDB0A2F192950CB00D07D2C /* APInt.cpp in Sources */,
+				1FDB0A30192950CB00D07D2C /* APSInt.cpp in Sources */,
+				1FDB0A31192950CB00D07D2C /* Atomic.cpp in Sources */,
+				1FDB0A32192950CB00D07D2C /* BlockFrequency.cpp in Sources */,
+				1FDB0A33192950CB00D07D2C /* BranchProbability.cpp in Sources */,
+				1FDB0A34192950CB00D07D2C /* circular_raw_ostream.cpp in Sources */,
+				1FDB0A35192950CB00D07D2C /* CommandLine.cpp in Sources */,
+				1FDB0A36192950CB00D07D2C /* Compression.cpp in Sources */,
+				1FDB0A37192950CB00D07D2C /* ConstantRange.cpp in Sources */,
+				1FDB0A38192950CB00D07D2C /* ConvertUTF.c in Sources */,
+				1FDB0A39192950CB00D07D2C /* ConvertUTFWrapper.cpp in Sources */,
+				1FDB0A3A192950CB00D07D2C /* CrashRecoveryContext.cpp in Sources */,
+				1FDB0A3B192950CB00D07D2C /* DAGDeltaAlgorithm.cpp in Sources */,
+				1FDB0A3C192950CB00D07D2C /* DataExtractor.cpp in Sources */,
+				1FDB0A3D192950CB00D07D2C /* DataStream.cpp in Sources */,
+				1FDB0A3E192950CB00D07D2C /* Debug.cpp in Sources */,
+				1FDB0A3F192950CB00D07D2C /* DeltaAlgorithm.cpp in Sources */,
+				1FDB0A40192950CB00D07D2C /* Disassembler.cpp in Sources */,
+				1FDB0A41192950CB00D07D2C /* Dwarf.cpp in Sources */,
+				1FDB0A42192950CB00D07D2C /* DynamicLibrary.cpp in Sources */,
+				1FDB0A43192950CB00D07D2C /* Errno.cpp in Sources */,
+				1FDB0A44192950CC00D07D2C /* ErrorHandling.cpp in Sources */,
+				1FDB0A45192950CC00D07D2C /* FileOutputBuffer.cpp in Sources */,
+				1FDB0A46192950CC00D07D2C /* FileUtilities.cpp in Sources */,
+				1FDB0A47192950CC00D07D2C /* FoldingSet.cpp in Sources */,
+				1FDB0A48192950CC00D07D2C /* FormattedStream.cpp in Sources */,
+				1FDB0A49192950CC00D07D2C /* GraphWriter.cpp in Sources */,
+				1FDB0A4A192950CC00D07D2C /* Hashing.cpp in Sources */,
+				1FDB0A4B192950CC00D07D2C /* Host.cpp in Sources */,
+				1FDB0A4C192950CC00D07D2C /* IncludeFile.cpp in Sources */,
+				1FDB0A4D192950CC00D07D2C /* IntEqClasses.cpp in Sources */,
+				1FDB0A4E192950CC00D07D2C /* IntervalMap.cpp in Sources */,
+				1FDB0A4F192950CC00D07D2C /* IntrusiveRefCntPtr.cpp in Sources */,
+				1FDB0A50192950CC00D07D2C /* IsInf.cpp in Sources */,
+				1FDB0A51192950CC00D07D2C /* IsNAN.cpp in Sources */,
+				1FDB0A52192950CC00D07D2C /* Locale.cpp in Sources */,
+				1FDB0A53192950CC00D07D2C /* LockFileManager.cpp in Sources */,
+				1FDB0A54192950CC00D07D2C /* ManagedStatic.cpp in Sources */,
+				1FDB0A55192950CC00D07D2C /* MD5.cpp in Sources */,
+				1FDB0A56192950CC00D07D2C /* Memory.cpp in Sources */,
+				1FDB0A57192950CC00D07D2C /* MemoryBuffer.cpp in Sources */,
+				1FDB0A58192950CC00D07D2C /* MemoryObject.cpp in Sources */,
+				1FDB0A59192950CC00D07D2C /* Mutex.cpp in Sources */,
+				1FDB0A5A192950CC00D07D2C /* Path.cpp in Sources */,
+				1FDB0A5B192950CC00D07D2C /* PluginLoader.cpp in Sources */,
+				1FDB0A5C192950CC00D07D2C /* PrettyStackTrace.cpp in Sources */,
+				1FDB0A5D192950CC00D07D2C /* Process.cpp in Sources */,
+				1FDB0A5E192950CC00D07D2C /* Program.cpp in Sources */,
+				1FDB0A5F192950CC00D07D2C /* raw_os_ostream.cpp in Sources */,
+				1FDB0A60192950CC00D07D2C /* raw_ostream.cpp in Sources */,
+				1FDB0A61192950CC00D07D2C /* regcomp.c in Sources */,
+				1FDB0A62192950CC00D07D2C /* regerror.c in Sources */,
+				1FDB0A63192950CC00D07D2C /* Regex.cpp in Sources */,
+				1FDB0A64192950CC00D07D2C /* regexec.c in Sources */,
+				1FDB0A65192950CC00D07D2C /* regfree.c in Sources */,
+				1FDB0A66192950CC00D07D2C /* regstrlcpy.c in Sources */,
+				1FDB0A67192950CC00D07D2C /* RWMutex.cpp in Sources */,
+				1FDB0A68192950CC00D07D2C /* SearchForAddressOfSpecialSymbol.cpp in Sources */,
+				1FDB0A69192950CC00D07D2C /* Signals.cpp in Sources */,
+				1FDB0A6A192950CC00D07D2C /* SmallPtrSet.cpp in Sources */,
+				1FDB0A6B192950CC00D07D2C /* SmallVector.cpp in Sources */,
+				1FDB0A6C192950CC00D07D2C /* SourceMgr.cpp in Sources */,
+				1FDB0A6D192950CC00D07D2C /* Statistic.cpp in Sources */,
+				1FDB0A6E192950CC00D07D2C /* StreamableMemoryObject.cpp in Sources */,
+				1FDB0A6F192950CC00D07D2C /* StringExtras.cpp in Sources */,
+				1FDB0A70192950CC00D07D2C /* StringMap.cpp in Sources */,
+				1FDB0A71192950CC00D07D2C /* StringPool.cpp in Sources */,
+				1FDB0A72192950CC00D07D2C /* StringRef.cpp in Sources */,
+				1FDB0A73192950CC00D07D2C /* StringRefMemoryObject.cpp in Sources */,
+				1FDB0A74192950CC00D07D2C /* system_error.cpp in Sources */,
+				1FDB0A75192950CC00D07D2C /* SystemUtils.cpp in Sources */,
+				1FDB0A76192950CC00D07D2C /* TargetRegistry.cpp in Sources */,
+				1FDB0A77192950CC00D07D2C /* Threading.cpp in Sources */,
+				1FDB0A78192950CC00D07D2C /* ThreadLocal.cpp in Sources */,
+				1FDB0A79192950CC00D07D2C /* Timer.cpp in Sources */,
+				1FDB0A7A192950CC00D07D2C /* TimeValue.cpp in Sources */,
+				1FDB0A7B192950CC00D07D2C /* ToolOutputFile.cpp in Sources */,
+				1FDB0A7C192950CC00D07D2C /* Triple.cpp in Sources */,
+				1FDB0A7D192950CC00D07D2C /* Twine.cpp in Sources */,
+				1FDB0A7E192950CC00D07D2C /* Unicode.cpp in Sources */,
+				1FDB0A7F192950CC00D07D2C /* Valgrind.cpp in Sources */,
+				1FDB0A80192950CC00D07D2C /* Watchdog.cpp in Sources */,
+				1FDB0A81192950CC00D07D2C /* YAMLParser.cpp in Sources */,
+				1FDB0A82192950CC00D07D2C /* YAMLTraits.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -3578,6 +3794,78 @@
 			};
 			name = Release;
 		};
+		1FDB0A2B1929509D00D07D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1FDB0A2C1929509D00D07D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3598,6 +3886,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1FDB0A2A1929509D00D07D2C /* Build configuration list for PBXNativeTarget "LLVMSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDB0A2B1929509D00D07D2C /* Debug */,
+				1FDB0A2C1929509D00D07D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
