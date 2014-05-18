@@ -1130,6 +1130,8 @@
 		1F4A80B31929241B00D9BD62 /* ValueTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80841929241B00D9BD62 /* ValueTypes.cpp */; };
 		1F4A80B41929241B00D9BD62 /* Verifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80851929241B00D9BD62 /* Verifier.cpp */; };
 		1F4A80BA192924B300D9BD62 /* IRReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80B7192924B300D9BD62 /* IRReader.cpp */; };
+		1F4A80C21929252500D9BD62 /* LTOCodeGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80BF1929252500D9BD62 /* LTOCodeGenerator.cpp */; };
+		1F4A80C31929252500D9BD62 /* LTOModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80C01929252500D9BD62 /* LTOModule.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2248,6 +2250,8 @@
 		1F4A80841929241B00D9BD62 /* ValueTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueTypes.cpp; sourceTree = "<group>"; };
 		1F4A80851929241B00D9BD62 /* Verifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Verifier.cpp; sourceTree = "<group>"; };
 		1F4A80B7192924B300D9BD62 /* IRReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRReader.cpp; sourceTree = "<group>"; };
+		1F4A80BF1929252500D9BD62 /* LTOCodeGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LTOCodeGenerator.cpp; sourceTree = "<group>"; };
+		1F4A80C01929252500D9BD62 /* LTOModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LTOModule.cpp; sourceTree = "<group>"; };
 		1F8DEF791927F8B900138754 /* libLLVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -3087,6 +3091,7 @@
 				1F4A800D1929235600D9BD62 /* ExecutionEngine */,
 				1F4A80561929241B00D9BD62 /* IR */,
 				1F4A80B5192924B300D9BD62 /* IRReader */,
+				1F4A80BC1929252500D9BD62 /* LTO */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 				1F1FB4E819281045004EB0CA /* run-tablegen.sh */,
@@ -3787,6 +3792,15 @@
 				1F4A80B7192924B300D9BD62 /* IRReader.cpp */,
 			);
 			path = IRReader;
+			sourceTree = "<group>";
+		};
+		1F4A80BC1929252500D9BD62 /* LTO */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A80BF1929252500D9BD62 /* LTOCodeGenerator.cpp */,
+				1F4A80C01929252500D9BD62 /* LTOModule.cpp */,
+			);
+			path = LTO;
 			sourceTree = "<group>";
 		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
@@ -4915,6 +4929,7 @@
 				1F1FB32619280C8D004EB0CA /* Compression.cpp in Sources */,
 				1F1FB36419280C8D004EB0CA /* StreamableMemoryObject.cpp in Sources */,
 				1F1FB69C192812DC004EB0CA /* PseudoSourceValue.cpp in Sources */,
+				1F4A80C31929252500D9BD62 /* LTOModule.cpp in Sources */,
 				1F1FB3AA19280D91004EB0CA /* TGLexer.cpp in Sources */,
 				1F1FB685192812DC004EB0CA /* MachineLICM.cpp in Sources */,
 				1F1FB64A192812DB004EB0CA /* ErlangGCPrinter.cpp in Sources */,
@@ -5014,6 +5029,7 @@
 				1F1FB36E19280C8D004EB0CA /* ThreadLocal.cpp in Sources */,
 				1F4A80971929241B00D9BD62 /* Dominators.cpp in Sources */,
 				1F1FB6A0192812DC004EB0CA /* RegAllocFast.cpp in Sources */,
+				1F4A80C21929252500D9BD62 /* LTOCodeGenerator.cpp in Sources */,
 				1F1FB672192812DC004EB0CA /* LiveRegUnits.cpp in Sources */,
 				1F1FB643192812DB004EB0CA /* DwarfCFIException.cpp in Sources */,
 				1F4A7FFD192922BF00D9BD62 /* DWARFDebugFrame.cpp in Sources */,
