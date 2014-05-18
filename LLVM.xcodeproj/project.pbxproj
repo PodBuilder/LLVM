@@ -4715,6 +4715,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "-Wno-conditional-uninitialized";
 			};
 			name = Debug;
 		};
@@ -4752,6 +4753,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "-Wno-conditional-uninitialized";
 			};
 			name = Release;
 		};
