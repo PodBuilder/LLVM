@@ -3504,7 +3504,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FDB0ACA192951E800D07D2C /* Build configuration list for PBXNativeTarget "LLVMAnalysis" */;
 			buildPhases = (
-				1FDB0B01192952DF00D07D2C /* Generate Intrinsics.td */,
+				1FDB0B01192952DF00D07D2C /* Generate Intrinsics.gen */,
 				1FDB0AC5192951E800D07D2C /* Sources */,
 				1FDB0AC6192951E800D07D2C /* Frameworks */,
 				1FDB0AC7192951E800D07D2C /* Headers */,
@@ -3570,14 +3570,14 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1FDB0B01192952DF00D07D2C /* Generate Intrinsics.td */ = {
+		1FDB0B01192952DF00D07D2C /* Generate Intrinsics.gen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Generate Intrinsics.td";
+			name = "Generate Intrinsics.gen";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
