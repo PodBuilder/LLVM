@@ -123,6 +123,29 @@
 		1F561FF71929558700776A54 /* TwoAddressInstructionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB630192812DB004EB0CA /* TwoAddressInstructionPass.cpp */; };
 		1F561FF81929558700776A54 /* UnreachableBlockElim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB631192812DB004EB0CA /* UnreachableBlockElim.cpp */; };
 		1F561FF91929558700776A54 /* VirtRegMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB632192812DB004EB0CA /* VirtRegMap.cpp */; };
+		1F5620051929564500776A54 /* DAGCombiner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB5FF192812DB004EB0CA /* DAGCombiner.cpp */; };
+		1F5620061929564500776A54 /* FastISel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB600192812DB004EB0CA /* FastISel.cpp */; };
+		1F5620071929564500776A54 /* FunctionLoweringInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB601192812DB004EB0CA /* FunctionLoweringInfo.cpp */; };
+		1F5620081929564500776A54 /* InstrEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB602192812DB004EB0CA /* InstrEmitter.cpp */; };
+		1F56200A1929564500776A54 /* LegalizeDAG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB604192812DB004EB0CA /* LegalizeDAG.cpp */; };
+		1F56200B1929564500776A54 /* LegalizeFloatTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB605192812DB004EB0CA /* LegalizeFloatTypes.cpp */; };
+		1F56200C1929564500776A54 /* LegalizeIntegerTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB606192812DB004EB0CA /* LegalizeIntegerTypes.cpp */; };
+		1F56200D1929564500776A54 /* LegalizeTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB607192812DB004EB0CA /* LegalizeTypes.cpp */; };
+		1F56200F1929564500776A54 /* LegalizeTypesGeneric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB609192812DB004EB0CA /* LegalizeTypesGeneric.cpp */; };
+		1F5620101929564500776A54 /* LegalizeVectorOps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB60A192812DB004EB0CA /* LegalizeVectorOps.cpp */; };
+		1F5620111929564500776A54 /* LegalizeVectorTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB60B192812DB004EB0CA /* LegalizeVectorTypes.cpp */; };
+		1F5620121929564500776A54 /* ResourcePriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB60C192812DB004EB0CA /* ResourcePriorityQueue.cpp */; };
+		1F5620131929564500776A54 /* ScheduleDAGFast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB60D192812DB004EB0CA /* ScheduleDAGFast.cpp */; };
+		1F5620141929564500776A54 /* ScheduleDAGRRList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB60E192812DB004EB0CA /* ScheduleDAGRRList.cpp */; };
+		1F5620151929564500776A54 /* ScheduleDAGSDNodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB60F192812DB004EB0CA /* ScheduleDAGSDNodes.cpp */; };
+		1F5620171929564500776A54 /* ScheduleDAGVLIW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB611192812DB004EB0CA /* ScheduleDAGVLIW.cpp */; };
+		1F5620191929564500776A54 /* SelectionDAG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB613192812DB004EB0CA /* SelectionDAG.cpp */; };
+		1F56201A1929564500776A54 /* SelectionDAGBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB614192812DB004EB0CA /* SelectionDAGBuilder.cpp */; };
+		1F56201C1929564500776A54 /* SelectionDAGDumper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB616192812DB004EB0CA /* SelectionDAGDumper.cpp */; };
+		1F56201D1929564500776A54 /* SelectionDAGISel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB617192812DB004EB0CA /* SelectionDAGISel.cpp */; };
+		1F56201E1929564500776A54 /* SelectionDAGPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB618192812DB004EB0CA /* SelectionDAGPrinter.cpp */; };
+		1F56201F1929564500776A54 /* TargetLowering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB619192812DB004EB0CA /* TargetLowering.cpp */; };
+		1F5620201929564500776A54 /* TargetSelectionDAGInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB61A192812DB004EB0CA /* TargetSelectionDAGInfo.cpp */; };
 		1FDB0A2D192950CB00D07D2C /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A119280C8D004EB0CA /* Allocator.cpp */; };
 		1FDB0A2E192950CB00D07D2C /* APFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A219280C8D004EB0CA /* APFloat.cpp */; };
 		1FDB0A2F192950CB00D07D2C /* APInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB2A319280C8D004EB0CA /* APInt.cpp */; };
@@ -318,6 +341,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		1F561F7A1929556F00776A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
+		};
+		1F5620021929562500776A54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
 			proxyType = 1;
@@ -1638,6 +1668,7 @@
 		1F4A822D19292B5400D9BD62 /* X86ShuffleDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86ShuffleDecode.h; sourceTree = "<group>"; };
 		1F561F681929552000776A54 /* libLLVMBitWriter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMBitWriter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F561F741929555C00776A54 /* libLLVMCodeGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMCodeGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F561FFE1929561F00776A54 /* libLLVMSelectionDAG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMSelectionDAG.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -1672,6 +1703,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F561F711929555C00776A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F561FFB1929561F00776A54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3560,6 +3598,7 @@
 				1FDB0B251929547300D07D2C /* libLLVMBitReader.a */,
 				1F561F681929552000776A54 /* libLLVMBitWriter.a */,
 				1F561F741929555C00776A54 /* libLLVMCodeGen.a */,
+				1F561FFE1929561F00776A54 /* libLLVMSelectionDAG.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3656,6 +3695,24 @@
 			name = LLVMCodeGen;
 			productName = LLVMCodeGen;
 			productReference = 1F561F741929555C00776A54 /* libLLVMCodeGen.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1F561FFD1929561F00776A54 /* LLVMSelectionDAG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F561FFF1929561F00776A54 /* Build configuration list for PBXNativeTarget "LLVMSelectionDAG" */;
+			buildPhases = (
+				1F5620041929562900776A54 /* Generate Intrinsics.gen */,
+				1F561FFA1929561F00776A54 /* Sources */,
+				1F561FFB1929561F00776A54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F5620031929562500776A54 /* PBXTargetDependency */,
+			);
+			name = LLVMSelectionDAG;
+			productName = LLVMSelectionDAG;
+			productReference = 1F561FFE1929561F00776A54 /* libLLVMSelectionDAG.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1FDB0A281929509D00D07D2C /* LLVMSupport */ = {
@@ -3787,6 +3844,7 @@
 				1FDB0B241929547300D07D2C /* LLVMBitReader */,
 				1F561F671929552000776A54 /* LLVMBitWriter */,
 				1F561F731929555C00776A54 /* LLVMCodeGen */,
+				1F561FFD1929561F00776A54 /* LLVMSelectionDAG */,
 				1FDB0A281929509D00D07D2C /* LLVMSupport */,
 				1FDB0A861929511700D07D2C /* LLVMTableGen */,
 				1FDB0B071929539200D07D2C /* LLVMipa */,
@@ -3797,6 +3855,21 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		1F561F7C1929557300776A54 /* Generate Intrinsics.gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Intrinsics.gen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		1F5620041929562900776A54 /* Generate Intrinsics.gen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4026,6 +4099,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F561FFA1929561F00776A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5620051929564500776A54 /* DAGCombiner.cpp in Sources */,
+				1F5620061929564500776A54 /* FastISel.cpp in Sources */,
+				1F5620071929564500776A54 /* FunctionLoweringInfo.cpp in Sources */,
+				1F5620081929564500776A54 /* InstrEmitter.cpp in Sources */,
+				1F56200A1929564500776A54 /* LegalizeDAG.cpp in Sources */,
+				1F56200B1929564500776A54 /* LegalizeFloatTypes.cpp in Sources */,
+				1F56200C1929564500776A54 /* LegalizeIntegerTypes.cpp in Sources */,
+				1F56200D1929564500776A54 /* LegalizeTypes.cpp in Sources */,
+				1F56200F1929564500776A54 /* LegalizeTypesGeneric.cpp in Sources */,
+				1F5620101929564500776A54 /* LegalizeVectorOps.cpp in Sources */,
+				1F5620111929564500776A54 /* LegalizeVectorTypes.cpp in Sources */,
+				1F5620121929564500776A54 /* ResourcePriorityQueue.cpp in Sources */,
+				1F5620131929564500776A54 /* ScheduleDAGFast.cpp in Sources */,
+				1F5620141929564500776A54 /* ScheduleDAGRRList.cpp in Sources */,
+				1F5620151929564500776A54 /* ScheduleDAGSDNodes.cpp in Sources */,
+				1F5620171929564500776A54 /* ScheduleDAGVLIW.cpp in Sources */,
+				1F5620191929564500776A54 /* SelectionDAG.cpp in Sources */,
+				1F56201A1929564500776A54 /* SelectionDAGBuilder.cpp in Sources */,
+				1F56201C1929564500776A54 /* SelectionDAGDumper.cpp in Sources */,
+				1F56201D1929564500776A54 /* SelectionDAGISel.cpp in Sources */,
+				1F56201E1929564500776A54 /* SelectionDAGPrinter.cpp in Sources */,
+				1F56201F1929564500776A54 /* TargetLowering.cpp in Sources */,
+				1F5620201929564500776A54 /* TargetSelectionDAGInfo.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FDB0A251929509D00D07D2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4231,6 +4334,11 @@
 			isa = PBXTargetDependency;
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
 			targetProxy = 1F561F7A1929556F00776A54 /* PBXContainerItemProxy */;
+		};
+		1F5620031929562500776A54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
+			targetProxy = 1F5620021929562500776A54 /* PBXContainerItemProxy */;
 		};
 		1FDB0B031929530A00D07D2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4451,6 +4559,78 @@
 			name = Debug;
 		};
 		1F561F771929555C00776A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F5620001929561F00776A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F5620011929561F00776A54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -4953,6 +5133,14 @@
 			buildConfigurations = (
 				1F561F761929555C00776A54 /* Debug */,
 				1F561F771929555C00776A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F561FFF1929561F00776A54 /* Build configuration list for PBXNativeTarget "LLVMSelectionDAG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5620001929561F00776A54 /* Debug */,
+				1F5620011929561F00776A54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
