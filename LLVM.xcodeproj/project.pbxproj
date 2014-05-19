@@ -1680,6 +1680,103 @@
 		1F1FB632192812DB004EB0CA /* VirtRegMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VirtRegMap.cpp; sourceTree = "<group>"; };
 		1F424627192ABC4D006D6A20 /* libLLVMX86Info.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMX86Info.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F424633192ABD06006D6A20 /* libLLVMX86Utils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMX86Utils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F424651192ABF76006D6A20 /* A15SDOptimizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = A15SDOptimizer.cpp; sourceTree = "<group>"; };
+		1F424652192ABF76006D6A20 /* ARM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM.h; sourceTree = "<group>"; };
+		1F424653192ABF76006D6A20 /* ARM.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARM.td; sourceTree = "<group>"; };
+		1F424654192ABF76006D6A20 /* ARMAsmPrinter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMAsmPrinter.cpp; sourceTree = "<group>"; };
+		1F424655192ABF76006D6A20 /* ARMAsmPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMAsmPrinter.h; sourceTree = "<group>"; };
+		1F424656192ABF76006D6A20 /* ARMBaseInstrInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMBaseInstrInfo.cpp; sourceTree = "<group>"; };
+		1F424657192ABF76006D6A20 /* ARMBaseInstrInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMBaseInstrInfo.h; sourceTree = "<group>"; };
+		1F424658192ABF76006D6A20 /* ARMBaseRegisterInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMBaseRegisterInfo.cpp; sourceTree = "<group>"; };
+		1F424659192ABF76006D6A20 /* ARMBaseRegisterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMBaseRegisterInfo.h; sourceTree = "<group>"; };
+		1F42465A192ABF76006D6A20 /* ARMBuildAttrs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMBuildAttrs.h; sourceTree = "<group>"; };
+		1F42465B192ABF76006D6A20 /* ARMCallingConv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMCallingConv.h; sourceTree = "<group>"; };
+		1F42465C192ABF76006D6A20 /* ARMCallingConv.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMCallingConv.td; sourceTree = "<group>"; };
+		1F42465D192ABF76006D6A20 /* ARMCodeEmitter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMCodeEmitter.cpp; sourceTree = "<group>"; };
+		1F42465E192ABF76006D6A20 /* ARMConstantIslandPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMConstantIslandPass.cpp; sourceTree = "<group>"; };
+		1F42465F192ABF76006D6A20 /* ARMConstantPoolValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMConstantPoolValue.cpp; sourceTree = "<group>"; };
+		1F424660192ABF76006D6A20 /* ARMConstantPoolValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMConstantPoolValue.h; sourceTree = "<group>"; };
+		1F424661192ABF76006D6A20 /* ARMExpandPseudoInsts.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMExpandPseudoInsts.cpp; sourceTree = "<group>"; };
+		1F424662192ABF76006D6A20 /* ARMFastISel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMFastISel.cpp; sourceTree = "<group>"; };
+		1F424663192ABF76006D6A20 /* ARMFeatures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMFeatures.h; sourceTree = "<group>"; };
+		1F424664192ABF76006D6A20 /* ARMFPUName.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMFPUName.def; sourceTree = "<group>"; };
+		1F424665192ABF76006D6A20 /* ARMFPUName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMFPUName.h; sourceTree = "<group>"; };
+		1F424666192ABF76006D6A20 /* ARMFrameLowering.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMFrameLowering.cpp; sourceTree = "<group>"; };
+		1F424667192ABF76006D6A20 /* ARMFrameLowering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMFrameLowering.h; sourceTree = "<group>"; };
+		1F424668192ABF76006D6A20 /* ARMHazardRecognizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMHazardRecognizer.cpp; sourceTree = "<group>"; };
+		1F424669192ABF76006D6A20 /* ARMHazardRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMHazardRecognizer.h; sourceTree = "<group>"; };
+		1F42466A192ABF76006D6A20 /* ARMInstrFormats.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMInstrFormats.td; sourceTree = "<group>"; };
+		1F42466B192ABF76006D6A20 /* ARMInstrInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMInstrInfo.cpp; sourceTree = "<group>"; };
+		1F42466C192ABF76006D6A20 /* ARMInstrInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMInstrInfo.h; sourceTree = "<group>"; };
+		1F42466D192ABF76006D6A20 /* ARMInstrInfo.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMInstrInfo.td; sourceTree = "<group>"; };
+		1F42466E192ABF76006D6A20 /* ARMInstrNEON.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMInstrNEON.td; sourceTree = "<group>"; };
+		1F42466F192ABF76006D6A20 /* ARMInstrThumb.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMInstrThumb.td; sourceTree = "<group>"; };
+		1F424670192ABF76006D6A20 /* ARMInstrThumb2.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMInstrThumb2.td; sourceTree = "<group>"; };
+		1F424671192ABF76006D6A20 /* ARMInstrVFP.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMInstrVFP.td; sourceTree = "<group>"; };
+		1F424672192ABF76006D6A20 /* ARMISelDAGToDAG.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMISelDAGToDAG.cpp; sourceTree = "<group>"; };
+		1F424673192ABF76006D6A20 /* ARMISelLowering.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMISelLowering.cpp; sourceTree = "<group>"; };
+		1F424674192ABF76006D6A20 /* ARMISelLowering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMISelLowering.h; sourceTree = "<group>"; };
+		1F424675192ABF76006D6A20 /* ARMJITInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMJITInfo.cpp; sourceTree = "<group>"; };
+		1F424676192ABF76006D6A20 /* ARMJITInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMJITInfo.h; sourceTree = "<group>"; };
+		1F424677192ABF76006D6A20 /* ARMLoadStoreOptimizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMLoadStoreOptimizer.cpp; sourceTree = "<group>"; };
+		1F424678192ABF76006D6A20 /* ARMMachineFunctionInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMMachineFunctionInfo.cpp; sourceTree = "<group>"; };
+		1F424679192ABF76006D6A20 /* ARMMachineFunctionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMMachineFunctionInfo.h; sourceTree = "<group>"; };
+		1F42467A192ABF76006D6A20 /* ARMMCInstLower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMMCInstLower.cpp; sourceTree = "<group>"; };
+		1F42467B192ABF76006D6A20 /* ARMPerfectShuffle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMPerfectShuffle.h; sourceTree = "<group>"; };
+		1F42467C192ABF76006D6A20 /* ARMRegisterInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMRegisterInfo.cpp; sourceTree = "<group>"; };
+		1F42467D192ABF76006D6A20 /* ARMRegisterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMRegisterInfo.h; sourceTree = "<group>"; };
+		1F42467E192ABF76006D6A20 /* ARMRegisterInfo.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMRegisterInfo.td; sourceTree = "<group>"; };
+		1F42467F192ABF76006D6A20 /* ARMRelocations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMRelocations.h; sourceTree = "<group>"; };
+		1F424680192ABF76006D6A20 /* ARMSchedule.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMSchedule.td; sourceTree = "<group>"; };
+		1F424681192ABF76006D6A20 /* ARMScheduleA8.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMScheduleA8.td; sourceTree = "<group>"; };
+		1F424682192ABF76006D6A20 /* ARMScheduleA9.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMScheduleA9.td; sourceTree = "<group>"; };
+		1F424683192ABF76006D6A20 /* ARMScheduleSwift.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMScheduleSwift.td; sourceTree = "<group>"; };
+		1F424684192ABF76006D6A20 /* ARMScheduleV6.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARMScheduleV6.td; sourceTree = "<group>"; };
+		1F424685192ABF76006D6A20 /* ARMSelectionDAGInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMSelectionDAGInfo.cpp; sourceTree = "<group>"; };
+		1F424686192ABF76006D6A20 /* ARMSelectionDAGInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMSelectionDAGInfo.h; sourceTree = "<group>"; };
+		1F424687192ABF76006D6A20 /* ARMSubtarget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMSubtarget.cpp; sourceTree = "<group>"; };
+		1F424688192ABF76006D6A20 /* ARMSubtarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMSubtarget.h; sourceTree = "<group>"; };
+		1F424689192ABF76006D6A20 /* ARMTargetMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMTargetMachine.cpp; sourceTree = "<group>"; };
+		1F42468A192ABF76006D6A20 /* ARMTargetMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMTargetMachine.h; sourceTree = "<group>"; };
+		1F42468B192ABF76006D6A20 /* ARMTargetObjectFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMTargetObjectFile.cpp; sourceTree = "<group>"; };
+		1F42468C192ABF76006D6A20 /* ARMTargetObjectFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMTargetObjectFile.h; sourceTree = "<group>"; };
+		1F42468D192ABF76006D6A20 /* ARMTargetTransformInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMTargetTransformInfo.cpp; sourceTree = "<group>"; };
+		1F42468F192ABF76006D6A20 /* ARMAsmParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMAsmParser.cpp; sourceTree = "<group>"; };
+		1F424695192ABF76006D6A20 /* ARMDisassembler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMDisassembler.cpp; sourceTree = "<group>"; };
+		1F42469A192ABF76006D6A20 /* ARMInstPrinter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMInstPrinter.cpp; sourceTree = "<group>"; };
+		1F42469B192ABF76006D6A20 /* ARMInstPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMInstPrinter.h; sourceTree = "<group>"; };
+		1F4246A3192ABF76006D6A20 /* ARMAddressingModes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMAddressingModes.h; sourceTree = "<group>"; };
+		1F4246A4192ABF76006D6A20 /* ARMAsmBackend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMAsmBackend.cpp; sourceTree = "<group>"; };
+		1F4246A5192ABF76006D6A20 /* ARMBaseInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMBaseInfo.h; sourceTree = "<group>"; };
+		1F4246A6192ABF76006D6A20 /* ARMELFObjectWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMELFObjectWriter.cpp; sourceTree = "<group>"; };
+		1F4246A7192ABF76006D6A20 /* ARMELFStreamer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMELFStreamer.cpp; sourceTree = "<group>"; };
+		1F4246A8192ABF76006D6A20 /* ARMFixupKinds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMFixupKinds.h; sourceTree = "<group>"; };
+		1F4246A9192ABF76006D6A20 /* ARMMachObjectWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMMachObjectWriter.cpp; sourceTree = "<group>"; };
+		1F4246AA192ABF76006D6A20 /* ARMMachORelocationInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMMachORelocationInfo.cpp; sourceTree = "<group>"; };
+		1F4246AB192ABF76006D6A20 /* ARMMCAsmInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMMCAsmInfo.cpp; sourceTree = "<group>"; };
+		1F4246AC192ABF76006D6A20 /* ARMMCAsmInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMMCAsmInfo.h; sourceTree = "<group>"; };
+		1F4246AD192ABF76006D6A20 /* ARMMCCodeEmitter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMMCCodeEmitter.cpp; sourceTree = "<group>"; };
+		1F4246AE192ABF76006D6A20 /* ARMMCExpr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMMCExpr.cpp; sourceTree = "<group>"; };
+		1F4246AF192ABF76006D6A20 /* ARMMCExpr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMMCExpr.h; sourceTree = "<group>"; };
+		1F4246B0192ABF76006D6A20 /* ARMMCTargetDesc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMMCTargetDesc.cpp; sourceTree = "<group>"; };
+		1F4246B1192ABF76006D6A20 /* ARMMCTargetDesc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMMCTargetDesc.h; sourceTree = "<group>"; };
+		1F4246B2192ABF77006D6A20 /* ARMUnwindOp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMUnwindOp.h; sourceTree = "<group>"; };
+		1F4246B3192ABF77006D6A20 /* ARMUnwindOpAsm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMUnwindOpAsm.cpp; sourceTree = "<group>"; };
+		1F4246B4192ABF77006D6A20 /* ARMUnwindOpAsm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMUnwindOpAsm.h; sourceTree = "<group>"; };
+		1F4246B8192ABF77006D6A20 /* MLxExpansionPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MLxExpansionPass.cpp; sourceTree = "<group>"; };
+		1F4246BD192ABF77006D6A20 /* ARMTargetInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARMTargetInfo.cpp; sourceTree = "<group>"; };
+		1F4246C1192ABF77006D6A20 /* Thumb1FrameLowering.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb1FrameLowering.cpp; sourceTree = "<group>"; };
+		1F4246C2192ABF77006D6A20 /* Thumb1FrameLowering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumb1FrameLowering.h; sourceTree = "<group>"; };
+		1F4246C3192ABF77006D6A20 /* Thumb1InstrInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb1InstrInfo.cpp; sourceTree = "<group>"; };
+		1F4246C4192ABF77006D6A20 /* Thumb1InstrInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumb1InstrInfo.h; sourceTree = "<group>"; };
+		1F4246C5192ABF77006D6A20 /* Thumb1RegisterInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb1RegisterInfo.cpp; sourceTree = "<group>"; };
+		1F4246C6192ABF77006D6A20 /* Thumb1RegisterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumb1RegisterInfo.h; sourceTree = "<group>"; };
+		1F4246C7192ABF77006D6A20 /* Thumb2InstrInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb2InstrInfo.cpp; sourceTree = "<group>"; };
+		1F4246C8192ABF77006D6A20 /* Thumb2InstrInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumb2InstrInfo.h; sourceTree = "<group>"; };
+		1F4246C9192ABF77006D6A20 /* Thumb2ITBlockPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb2ITBlockPass.cpp; sourceTree = "<group>"; };
+		1F4246CA192ABF77006D6A20 /* Thumb2RegisterInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb2RegisterInfo.cpp; sourceTree = "<group>"; };
+		1F4246CB192ABF77006D6A20 /* Thumb2RegisterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumb2RegisterInfo.h; sourceTree = "<group>"; };
+		1F4246CC192ABF77006D6A20 /* Thumb2SizeReduction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb2SizeReduction.cpp; sourceTree = "<group>"; };
 		1F4A7FD3192922BF00D9BD62 /* DIContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DIContext.cpp; sourceTree = "<group>"; };
 		1F4A7FD4192922BF00D9BD62 /* DWARFAbbreviationDeclaration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFAbbreviationDeclaration.cpp; sourceTree = "<group>"; };
 		1F4A7FD5192922BF00D9BD62 /* DWARFAbbreviationDeclaration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFAbbreviationDeclaration.h; sourceTree = "<group>"; };
@@ -3595,6 +3692,158 @@
 			path = SelectionDAG;
 			sourceTree = "<group>";
 		};
+		1F424650192ABF76006D6A20 /* ARM */ = {
+			isa = PBXGroup;
+			children = (
+				1F42468E192ABF76006D6A20 /* AsmParser */,
+				1F424694192ABF76006D6A20 /* Disassembler */,
+				1F424699192ABF76006D6A20 /* InstPrinter */,
+				1F4246A2192ABF76006D6A20 /* MCTargetDesc */,
+				1F4246BC192ABF77006D6A20 /* TargetInfo */,
+				1F4246CD192ABF93006D6A20 /* TableGen Files */,
+				1F424651192ABF76006D6A20 /* A15SDOptimizer.cpp */,
+				1F424652192ABF76006D6A20 /* ARM.h */,
+				1F424654192ABF76006D6A20 /* ARMAsmPrinter.cpp */,
+				1F424655192ABF76006D6A20 /* ARMAsmPrinter.h */,
+				1F424656192ABF76006D6A20 /* ARMBaseInstrInfo.cpp */,
+				1F424657192ABF76006D6A20 /* ARMBaseInstrInfo.h */,
+				1F424658192ABF76006D6A20 /* ARMBaseRegisterInfo.cpp */,
+				1F424659192ABF76006D6A20 /* ARMBaseRegisterInfo.h */,
+				1F42465A192ABF76006D6A20 /* ARMBuildAttrs.h */,
+				1F42465B192ABF76006D6A20 /* ARMCallingConv.h */,
+				1F42465D192ABF76006D6A20 /* ARMCodeEmitter.cpp */,
+				1F42465E192ABF76006D6A20 /* ARMConstantIslandPass.cpp */,
+				1F42465F192ABF76006D6A20 /* ARMConstantPoolValue.cpp */,
+				1F424660192ABF76006D6A20 /* ARMConstantPoolValue.h */,
+				1F424661192ABF76006D6A20 /* ARMExpandPseudoInsts.cpp */,
+				1F424662192ABF76006D6A20 /* ARMFastISel.cpp */,
+				1F424663192ABF76006D6A20 /* ARMFeatures.h */,
+				1F424664192ABF76006D6A20 /* ARMFPUName.def */,
+				1F424665192ABF76006D6A20 /* ARMFPUName.h */,
+				1F424666192ABF76006D6A20 /* ARMFrameLowering.cpp */,
+				1F424667192ABF76006D6A20 /* ARMFrameLowering.h */,
+				1F424668192ABF76006D6A20 /* ARMHazardRecognizer.cpp */,
+				1F424669192ABF76006D6A20 /* ARMHazardRecognizer.h */,
+				1F42466B192ABF76006D6A20 /* ARMInstrInfo.cpp */,
+				1F42466C192ABF76006D6A20 /* ARMInstrInfo.h */,
+				1F424672192ABF76006D6A20 /* ARMISelDAGToDAG.cpp */,
+				1F424673192ABF76006D6A20 /* ARMISelLowering.cpp */,
+				1F424674192ABF76006D6A20 /* ARMISelLowering.h */,
+				1F424675192ABF76006D6A20 /* ARMJITInfo.cpp */,
+				1F424676192ABF76006D6A20 /* ARMJITInfo.h */,
+				1F424677192ABF76006D6A20 /* ARMLoadStoreOptimizer.cpp */,
+				1F424678192ABF76006D6A20 /* ARMMachineFunctionInfo.cpp */,
+				1F424679192ABF76006D6A20 /* ARMMachineFunctionInfo.h */,
+				1F42467A192ABF76006D6A20 /* ARMMCInstLower.cpp */,
+				1F42467B192ABF76006D6A20 /* ARMPerfectShuffle.h */,
+				1F42467C192ABF76006D6A20 /* ARMRegisterInfo.cpp */,
+				1F42467D192ABF76006D6A20 /* ARMRegisterInfo.h */,
+				1F42467F192ABF76006D6A20 /* ARMRelocations.h */,
+				1F424685192ABF76006D6A20 /* ARMSelectionDAGInfo.cpp */,
+				1F424686192ABF76006D6A20 /* ARMSelectionDAGInfo.h */,
+				1F424687192ABF76006D6A20 /* ARMSubtarget.cpp */,
+				1F424688192ABF76006D6A20 /* ARMSubtarget.h */,
+				1F424689192ABF76006D6A20 /* ARMTargetMachine.cpp */,
+				1F42468A192ABF76006D6A20 /* ARMTargetMachine.h */,
+				1F42468B192ABF76006D6A20 /* ARMTargetObjectFile.cpp */,
+				1F42468C192ABF76006D6A20 /* ARMTargetObjectFile.h */,
+				1F42468D192ABF76006D6A20 /* ARMTargetTransformInfo.cpp */,
+				1F4246B8192ABF77006D6A20 /* MLxExpansionPass.cpp */,
+				1F4246C1192ABF77006D6A20 /* Thumb1FrameLowering.cpp */,
+				1F4246C2192ABF77006D6A20 /* Thumb1FrameLowering.h */,
+				1F4246C3192ABF77006D6A20 /* Thumb1InstrInfo.cpp */,
+				1F4246C4192ABF77006D6A20 /* Thumb1InstrInfo.h */,
+				1F4246C5192ABF77006D6A20 /* Thumb1RegisterInfo.cpp */,
+				1F4246C6192ABF77006D6A20 /* Thumb1RegisterInfo.h */,
+				1F4246C7192ABF77006D6A20 /* Thumb2InstrInfo.cpp */,
+				1F4246C8192ABF77006D6A20 /* Thumb2InstrInfo.h */,
+				1F4246C9192ABF77006D6A20 /* Thumb2ITBlockPass.cpp */,
+				1F4246CA192ABF77006D6A20 /* Thumb2RegisterInfo.cpp */,
+				1F4246CB192ABF77006D6A20 /* Thumb2RegisterInfo.h */,
+				1F4246CC192ABF77006D6A20 /* Thumb2SizeReduction.cpp */,
+			);
+			path = ARM;
+			sourceTree = "<group>";
+		};
+		1F42468E192ABF76006D6A20 /* AsmParser */ = {
+			isa = PBXGroup;
+			children = (
+				1F42468F192ABF76006D6A20 /* ARMAsmParser.cpp */,
+			);
+			path = AsmParser;
+			sourceTree = "<group>";
+		};
+		1F424694192ABF76006D6A20 /* Disassembler */ = {
+			isa = PBXGroup;
+			children = (
+				1F424695192ABF76006D6A20 /* ARMDisassembler.cpp */,
+			);
+			path = Disassembler;
+			sourceTree = "<group>";
+		};
+		1F424699192ABF76006D6A20 /* InstPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				1F42469A192ABF76006D6A20 /* ARMInstPrinter.cpp */,
+				1F42469B192ABF76006D6A20 /* ARMInstPrinter.h */,
+			);
+			path = InstPrinter;
+			sourceTree = "<group>";
+		};
+		1F4246A2192ABF76006D6A20 /* MCTargetDesc */ = {
+			isa = PBXGroup;
+			children = (
+				1F4246A3192ABF76006D6A20 /* ARMAddressingModes.h */,
+				1F4246A4192ABF76006D6A20 /* ARMAsmBackend.cpp */,
+				1F4246A5192ABF76006D6A20 /* ARMBaseInfo.h */,
+				1F4246A6192ABF76006D6A20 /* ARMELFObjectWriter.cpp */,
+				1F4246A7192ABF76006D6A20 /* ARMELFStreamer.cpp */,
+				1F4246A8192ABF76006D6A20 /* ARMFixupKinds.h */,
+				1F4246A9192ABF76006D6A20 /* ARMMachObjectWriter.cpp */,
+				1F4246AA192ABF76006D6A20 /* ARMMachORelocationInfo.cpp */,
+				1F4246AB192ABF76006D6A20 /* ARMMCAsmInfo.cpp */,
+				1F4246AC192ABF76006D6A20 /* ARMMCAsmInfo.h */,
+				1F4246AD192ABF76006D6A20 /* ARMMCCodeEmitter.cpp */,
+				1F4246AE192ABF76006D6A20 /* ARMMCExpr.cpp */,
+				1F4246AF192ABF76006D6A20 /* ARMMCExpr.h */,
+				1F4246B0192ABF76006D6A20 /* ARMMCTargetDesc.cpp */,
+				1F4246B1192ABF76006D6A20 /* ARMMCTargetDesc.h */,
+				1F4246B2192ABF77006D6A20 /* ARMUnwindOp.h */,
+				1F4246B3192ABF77006D6A20 /* ARMUnwindOpAsm.cpp */,
+				1F4246B4192ABF77006D6A20 /* ARMUnwindOpAsm.h */,
+			);
+			path = MCTargetDesc;
+			sourceTree = "<group>";
+		};
+		1F4246BC192ABF77006D6A20 /* TargetInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F4246BD192ABF77006D6A20 /* ARMTargetInfo.cpp */,
+			);
+			path = TargetInfo;
+			sourceTree = "<group>";
+		};
+		1F4246CD192ABF93006D6A20 /* TableGen Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F424653192ABF76006D6A20 /* ARM.td */,
+				1F42465C192ABF76006D6A20 /* ARMCallingConv.td */,
+				1F42466A192ABF76006D6A20 /* ARMInstrFormats.td */,
+				1F42466D192ABF76006D6A20 /* ARMInstrInfo.td */,
+				1F42466E192ABF76006D6A20 /* ARMInstrNEON.td */,
+				1F42466F192ABF76006D6A20 /* ARMInstrThumb.td */,
+				1F424670192ABF76006D6A20 /* ARMInstrThumb2.td */,
+				1F424671192ABF76006D6A20 /* ARMInstrVFP.td */,
+				1F42467E192ABF76006D6A20 /* ARMRegisterInfo.td */,
+				1F424680192ABF76006D6A20 /* ARMSchedule.td */,
+				1F424681192ABF76006D6A20 /* ARMScheduleA8.td */,
+				1F424682192ABF76006D6A20 /* ARMScheduleA9.td */,
+				1F424683192ABF76006D6A20 /* ARMScheduleSwift.td */,
+				1F424684192ABF76006D6A20 /* ARMScheduleV6.td */,
+			);
+			name = "TableGen Files";
+			sourceTree = "<group>";
+		};
 		1F4A7FD2192922BF00D9BD62 /* DebugInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -3895,6 +4144,7 @@
 		1F4A81811929289400D9BD62 /* Target */ = {
 			isa = PBXGroup;
 			children = (
+				1F424650192ABF76006D6A20 /* ARM */,
 				1F4A81941929292800D9BD62 /* X86 */,
 				1F4A8182192928B300D9BD62 /* Mangler.cpp */,
 				1F4A8183192928B300D9BD62 /* Target.cpp */,
