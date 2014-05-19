@@ -58,6 +58,38 @@
 		1F1F47471929810700254AAE /* X86WinCOFFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A822219292B5400D9BD62 /* X86WinCOFFObjectWriter.cpp */; };
 		1F1FB46F19280F54004EB0CA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46B19280F46004EB0CA /* libz.dylib */; };
 		1F1FB47019280F58004EB0CA /* libcurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46D19280F4C004EB0CA /* libcurses.dylib */; };
+		1F308AE2192AC216009A210E /* A15SDOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424651192ABF76006D6A20 /* A15SDOptimizer.cpp */; };
+		1F308AE4192AC216009A210E /* ARMAsmPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424654192ABF76006D6A20 /* ARMAsmPrinter.cpp */; };
+		1F308AE6192AC217009A210E /* ARMBaseInstrInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424656192ABF76006D6A20 /* ARMBaseInstrInfo.cpp */; };
+		1F308AE8192AC217009A210E /* ARMBaseRegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424658192ABF76006D6A20 /* ARMBaseRegisterInfo.cpp */; };
+		1F308AEC192AC217009A210E /* ARMCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F42465D192ABF76006D6A20 /* ARMCodeEmitter.cpp */; };
+		1F308AED192AC217009A210E /* ARMConstantIslandPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F42465E192ABF76006D6A20 /* ARMConstantIslandPass.cpp */; };
+		1F308AEE192AC217009A210E /* ARMConstantPoolValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F42465F192ABF76006D6A20 /* ARMConstantPoolValue.cpp */; };
+		1F308AF0192AC217009A210E /* ARMExpandPseudoInsts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424661192ABF76006D6A20 /* ARMExpandPseudoInsts.cpp */; };
+		1F308AF1192AC217009A210E /* ARMFastISel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424662192ABF76006D6A20 /* ARMFastISel.cpp */; };
+		1F308AF5192AC217009A210E /* ARMFrameLowering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424666192ABF76006D6A20 /* ARMFrameLowering.cpp */; };
+		1F308AF7192AC217009A210E /* ARMHazardRecognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424668192ABF76006D6A20 /* ARMHazardRecognizer.cpp */; };
+		1F308AF9192AC217009A210E /* ARMInstrInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F42466B192ABF76006D6A20 /* ARMInstrInfo.cpp */; };
+		1F308AFB192AC217009A210E /* ARMISelDAGToDAG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424672192ABF76006D6A20 /* ARMISelDAGToDAG.cpp */; };
+		1F308AFC192AC217009A210E /* ARMISelLowering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424673192ABF76006D6A20 /* ARMISelLowering.cpp */; };
+		1F308AFE192AC217009A210E /* ARMJITInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424675192ABF76006D6A20 /* ARMJITInfo.cpp */; };
+		1F308B00192AC217009A210E /* ARMLoadStoreOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424677192ABF76006D6A20 /* ARMLoadStoreOptimizer.cpp */; };
+		1F308B01192AC217009A210E /* ARMMachineFunctionInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424678192ABF76006D6A20 /* ARMMachineFunctionInfo.cpp */; };
+		1F308B03192AC217009A210E /* ARMMCInstLower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F42467A192ABF76006D6A20 /* ARMMCInstLower.cpp */; };
+		1F308B05192AC217009A210E /* ARMRegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F42467C192ABF76006D6A20 /* ARMRegisterInfo.cpp */; };
+		1F308B08192AC217009A210E /* ARMSelectionDAGInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424685192ABF76006D6A20 /* ARMSelectionDAGInfo.cpp */; };
+		1F308B0A192AC217009A210E /* ARMSubtarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424687192ABF76006D6A20 /* ARMSubtarget.cpp */; };
+		1F308B0C192AC217009A210E /* ARMTargetMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F424689192ABF76006D6A20 /* ARMTargetMachine.cpp */; };
+		1F308B0E192AC217009A210E /* ARMTargetObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F42468B192ABF76006D6A20 /* ARMTargetObjectFile.cpp */; };
+		1F308B10192AC217009A210E /* ARMTargetTransformInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F42468D192ABF76006D6A20 /* ARMTargetTransformInfo.cpp */; };
+		1F308B11192AC217009A210E /* MLxExpansionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4246B8192ABF77006D6A20 /* MLxExpansionPass.cpp */; };
+		1F308B12192AC217009A210E /* Thumb1FrameLowering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4246C1192ABF77006D6A20 /* Thumb1FrameLowering.cpp */; };
+		1F308B14192AC217009A210E /* Thumb1InstrInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4246C3192ABF77006D6A20 /* Thumb1InstrInfo.cpp */; };
+		1F308B16192AC217009A210E /* Thumb1RegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4246C5192ABF77006D6A20 /* Thumb1RegisterInfo.cpp */; };
+		1F308B18192AC217009A210E /* Thumb2InstrInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4246C7192ABF77006D6A20 /* Thumb2InstrInfo.cpp */; };
+		1F308B1A192AC217009A210E /* Thumb2ITBlockPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4246C9192ABF77006D6A20 /* Thumb2ITBlockPass.cpp */; };
+		1F308B1B192AC217009A210E /* Thumb2RegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4246CA192ABF77006D6A20 /* Thumb2RegisterInfo.cpp */; };
+		1F308B1D192AC217009A210E /* Thumb2SizeReduction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4246CC192ABF77006D6A20 /* Thumb2SizeReduction.cpp */; };
 		1F42462B192ABC62006D6A20 /* X86TargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A822719292B5400D9BD62 /* X86TargetInfo.cpp */; };
 		1F42463A192ABD1B006D6A20 /* X86ShuffleDecode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A822C19292B5400D9BD62 /* X86ShuffleDecode.cpp */; };
 		1F561F6C1929553E00776A54 /* BitcodeWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57519281282004EB0CA /* BitcodeWriter.cpp */; };
@@ -574,6 +606,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
 			remoteInfo = "llvm-tblgen";
+		};
+		1F308ADD192AC1F0009A210E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
+		};
+		1F308ADF192AC1F0009A210E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F4246CE192ABFF6006D6A20;
+			remoteInfo = ARMCommonTableGen;
 		};
 		1F424640192ABE13006D6A20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1797,6 +1843,7 @@
 		1F4246CB192ABF77006D6A20 /* Thumb2RegisterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumb2RegisterInfo.h; sourceTree = "<group>"; };
 		1F4246CC192ABF77006D6A20 /* Thumb2SizeReduction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb2SizeReduction.cpp; sourceTree = "<group>"; };
 		1F4246D5192AC033006D6A20 /* tablegen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = tablegen.sh; sourceTree = "<group>"; };
+		1F4246DA192AC1CD006D6A20 /* libLLVMARMCodeGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMARMCodeGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4A7FD3192922BF00D9BD62 /* DIContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DIContext.cpp; sourceTree = "<group>"; };
 		1F4A7FD4192922BF00D9BD62 /* DWARFAbbreviationDeclaration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFAbbreviationDeclaration.cpp; sourceTree = "<group>"; };
 		1F4A7FD5192922BF00D9BD62 /* DWARFAbbreviationDeclaration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFAbbreviationDeclaration.h; sourceTree = "<group>"; };
@@ -2165,6 +2212,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F424630192ABD06006D6A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4246D7192AC1CD006D6A20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4372,6 +4426,7 @@
 				1F1F473A192980F300254AAE /* libLLVMX86Desc.a */,
 				1F424627192ABC4D006D6A20 /* libLLVMX86Info.a */,
 				1F424633192ABD06006D6A20 /* libLLVMX86Utils.a */,
+				1F4246DA192AC1CD006D6A20 /* libLLVMARMCodeGen.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4519,6 +4574,25 @@
 			name = LLVMX86Utils;
 			productName = LLVMX86Utils;
 			productReference = 1F424633192ABD06006D6A20 /* libLLVMX86Utils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1F4246D9192AC1CD006D6A20 /* LLVMARMCodeGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4246DB192AC1CD006D6A20 /* Build configuration list for PBXNativeTarget "LLVMARMCodeGen" */;
+			buildPhases = (
+				1F308AE1192AC1F4009A210E /* Create Intrinsics.gen */,
+				1F4246D6192AC1CD006D6A20 /* Sources */,
+				1F4246D7192AC1CD006D6A20 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F308ADE192AC1F0009A210E /* PBXTargetDependency */,
+				1F308AE0192AC1F0009A210E /* PBXTargetDependency */,
+			);
+			name = LLVMARMCodeGen;
+			productName = LLVMARMCodeGen;
+			productReference = 1F4246DA192AC1CD006D6A20 /* libLLVMARMCodeGen.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1F561F671929552000776A54 /* LLVMBitWriter */ = {
@@ -5006,6 +5080,7 @@
 				1F1F472E192980F300254AAE /* LLVMX86Desc */,
 				1F424626192ABC4D006D6A20 /* LLVMX86Info */,
 				1F424632192ABD06006D6A20 /* LLVMX86Utils */,
+				1F4246D9192AC1CD006D6A20 /* LLVMARMCodeGen */,
 				1FDB0B071929539200D07D2C /* LLVMipa */,
 				1F1FB3B219280E8C004EB0CA /* llvm-tblgen */,
 				1F4246CE192ABFF6006D6A20 /* ARMCommonTableGen */,
@@ -5023,6 +5098,21 @@
 			inputPaths = (
 			);
 			name = "Generate Intrinsics.gen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		1F308AE1192AC1F4009A210E /* Create Intrinsics.gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Intrinsics.gen";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5284,6 +5374,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F42463A192ABD1B006D6A20 /* X86ShuffleDecode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4246D6192AC1CD006D6A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F308AE2192AC216009A210E /* A15SDOptimizer.cpp in Sources */,
+				1F308AE4192AC216009A210E /* ARMAsmPrinter.cpp in Sources */,
+				1F308AE6192AC217009A210E /* ARMBaseInstrInfo.cpp in Sources */,
+				1F308AE8192AC217009A210E /* ARMBaseRegisterInfo.cpp in Sources */,
+				1F308AEC192AC217009A210E /* ARMCodeEmitter.cpp in Sources */,
+				1F308AED192AC217009A210E /* ARMConstantIslandPass.cpp in Sources */,
+				1F308AEE192AC217009A210E /* ARMConstantPoolValue.cpp in Sources */,
+				1F308AF0192AC217009A210E /* ARMExpandPseudoInsts.cpp in Sources */,
+				1F308AF1192AC217009A210E /* ARMFastISel.cpp in Sources */,
+				1F308AF5192AC217009A210E /* ARMFrameLowering.cpp in Sources */,
+				1F308AF7192AC217009A210E /* ARMHazardRecognizer.cpp in Sources */,
+				1F308AF9192AC217009A210E /* ARMInstrInfo.cpp in Sources */,
+				1F308AFB192AC217009A210E /* ARMISelDAGToDAG.cpp in Sources */,
+				1F308AFC192AC217009A210E /* ARMISelLowering.cpp in Sources */,
+				1F308AFE192AC217009A210E /* ARMJITInfo.cpp in Sources */,
+				1F308B00192AC217009A210E /* ARMLoadStoreOptimizer.cpp in Sources */,
+				1F308B01192AC217009A210E /* ARMMachineFunctionInfo.cpp in Sources */,
+				1F308B03192AC217009A210E /* ARMMCInstLower.cpp in Sources */,
+				1F308B05192AC217009A210E /* ARMRegisterInfo.cpp in Sources */,
+				1F308B08192AC217009A210E /* ARMSelectionDAGInfo.cpp in Sources */,
+				1F308B0A192AC217009A210E /* ARMSubtarget.cpp in Sources */,
+				1F308B0C192AC217009A210E /* ARMTargetMachine.cpp in Sources */,
+				1F308B0E192AC217009A210E /* ARMTargetObjectFile.cpp in Sources */,
+				1F308B10192AC217009A210E /* ARMTargetTransformInfo.cpp in Sources */,
+				1F308B11192AC217009A210E /* MLxExpansionPass.cpp in Sources */,
+				1F308B12192AC217009A210E /* Thumb1FrameLowering.cpp in Sources */,
+				1F308B14192AC217009A210E /* Thumb1InstrInfo.cpp in Sources */,
+				1F308B16192AC217009A210E /* Thumb1RegisterInfo.cpp in Sources */,
+				1F308B18192AC217009A210E /* Thumb2InstrInfo.cpp in Sources */,
+				1F308B1A192AC217009A210E /* Thumb2ITBlockPass.cpp in Sources */,
+				1F308B1B192AC217009A210E /* Thumb2RegisterInfo.cpp in Sources */,
+				1F308B1D192AC217009A210E /* Thumb2SizeReduction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5946,6 +6075,16 @@
 			isa = PBXTargetDependency;
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
 			targetProxy = 1F1F471219297DCD00254AAE /* PBXContainerItemProxy */;
+		};
+		1F308ADE192AC1F0009A210E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
+			targetProxy = 1F308ADD192AC1F0009A210E /* PBXContainerItemProxy */;
+		};
+		1F308AE0192AC1F0009A210E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F4246CE192ABFF6006D6A20 /* ARMCommonTableGen */;
+			targetProxy = 1F308ADF192AC1F0009A210E /* PBXContainerItemProxy */;
 		};
 		1F424641192ABE13006D6A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6626,6 +6765,86 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F4246DC192AC1CD006D6A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/ARMCommonTableGen\"",
+					"\"$(SRCROOT)/include\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F4246DD192AC1CD006D6A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/ARMCommonTableGen\"",
+					"\"$(SRCROOT)/include\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -8570,6 +8789,7 @@
 				1F424629192ABC4D006D6A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F424634192ABD06006D6A20 /* Build configuration list for PBXNativeTarget "LLVMX86Utils" */ = {
 			isa = XCConfigurationList;
@@ -8578,6 +8798,7 @@
 				1F424636192ABD06006D6A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F42463C192ABDB9006D6A20 /* Build configuration list for PBXAggregateTarget "X86CommonTableGen" */ = {
 			isa = XCConfigurationList;
@@ -8586,6 +8807,7 @@
 				1F42463E192ABDB9006D6A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F4246CF192ABFF6006D6A20 /* Build configuration list for PBXAggregateTarget "ARMCommonTableGen" */ = {
 			isa = XCConfigurationList;
@@ -8594,6 +8816,16 @@
 				1F4246D1192ABFF6006D6A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4246DB192AC1CD006D6A20 /* Build configuration list for PBXNativeTarget "LLVMARMCodeGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4246DC192AC1CD006D6A20 /* Debug */,
+				1F4246DD192AC1CD006D6A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F561F6B1929552100776A54 /* Build configuration list for PBXNativeTarget "LLVMBitWriter" */ = {
 			isa = XCConfigurationList;
