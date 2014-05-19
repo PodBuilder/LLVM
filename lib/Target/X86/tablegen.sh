@@ -24,13 +24,13 @@ TableGen () {
     fi
 }
 
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenRegisterInfo.inc" "-gen-register-info -I${SRCROOT}/lib/Target/X86"
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenDisassemblerTables.inc" "-gen-disassembler -I${SRCROOT}/lib/Target/X86"
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenInstrInfo.inc" "-gen-instr-info -I${SRCROOT}/lib/Target/X86"
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenAsmWriter.inc" "-gen-asm-writer -I${SRCROOT}/lib/Target/X86"
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenAsmWriter1.inc" "-gen-asm-writer -asmwriternum=1 -I${SRCROOT}/lib/Target/X86"
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenAsmMatcher.inc" "-gen-asm-matcher -I${SRCROOT}/lib/Target/X86"
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenDAGISel.inc" "-gen-dag-isel -I${SRCROOT}/lib/Target/X86"
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenFastISel.inc" "-gen-fast-isel -I${SRCROOT}/lib/Target/X86"
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenCallingConv.inc" "-gen-callingconv -I${SRCROOT}/lib/Target/X86"
-TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${DERIVED_FILE_DIR}/X86GenSubtargetInfo.inc" "-gen-subtarget -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenRegisterInfo.inc" "-gen-register-info -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenDisassemblerTables.inc" "-gen-disassembler -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenInstrInfo.inc" "-gen-instr-info -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenAsmWriter.inc" "-gen-asm-writer -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenAsmWriter1.inc" "-gen-asm-writer -asmwriternum=1 -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenAsmMatcher.inc" "-gen-asm-matcher -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenDAGISel.inc" "-gen-dag-isel -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenFastISel.inc" "-gen-fast-isel -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenCallingConv.inc" "-gen-callingconv -I${SRCROOT}/lib/Target/X86"
+TableGen "${SRCROOT}/lib/Target/X86/X86.td" "${PROJECT_TEMP_DIR}/X86CommonTableGen/X86GenSubtargetInfo.inc" "-gen-subtarget -I${SRCROOT}/lib/Target/X86"

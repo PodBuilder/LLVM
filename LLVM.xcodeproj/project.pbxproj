@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1F42463B192ABDB9006D6A20 /* X86CommonTableGen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F42463C192ABDB9006D6A20 /* Build configuration list for PBXAggregateTarget "X86CommonTableGen" */;
+			buildPhases = (
+				1F42463F192ABDC1006D6A20 /* Run TableGen */,
+			);
+			dependencies = (
+				1F424641192ABE13006D6A20 /* PBXTargetDependency */,
+			);
+			name = X86CommonTableGen;
+			productName = X86CommonTableGen;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1F1F470919297D8E00254AAE /* Mangler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8182192928B300D9BD62 /* Mangler.cpp */; };
 		1F1F470A19297D8E00254AAE /* Target.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8183192928B300D9BD62 /* Target.cpp */; };
@@ -548,40 +563,54 @@
 			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
 			remoteInfo = "llvm-tblgen";
 		};
-		1F1F471C19297F9500254AAE /* PBXContainerItemProxy */ = {
+		1F424640192ABE13006D6A20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
 			remoteInfo = "llvm-tblgen";
 		};
-		1F1F47221929806700254AAE /* PBXContainerItemProxy */ = {
+		1F424642192ABE1C006D6A20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
-			remoteInfo = "llvm-tblgen";
+			remoteGlobalIDString = 1F42463B192ABDB9006D6A20;
+			remoteInfo = X86CommonTableGen;
 		};
-		1F1F4730192980F300254AAE /* PBXContainerItemProxy */ = {
+		1F424646192ABE3B006D6A20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
-			remoteInfo = "llvm-tblgen";
+			remoteGlobalIDString = 1F42463B192ABDB9006D6A20;
+			remoteInfo = X86CommonTableGen;
 		};
-		1F42462C192ABC8A006D6A20 /* PBXContainerItemProxy */ = {
+		1F424648192ABE50006D6A20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
-			remoteInfo = "llvm-tblgen";
+			remoteGlobalIDString = 1F42463B192ABDB9006D6A20;
+			remoteInfo = X86CommonTableGen;
 		};
-		1F424637192ABD0D006D6A20 /* PBXContainerItemProxy */ = {
+		1F42464A192ABE5F006D6A20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
-			remoteInfo = "llvm-tblgen";
+			remoteGlobalIDString = 1F42463B192ABDB9006D6A20;
+			remoteInfo = X86CommonTableGen;
+		};
+		1F42464C192ABE69006D6A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42463B192ABDB9006D6A20;
+			remoteInfo = X86CommonTableGen;
+		};
+		1F42464E192ABE74006D6A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42463B192ABDB9006D6A20;
+			remoteInfo = X86CommonTableGen;
 		};
 		1F561F7A1929556F00776A54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -4106,13 +4135,13 @@
 			buildConfigurationList = 1F1F470419297C7300254AAE /* Build configuration list for PBXNativeTarget "LLVMX86CodeGen" */;
 			buildPhases = (
 				1F1F470819297D5B00254AAE /* Generate Intrinsics.gen */,
-				1F1F470719297D4C00254AAE /* TableGen X86 Sources */,
 				1F1F46FD19297C7300254AAE /* Sources */,
 				1F1F46FE19297C7300254AAE /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F42464D192ABE69006D6A20 /* PBXTargetDependency */,
 				1F1F471319297DCD00254AAE /* PBXTargetDependency */,
 			);
 			name = LLVMX86CodeGen;
@@ -4124,14 +4153,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F1F471919297F8500254AAE /* Build configuration list for PBXNativeTarget "LLVMX86AsmParser" */;
 			buildPhases = (
-				1F1F471F19297FB200254AAE /* TableGen */,
 				1F1F471419297F8500254AAE /* Sources */,
 				1F1F471519297F8500254AAE /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F1F471D19297F9500254AAE /* PBXTargetDependency */,
+				1F424649192ABE50006D6A20 /* PBXTargetDependency */,
 			);
 			name = LLVMX86AsmParser;
 			productName = LLVMX86AsmParser;
@@ -4142,14 +4170,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F1F47271929806700254AAE /* Build configuration list for PBXNativeTarget "LLVMX86AsmPrinter" */;
 			buildPhases = (
-				1F1F47231929806700254AAE /* TableGen */,
 				1F1F47241929806700254AAE /* Sources */,
 				1F1F47261929806700254AAE /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F1F47211929806700254AAE /* PBXTargetDependency */,
+				1F42464B192ABE5F006D6A20 /* PBXTargetDependency */,
 			);
 			name = LLVMX86AsmPrinter;
 			productName = LLVMX86AsmParser;
@@ -4160,14 +4187,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F1F4737192980F300254AAE /* Build configuration list for PBXNativeTarget "LLVMX86Desc" */;
 			buildPhases = (
-				1F1F4731192980F300254AAE /* TableGen */,
 				1F1F4732192980F300254AAE /* Sources */,
 				1F1F4736192980F300254AAE /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F1F472F192980F300254AAE /* PBXTargetDependency */,
+				1F424647192ABE3B006D6A20 /* PBXTargetDependency */,
 			);
 			name = LLVMX86Desc;
 			productName = LLVMX86AsmParser;
@@ -4194,14 +4220,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F42462A192ABC4D006D6A20 /* Build configuration list for PBXNativeTarget "LLVMX86Info" */;
 			buildPhases = (
-				1F42462E192ABC95006D6A20 /* TableGen */,
 				1F424623192ABC4D006D6A20 /* Sources */,
 				1F424624192ABC4D006D6A20 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F42462D192ABC8A006D6A20 /* PBXTargetDependency */,
+				1F424643192ABE1C006D6A20 /* PBXTargetDependency */,
 			);
 			name = LLVMX86Info;
 			productName = LLVMX86Info;
@@ -4212,14 +4237,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F424634192ABD06006D6A20 /* Build configuration list for PBXNativeTarget "LLVMX86Utils" */;
 			buildPhases = (
-				1F424639192ABD11006D6A20 /* TableGen */,
 				1F42462F192ABD06006D6A20 /* Sources */,
 				1F424630192ABD06006D6A20 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F424638192ABD0D006D6A20 /* PBXTargetDependency */,
+				1F42464F192ABE74006D6A20 /* PBXTargetDependency */,
 			);
 			name = LLVMX86Utils;
 			productName = LLVMX86Utils;
@@ -4713,26 +4737,12 @@
 				1F424632192ABD06006D6A20 /* LLVMX86Utils */,
 				1FDB0B071929539200D07D2C /* LLVMipa */,
 				1F1FB3B219280E8C004EB0CA /* llvm-tblgen */,
+				1F42463B192ABDB9006D6A20 /* X86CommonTableGen */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F1F470719297D4C00254AAE /* TableGen X86 Sources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "TableGen X86 Sources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = ". \"${SRCROOT}/lib/Target/X86/tablegen.sh\"";
-			showEnvVarsInLog = 0;
-		};
 		1F1F470819297D5B00254AAE /* Generate Intrinsics.gen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -4748,74 +4758,14 @@
 			shellScript = ". \"${SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
 			showEnvVarsInLog = 0;
 		};
-		1F1F471F19297FB200254AAE /* TableGen */ = {
+		1F42463F192ABDC1006D6A20 /* Run TableGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = TableGen;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = ". \"${SRCROOT}/lib/Target/X86/tablegen.sh\"";
-			showEnvVarsInLog = 0;
-		};
-		1F1F47231929806700254AAE /* TableGen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = TableGen;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = ". \"${SRCROOT}/lib/Target/X86/tablegen.sh\"";
-			showEnvVarsInLog = 0;
-		};
-		1F1F4731192980F300254AAE /* TableGen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = TableGen;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = ". \"${SRCROOT}/lib/Target/X86/tablegen.sh\"";
-			showEnvVarsInLog = 0;
-		};
-		1F42462E192ABC95006D6A20 /* TableGen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = TableGen;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = ". \"${SRCROOT}/lib/Target/X86/tablegen.sh\"";
-			showEnvVarsInLog = 0;
-		};
-		1F424639192ABD11006D6A20 /* TableGen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = TableGen;
+			name = "Run TableGen";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5711,30 +5661,40 @@
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
 			targetProxy = 1F1F471219297DCD00254AAE /* PBXContainerItemProxy */;
 		};
-		1F1F471D19297F9500254AAE /* PBXTargetDependency */ = {
+		1F424641192ABE13006D6A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
-			targetProxy = 1F1F471C19297F9500254AAE /* PBXContainerItemProxy */;
+			targetProxy = 1F424640192ABE13006D6A20 /* PBXContainerItemProxy */;
 		};
-		1F1F47211929806700254AAE /* PBXTargetDependency */ = {
+		1F424643192ABE1C006D6A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
-			targetProxy = 1F1F47221929806700254AAE /* PBXContainerItemProxy */;
+			target = 1F42463B192ABDB9006D6A20 /* X86CommonTableGen */;
+			targetProxy = 1F424642192ABE1C006D6A20 /* PBXContainerItemProxy */;
 		};
-		1F1F472F192980F300254AAE /* PBXTargetDependency */ = {
+		1F424647192ABE3B006D6A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
-			targetProxy = 1F1F4730192980F300254AAE /* PBXContainerItemProxy */;
+			target = 1F42463B192ABDB9006D6A20 /* X86CommonTableGen */;
+			targetProxy = 1F424646192ABE3B006D6A20 /* PBXContainerItemProxy */;
 		};
-		1F42462D192ABC8A006D6A20 /* PBXTargetDependency */ = {
+		1F424649192ABE50006D6A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
-			targetProxy = 1F42462C192ABC8A006D6A20 /* PBXContainerItemProxy */;
+			target = 1F42463B192ABDB9006D6A20 /* X86CommonTableGen */;
+			targetProxy = 1F424648192ABE50006D6A20 /* PBXContainerItemProxy */;
 		};
-		1F424638192ABD0D006D6A20 /* PBXTargetDependency */ = {
+		1F42464B192ABE5F006D6A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
-			targetProxy = 1F424637192ABD0D006D6A20 /* PBXContainerItemProxy */;
+			target = 1F42463B192ABDB9006D6A20 /* X86CommonTableGen */;
+			targetProxy = 1F42464A192ABE5F006D6A20 /* PBXContainerItemProxy */;
+		};
+		1F42464D192ABE69006D6A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F42463B192ABDB9006D6A20 /* X86CommonTableGen */;
+			targetProxy = 1F42464C192ABE69006D6A20 /* PBXContainerItemProxy */;
+		};
+		1F42464F192ABE74006D6A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F42463B192ABDB9006D6A20 /* X86CommonTableGen */;
+			targetProxy = 1F42464E192ABE74006D6A20 /* PBXContainerItemProxy */;
 		};
 		1F561F7B1929556F00776A54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5902,6 +5862,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
 					"\"$(SRCROOT)/include\"",
 					"\"$(SRCROOT)/lib/Target/X86\"",
 				);
@@ -5944,6 +5905,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
 					"\"$(SRCROOT)/include\"",
 					"\"$(SRCROOT)/lib/Target/X86\"",
 				);
@@ -5982,6 +5944,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
 					"\"$(SRCROOT)/include\"",
 					"\"$(SRCROOT)/lib/Target/X86\"",
 				);
@@ -6024,6 +5987,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
 					"\"$(SRCROOT)/include\"",
 					"\"$(SRCROOT)/lib/Target/X86\"",
 				);
@@ -6062,6 +6026,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
 					"\"$(SRCROOT)/include\"",
 					"\"$(SRCROOT)/lib/Target/X86\"",
 				);
@@ -6104,6 +6069,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
 					"\"$(SRCROOT)/include\"",
 					"\"$(SRCROOT)/lib/Target/X86\"",
 				);
@@ -6212,6 +6178,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
+					"\"$(SRCROOT)/include\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6250,6 +6220,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
+					"\"$(SRCROOT)/include\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -6284,6 +6258,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
+					"\"$(SRCROOT)/include\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6322,9 +6300,27 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_TEMP_DIR)/X86CommonTableGen\"",
+					"\"$(SRCROOT)/include\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F42463D192ABDB9006D6A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F42463E192ABDB9006D6A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -8275,6 +8271,14 @@
 			buildConfigurations = (
 				1F424635192ABD06006D6A20 /* Debug */,
 				1F424636192ABD06006D6A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F42463C192ABDB9006D6A20 /* Build configuration list for PBXAggregateTarget "X86CommonTableGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F42463D192ABDB9006D6A20 /* Debug */,
+				1F42463E192ABDB9006D6A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
