@@ -2770,7 +2770,7 @@ unsigned ARMFastISel::ARMEmitIntExt(MVT SrcVT, unsigned SrcReg, MVT DestVT,
   // 16-bit Thumb instructions always set CPSR (unless they're in an IT block).
   bool setsCPSR = &ARM::tGPRRegClass == RC;
   unsigned LSLOpc = isThumb2 ? ARM::tLSLri : ARM::MOVsi;
-  unsigned ResultReg;
+  unsigned ResultReg = 0;
   // MOVsi encodes shift and immediate in shift operand addressing mode.
   // The following condition has the same value when emitting two
   // instruction sequences: both are shifts.
@@ -2845,7 +2845,7 @@ bool ARMFastISel::SelectShift(const Instruction *I,
     return false;
 
   unsigned Opc = ARM::MOVsr;
-  unsigned ShiftImm;
+  unsigned ShiftImm = 0;
   Value *Src2Value = I->getOperand(1);
   if (const ConstantInt *CI = dyn_cast<ConstantInt>(Src2Value)) {
     ShiftImm = CI->getZExtValue();
@@ -2997,7 +2997,7 @@ bool ARMFastISel::tryToFoldLoadIntoMI(MachineInstr *MI, unsigned OpNo,
   const uint64_t Imm = MI->getOperand(2).getImm();
 
   bool Found = false;
-  bool isZExt;
+  bool isZExt = false;
   for (unsigned i = 0, e = array_lengthof(FoldableLoadExtends);
        i != e; ++i) {
     if (FoldableLoadExtends[i].Opc[isThumb2] == MI->getOpcode() &&
