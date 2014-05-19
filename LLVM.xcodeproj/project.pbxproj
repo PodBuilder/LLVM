@@ -19,6 +19,18 @@
 			name = X86CommonTableGen;
 			productName = X86CommonTableGen;
 		};
+		1F4246CE192ABFF6006D6A20 /* ARMCommonTableGen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F4246CF192ABFF6006D6A20 /* Build configuration list for PBXAggregateTarget "ARMCommonTableGen" */;
+			buildPhases = (
+				1F4246D2192AC003006D6A20 /* Run TableGen */,
+			);
+			dependencies = (
+				1F4246D4192AC00E006D6A20 /* PBXTargetDependency */,
+			);
+			name = ARMCommonTableGen;
+			productName = ARMCommonTableGen;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -611,6 +623,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1F42463B192ABDB9006D6A20;
 			remoteInfo = X86CommonTableGen;
+		};
+		1F4246D3192AC00E006D6A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
 		};
 		1F561F7A1929556F00776A54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1777,6 +1796,7 @@
 		1F4246CA192ABF77006D6A20 /* Thumb2RegisterInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb2RegisterInfo.cpp; sourceTree = "<group>"; };
 		1F4246CB192ABF77006D6A20 /* Thumb2RegisterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumb2RegisterInfo.h; sourceTree = "<group>"; };
 		1F4246CC192ABF77006D6A20 /* Thumb2SizeReduction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thumb2SizeReduction.cpp; sourceTree = "<group>"; };
+		1F4246D5192AC033006D6A20 /* tablegen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = tablegen.sh; sourceTree = "<group>"; };
 		1F4A7FD3192922BF00D9BD62 /* DIContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DIContext.cpp; sourceTree = "<group>"; };
 		1F4A7FD4192922BF00D9BD62 /* DWARFAbbreviationDeclaration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFAbbreviationDeclaration.cpp; sourceTree = "<group>"; };
 		1F4A7FD5192922BF00D9BD62 /* DWARFAbbreviationDeclaration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWARFAbbreviationDeclaration.h; sourceTree = "<group>"; };
@@ -3826,6 +3846,7 @@
 		1F4246CD192ABF93006D6A20 /* TableGen Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F4246D5192AC033006D6A20 /* tablegen.sh */,
 				1F424653192ABF76006D6A20 /* ARM.td */,
 				1F42465C192ABF76006D6A20 /* ARMCallingConv.td */,
 				1F42466A192ABF76006D6A20 /* ARMInstrFormats.td */,
@@ -4987,6 +5008,7 @@
 				1F424632192ABD06006D6A20 /* LLVMX86Utils */,
 				1FDB0B071929539200D07D2C /* LLVMipa */,
 				1F1FB3B219280E8C004EB0CA /* llvm-tblgen */,
+				1F4246CE192ABFF6006D6A20 /* ARMCommonTableGen */,
 				1F42463B192ABDB9006D6A20 /* X86CommonTableGen */,
 			);
 		};
@@ -5022,6 +5044,20 @@
 			shellPath = /bin/sh;
 			shellScript = ". \"${SRCROOT}/lib/Target/X86/tablegen.sh\"";
 			showEnvVarsInLog = 0;
+		};
+		1F4246D2192AC003006D6A20 /* Run TableGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run TableGen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/Target/ARM/tablegen.sh\"";
 		};
 		1F561F7C1929557300776A54 /* Generate Intrinsics.gen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -5946,6 +5982,11 @@
 			target = 1F42463B192ABDB9006D6A20 /* X86CommonTableGen */;
 			targetProxy = 1F42464E192ABE74006D6A20 /* PBXContainerItemProxy */;
 		};
+		1F4246D4192AC00E006D6A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
+			targetProxy = 1F4246D3192AC00E006D6A20 /* PBXContainerItemProxy */;
+		};
 		1F561F7B1929556F00776A54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
@@ -6568,6 +6609,20 @@
 			name = Debug;
 		};
 		1F42463E192ABDB9006D6A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F4246D0192ABFF6006D6A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F4246D1192ABFF6006D6A20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -8529,6 +8584,14 @@
 			buildConfigurations = (
 				1F42463D192ABDB9006D6A20 /* Debug */,
 				1F42463E192ABDB9006D6A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F4246CF192ABFF6006D6A20 /* Build configuration list for PBXAggregateTarget "ARMCommonTableGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4246D0192ABFF6006D6A20 /* Debug */,
+				1F4246D1192ABFF6006D6A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
