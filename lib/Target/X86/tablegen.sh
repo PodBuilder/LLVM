@@ -19,7 +19,7 @@ TableGen () {
     mkdir -p `dirname $2`
     
     if [ "$1" -nt "$2" ]; then
-        echo Processing `basename $2`
+        echo Generating `basename $2`
         $LLVM_TBLGEN $3 -I ${SRCROOT}/include -o $2 $1
     fi
 }
