@@ -20,6 +20,15 @@
 		1F1F472B1929807C00254AAE /* X86ATTInstPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A820C19292B5400D9BD62 /* X86ATTInstPrinter.cpp */; };
 		1F1F472C1929807C00254AAE /* X86InstComments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A820E19292B5400D9BD62 /* X86InstComments.cpp */; };
 		1F1F472D1929807C00254AAE /* X86IntelInstPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821019292B5400D9BD62 /* X86IntelInstPrinter.cpp */; };
+		1F1F473B1929810700254AAE /* X86AsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821619292B5400D9BD62 /* X86AsmBackend.cpp */; };
+		1F1F473D1929810700254AAE /* X86ELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821819292B5400D9BD62 /* X86ELFObjectWriter.cpp */; };
+		1F1F473E1929810700254AAE /* X86ELFRelocationInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821919292B5400D9BD62 /* X86ELFRelocationInfo.cpp */; };
+		1F1F47401929810700254AAE /* X86MachObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821B19292B5400D9BD62 /* X86MachObjectWriter.cpp */; };
+		1F1F47411929810700254AAE /* X86MachORelocationInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821C19292B5400D9BD62 /* X86MachORelocationInfo.cpp */; };
+		1F1F47421929810700254AAE /* X86MCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821D19292B5400D9BD62 /* X86MCAsmInfo.cpp */; };
+		1F1F47441929810700254AAE /* X86MCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A821F19292B5400D9BD62 /* X86MCCodeEmitter.cpp */; };
+		1F1F47451929810700254AAE /* X86MCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A822019292B5400D9BD62 /* X86MCTargetDesc.cpp */; };
+		1F1F47471929810700254AAE /* X86WinCOFFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A822219292B5400D9BD62 /* X86WinCOFFObjectWriter.cpp */; };
 		1F1FB46F19280F54004EB0CA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46B19280F46004EB0CA /* libz.dylib */; };
 		1F1FB47019280F58004EB0CA /* libcurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1FB46D19280F4C004EB0CA /* libcurses.dylib */; };
 		1F561F6C1929553E00776A54 /* BitcodeWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FB57519281282004EB0CA /* BitcodeWriter.cpp */; };
@@ -551,6 +560,13 @@
 			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
 			remoteInfo = "llvm-tblgen";
 		};
+		1F1F4730192980F300254AAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
+		};
 		1F561F7A1929556F00776A54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
@@ -613,7 +629,8 @@
 		1F1F470119297C7300254AAE /* libLLVMX86CodeGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMX86CodeGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1F470619297C8F00254AAE /* tablegen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = tablegen.sh; sourceTree = "<group>"; };
 		1F1F471819297F8500254AAE /* libLLVMX86AsmParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMX86AsmParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F1F472A1929806700254AAE /* libLLVMX86AsmParser copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libLLVMX86AsmParser copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1F472A1929806700254AAE /* libLLVMX86AsmPrinter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMX86AsmPrinter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1F473A192980F300254AAE /* libLLVMX86Desc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMX86Desc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1FAE2919280BE8004EB0CA /* APFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APFloat.h; sourceTree = "<group>"; };
 		1F1FAE2A19280BE8004EB0CA /* APInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APInt.h; sourceTree = "<group>"; };
 		1F1FAE2B19280BE8004EB0CA /* APSInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSInt.h; sourceTree = "<group>"; };
@@ -1952,6 +1969,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F1F47261929806700254AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F1F4736192980F300254AAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4012,7 +4036,8 @@
 				1FCF508119297612000122C0 /* libLLVMTarget.a */,
 				1F1F470119297C7300254AAE /* libLLVMX86CodeGen.a */,
 				1F1F471819297F8500254AAE /* libLLVMX86AsmParser.a */,
-				1F1F472A1929806700254AAE /* libLLVMX86AsmParser copy.a */,
+				1F1F472A1929806700254AAE /* libLLVMX86AsmPrinter.a */,
+				1F1F473A192980F300254AAE /* libLLVMX86Desc.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4094,7 +4119,25 @@
 			);
 			name = LLVMX86AsmPrinter;
 			productName = LLVMX86AsmParser;
-			productReference = 1F1F472A1929806700254AAE /* libLLVMX86AsmParser copy.a */;
+			productReference = 1F1F472A1929806700254AAE /* libLLVMX86AsmPrinter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1F1F472E192980F300254AAE /* LLVMX86Desc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F1F4737192980F300254AAE /* Build configuration list for PBXNativeTarget "LLVMX86Desc" */;
+			buildPhases = (
+				1F1F4731192980F300254AAE /* TableGen */,
+				1F1F4732192980F300254AAE /* Sources */,
+				1F1F4736192980F300254AAE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F1F472F192980F300254AAE /* PBXTargetDependency */,
+			);
+			name = LLVMX86Desc;
+			productName = LLVMX86AsmParser;
+			productReference = 1F1F473A192980F300254AAE /* libLLVMX86Desc.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1F1FB3B219280E8C004EB0CA /* llvm-tblgen */ = {
@@ -4595,6 +4638,7 @@
 				1F1F471719297F8500254AAE /* LLVMX86AsmParser */,
 				1F1F47201929806700254AAE /* LLVMX86AsmPrinter */,
 				1F1F470019297C7300254AAE /* LLVMX86CodeGen */,
+				1F1F472E192980F300254AAE /* LLVMX86Desc */,
 				1FDB0B071929539200D07D2C /* LLVMipa */,
 				1F1FB3B219280E8C004EB0CA /* llvm-tblgen */,
 			);
@@ -4648,6 +4692,21 @@
 			showEnvVarsInLog = 0;
 		};
 		1F1F47231929806700254AAE /* TableGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = TableGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/Target/X86/tablegen.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		1F1F4731192980F300254AAE /* TableGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4815,6 +4874,22 @@
 				1F1F472B1929807C00254AAE /* X86ATTInstPrinter.cpp in Sources */,
 				1F1F472C1929807C00254AAE /* X86InstComments.cpp in Sources */,
 				1F1F472D1929807C00254AAE /* X86IntelInstPrinter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F1F4732192980F300254AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1F473B1929810700254AAE /* X86AsmBackend.cpp in Sources */,
+				1F1F473D1929810700254AAE /* X86ELFObjectWriter.cpp in Sources */,
+				1F1F473E1929810700254AAE /* X86ELFRelocationInfo.cpp in Sources */,
+				1F1F47401929810700254AAE /* X86MachObjectWriter.cpp in Sources */,
+				1F1F47411929810700254AAE /* X86MachORelocationInfo.cpp in Sources */,
+				1F1F47421929810700254AAE /* X86MCAsmInfo.cpp in Sources */,
+				1F1F47441929810700254AAE /* X86MCCodeEmitter.cpp in Sources */,
+				1F1F47451929810700254AAE /* X86MCTargetDesc.cpp in Sources */,
+				1F1F47471929810700254AAE /* X86WinCOFFObjectWriter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5528,6 +5603,11 @@
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
 			targetProxy = 1F1F47221929806700254AAE /* PBXContainerItemProxy */;
 		};
+		1F1F472F192980F300254AAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
+			targetProxy = 1F1F4730192980F300254AAE /* PBXContainerItemProxy */;
+		};
 		1F561F7B1929556F00776A54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
@@ -5779,7 +5859,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "LLVMX86AsmParser copy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -5820,7 +5900,87 @@
 					"\"$(SRCROOT)/lib/Target/X86\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "LLVMX86AsmParser copy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F1F4738192980F300254AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/include\"",
+					"\"$(SRCROOT)/lib/Target/X86\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F1F4739192980F300254AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/include\"",
+					"\"$(SRCROOT)/lib/Target/X86\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -7801,12 +7961,22 @@
 				1F1F471B19297F8500254AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1F47271929806700254AAE /* Build configuration list for PBXNativeTarget "LLVMX86AsmPrinter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F1F47281929806700254AAE /* Debug */,
 				1F1F47291929806700254AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F1F4737192980F300254AAE /* Build configuration list for PBXNativeTarget "LLVMX86Desc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F1F4738192980F300254AAE /* Debug */,
+				1F1F4739192980F300254AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
