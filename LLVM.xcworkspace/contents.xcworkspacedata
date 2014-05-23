@@ -7,4 +7,7 @@
    <FileRef
       location = "group:lib/Target/X86/X86.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:lib/Target/ARM/ARM.xcodeproj">
+   </FileRef>
 </Workspace>

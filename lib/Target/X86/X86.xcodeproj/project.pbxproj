@@ -236,48 +236,6 @@
 			remoteGlobalIDString = 1FCF508119297612000122C0;
 			remoteInfo = LLVMTarget;
 		};
-		1F195950192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F1F471819297F8500254AAE;
-			remoteInfo = LLVMX86AsmParser;
-		};
-		1F195952192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F1F472A1929806700254AAE;
-			remoteInfo = LLVMX86AsmPrinter;
-		};
-		1F195954192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F1F470119297C7300254AAE;
-			remoteInfo = LLVMX86CodeGen;
-		};
-		1F195956192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F1F473A192980F300254AAE;
-			remoteInfo = LLVMX86Desc;
-		};
-		1F195958192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F424627192ABC4D006D6A20;
-			remoteInfo = LLVMX86Info;
-		};
-		1F19595A192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F424633192ABD06006D6A20;
-			remoteInfo = LLVMX86Utils;
-		};
 		1F19595C192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
@@ -694,12 +652,6 @@
 				1F19594B192FEDFF0098B0BD /* libLLVMSupport.a */,
 				1F19594D192FEDFF0098B0BD /* libLLVMTableGen.a */,
 				1F19594F192FEDFF0098B0BD /* libLLVMTarget.a */,
-				1F195951192FEDFF0098B0BD /* libLLVMX86AsmParser.a */,
-				1F195953192FEDFF0098B0BD /* libLLVMX86AsmPrinter.a */,
-				1F195955192FEDFF0098B0BD /* libLLVMX86CodeGen.a */,
-				1F195957192FEDFF0098B0BD /* libLLVMX86Desc.a */,
-				1F195959192FEDFF0098B0BD /* libLLVMX86Info.a */,
-				1F19595B192FEDFF0098B0BD /* libLLVMX86Utils.a */,
 				1F19595D192FEDFF0098B0BD /* libLLVMARMCodeGen.a */,
 				1F19595F192FEDFF0098B0BD /* libLLVMipa.a */,
 				1F195961192FEDFF0098B0BD /* llvm-tblgen */,
@@ -1035,48 +987,6 @@
 			fileType = archive.ar;
 			path = libLLVMTarget.a;
 			remoteRef = 1F19594E192FEDFF0098B0BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1F195951192FEDFF0098B0BD /* libLLVMX86AsmParser.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLLVMX86AsmParser.a;
-			remoteRef = 1F195950192FEDFF0098B0BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1F195953192FEDFF0098B0BD /* libLLVMX86AsmPrinter.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLLVMX86AsmPrinter.a;
-			remoteRef = 1F195952192FEDFF0098B0BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1F195955192FEDFF0098B0BD /* libLLVMX86CodeGen.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLLVMX86CodeGen.a;
-			remoteRef = 1F195954192FEDFF0098B0BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1F195957192FEDFF0098B0BD /* libLLVMX86Desc.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLLVMX86Desc.a;
-			remoteRef = 1F195956192FEDFF0098B0BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1F195959192FEDFF0098B0BD /* libLLVMX86Info.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLLVMX86Info.a;
-			remoteRef = 1F195958192FEDFF0098B0BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1F19595B192FEDFF0098B0BD /* libLLVMX86Utils.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLLVMX86Utils.a;
-			remoteRef = 1F19595A192FEDFF0098B0BD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		1F19595D192FEDFF0098B0BD /* libLLVMARMCodeGen.a */ = {
@@ -1742,6 +1652,7 @@
 				1F195965192FEE210098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F19596F192FEE520098B0BD /* Build configuration list for PBXNativeTarget "LLVMX86CodeGen" */ = {
 			isa = XCConfigurationList;
@@ -1750,6 +1661,7 @@
 				1F195971192FEE520098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1959A1192FF0510098B0BD /* Build configuration list for PBXNativeTarget "LLVMX86AsmParser" */ = {
 			isa = XCConfigurationList;
@@ -1758,6 +1670,7 @@
 				1F1959A3192FF0510098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1959B4192FF0A90098B0BD /* Build configuration list for PBXNativeTarget "LLVMX86AsmPrinter" */ = {
 			isa = XCConfigurationList;
@@ -1766,6 +1679,7 @@
 				1F1959B6192FF0A90098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1959C1192FF12C0098B0BD /* Build configuration list for PBXNativeTarget "LLVMX86Desc" */ = {
 			isa = XCConfigurationList;
@@ -1774,6 +1688,7 @@
 				1F1959C3192FF12C0098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1959D4192FF17E0098B0BD /* Build configuration list for PBXNativeTarget "LLVMX86Info" */ = {
 			isa = XCConfigurationList;
@@ -1782,6 +1697,7 @@
 				1F1959D6192FF17E0098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1959DD192FF1A70098B0BD /* Build configuration list for PBXNativeTarget "LLVMX86Utils" */ = {
 			isa = XCConfigurationList;
@@ -1790,6 +1706,7 @@
 				1F1959DF192FF1A70098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
