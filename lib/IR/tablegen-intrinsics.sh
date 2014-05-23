@@ -14,11 +14,11 @@ LLVM_TBLGEN=${BUILT_PRODUCTS_DIR}/llvm-tblgen
     exit 1
 }
 
-INPUT=${SRCROOT}/include/llvm/IR/Intrinsics.td
+INPUT=${TOP_SRCROOT}/include/llvm/IR/Intrinsics.td
 OUTPUT=${DERIVED_FILE_DIR}/llvm/IR/Intrinsics.gen
 
 mkdir -p `dirname ${OUTPUT}`
 if [ "$INPUT" -nt "$OUTPUT" ]; then
     echo Processing $INPUT
-    $LLVM_TBLGEN -gen-intrinsic -I ${SRCROOT}/include -o $OUTPUT $INPUT
+    $LLVM_TBLGEN -gen-intrinsic -I ${TOP_SRCROOT}/include -o $OUTPUT $INPUT
 fi

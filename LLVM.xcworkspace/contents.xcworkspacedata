@@ -4,4 +4,7 @@
    <FileRef
       location = "container:LLVM.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:lib/Target/X86/X86.xcodeproj">
+   </FileRef>
 </Workspace>
