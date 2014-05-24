@@ -278,8 +278,8 @@ void ARM64AdvSIMDScalar::transformInstruction(MachineInstr *MI) {
   // Check if we need a copy for the source registers.
   unsigned OrigSrc0 = MI->getOperand(1).getReg();
   unsigned OrigSrc1 = MI->getOperand(2).getReg();
-  unsigned Src0 = 0, SubReg0;
-  unsigned Src1 = 0, SubReg1;
+  unsigned Src0 = 0, SubReg0 = 0;
+  unsigned Src1 = 0, SubReg1 = 0;
   if (!MRI->def_empty(OrigSrc0)) {
     MachineRegisterInfo::def_iterator Def = MRI->def_begin(OrigSrc0);
     assert(llvm::next(Def) == MRI->def_end() && "Multiple def in SSA!");

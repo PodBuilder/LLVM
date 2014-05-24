@@ -850,7 +850,7 @@ bool ARM64FastISel::EmitCmp(Value *Src1Value, Value *Src2Value, bool isZExt) {
 
   // Check to see if the 2nd operand is a constant that we can encode directly
   // in the compare.
-  uint64_t Imm;
+  uint64_t Imm = 0;
   bool UseImm = false;
   bool isNegativeImm = false;
   if (const ConstantInt *ConstInt = dyn_cast<ConstantInt>(Src2Value)) {
@@ -872,7 +872,7 @@ bool ARM64FastISel::EmitCmp(Value *Src1Value, Value *Src2Value, bool isZExt) {
         UseImm = true;
   }
 
-  unsigned ZReg;
+  unsigned ZReg = 0;
   unsigned CmpOpc;
   bool isICmp = true;
   bool needsExt = false;
@@ -910,7 +910,7 @@ bool ARM64FastISel::EmitCmp(Value *Src1Value, Value *Src2Value, bool isZExt) {
   unsigned SrcReg1 = getRegForValue(Src1Value);
   if (SrcReg1 == 0) return false;
 
-  unsigned SrcReg2;
+  unsigned SrcReg2 = 0;
   if (!UseImm) {
     SrcReg2 = getRegForValue(Src2Value);
     if (SrcReg2 == 0) return false;
