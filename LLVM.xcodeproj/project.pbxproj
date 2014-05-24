@@ -352,6 +352,39 @@
 		1F6E0D3019312A58001B8DC5 /* InstCombineSimplifyDemanded.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C611931276E001B8DC5 /* InstCombineSimplifyDemanded.cpp */; };
 		1F6E0D3119312A58001B8DC5 /* InstCombineVectorOps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C621931276E001B8DC5 /* InstCombineVectorOps.cpp */; };
 		1F6E0D3219312A58001B8DC5 /* InstructionCombining.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C641931276E001B8DC5 /* InstructionCombining.cpp */; };
+		1F6E0D3E19312B09001B8DC5 /* ADCE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C961931276E001B8DC5 /* ADCE.cpp */; };
+		1F6E0D3F19312B09001B8DC5 /* CodeGenPrepare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C971931276E001B8DC5 /* CodeGenPrepare.cpp */; };
+		1F6E0D4019312B09001B8DC5 /* ConstantProp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C981931276E001B8DC5 /* ConstantProp.cpp */; };
+		1F6E0D4119312B09001B8DC5 /* CorrelatedValuePropagation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C991931276E001B8DC5 /* CorrelatedValuePropagation.cpp */; };
+		1F6E0D4219312B09001B8DC5 /* DCE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C9A1931276E001B8DC5 /* DCE.cpp */; };
+		1F6E0D4319312B09001B8DC5 /* DeadStoreElimination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C9B1931276E001B8DC5 /* DeadStoreElimination.cpp */; };
+		1F6E0D4419312B09001B8DC5 /* EarlyCSE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C9C1931276E001B8DC5 /* EarlyCSE.cpp */; };
+		1F6E0D4519312B09001B8DC5 /* FlattenCFGPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C9D1931276E001B8DC5 /* FlattenCFGPass.cpp */; };
+		1F6E0D4619312B09001B8DC5 /* GlobalMerge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C9E1931276E001B8DC5 /* GlobalMerge.cpp */; };
+		1F6E0D4719312B09001B8DC5 /* GVN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C9F1931276E001B8DC5 /* GVN.cpp */; };
+		1F6E0D4819312B09001B8DC5 /* IndVarSimplify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA01931276E001B8DC5 /* IndVarSimplify.cpp */; };
+		1F6E0D4919312B09001B8DC5 /* JumpThreading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA11931276E001B8DC5 /* JumpThreading.cpp */; };
+		1F6E0D4A19312B09001B8DC5 /* LICM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA21931276E001B8DC5 /* LICM.cpp */; };
+		1F6E0D4B19312B09001B8DC5 /* LoopDeletion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA31931276E001B8DC5 /* LoopDeletion.cpp */; };
+		1F6E0D4C19312B09001B8DC5 /* LoopIdiomRecognize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA41931276E001B8DC5 /* LoopIdiomRecognize.cpp */; };
+		1F6E0D4D19312B09001B8DC5 /* LoopInstSimplify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA51931276E001B8DC5 /* LoopInstSimplify.cpp */; };
+		1F6E0D4E19312B09001B8DC5 /* LoopRotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA61931276E001B8DC5 /* LoopRotation.cpp */; };
+		1F6E0D4F19312B09001B8DC5 /* LoopStrengthReduce.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA71931276E001B8DC5 /* LoopStrengthReduce.cpp */; };
+		1F6E0D5019312B09001B8DC5 /* LoopUnrollPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA81931276E001B8DC5 /* LoopUnrollPass.cpp */; };
+		1F6E0D5119312B09001B8DC5 /* LoopUnswitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CA91931276E001B8DC5 /* LoopUnswitch.cpp */; };
+		1F6E0D5219312B09001B8DC5 /* LowerAtomic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CAA1931276E001B8DC5 /* LowerAtomic.cpp */; };
+		1F6E0D5319312B09001B8DC5 /* MemCpyOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CAB1931276E001B8DC5 /* MemCpyOptimizer.cpp */; };
+		1F6E0D5419312B09001B8DC5 /* PartiallyInlineLibCalls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CAC1931276E001B8DC5 /* PartiallyInlineLibCalls.cpp */; };
+		1F6E0D5519312B09001B8DC5 /* Reassociate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CAD1931276E001B8DC5 /* Reassociate.cpp */; };
+		1F6E0D5619312B09001B8DC5 /* Reg2Mem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CAE1931276E001B8DC5 /* Reg2Mem.cpp */; };
+		1F6E0D5719312B09001B8DC5 /* Scalar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CAF1931276E001B8DC5 /* Scalar.cpp */; };
+		1F6E0D5819312B09001B8DC5 /* ScalarReplAggregates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CB01931276E001B8DC5 /* ScalarReplAggregates.cpp */; };
+		1F6E0D5919312B09001B8DC5 /* SCCP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CB11931276E001B8DC5 /* SCCP.cpp */; };
+		1F6E0D5A19312B09001B8DC5 /* SimplifyCFGPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CB21931276E001B8DC5 /* SimplifyCFGPass.cpp */; };
+		1F6E0D5B19312B09001B8DC5 /* Sink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CB31931276E001B8DC5 /* Sink.cpp */; };
+		1F6E0D5C19312B09001B8DC5 /* SROA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CB41931276E001B8DC5 /* SROA.cpp */; };
+		1F6E0D5D19312B09001B8DC5 /* StructurizeCFG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CB51931276E001B8DC5 /* StructurizeCFG.cpp */; };
+		1F6E0D5E19312B09001B8DC5 /* TailRecursionElimination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CB61931276E001B8DC5 /* TailRecursionElimination.cpp */; };
 		1FCF505B19297548000122C0 /* Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80DB1929264200D9BD62 /* Disassembler.cpp */; };
 		1FCF50641929759C000122C0 /* Archive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8156192926D600D9BD62 /* Archive.cpp */; };
 		1FCF50651929759C000122C0 /* Binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8157192926D600D9BD62 /* Binary.cpp */; };
@@ -602,6 +635,13 @@
 			remoteInfo = "llvm-tblgen";
 		};
 		1F5620A8192958A500776A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
+		};
+		1F6E0D3B19312AF0001B8DC5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
 			proxyType = 1;
@@ -1979,6 +2019,7 @@
 		1F6E0CE4193127BA001B8DC5 /* libLLVMTransformUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMTransformUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E0D10193129D7001B8DC5 /* libLLVMInstrumentation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInstrumentation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E0D2119312A37001B8DC5 /* libLLVMInstCombine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInstCombine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E0D3719312AE4001B8DC5 /* libLLVMScalarOpts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMScalarOpts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -2136,6 +2177,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F6E0D1E19312A37001B8DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E0D3419312AE4001B8DC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4113,6 +4161,7 @@
 				1F6E0CE4193127BA001B8DC5 /* libLLVMTransformUtils.a */,
 				1F6E0D10193129D7001B8DC5 /* libLLVMInstrumentation.a */,
 				1F6E0D2119312A37001B8DC5 /* libLLVMInstCombine.a */,
+				1F6E0D3719312AE4001B8DC5 /* libLLVMScalarOpts.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4475,6 +4524,24 @@
 			productReference = 1F6E0D2119312A37001B8DC5 /* libLLVMInstCombine.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F6E0D3619312AE4001B8DC5 /* LLVMScalarOpts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6E0D3819312AE4001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMScalarOpts" */;
+			buildPhases = (
+				1F6E0D3D19312AF1001B8DC5 /* Create Intrinsics.gen */,
+				1F6E0D3319312AE4001B8DC5 /* Sources */,
+				1F6E0D3419312AE4001B8DC5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6E0D3C19312AF0001B8DC5 /* PBXTargetDependency */,
+			);
+			name = LLVMScalarOpts;
+			productName = LLVMScalarOpts;
+			productReference = 1F6E0D3719312AE4001B8DC5 /* libLLVMScalarOpts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FCF505619297538000122C0 /* LLVMMCDisassembler */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FCF505A19297538000122C0 /* Build configuration list for PBXNativeTarget "LLVMMCDisassembler" */;
@@ -4686,6 +4753,7 @@
 				1FCF505F1929758C000122C0 /* LLVMObject */,
 				1FCF5074192975C4000122C0 /* LLVMOption */,
 				1F5620971929585A00776A54 /* LLVMRuntimeDyld */,
+				1F6E0D3619312AE4001B8DC5 /* LLVMScalarOpts */,
 				1F561FFD1929561F00776A54 /* LLVMSelectionDAG */,
 				1FDB0A281929509D00D07D2C /* LLVMSupport */,
 				1FDB0A861929511700D07D2C /* LLVMTableGen */,
@@ -4804,6 +4872,21 @@
 			showEnvVarsInLog = 0;
 		};
 		1F6E0D2519312A41001B8DC5 /* Create Intrinsics.gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Intrinsics.gen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		1F6E0D3D19312AF1001B8DC5 /* Create Intrinsics.gen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5381,6 +5464,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F6E0D3319312AE4001B8DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6E0D3E19312B09001B8DC5 /* ADCE.cpp in Sources */,
+				1F6E0D3F19312B09001B8DC5 /* CodeGenPrepare.cpp in Sources */,
+				1F6E0D4019312B09001B8DC5 /* ConstantProp.cpp in Sources */,
+				1F6E0D4119312B09001B8DC5 /* CorrelatedValuePropagation.cpp in Sources */,
+				1F6E0D4219312B09001B8DC5 /* DCE.cpp in Sources */,
+				1F6E0D4319312B09001B8DC5 /* DeadStoreElimination.cpp in Sources */,
+				1F6E0D4419312B09001B8DC5 /* EarlyCSE.cpp in Sources */,
+				1F6E0D4519312B09001B8DC5 /* FlattenCFGPass.cpp in Sources */,
+				1F6E0D4619312B09001B8DC5 /* GlobalMerge.cpp in Sources */,
+				1F6E0D4719312B09001B8DC5 /* GVN.cpp in Sources */,
+				1F6E0D4819312B09001B8DC5 /* IndVarSimplify.cpp in Sources */,
+				1F6E0D4919312B09001B8DC5 /* JumpThreading.cpp in Sources */,
+				1F6E0D4A19312B09001B8DC5 /* LICM.cpp in Sources */,
+				1F6E0D4B19312B09001B8DC5 /* LoopDeletion.cpp in Sources */,
+				1F6E0D4C19312B09001B8DC5 /* LoopIdiomRecognize.cpp in Sources */,
+				1F6E0D4D19312B09001B8DC5 /* LoopInstSimplify.cpp in Sources */,
+				1F6E0D4E19312B09001B8DC5 /* LoopRotation.cpp in Sources */,
+				1F6E0D4F19312B09001B8DC5 /* LoopStrengthReduce.cpp in Sources */,
+				1F6E0D5019312B09001B8DC5 /* LoopUnrollPass.cpp in Sources */,
+				1F6E0D5119312B09001B8DC5 /* LoopUnswitch.cpp in Sources */,
+				1F6E0D5219312B09001B8DC5 /* LowerAtomic.cpp in Sources */,
+				1F6E0D5319312B09001B8DC5 /* MemCpyOptimizer.cpp in Sources */,
+				1F6E0D5419312B09001B8DC5 /* PartiallyInlineLibCalls.cpp in Sources */,
+				1F6E0D5519312B09001B8DC5 /* Reassociate.cpp in Sources */,
+				1F6E0D5619312B09001B8DC5 /* Reg2Mem.cpp in Sources */,
+				1F6E0D5719312B09001B8DC5 /* Scalar.cpp in Sources */,
+				1F6E0D5819312B09001B8DC5 /* ScalarReplAggregates.cpp in Sources */,
+				1F6E0D5919312B09001B8DC5 /* SCCP.cpp in Sources */,
+				1F6E0D5A19312B09001B8DC5 /* SimplifyCFGPass.cpp in Sources */,
+				1F6E0D5B19312B09001B8DC5 /* Sink.cpp in Sources */,
+				1F6E0D5C19312B09001B8DC5 /* SROA.cpp in Sources */,
+				1F6E0D5D19312B09001B8DC5 /* StructurizeCFG.cpp in Sources */,
+				1F6E0D5E19312B09001B8DC5 /* TailRecursionElimination.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FCF505319297538000122C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5661,6 +5784,11 @@
 			isa = PBXTargetDependency;
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
 			targetProxy = 1F5620A8192958A500776A54 /* PBXContainerItemProxy */;
+		};
+		1F6E0D3C19312AF0001B8DC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
+			targetProxy = 1F6E0D3B19312AF0001B8DC5 /* PBXContainerItemProxy */;
 		};
 		1FDB0B031929530A00D07D2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7148,6 +7276,78 @@
 			};
 			name = Release;
 		};
+		1F6E0D3919312AE4001B8DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F6E0D3A19312AE4001B8DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1FCF505819297538000122C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8054,6 +8254,14 @@
 			buildConfigurations = (
 				1F6E0D2319312A37001B8DC5 /* Debug */,
 				1F6E0D2419312A37001B8DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F6E0D3819312AE4001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMScalarOpts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6E0D3919312AE4001B8DC5 /* Debug */,
+				1F6E0D3A19312AE4001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
