@@ -4887,6 +4887,7 @@
 				1F56208D1929582100776A54 /* LLVMMCJIT */,
 				1F562135192959BE00776A54 /* LLVMMCParser */,
 				1FCF505F1929758C000122C0 /* LLVMObject */,
+				1F6E0D9119312BFE001B8DC5 /* LLVMObjCARCOpts */,
 				1FCF5074192975C4000122C0 /* LLVMOption */,
 				1F5620971929585A00776A54 /* LLVMRuntimeDyld */,
 				1F6E0D3619312AE4001B8DC5 /* LLVMScalarOpts */,
@@ -4899,7 +4900,6 @@
 				1FDB0B071929539200D07D2C /* LLVMipa */,
 				1F6E0D6219312B4B001B8DC5 /* LLVMipo */,
 				1F1FB3B219280E8C004EB0CA /* llvm-tblgen */,
-				1F6E0D9119312BFE001B8DC5 /* LLVMObjCARCOpts */,
 			);
 		};
 /* End PBXProject section */
@@ -8710,6 +8710,7 @@
 				1F6E0CE7193127BA001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0D11193129D7001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMInstrumentation" */ = {
 			isa = XCConfigurationList;
@@ -8718,6 +8719,7 @@
 				1F6E0D13193129D7001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0D2219312A37001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMInstCombine" */ = {
 			isa = XCConfigurationList;
@@ -8726,6 +8728,7 @@
 				1F6E0D2419312A37001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0D3819312AE4001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMScalarOpts" */ = {
 			isa = XCConfigurationList;
@@ -8734,6 +8737,7 @@
 				1F6E0D3A19312AE4001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0D6419312B4B001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMipo" */ = {
 			isa = XCConfigurationList;
@@ -8742,6 +8746,7 @@
 				1F6E0D6619312B4B001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0D8419312BA4001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMVectorize" */ = {
 			isa = XCConfigurationList;
@@ -8750,6 +8755,7 @@
 				1F6E0D8619312BA4001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0D9319312BFF001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMObjCARCOpts" */ = {
 			isa = XCConfigurationList;
@@ -8758,6 +8764,7 @@
 				1F6E0D9519312BFF001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FCF505A19297538000122C0 /* Build configuration list for PBXNativeTarget "LLVMMCDisassembler" */ = {
 			isa = XCConfigurationList;
