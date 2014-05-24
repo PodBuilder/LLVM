@@ -13,4 +13,7 @@
    <FileRef
       location = "group:lib/Target/ARM64/ARM64.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:lib/Clang/Clang.xcodeproj">
+   </FileRef>
 </Workspace>
