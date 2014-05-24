@@ -3182,7 +3182,7 @@ parseMemory(OperandVector &Operands) {
 bool ARM64AsmParser::
 parseSymbolicImmVal(const MCExpr *&ImmVal) {
   bool HasELFModifier = false;
-  ARM64MCExpr::VariantKind RefKind;
+  ARM64MCExpr::VariantKind RefKind = ARM64MCExpr::VariantKind::VK_NONE;
 
   if (Parser.getTok().is(AsmToken::Colon)) {
     Parser.Lex(); // Eat ':"
