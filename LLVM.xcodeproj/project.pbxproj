@@ -331,6 +331,14 @@
 		1F6E0D091931295E001B8DC5 /* UnifyFunctionExitNodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CD81931276E001B8DC5 /* UnifyFunctionExitNodes.cpp */; };
 		1F6E0D0A1931295E001B8DC5 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CD91931276E001B8DC5 /* Utils.cpp */; };
 		1F6E0D0B1931295E001B8DC5 /* ValueMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CDA1931276E001B8DC5 /* ValueMapper.cpp */; };
+		1F6E0D1519312A01001B8DC5 /* AddressSanitizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C661931276E001B8DC5 /* AddressSanitizer.cpp */; };
+		1F6E0D1619312A01001B8DC5 /* BoundsChecking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C671931276E001B8DC5 /* BoundsChecking.cpp */; };
+		1F6E0D1719312A01001B8DC5 /* DataFlowSanitizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C681931276E001B8DC5 /* DataFlowSanitizer.cpp */; };
+		1F6E0D1819312A01001B8DC5 /* DebugIR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C691931276E001B8DC5 /* DebugIR.cpp */; };
+		1F6E0D1919312A01001B8DC5 /* GCOVProfiling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C6B1931276E001B8DC5 /* GCOVProfiling.cpp */; };
+		1F6E0D1A19312A01001B8DC5 /* Instrumentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C6C1931276E001B8DC5 /* Instrumentation.cpp */; };
+		1F6E0D1B19312A01001B8DC5 /* MemorySanitizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C6E1931276E001B8DC5 /* MemorySanitizer.cpp */; };
+		1F6E0D1C19312A01001B8DC5 /* ThreadSanitizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C6F1931276E001B8DC5 /* ThreadSanitizer.cpp */; };
 		1FCF505B19297548000122C0 /* Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80DB1929264200D9BD62 /* Disassembler.cpp */; };
 		1FCF50641929759C000122C0 /* Archive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8156192926D600D9BD62 /* Archive.cpp */; };
 		1FCF50651929759C000122C0 /* Binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8157192926D600D9BD62 /* Binary.cpp */; };
@@ -1956,6 +1964,7 @@
 		1F6E0CDE1931276E001B8DC5 /* SLPVectorizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SLPVectorizer.cpp; sourceTree = "<group>"; };
 		1F6E0CDF1931276E001B8DC5 /* Vectorize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vectorize.cpp; sourceTree = "<group>"; };
 		1F6E0CE4193127BA001B8DC5 /* libLLVMTransformUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMTransformUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E0D10193129D7001B8DC5 /* libLLVMInstrumentation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInstrumentation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -2099,6 +2108,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F6E0CE1193127BA001B8DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E0D0D193129D7001B8DC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4074,6 +4090,7 @@
 				1FCF5075192975C4000122C0 /* libLLVMOption.a */,
 				1FCF508119297612000122C0 /* libLLVMTarget.a */,
 				1F6E0CE4193127BA001B8DC5 /* libLLVMTransformUtils.a */,
+				1F6E0D10193129D7001B8DC5 /* libLLVMInstrumentation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4402,6 +4419,23 @@
 			productReference = 1F6E0CE4193127BA001B8DC5 /* libLLVMTransformUtils.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F6E0D0F193129D7001B8DC5 /* LLVMInstrumentation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6E0D11193129D7001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMInstrumentation" */;
+			buildPhases = (
+				1F6E0D14193129E1001B8DC5 /* Create Intrinsics.gen */,
+				1F6E0D0C193129D7001B8DC5 /* Sources */,
+				1F6E0D0D193129D7001B8DC5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVMInstrumentation;
+			productName = LLVMInstrumentation;
+			productReference = 1F6E0D10193129D7001B8DC5 /* libLLVMInstrumentation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FCF505619297538000122C0 /* LLVMMCDisassembler */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FCF505A19297538000122C0 /* Build configuration list for PBXNativeTarget "LLVMMCDisassembler" */;
@@ -4599,6 +4633,7 @@
 				1F5620A31929589A00776A54 /* LLVMCore */,
 				1F562043192956F400776A54 /* LLVMDebugInfo */,
 				1F5620681929573800776A54 /* LLVMExecutionEngine */,
+				1F6E0D0F193129D7001B8DC5 /* LLVMInstrumentation */,
 				1F5620741929578000776A54 /* LLVMInterpreter */,
 				1F5620DD192958EF00776A54 /* LLVMIRReader */,
 				1F562082192957DE00776A54 /* LLVMJIT */,
@@ -4699,6 +4734,21 @@
 			showEnvVarsInLog = 0;
 		};
 		1F6E0CE8193127C5001B8DC5 /* Create Intrinsics.gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Intrinsics.gen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		1F6E0D14193129E1001B8DC5 /* Create Intrinsics.gen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5238,6 +5288,21 @@
 				1F6E0D091931295E001B8DC5 /* UnifyFunctionExitNodes.cpp in Sources */,
 				1F6E0D0A1931295E001B8DC5 /* Utils.cpp in Sources */,
 				1F6E0D0B1931295E001B8DC5 /* ValueMapper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E0D0C193129D7001B8DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6E0D1519312A01001B8DC5 /* AddressSanitizer.cpp in Sources */,
+				1F6E0D1619312A01001B8DC5 /* BoundsChecking.cpp in Sources */,
+				1F6E0D1719312A01001B8DC5 /* DataFlowSanitizer.cpp in Sources */,
+				1F6E0D1819312A01001B8DC5 /* DebugIR.cpp in Sources */,
+				1F6E0D1919312A01001B8DC5 /* GCOVProfiling.cpp in Sources */,
+				1F6E0D1A19312A01001B8DC5 /* Instrumentation.cpp in Sources */,
+				1F6E0D1B19312A01001B8DC5 /* MemorySanitizer.cpp in Sources */,
+				1F6E0D1C19312A01001B8DC5 /* ThreadSanitizer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6864,6 +6929,78 @@
 			};
 			name = Release;
 		};
+		1F6E0D12193129D7001B8DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F6E0D13193129D7001B8DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1FCF505819297538000122C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7754,6 +7891,14 @@
 			buildConfigurations = (
 				1F6E0CE6193127BA001B8DC5 /* Debug */,
 				1F6E0CE7193127BA001B8DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F6E0D11193129D7001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMInstrumentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6E0D12193129D7001B8DC5 /* Debug */,
+				1F6E0D13193129D7001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
