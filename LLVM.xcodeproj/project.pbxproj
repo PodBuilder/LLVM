@@ -406,6 +406,10 @@
 		1F6E0D7C19312B6B001B8DC5 /* PruneEH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C831931276E001B8DC5 /* PruneEH.cpp */; };
 		1F6E0D7D19312B6C001B8DC5 /* StripDeadPrototypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C841931276E001B8DC5 /* StripDeadPrototypes.cpp */; };
 		1F6E0D7E19312B6C001B8DC5 /* StripSymbols.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0C851931276E001B8DC5 /* StripSymbols.cpp */; };
+		1F6E0D8A19312BC9001B8DC5 /* BBVectorize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CDC1931276E001B8DC5 /* BBVectorize.cpp */; };
+		1F6E0D8B19312BC9001B8DC5 /* LoopVectorize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CDD1931276E001B8DC5 /* LoopVectorize.cpp */; };
+		1F6E0D8C19312BC9001B8DC5 /* SLPVectorizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CDE1931276E001B8DC5 /* SLPVectorizer.cpp */; };
+		1F6E0D8D19312BC9001B8DC5 /* Vectorize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0CDF1931276E001B8DC5 /* Vectorize.cpp */; };
 		1FCF505B19297548000122C0 /* Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A80DB1929264200D9BD62 /* Disassembler.cpp */; };
 		1FCF50641929759C000122C0 /* Archive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8156192926D600D9BD62 /* Archive.cpp */; };
 		1FCF50651929759C000122C0 /* Binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8157192926D600D9BD62 /* Binary.cpp */; };
@@ -670,6 +674,13 @@
 			remoteInfo = "llvm-tblgen";
 		};
 		1F6E0D6819312B57001B8DC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
+		};
+		1F6E0D8819312BBC001B8DC5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F176B201927F86A0003BFB8 /* Project object */;
 			proxyType = 1;
@@ -2049,6 +2060,7 @@
 		1F6E0D2119312A37001B8DC5 /* libLLVMInstCombine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInstCombine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E0D3719312AE4001B8DC5 /* libLLVMScalarOpts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMScalarOpts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E0D6319312B4B001B8DC5 /* libLLVMipo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMipo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E0D8319312BA4001B8DC5 /* libLLVMVectorize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMVectorize.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -2220,6 +2232,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F6E0D6019312B4B001B8DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E0D8019312BA4001B8DC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4199,6 +4218,7 @@
 				1F6E0D2119312A37001B8DC5 /* libLLVMInstCombine.a */,
 				1F6E0D3719312AE4001B8DC5 /* libLLVMScalarOpts.a */,
 				1F6E0D6319312B4B001B8DC5 /* libLLVMipo.a */,
+				1F6E0D8319312BA4001B8DC5 /* libLLVMVectorize.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4597,6 +4617,24 @@
 			productReference = 1F6E0D6319312B4B001B8DC5 /* libLLVMipo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F6E0D8219312BA4001B8DC5 /* LLVMVectorize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6E0D8419312BA4001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMVectorize" */;
+			buildPhases = (
+				1F6E0D8719312BAE001B8DC5 /* Create Intrinsics.gen */,
+				1F6E0D7F19312BA4001B8DC5 /* Sources */,
+				1F6E0D8019312BA4001B8DC5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6E0D8919312BBC001B8DC5 /* PBXTargetDependency */,
+			);
+			name = LLVMVectorize;
+			productName = LLVMVectorize;
+			productReference = 1F6E0D8319312BA4001B8DC5 /* libLLVMVectorize.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FCF505619297538000122C0 /* LLVMMCDisassembler */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FCF505A19297538000122C0 /* Build configuration list for PBXNativeTarget "LLVMMCDisassembler" */;
@@ -4814,6 +4852,7 @@
 				1FDB0A861929511700D07D2C /* LLVMTableGen */,
 				1FCF508019297612000122C0 /* LLVMTarget */,
 				1F6E0CE3193127BA001B8DC5 /* LLVMTransformUtils */,
+				1F6E0D8219312BA4001B8DC5 /* LLVMVectorize */,
 				1FDB0B071929539200D07D2C /* LLVMipa */,
 				1F6E0D6219312B4B001B8DC5 /* LLVMipo */,
 				1F1FB3B219280E8C004EB0CA /* llvm-tblgen */,
@@ -4958,6 +4997,21 @@
 			showEnvVarsInLog = 0;
 		};
 		1F6E0D6719312B53001B8DC5 /* Create Intrinsics.gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Intrinsics.gen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		1F6E0D8719312BAE001B8DC5 /* Create Intrinsics.gen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5603,6 +5657,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F6E0D7F19312BA4001B8DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6E0D8A19312BC9001B8DC5 /* BBVectorize.cpp in Sources */,
+				1F6E0D8B19312BC9001B8DC5 /* LoopVectorize.cpp in Sources */,
+				1F6E0D8C19312BC9001B8DC5 /* SLPVectorizer.cpp in Sources */,
+				1F6E0D8D19312BC9001B8DC5 /* Vectorize.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FCF505319297538000122C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5893,6 +5958,11 @@
 			isa = PBXTargetDependency;
 			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
 			targetProxy = 1F6E0D6819312B57001B8DC5 /* PBXContainerItemProxy */;
+		};
+		1F6E0D8919312BBC001B8DC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1FB3B219280E8C004EB0CA /* llvm-tblgen */;
+			targetProxy = 1F6E0D8819312BBC001B8DC5 /* PBXContainerItemProxy */;
 		};
 		1FDB0B031929530A00D07D2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7524,6 +7594,78 @@
 			};
 			name = Release;
 		};
+		1F6E0D8519312BA4001B8DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F6E0D8619312BA4001B8DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1FCF505819297538000122C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8446,6 +8588,14 @@
 			buildConfigurations = (
 				1F6E0D6519312B4B001B8DC5 /* Debug */,
 				1F6E0D6619312B4B001B8DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F6E0D8419312BA4001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMVectorize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6E0D8519312BA4001B8DC5 /* Debug */,
+				1F6E0D8619312BA4001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
