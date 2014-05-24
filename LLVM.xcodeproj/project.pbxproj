@@ -1788,6 +1788,138 @@
 		1F5620F11929594F00776A54 /* libLLVMLinker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMLinker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5620FA1929598000776A54 /* libLLVMMC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMMC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F562136192959BE00776A54 /* libLLVMMCParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMMCParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E0C561931276E001B8DC5 /* InstCombine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstCombine.h; sourceTree = "<group>"; };
+		1F6E0C571931276E001B8DC5 /* InstCombineAddSub.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineAddSub.cpp; sourceTree = "<group>"; };
+		1F6E0C581931276E001B8DC5 /* InstCombineAndOrXor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineAndOrXor.cpp; sourceTree = "<group>"; };
+		1F6E0C591931276E001B8DC5 /* InstCombineCalls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineCalls.cpp; sourceTree = "<group>"; };
+		1F6E0C5A1931276E001B8DC5 /* InstCombineCasts.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineCasts.cpp; sourceTree = "<group>"; };
+		1F6E0C5B1931276E001B8DC5 /* InstCombineCompares.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineCompares.cpp; sourceTree = "<group>"; };
+		1F6E0C5C1931276E001B8DC5 /* InstCombineLoadStoreAlloca.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineLoadStoreAlloca.cpp; sourceTree = "<group>"; };
+		1F6E0C5D1931276E001B8DC5 /* InstCombineMulDivRem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineMulDivRem.cpp; sourceTree = "<group>"; };
+		1F6E0C5E1931276E001B8DC5 /* InstCombinePHI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombinePHI.cpp; sourceTree = "<group>"; };
+		1F6E0C5F1931276E001B8DC5 /* InstCombineSelect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineSelect.cpp; sourceTree = "<group>"; };
+		1F6E0C601931276E001B8DC5 /* InstCombineShifts.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineShifts.cpp; sourceTree = "<group>"; };
+		1F6E0C611931276E001B8DC5 /* InstCombineSimplifyDemanded.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineSimplifyDemanded.cpp; sourceTree = "<group>"; };
+		1F6E0C621931276E001B8DC5 /* InstCombineVectorOps.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstCombineVectorOps.cpp; sourceTree = "<group>"; };
+		1F6E0C631931276E001B8DC5 /* InstCombineWorklist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstCombineWorklist.h; sourceTree = "<group>"; };
+		1F6E0C641931276E001B8DC5 /* InstructionCombining.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstructionCombining.cpp; sourceTree = "<group>"; };
+		1F6E0C661931276E001B8DC5 /* AddressSanitizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AddressSanitizer.cpp; sourceTree = "<group>"; };
+		1F6E0C671931276E001B8DC5 /* BoundsChecking.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BoundsChecking.cpp; sourceTree = "<group>"; };
+		1F6E0C681931276E001B8DC5 /* DataFlowSanitizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataFlowSanitizer.cpp; sourceTree = "<group>"; };
+		1F6E0C691931276E001B8DC5 /* DebugIR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DebugIR.cpp; sourceTree = "<group>"; };
+		1F6E0C6A1931276E001B8DC5 /* DebugIR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugIR.h; sourceTree = "<group>"; };
+		1F6E0C6B1931276E001B8DC5 /* GCOVProfiling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GCOVProfiling.cpp; sourceTree = "<group>"; };
+		1F6E0C6C1931276E001B8DC5 /* Instrumentation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Instrumentation.cpp; sourceTree = "<group>"; };
+		1F6E0C6D1931276E001B8DC5 /* MaximumSpanningTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaximumSpanningTree.h; sourceTree = "<group>"; };
+		1F6E0C6E1931276E001B8DC5 /* MemorySanitizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MemorySanitizer.cpp; sourceTree = "<group>"; };
+		1F6E0C6F1931276E001B8DC5 /* ThreadSanitizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadSanitizer.cpp; sourceTree = "<group>"; };
+		1F6E0C711931276E001B8DC5 /* ArgumentPromotion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArgumentPromotion.cpp; sourceTree = "<group>"; };
+		1F6E0C721931276E001B8DC5 /* BarrierNoopPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BarrierNoopPass.cpp; sourceTree = "<group>"; };
+		1F6E0C731931276E001B8DC5 /* ConstantMerge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConstantMerge.cpp; sourceTree = "<group>"; };
+		1F6E0C741931276E001B8DC5 /* DeadArgumentElimination.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DeadArgumentElimination.cpp; sourceTree = "<group>"; };
+		1F6E0C751931276E001B8DC5 /* ExtractGV.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExtractGV.cpp; sourceTree = "<group>"; };
+		1F6E0C761931276E001B8DC5 /* FunctionAttrs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FunctionAttrs.cpp; sourceTree = "<group>"; };
+		1F6E0C771931276E001B8DC5 /* GlobalDCE.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GlobalDCE.cpp; sourceTree = "<group>"; };
+		1F6E0C781931276E001B8DC5 /* GlobalOpt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GlobalOpt.cpp; sourceTree = "<group>"; };
+		1F6E0C791931276E001B8DC5 /* InlineAlways.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InlineAlways.cpp; sourceTree = "<group>"; };
+		1F6E0C7A1931276E001B8DC5 /* Inliner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Inliner.cpp; sourceTree = "<group>"; };
+		1F6E0C7B1931276E001B8DC5 /* InlineSimple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InlineSimple.cpp; sourceTree = "<group>"; };
+		1F6E0C7C1931276E001B8DC5 /* Internalize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Internalize.cpp; sourceTree = "<group>"; };
+		1F6E0C7D1931276E001B8DC5 /* IPConstantPropagation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IPConstantPropagation.cpp; sourceTree = "<group>"; };
+		1F6E0C7E1931276E001B8DC5 /* IPO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IPO.cpp; sourceTree = "<group>"; };
+		1F6E0C7F1931276E001B8DC5 /* LoopExtractor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopExtractor.cpp; sourceTree = "<group>"; };
+		1F6E0C801931276E001B8DC5 /* MergeFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MergeFunctions.cpp; sourceTree = "<group>"; };
+		1F6E0C811931276E001B8DC5 /* PartialInlining.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartialInlining.cpp; sourceTree = "<group>"; };
+		1F6E0C821931276E001B8DC5 /* PassManagerBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PassManagerBuilder.cpp; sourceTree = "<group>"; };
+		1F6E0C831931276E001B8DC5 /* PruneEH.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PruneEH.cpp; sourceTree = "<group>"; };
+		1F6E0C841931276E001B8DC5 /* StripDeadPrototypes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StripDeadPrototypes.cpp; sourceTree = "<group>"; };
+		1F6E0C851931276E001B8DC5 /* StripSymbols.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StripSymbols.cpp; sourceTree = "<group>"; };
+		1F6E0C871931276E001B8DC5 /* ARCRuntimeEntryPoints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCRuntimeEntryPoints.h; sourceTree = "<group>"; };
+		1F6E0C881931276E001B8DC5 /* DependencyAnalysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DependencyAnalysis.cpp; sourceTree = "<group>"; };
+		1F6E0C891931276E001B8DC5 /* DependencyAnalysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DependencyAnalysis.h; sourceTree = "<group>"; };
+		1F6E0C8A1931276E001B8DC5 /* ObjCARC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjCARC.cpp; sourceTree = "<group>"; };
+		1F6E0C8B1931276E001B8DC5 /* ObjCARC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCARC.h; sourceTree = "<group>"; };
+		1F6E0C8C1931276E001B8DC5 /* ObjCARCAliasAnalysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjCARCAliasAnalysis.cpp; sourceTree = "<group>"; };
+		1F6E0C8D1931276E001B8DC5 /* ObjCARCAliasAnalysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCARCAliasAnalysis.h; sourceTree = "<group>"; };
+		1F6E0C8E1931276E001B8DC5 /* ObjCARCAPElim.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjCARCAPElim.cpp; sourceTree = "<group>"; };
+		1F6E0C8F1931276E001B8DC5 /* ObjCARCContract.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjCARCContract.cpp; sourceTree = "<group>"; };
+		1F6E0C901931276E001B8DC5 /* ObjCARCExpand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjCARCExpand.cpp; sourceTree = "<group>"; };
+		1F6E0C911931276E001B8DC5 /* ObjCARCOpts.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjCARCOpts.cpp; sourceTree = "<group>"; };
+		1F6E0C921931276E001B8DC5 /* ObjCARCUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjCARCUtil.cpp; sourceTree = "<group>"; };
+		1F6E0C931931276E001B8DC5 /* ProvenanceAnalysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ProvenanceAnalysis.cpp; sourceTree = "<group>"; };
+		1F6E0C941931276E001B8DC5 /* ProvenanceAnalysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProvenanceAnalysis.h; sourceTree = "<group>"; };
+		1F6E0C961931276E001B8DC5 /* ADCE.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ADCE.cpp; sourceTree = "<group>"; };
+		1F6E0C971931276E001B8DC5 /* CodeGenPrepare.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CodeGenPrepare.cpp; sourceTree = "<group>"; };
+		1F6E0C981931276E001B8DC5 /* ConstantProp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConstantProp.cpp; sourceTree = "<group>"; };
+		1F6E0C991931276E001B8DC5 /* CorrelatedValuePropagation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CorrelatedValuePropagation.cpp; sourceTree = "<group>"; };
+		1F6E0C9A1931276E001B8DC5 /* DCE.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DCE.cpp; sourceTree = "<group>"; };
+		1F6E0C9B1931276E001B8DC5 /* DeadStoreElimination.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DeadStoreElimination.cpp; sourceTree = "<group>"; };
+		1F6E0C9C1931276E001B8DC5 /* EarlyCSE.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EarlyCSE.cpp; sourceTree = "<group>"; };
+		1F6E0C9D1931276E001B8DC5 /* FlattenCFGPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlattenCFGPass.cpp; sourceTree = "<group>"; };
+		1F6E0C9E1931276E001B8DC5 /* GlobalMerge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GlobalMerge.cpp; sourceTree = "<group>"; };
+		1F6E0C9F1931276E001B8DC5 /* GVN.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GVN.cpp; sourceTree = "<group>"; };
+		1F6E0CA01931276E001B8DC5 /* IndVarSimplify.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IndVarSimplify.cpp; sourceTree = "<group>"; };
+		1F6E0CA11931276E001B8DC5 /* JumpThreading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JumpThreading.cpp; sourceTree = "<group>"; };
+		1F6E0CA21931276E001B8DC5 /* LICM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LICM.cpp; sourceTree = "<group>"; };
+		1F6E0CA31931276E001B8DC5 /* LoopDeletion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopDeletion.cpp; sourceTree = "<group>"; };
+		1F6E0CA41931276E001B8DC5 /* LoopIdiomRecognize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopIdiomRecognize.cpp; sourceTree = "<group>"; };
+		1F6E0CA51931276E001B8DC5 /* LoopInstSimplify.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopInstSimplify.cpp; sourceTree = "<group>"; };
+		1F6E0CA61931276E001B8DC5 /* LoopRotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopRotation.cpp; sourceTree = "<group>"; };
+		1F6E0CA71931276E001B8DC5 /* LoopStrengthReduce.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopStrengthReduce.cpp; sourceTree = "<group>"; };
+		1F6E0CA81931276E001B8DC5 /* LoopUnrollPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopUnrollPass.cpp; sourceTree = "<group>"; };
+		1F6E0CA91931276E001B8DC5 /* LoopUnswitch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopUnswitch.cpp; sourceTree = "<group>"; };
+		1F6E0CAA1931276E001B8DC5 /* LowerAtomic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LowerAtomic.cpp; sourceTree = "<group>"; };
+		1F6E0CAB1931276E001B8DC5 /* MemCpyOptimizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MemCpyOptimizer.cpp; sourceTree = "<group>"; };
+		1F6E0CAC1931276E001B8DC5 /* PartiallyInlineLibCalls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartiallyInlineLibCalls.cpp; sourceTree = "<group>"; };
+		1F6E0CAD1931276E001B8DC5 /* Reassociate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reassociate.cpp; sourceTree = "<group>"; };
+		1F6E0CAE1931276E001B8DC5 /* Reg2Mem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reg2Mem.cpp; sourceTree = "<group>"; };
+		1F6E0CAF1931276E001B8DC5 /* Scalar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scalar.cpp; sourceTree = "<group>"; };
+		1F6E0CB01931276E001B8DC5 /* ScalarReplAggregates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScalarReplAggregates.cpp; sourceTree = "<group>"; };
+		1F6E0CB11931276E001B8DC5 /* SCCP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCCP.cpp; sourceTree = "<group>"; };
+		1F6E0CB21931276E001B8DC5 /* SimplifyCFGPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimplifyCFGPass.cpp; sourceTree = "<group>"; };
+		1F6E0CB31931276E001B8DC5 /* Sink.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sink.cpp; sourceTree = "<group>"; };
+		1F6E0CB41931276E001B8DC5 /* SROA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SROA.cpp; sourceTree = "<group>"; };
+		1F6E0CB51931276E001B8DC5 /* StructurizeCFG.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StructurizeCFG.cpp; sourceTree = "<group>"; };
+		1F6E0CB61931276E001B8DC5 /* TailRecursionElimination.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TailRecursionElimination.cpp; sourceTree = "<group>"; };
+		1F6E0CB81931276E001B8DC5 /* BasicBlockUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicBlockUtils.cpp; sourceTree = "<group>"; };
+		1F6E0CB91931276E001B8DC5 /* BreakCriticalEdges.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BreakCriticalEdges.cpp; sourceTree = "<group>"; };
+		1F6E0CBA1931276E001B8DC5 /* BuildLibCalls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BuildLibCalls.cpp; sourceTree = "<group>"; };
+		1F6E0CBB1931276E001B8DC5 /* BypassSlowDivision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BypassSlowDivision.cpp; sourceTree = "<group>"; };
+		1F6E0CBC1931276E001B8DC5 /* CloneFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CloneFunction.cpp; sourceTree = "<group>"; };
+		1F6E0CBD1931276E001B8DC5 /* CloneModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CloneModule.cpp; sourceTree = "<group>"; };
+		1F6E0CBE1931276E001B8DC5 /* CmpInstAnalysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CmpInstAnalysis.cpp; sourceTree = "<group>"; };
+		1F6E0CBF1931276E001B8DC5 /* CodeExtractor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CodeExtractor.cpp; sourceTree = "<group>"; };
+		1F6E0CC01931276E001B8DC5 /* DemoteRegToStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DemoteRegToStack.cpp; sourceTree = "<group>"; };
+		1F6E0CC11931276E001B8DC5 /* FlattenCFG.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlattenCFG.cpp; sourceTree = "<group>"; };
+		1F6E0CC21931276E001B8DC5 /* GlobalStatus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GlobalStatus.cpp; sourceTree = "<group>"; };
+		1F6E0CC31931276E001B8DC5 /* InlineFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InlineFunction.cpp; sourceTree = "<group>"; };
+		1F6E0CC41931276E001B8DC5 /* InstructionNamer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstructionNamer.cpp; sourceTree = "<group>"; };
+		1F6E0CC51931276E001B8DC5 /* IntegerDivision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntegerDivision.cpp; sourceTree = "<group>"; };
+		1F6E0CC61931276E001B8DC5 /* LCSSA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LCSSA.cpp; sourceTree = "<group>"; };
+		1F6E0CC71931276E001B8DC5 /* Local.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Local.cpp; sourceTree = "<group>"; };
+		1F6E0CC81931276E001B8DC5 /* LoopSimplify.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopSimplify.cpp; sourceTree = "<group>"; };
+		1F6E0CC91931276E001B8DC5 /* LoopUnroll.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopUnroll.cpp; sourceTree = "<group>"; };
+		1F6E0CCA1931276E001B8DC5 /* LoopUnrollRuntime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopUnrollRuntime.cpp; sourceTree = "<group>"; };
+		1F6E0CCB1931276E001B8DC5 /* LowerExpectIntrinsic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LowerExpectIntrinsic.cpp; sourceTree = "<group>"; };
+		1F6E0CCC1931276E001B8DC5 /* LowerInvoke.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LowerInvoke.cpp; sourceTree = "<group>"; };
+		1F6E0CCD1931276E001B8DC5 /* LowerSwitch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LowerSwitch.cpp; sourceTree = "<group>"; };
+		1F6E0CCE1931276E001B8DC5 /* Mem2Reg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mem2Reg.cpp; sourceTree = "<group>"; };
+		1F6E0CCF1931276E001B8DC5 /* MetaRenamer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MetaRenamer.cpp; sourceTree = "<group>"; };
+		1F6E0CD01931276E001B8DC5 /* ModuleUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModuleUtils.cpp; sourceTree = "<group>"; };
+		1F6E0CD11931276E001B8DC5 /* PromoteMemoryToRegister.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PromoteMemoryToRegister.cpp; sourceTree = "<group>"; };
+		1F6E0CD21931276E001B8DC5 /* SimplifyCFG.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimplifyCFG.cpp; sourceTree = "<group>"; };
+		1F6E0CD31931276E001B8DC5 /* SimplifyIndVar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimplifyIndVar.cpp; sourceTree = "<group>"; };
+		1F6E0CD41931276E001B8DC5 /* SimplifyInstructions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimplifyInstructions.cpp; sourceTree = "<group>"; };
+		1F6E0CD51931276E001B8DC5 /* SimplifyLibCalls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimplifyLibCalls.cpp; sourceTree = "<group>"; };
+		1F6E0CD61931276E001B8DC5 /* SpecialCaseList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpecialCaseList.cpp; sourceTree = "<group>"; };
+		1F6E0CD71931276E001B8DC5 /* SSAUpdater.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SSAUpdater.cpp; sourceTree = "<group>"; };
+		1F6E0CD81931276E001B8DC5 /* UnifyFunctionExitNodes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UnifyFunctionExitNodes.cpp; sourceTree = "<group>"; };
+		1F6E0CD91931276E001B8DC5 /* Utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		1F6E0CDA1931276E001B8DC5 /* ValueMapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ValueMapper.cpp; sourceTree = "<group>"; };
+		1F6E0CDC1931276E001B8DC5 /* BBVectorize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BBVectorize.cpp; sourceTree = "<group>"; };
+		1F6E0CDD1931276E001B8DC5 /* LoopVectorize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopVectorize.cpp; sourceTree = "<group>"; };
+		1F6E0CDE1931276E001B8DC5 /* SLPVectorizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SLPVectorizer.cpp; sourceTree = "<group>"; };
+		1F6E0CDF1931276E001B8DC5 /* Vectorize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vectorize.cpp; sourceTree = "<group>"; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -2821,6 +2953,7 @@
 				1F4A81741929277300D9BD62 /* Option */,
 				1F1FB39719280D91004EB0CA /* TableGen */,
 				1F4A81811929289400D9BD62 /* Target */,
+				1F6E0C511931276E001B8DC5 /* Transforms */,
 				1F1FB2A019280C8D004EB0CA /* Support */,
 			);
 			name = "Source Files";
@@ -3670,6 +3803,201 @@
 				1F4A818A192928B300D9BD62 /* TargetSubtargetInfo.cpp */,
 			);
 			path = Target;
+			sourceTree = "<group>";
+		};
+		1F6E0C511931276E001B8DC5 /* Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E0C551931276E001B8DC5 /* InstCombine */,
+				1F6E0C651931276E001B8DC5 /* Instrumentation */,
+				1F6E0C701931276E001B8DC5 /* IPO */,
+				1F6E0C861931276E001B8DC5 /* ObjCARC */,
+				1F6E0C951931276E001B8DC5 /* Scalar */,
+				1F6E0CB71931276E001B8DC5 /* Utils */,
+				1F6E0CDB1931276E001B8DC5 /* Vectorize */,
+			);
+			path = Transforms;
+			sourceTree = "<group>";
+		};
+		1F6E0C551931276E001B8DC5 /* InstCombine */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E0C561931276E001B8DC5 /* InstCombine.h */,
+				1F6E0C571931276E001B8DC5 /* InstCombineAddSub.cpp */,
+				1F6E0C581931276E001B8DC5 /* InstCombineAndOrXor.cpp */,
+				1F6E0C591931276E001B8DC5 /* InstCombineCalls.cpp */,
+				1F6E0C5A1931276E001B8DC5 /* InstCombineCasts.cpp */,
+				1F6E0C5B1931276E001B8DC5 /* InstCombineCompares.cpp */,
+				1F6E0C5C1931276E001B8DC5 /* InstCombineLoadStoreAlloca.cpp */,
+				1F6E0C5D1931276E001B8DC5 /* InstCombineMulDivRem.cpp */,
+				1F6E0C5E1931276E001B8DC5 /* InstCombinePHI.cpp */,
+				1F6E0C5F1931276E001B8DC5 /* InstCombineSelect.cpp */,
+				1F6E0C601931276E001B8DC5 /* InstCombineShifts.cpp */,
+				1F6E0C611931276E001B8DC5 /* InstCombineSimplifyDemanded.cpp */,
+				1F6E0C621931276E001B8DC5 /* InstCombineVectorOps.cpp */,
+				1F6E0C631931276E001B8DC5 /* InstCombineWorklist.h */,
+				1F6E0C641931276E001B8DC5 /* InstructionCombining.cpp */,
+			);
+			path = InstCombine;
+			sourceTree = "<group>";
+		};
+		1F6E0C651931276E001B8DC5 /* Instrumentation */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E0C661931276E001B8DC5 /* AddressSanitizer.cpp */,
+				1F6E0C671931276E001B8DC5 /* BoundsChecking.cpp */,
+				1F6E0C681931276E001B8DC5 /* DataFlowSanitizer.cpp */,
+				1F6E0C691931276E001B8DC5 /* DebugIR.cpp */,
+				1F6E0C6A1931276E001B8DC5 /* DebugIR.h */,
+				1F6E0C6B1931276E001B8DC5 /* GCOVProfiling.cpp */,
+				1F6E0C6C1931276E001B8DC5 /* Instrumentation.cpp */,
+				1F6E0C6D1931276E001B8DC5 /* MaximumSpanningTree.h */,
+				1F6E0C6E1931276E001B8DC5 /* MemorySanitizer.cpp */,
+				1F6E0C6F1931276E001B8DC5 /* ThreadSanitizer.cpp */,
+			);
+			path = Instrumentation;
+			sourceTree = "<group>";
+		};
+		1F6E0C701931276E001B8DC5 /* IPO */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E0C711931276E001B8DC5 /* ArgumentPromotion.cpp */,
+				1F6E0C721931276E001B8DC5 /* BarrierNoopPass.cpp */,
+				1F6E0C731931276E001B8DC5 /* ConstantMerge.cpp */,
+				1F6E0C741931276E001B8DC5 /* DeadArgumentElimination.cpp */,
+				1F6E0C751931276E001B8DC5 /* ExtractGV.cpp */,
+				1F6E0C761931276E001B8DC5 /* FunctionAttrs.cpp */,
+				1F6E0C771931276E001B8DC5 /* GlobalDCE.cpp */,
+				1F6E0C781931276E001B8DC5 /* GlobalOpt.cpp */,
+				1F6E0C791931276E001B8DC5 /* InlineAlways.cpp */,
+				1F6E0C7A1931276E001B8DC5 /* Inliner.cpp */,
+				1F6E0C7B1931276E001B8DC5 /* InlineSimple.cpp */,
+				1F6E0C7C1931276E001B8DC5 /* Internalize.cpp */,
+				1F6E0C7D1931276E001B8DC5 /* IPConstantPropagation.cpp */,
+				1F6E0C7E1931276E001B8DC5 /* IPO.cpp */,
+				1F6E0C7F1931276E001B8DC5 /* LoopExtractor.cpp */,
+				1F6E0C801931276E001B8DC5 /* MergeFunctions.cpp */,
+				1F6E0C811931276E001B8DC5 /* PartialInlining.cpp */,
+				1F6E0C821931276E001B8DC5 /* PassManagerBuilder.cpp */,
+				1F6E0C831931276E001B8DC5 /* PruneEH.cpp */,
+				1F6E0C841931276E001B8DC5 /* StripDeadPrototypes.cpp */,
+				1F6E0C851931276E001B8DC5 /* StripSymbols.cpp */,
+			);
+			path = IPO;
+			sourceTree = "<group>";
+		};
+		1F6E0C861931276E001B8DC5 /* ObjCARC */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E0C871931276E001B8DC5 /* ARCRuntimeEntryPoints.h */,
+				1F6E0C881931276E001B8DC5 /* DependencyAnalysis.cpp */,
+				1F6E0C891931276E001B8DC5 /* DependencyAnalysis.h */,
+				1F6E0C8A1931276E001B8DC5 /* ObjCARC.cpp */,
+				1F6E0C8B1931276E001B8DC5 /* ObjCARC.h */,
+				1F6E0C8C1931276E001B8DC5 /* ObjCARCAliasAnalysis.cpp */,
+				1F6E0C8D1931276E001B8DC5 /* ObjCARCAliasAnalysis.h */,
+				1F6E0C8E1931276E001B8DC5 /* ObjCARCAPElim.cpp */,
+				1F6E0C8F1931276E001B8DC5 /* ObjCARCContract.cpp */,
+				1F6E0C901931276E001B8DC5 /* ObjCARCExpand.cpp */,
+				1F6E0C911931276E001B8DC5 /* ObjCARCOpts.cpp */,
+				1F6E0C921931276E001B8DC5 /* ObjCARCUtil.cpp */,
+				1F6E0C931931276E001B8DC5 /* ProvenanceAnalysis.cpp */,
+				1F6E0C941931276E001B8DC5 /* ProvenanceAnalysis.h */,
+			);
+			path = ObjCARC;
+			sourceTree = "<group>";
+		};
+		1F6E0C951931276E001B8DC5 /* Scalar */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E0C961931276E001B8DC5 /* ADCE.cpp */,
+				1F6E0C971931276E001B8DC5 /* CodeGenPrepare.cpp */,
+				1F6E0C981931276E001B8DC5 /* ConstantProp.cpp */,
+				1F6E0C991931276E001B8DC5 /* CorrelatedValuePropagation.cpp */,
+				1F6E0C9A1931276E001B8DC5 /* DCE.cpp */,
+				1F6E0C9B1931276E001B8DC5 /* DeadStoreElimination.cpp */,
+				1F6E0C9C1931276E001B8DC5 /* EarlyCSE.cpp */,
+				1F6E0C9D1931276E001B8DC5 /* FlattenCFGPass.cpp */,
+				1F6E0C9E1931276E001B8DC5 /* GlobalMerge.cpp */,
+				1F6E0C9F1931276E001B8DC5 /* GVN.cpp */,
+				1F6E0CA01931276E001B8DC5 /* IndVarSimplify.cpp */,
+				1F6E0CA11931276E001B8DC5 /* JumpThreading.cpp */,
+				1F6E0CA21931276E001B8DC5 /* LICM.cpp */,
+				1F6E0CA31931276E001B8DC5 /* LoopDeletion.cpp */,
+				1F6E0CA41931276E001B8DC5 /* LoopIdiomRecognize.cpp */,
+				1F6E0CA51931276E001B8DC5 /* LoopInstSimplify.cpp */,
+				1F6E0CA61931276E001B8DC5 /* LoopRotation.cpp */,
+				1F6E0CA71931276E001B8DC5 /* LoopStrengthReduce.cpp */,
+				1F6E0CA81931276E001B8DC5 /* LoopUnrollPass.cpp */,
+				1F6E0CA91931276E001B8DC5 /* LoopUnswitch.cpp */,
+				1F6E0CAA1931276E001B8DC5 /* LowerAtomic.cpp */,
+				1F6E0CAB1931276E001B8DC5 /* MemCpyOptimizer.cpp */,
+				1F6E0CAC1931276E001B8DC5 /* PartiallyInlineLibCalls.cpp */,
+				1F6E0CAD1931276E001B8DC5 /* Reassociate.cpp */,
+				1F6E0CAE1931276E001B8DC5 /* Reg2Mem.cpp */,
+				1F6E0CAF1931276E001B8DC5 /* Scalar.cpp */,
+				1F6E0CB01931276E001B8DC5 /* ScalarReplAggregates.cpp */,
+				1F6E0CB11931276E001B8DC5 /* SCCP.cpp */,
+				1F6E0CB21931276E001B8DC5 /* SimplifyCFGPass.cpp */,
+				1F6E0CB31931276E001B8DC5 /* Sink.cpp */,
+				1F6E0CB41931276E001B8DC5 /* SROA.cpp */,
+				1F6E0CB51931276E001B8DC5 /* StructurizeCFG.cpp */,
+				1F6E0CB61931276E001B8DC5 /* TailRecursionElimination.cpp */,
+			);
+			path = Scalar;
+			sourceTree = "<group>";
+		};
+		1F6E0CB71931276E001B8DC5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E0CB81931276E001B8DC5 /* BasicBlockUtils.cpp */,
+				1F6E0CB91931276E001B8DC5 /* BreakCriticalEdges.cpp */,
+				1F6E0CBA1931276E001B8DC5 /* BuildLibCalls.cpp */,
+				1F6E0CBB1931276E001B8DC5 /* BypassSlowDivision.cpp */,
+				1F6E0CBC1931276E001B8DC5 /* CloneFunction.cpp */,
+				1F6E0CBD1931276E001B8DC5 /* CloneModule.cpp */,
+				1F6E0CBE1931276E001B8DC5 /* CmpInstAnalysis.cpp */,
+				1F6E0CBF1931276E001B8DC5 /* CodeExtractor.cpp */,
+				1F6E0CC01931276E001B8DC5 /* DemoteRegToStack.cpp */,
+				1F6E0CC11931276E001B8DC5 /* FlattenCFG.cpp */,
+				1F6E0CC21931276E001B8DC5 /* GlobalStatus.cpp */,
+				1F6E0CC31931276E001B8DC5 /* InlineFunction.cpp */,
+				1F6E0CC41931276E001B8DC5 /* InstructionNamer.cpp */,
+				1F6E0CC51931276E001B8DC5 /* IntegerDivision.cpp */,
+				1F6E0CC61931276E001B8DC5 /* LCSSA.cpp */,
+				1F6E0CC71931276E001B8DC5 /* Local.cpp */,
+				1F6E0CC81931276E001B8DC5 /* LoopSimplify.cpp */,
+				1F6E0CC91931276E001B8DC5 /* LoopUnroll.cpp */,
+				1F6E0CCA1931276E001B8DC5 /* LoopUnrollRuntime.cpp */,
+				1F6E0CCB1931276E001B8DC5 /* LowerExpectIntrinsic.cpp */,
+				1F6E0CCC1931276E001B8DC5 /* LowerInvoke.cpp */,
+				1F6E0CCD1931276E001B8DC5 /* LowerSwitch.cpp */,
+				1F6E0CCE1931276E001B8DC5 /* Mem2Reg.cpp */,
+				1F6E0CCF1931276E001B8DC5 /* MetaRenamer.cpp */,
+				1F6E0CD01931276E001B8DC5 /* ModuleUtils.cpp */,
+				1F6E0CD11931276E001B8DC5 /* PromoteMemoryToRegister.cpp */,
+				1F6E0CD21931276E001B8DC5 /* SimplifyCFG.cpp */,
+				1F6E0CD31931276E001B8DC5 /* SimplifyIndVar.cpp */,
+				1F6E0CD41931276E001B8DC5 /* SimplifyInstructions.cpp */,
+				1F6E0CD51931276E001B8DC5 /* SimplifyLibCalls.cpp */,
+				1F6E0CD61931276E001B8DC5 /* SpecialCaseList.cpp */,
+				1F6E0CD71931276E001B8DC5 /* SSAUpdater.cpp */,
+				1F6E0CD81931276E001B8DC5 /* UnifyFunctionExitNodes.cpp */,
+				1F6E0CD91931276E001B8DC5 /* Utils.cpp */,
+				1F6E0CDA1931276E001B8DC5 /* ValueMapper.cpp */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1F6E0CDB1931276E001B8DC5 /* Vectorize */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E0CDC1931276E001B8DC5 /* BBVectorize.cpp */,
+				1F6E0CDD1931276E001B8DC5 /* LoopVectorize.cpp */,
+				1F6E0CDE1931276E001B8DC5 /* SLPVectorizer.cpp */,
+				1F6E0CDF1931276E001B8DC5 /* Vectorize.cpp */,
+			);
+			path = Vectorize;
 			sourceTree = "<group>";
 		};
 		1F8DEF7A1927F8B900138754 /* Products */ = {
