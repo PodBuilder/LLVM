@@ -1251,7 +1251,7 @@ Instruction *InstCombiner::visitFAdd(BinaryOperator &I) {
         match(RHS, m_Select(m_Value(C2), m_Value(A2), m_Value(B2)))) {
       if (C1 == C2) {
         Constant *Z1=0, *Z2=0;
-        Value *A, *B, *C=C1;
+        Value *A=0, *B=0, *C=C1;
         if (match(A1, m_AnyZero()) && match(B2, m_AnyZero())) {
             Z1 = dyn_cast<Constant>(A1); A = A2;
             Z2 = dyn_cast<Constant>(B2); B = B1;

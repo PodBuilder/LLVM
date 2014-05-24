@@ -830,7 +830,7 @@ Value *InstCombiner::FoldAndOfICmps(ICmpInst *LHS, ICmpInst *RHS) {
   if (LHSCC == ICmpInst::ICMP_EQ && LHSCC == RHSCC &&
       LHS->hasOneUse() && RHS->hasOneUse()) {
     Value *V;
-    ConstantInt *AndCst, *SmallCst = 0, *BigCst = 0;
+    ConstantInt *AndCst = 0, *SmallCst = 0, *BigCst = 0;
 
     // (trunc x) == C1 & (and x, CA) == C2
     // (and x, CA) == C2 & (trunc x) == C1
