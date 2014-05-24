@@ -50,6 +50,7 @@
 		1F6E0ED51931304B001B8DC5 /* ARM64TargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0E2319312D39001B8DC5 /* ARM64TargetInfo.cpp */; };
 		1F6E0EDE19313087001B8DC5 /* ARM64AsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0E0B19312D39001B8DC5 /* ARM64AsmParser.cpp */; };
 		1F6E0EE9193130F0001B8DC5 /* ARM64Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0E0D19312D39001B8DC5 /* ARM64Disassembler.cpp */; };
+		1F6E0EF419313126001B8DC5 /* ARM64InstPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E0E1019312D39001B8DC5 /* ARM64InstPrinter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,6 +327,13 @@
 			remoteGlobalIDString = 1F6E0E8F19312D63001B8DC5;
 			remoteInfo = ARM64CommonTableGen;
 		};
+		1F6E0EF21931311E001B8DC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6E0DA319312C92001B8DC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6E0E8F19312D63001B8DC5;
+			remoteInfo = ARM64CommonTableGen;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -402,6 +410,7 @@
 		1F6E0ECF19313038001B8DC5 /* libLLVMARM64Info.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMARM64Info.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E0EDA1931307A001B8DC5 /* libLLVMARM64AsmParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMARM64AsmParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E0EE3193130E2001B8DC5 /* libLLVMARM64Disassembler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMARM64Disassembler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E0EEE19313118001B8DC5 /* libLLVMARM64AsmPrinter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMARM64AsmPrinter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +436,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F6E0EE0193130E2001B8DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E0EEB19313118001B8DC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -632,6 +648,7 @@
 				1F6E0ECF19313038001B8DC5 /* libLLVMARM64Info.a */,
 				1F6E0EDA1931307A001B8DC5 /* libLLVMARM64AsmParser.a */,
 				1F6E0EE3193130E2001B8DC5 /* libLLVMARM64Disassembler.a */,
+				1F6E0EEE19313118001B8DC5 /* libLLVMARM64AsmPrinter.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -708,6 +725,23 @@
 			productReference = 1F6E0EE3193130E2001B8DC5 /* libLLVMARM64Disassembler.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F6E0EED19313118001B8DC5 /* LLVMARM64AsmPrinter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6E0EEF19313118001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMARM64AsmPrinter" */;
+			buildPhases = (
+				1F6E0EEA19313118001B8DC5 /* Sources */,
+				1F6E0EEB19313118001B8DC5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6E0EF31931311E001B8DC5 /* PBXTargetDependency */,
+			);
+			name = LLVMARM64AsmPrinter;
+			productName = LLVMARM64AsmPrinter;
+			productReference = 1F6E0EEE19313118001B8DC5 /* libLLVMARM64AsmPrinter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -736,6 +770,7 @@
 			targets = (
 				1F6E0E8F19312D63001B8DC5 /* ARM64CommonTableGen */,
 				1F6E0ED91931307A001B8DC5 /* LLVMARM64AsmParser */,
+				1F6E0EED19313118001B8DC5 /* LLVMARM64AsmPrinter */,
 				1F6E0E9B19312F0E001B8DC5 /* LLVMARM64CodeGen */,
 				1F6E0EE2193130E2001B8DC5 /* LLVMARM64Disassembler */,
 				1F6E0ECE19313038001B8DC5 /* LLVMARM64Info */,
@@ -1074,6 +1109,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F6E0EEA19313118001B8DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6E0EF419313126001B8DC5 /* ARM64InstPrinter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1101,6 +1144,11 @@
 			isa = PBXTargetDependency;
 			target = 1F6E0E8F19312D63001B8DC5 /* ARM64CommonTableGen */;
 			targetProxy = 1F6E0EE7193130E9001B8DC5 /* PBXContainerItemProxy */;
+		};
+		1F6E0EF31931311E001B8DC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6E0E8F19312D63001B8DC5 /* ARM64CommonTableGen */;
+			targetProxy = 1F6E0EF21931311E001B8DC5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1449,6 +1497,78 @@
 			};
 			name = Release;
 		};
+		1F6E0EF019313118001B8DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F6E0EF119313118001B8DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1498,6 +1618,14 @@
 			buildConfigurations = (
 				1F6E0EE5193130E2001B8DC5 /* Debug */,
 				1F6E0EE6193130E2001B8DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F6E0EEF19313118001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMARM64AsmPrinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6E0EF019313118001B8DC5 /* Debug */,
+				1F6E0EF119313118001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
