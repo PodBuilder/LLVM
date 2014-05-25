@@ -91,6 +91,62 @@
 		1FDBB941193285F50036BCCF /* ParseStmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110EE19315C5D00D90316 /* ParseStmt.cpp */; };
 		1FDBB942193285F50036BCCF /* ParseTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110EF19315C5D00D90316 /* ParseTemplate.cpp */; };
 		1FDBB943193285F50036BCCF /* ParseTentative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110F019315C5D00D90316 /* ParseTentative.cpp */; };
+		1FDBB94E193286500036BCCF /* APValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FBB19315C5D00D90316 /* APValue.cpp */; };
+		1FDBB94F193286500036BCCF /* ASTConsumer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FBC19315C5D00D90316 /* ASTConsumer.cpp */; };
+		1FDBB950193286500036BCCF /* ASTContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FBD19315C5D00D90316 /* ASTContext.cpp */; };
+		1FDBB951193286500036BCCF /* ASTDiagnostic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FBE19315C5D00D90316 /* ASTDiagnostic.cpp */; };
+		1FDBB952193286500036BCCF /* ASTDumper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FBF19315C5D00D90316 /* ASTDumper.cpp */; };
+		1FDBB953193286500036BCCF /* ASTImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FC019315C5D00D90316 /* ASTImporter.cpp */; };
+		1FDBB954193286500036BCCF /* ASTTypeTraits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FC119315C5D00D90316 /* ASTTypeTraits.cpp */; };
+		1FDBB955193286500036BCCF /* AttrImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FC219315C5D00D90316 /* AttrImpl.cpp */; };
+		1FDBB956193286500036BCCF /* Comment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FC319315C5D00D90316 /* Comment.cpp */; };
+		1FDBB957193286500036BCCF /* CommentBriefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FC419315C5D00D90316 /* CommentBriefParser.cpp */; };
+		1FDBB958193286500036BCCF /* CommentCommandTraits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FC519315C5D00D90316 /* CommentCommandTraits.cpp */; };
+		1FDBB959193286500036BCCF /* CommentLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FC619315C5D00D90316 /* CommentLexer.cpp */; };
+		1FDBB95A193286500036BCCF /* CommentParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FC719315C5D00D90316 /* CommentParser.cpp */; };
+		1FDBB95B193286500036BCCF /* CommentSema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FC819315C5D00D90316 /* CommentSema.cpp */; };
+		1FDBB95C193286500036BCCF /* CXXInheritance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FCA19315C5D00D90316 /* CXXInheritance.cpp */; };
+		1FDBB95D193286500036BCCF /* Decl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FCB19315C5D00D90316 /* Decl.cpp */; };
+		1FDBB95E193286500036BCCF /* DeclarationName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FCC19315C5D00D90316 /* DeclarationName.cpp */; };
+		1FDBB95F193286500036BCCF /* DeclBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FCD19315C5D00D90316 /* DeclBase.cpp */; };
+		1FDBB960193286500036BCCF /* DeclCXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FCE19315C5D00D90316 /* DeclCXX.cpp */; };
+		1FDBB961193286500036BCCF /* DeclFriend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FCF19315C5D00D90316 /* DeclFriend.cpp */; };
+		1FDBB962193286500036BCCF /* DeclGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD019315C5D00D90316 /* DeclGroup.cpp */; };
+		1FDBB963193286500036BCCF /* DeclObjC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD119315C5D00D90316 /* DeclObjC.cpp */; };
+		1FDBB964193286500036BCCF /* DeclOpenMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD219315C5D00D90316 /* DeclOpenMP.cpp */; };
+		1FDBB965193286500036BCCF /* DeclPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD319315C5D00D90316 /* DeclPrinter.cpp */; };
+		1FDBB966193286500036BCCF /* DeclTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD419315C5D00D90316 /* DeclTemplate.cpp */; };
+		1FDBB967193286500036BCCF /* Expr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD519315C5D00D90316 /* Expr.cpp */; };
+		1FDBB968193286500036BCCF /* ExprClassification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD619315C5D00D90316 /* ExprClassification.cpp */; };
+		1FDBB969193286500036BCCF /* ExprConstant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD719315C5D00D90316 /* ExprConstant.cpp */; };
+		1FDBB96A193286500036BCCF /* ExprCXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD819315C5D00D90316 /* ExprCXX.cpp */; };
+		1FDBB96B193286500036BCCF /* ExternalASTSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FD919315C5D00D90316 /* ExternalASTSource.cpp */; };
+		1FDBB96C193286500036BCCF /* InheritViz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FDA19315C5D00D90316 /* InheritViz.cpp */; };
+		1FDBB96D193286500036BCCF /* ItaniumCXXABI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FDB19315C5D00D90316 /* ItaniumCXXABI.cpp */; };
+		1FDBB96E193286500036BCCF /* ItaniumMangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FDC19315C5D00D90316 /* ItaniumMangle.cpp */; };
+		1FDBB96F193286500036BCCF /* Mangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FDD19315C5D00D90316 /* Mangle.cpp */; };
+		1FDBB970193286500036BCCF /* MangleNumberingContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FDE19315C5D00D90316 /* MangleNumberingContext.cpp */; };
+		1FDBB971193286500036BCCF /* MicrosoftCXXABI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FDF19315C5D00D90316 /* MicrosoftCXXABI.cpp */; };
+		1FDBB972193286500036BCCF /* MicrosoftMangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE019315C5D00D90316 /* MicrosoftMangle.cpp */; };
+		1FDBB973193286500036BCCF /* NestedNameSpecifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE119315C5D00D90316 /* NestedNameSpecifier.cpp */; };
+		1FDBB974193286500036BCCF /* NSAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE219315C5D00D90316 /* NSAPI.cpp */; };
+		1FDBB975193286500036BCCF /* ParentMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE319315C5D00D90316 /* ParentMap.cpp */; };
+		1FDBB976193286500036BCCF /* RawCommentList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE419315C5D00D90316 /* RawCommentList.cpp */; };
+		1FDBB977193286500036BCCF /* RecordLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE519315C5D00D90316 /* RecordLayout.cpp */; };
+		1FDBB978193286500036BCCF /* RecordLayoutBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE619315C5D00D90316 /* RecordLayoutBuilder.cpp */; };
+		1FDBB979193286500036BCCF /* SelectorLocationsKind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE719315C5D00D90316 /* SelectorLocationsKind.cpp */; };
+		1FDBB97A193286500036BCCF /* Stmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE819315C5D00D90316 /* Stmt.cpp */; };
+		1FDBB97B193286500036BCCF /* StmtIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FE919315C5D00D90316 /* StmtIterator.cpp */; };
+		1FDBB97C193286500036BCCF /* StmtPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FEA19315C5D00D90316 /* StmtPrinter.cpp */; };
+		1FDBB97D193286500036BCCF /* StmtProfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FEB19315C5D00D90316 /* StmtProfile.cpp */; };
+		1FDBB97E193286500036BCCF /* StmtViz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FEC19315C5D00D90316 /* StmtViz.cpp */; };
+		1FDBB97F193286500036BCCF /* TemplateBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FED19315C5D00D90316 /* TemplateBase.cpp */; };
+		1FDBB980193286500036BCCF /* TemplateName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FEE19315C5D00D90316 /* TemplateName.cpp */; };
+		1FDBB981193286500036BCCF /* Type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FEF19315C5D00D90316 /* Type.cpp */; };
+		1FDBB982193286500036BCCF /* TypeLoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FF019315C5D00D90316 /* TypeLoc.cpp */; };
+		1FDBB983193286500036BCCF /* TypePrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FF119315C5D00D90316 /* TypePrinter.cpp */; };
+		1FDBB984193286500036BCCF /* VTableBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FF219315C5D00D90316 /* VTableBuilder.cpp */; };
+		1FDBB985193286500036BCCF /* VTTBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FF319315C5D00D90316 /* VTTBuilder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -361,6 +417,13 @@
 			remoteInfo = ClangCommonTableGen;
 		};
 		1FDBB934193285E70036BCCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F76BEB21931598E0037CB30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FCE6BB5193264AA006133A3;
+			remoteInfo = ClangCommonTableGen;
+		};
+		1FDBB94C1932863E0036BCCF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F76BEB21931598E0037CB30 /* Project object */;
 			proxyType = 1;
@@ -931,6 +994,7 @@
 		1FDBB8D2193281C80036BCCF /* libclangBasic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangBasic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB9101932854F0036BCCF /* libclangLex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangLex.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB930193285E00036BCCF /* libclangParse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangParse.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDBB948193286370036BCCF /* libclangAST.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangAST.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -965,6 +1029,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FDBB945193286370036BCCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -975,6 +1046,7 @@
 				1FDBB8D2193281C80036BCCF /* libclangBasic.a */,
 				1FDBB9101932854F0036BCCF /* libclangLex.a */,
 				1FDBB930193285E00036BCCF /* libclangParse.a */,
+				1FDBB948193286370036BCCF /* libclangAST.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1895,6 +1967,23 @@
 			productReference = 1FDBB930193285E00036BCCF /* libclangParse.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1FDBB947193286370036BCCF /* clangAST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FDBB949193286370036BCCF /* Build configuration list for PBXNativeTarget "clangAST" */;
+			buildPhases = (
+				1FDBB944193286370036BCCF /* Sources */,
+				1FDBB945193286370036BCCF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FDBB94D1932863E0036BCCF /* PBXTargetDependency */,
+			);
+			name = clangAST;
+			productName = clangAST;
+			productReference = 1FDBB948193286370036BCCF /* libclangAST.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1928,6 +2017,7 @@
 				1FDBB8D1193281C80036BCCF /* clangBasic */,
 				1FDBB90F1932854F0036BCCF /* clangLex */,
 				1FDBB92F193285E00036BCCF /* clangParse */,
+				1FDBB947193286370036BCCF /* clangAST */,
 			);
 		};
 /* End PBXProject section */
@@ -2285,6 +2375,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FDBB944193286370036BCCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDBB94E193286500036BCCF /* APValue.cpp in Sources */,
+				1FDBB94F193286500036BCCF /* ASTConsumer.cpp in Sources */,
+				1FDBB950193286500036BCCF /* ASTContext.cpp in Sources */,
+				1FDBB951193286500036BCCF /* ASTDiagnostic.cpp in Sources */,
+				1FDBB952193286500036BCCF /* ASTDumper.cpp in Sources */,
+				1FDBB953193286500036BCCF /* ASTImporter.cpp in Sources */,
+				1FDBB954193286500036BCCF /* ASTTypeTraits.cpp in Sources */,
+				1FDBB955193286500036BCCF /* AttrImpl.cpp in Sources */,
+				1FDBB956193286500036BCCF /* Comment.cpp in Sources */,
+				1FDBB957193286500036BCCF /* CommentBriefParser.cpp in Sources */,
+				1FDBB958193286500036BCCF /* CommentCommandTraits.cpp in Sources */,
+				1FDBB959193286500036BCCF /* CommentLexer.cpp in Sources */,
+				1FDBB95A193286500036BCCF /* CommentParser.cpp in Sources */,
+				1FDBB95B193286500036BCCF /* CommentSema.cpp in Sources */,
+				1FDBB95C193286500036BCCF /* CXXInheritance.cpp in Sources */,
+				1FDBB95D193286500036BCCF /* Decl.cpp in Sources */,
+				1FDBB95E193286500036BCCF /* DeclarationName.cpp in Sources */,
+				1FDBB95F193286500036BCCF /* DeclBase.cpp in Sources */,
+				1FDBB960193286500036BCCF /* DeclCXX.cpp in Sources */,
+				1FDBB961193286500036BCCF /* DeclFriend.cpp in Sources */,
+				1FDBB962193286500036BCCF /* DeclGroup.cpp in Sources */,
+				1FDBB963193286500036BCCF /* DeclObjC.cpp in Sources */,
+				1FDBB964193286500036BCCF /* DeclOpenMP.cpp in Sources */,
+				1FDBB965193286500036BCCF /* DeclPrinter.cpp in Sources */,
+				1FDBB966193286500036BCCF /* DeclTemplate.cpp in Sources */,
+				1FDBB967193286500036BCCF /* Expr.cpp in Sources */,
+				1FDBB968193286500036BCCF /* ExprClassification.cpp in Sources */,
+				1FDBB969193286500036BCCF /* ExprConstant.cpp in Sources */,
+				1FDBB96A193286500036BCCF /* ExprCXX.cpp in Sources */,
+				1FDBB96B193286500036BCCF /* ExternalASTSource.cpp in Sources */,
+				1FDBB96C193286500036BCCF /* InheritViz.cpp in Sources */,
+				1FDBB96D193286500036BCCF /* ItaniumCXXABI.cpp in Sources */,
+				1FDBB96E193286500036BCCF /* ItaniumMangle.cpp in Sources */,
+				1FDBB96F193286500036BCCF /* Mangle.cpp in Sources */,
+				1FDBB970193286500036BCCF /* MangleNumberingContext.cpp in Sources */,
+				1FDBB971193286500036BCCF /* MicrosoftCXXABI.cpp in Sources */,
+				1FDBB972193286500036BCCF /* MicrosoftMangle.cpp in Sources */,
+				1FDBB973193286500036BCCF /* NestedNameSpecifier.cpp in Sources */,
+				1FDBB974193286500036BCCF /* NSAPI.cpp in Sources */,
+				1FDBB975193286500036BCCF /* ParentMap.cpp in Sources */,
+				1FDBB976193286500036BCCF /* RawCommentList.cpp in Sources */,
+				1FDBB977193286500036BCCF /* RecordLayout.cpp in Sources */,
+				1FDBB978193286500036BCCF /* RecordLayoutBuilder.cpp in Sources */,
+				1FDBB979193286500036BCCF /* SelectorLocationsKind.cpp in Sources */,
+				1FDBB97A193286500036BCCF /* Stmt.cpp in Sources */,
+				1FDBB97B193286500036BCCF /* StmtIterator.cpp in Sources */,
+				1FDBB97C193286500036BCCF /* StmtPrinter.cpp in Sources */,
+				1FDBB97D193286500036BCCF /* StmtProfile.cpp in Sources */,
+				1FDBB97E193286500036BCCF /* StmtViz.cpp in Sources */,
+				1FDBB97F193286500036BCCF /* TemplateBase.cpp in Sources */,
+				1FDBB980193286500036BCCF /* TemplateName.cpp in Sources */,
+				1FDBB981193286500036BCCF /* Type.cpp in Sources */,
+				1FDBB982193286500036BCCF /* TypeLoc.cpp in Sources */,
+				1FDBB983193286500036BCCF /* TypePrinter.cpp in Sources */,
+				1FDBB984193286500036BCCF /* VTableBuilder.cpp in Sources */,
+				1FDBB985193286500036BCCF /* VTTBuilder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2312,6 +2465,11 @@
 			isa = PBXTargetDependency;
 			target = 1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */;
 			targetProxy = 1FDBB934193285E70036BCCF /* PBXContainerItemProxy */;
+		};
+		1FDBB94D1932863E0036BCCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */;
+			targetProxy = 1FDBB94C1932863E0036BCCF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2646,6 +2804,78 @@
 			};
 			name = Release;
 		};
+		1FDBB94A193286370036BCCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1FDBB94B193286370036BCCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2697,6 +2927,14 @@
 			buildConfigurations = (
 				1FDBB932193285E00036BCCF /* Debug */,
 				1FDBB933193285E00036BCCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FDBB949193286370036BCCF /* Build configuration list for PBXNativeTarget "clangAST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDBB94A193286370036BCCF /* Debug */,
+				1FDBB94B193286370036BCCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
