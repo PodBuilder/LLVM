@@ -1715,7 +1715,9 @@
 		1F76BEB21931598E0037CB30 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LLVM;
 				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "William Kent";
 			};
 			buildConfigurationList = 1F76BEB51931598E0037CB30 /* Build configuration list for PBXProject "Clang" */;
 			compatibilityVersion = "Xcode 3.2";

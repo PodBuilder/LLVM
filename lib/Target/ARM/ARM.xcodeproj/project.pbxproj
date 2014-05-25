@@ -850,7 +850,9 @@
 		1F1959E2192FF23B0098B0BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LLVM;
 				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "William Kent";
 			};
 			buildConfigurationList = 1F1959E5192FF23B0098B0BD /* Build configuration list for PBXProject "ARM" */;
 			compatibilityVersion = "Xcode 3.2";

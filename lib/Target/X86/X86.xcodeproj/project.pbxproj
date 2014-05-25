@@ -61,6 +61,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F0200B219325F2C00EF3D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D2119312A37001B8DC5;
+			remoteInfo = LLVMInstCombine;
+		};
+		1F0200B419325F2C00EF3D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D10193129D7001B8DC5;
+			remoteInfo = LLVMInstrumentation;
+		};
+		1F0200B619325F2C00EF3D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D9219312BFE001B8DC5;
+			remoteInfo = LLVMObjCARCOpts;
+		};
+		1F0200B819325F2C00EF3D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D3719312AE4001B8DC5;
+			remoteInfo = LLVMScalarOpts;
+		};
+		1F0200BA19325F2C00EF3D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0CE4193127BA001B8DC5;
+			remoteInfo = LLVMTransformUtils;
+		};
+		1F0200BC19325F2C00EF3D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D8319312BA4001B8DC5;
+			remoteInfo = LLVMVectorize;
+		};
+		1F0200BE19325F2C00EF3D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D6319312B4B001B8DC5;
+			remoteInfo = LLVMipo;
+		};
 		1F19591E192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
@@ -235,13 +284,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 1FCF508119297612000122C0;
 			remoteInfo = LLVMTarget;
-		};
-		1F19595C192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F1958F7192FEDFF0098B0BD /* LLVM.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F4246DA192AC1CD006D6A20;
-			remoteInfo = LLVMARMCodeGen;
 		};
 		1F19595E192FEDFF0098B0BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -636,6 +678,8 @@
 				1F19592B192FEDFF0098B0BD /* libLLVMCore.a */,
 				1F19592D192FEDFF0098B0BD /* libLLVMDebugInfo.a */,
 				1F19592F192FEDFF0098B0BD /* libLLVMExecutionEngine.a */,
+				1F0200B319325F2C00EF3D50 /* libLLVMInstCombine.a */,
+				1F0200B519325F2C00EF3D50 /* libLLVMInstrumentation.a */,
 				1F195931192FEDFF0098B0BD /* libLLVMInterpreter.a */,
 				1F195933192FEDFF0098B0BD /* libLLVMIRReader.a */,
 				1F195935192FEDFF0098B0BD /* libLLVMJIT.a */,
@@ -646,14 +690,18 @@
 				1F19593F192FEDFF0098B0BD /* libLLVMMCJIT.a */,
 				1F195941192FEDFF0098B0BD /* libLLVMMCParser.a */,
 				1F195943192FEDFF0098B0BD /* libLLVMObject.a */,
+				1F0200B719325F2C00EF3D50 /* libLLVMObjCARCOpts.a */,
 				1F195945192FEDFF0098B0BD /* libLLVMOption.a */,
 				1F195947192FEDFF0098B0BD /* libLLVMRuntimeDyld.a */,
+				1F0200B919325F2C00EF3D50 /* libLLVMScalarOpts.a */,
 				1F195949192FEDFF0098B0BD /* libLLVMSelectionDAG.a */,
 				1F19594B192FEDFF0098B0BD /* libLLVMSupport.a */,
 				1F19594D192FEDFF0098B0BD /* libLLVMTableGen.a */,
 				1F19594F192FEDFF0098B0BD /* libLLVMTarget.a */,
-				1F19595D192FEDFF0098B0BD /* libLLVMARMCodeGen.a */,
+				1F0200BB19325F2C00EF3D50 /* libLLVMTransformUtils.a */,
+				1F0200BD19325F2C00EF3D50 /* libLLVMVectorize.a */,
 				1F19595F192FEDFF0098B0BD /* libLLVMipa.a */,
+				1F0200BF19325F2C00EF3D50 /* libLLVMipo.a */,
 				1F195961192FEDFF0098B0BD /* llvm-tblgen */,
 			);
 			name = Products;
@@ -782,7 +830,9 @@
 		1F195888192FED040098B0BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LLVM;
 				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "William Kent";
 			};
 			buildConfigurationList = 1F19588B192FED040098B0BD /* Build configuration list for PBXProject "X86" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -814,6 +864,55 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		1F0200B319325F2C00EF3D50 /* libLLVMInstCombine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMInstCombine.a;
+			remoteRef = 1F0200B219325F2C00EF3D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F0200B519325F2C00EF3D50 /* libLLVMInstrumentation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMInstrumentation.a;
+			remoteRef = 1F0200B419325F2C00EF3D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F0200B719325F2C00EF3D50 /* libLLVMObjCARCOpts.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMObjCARCOpts.a;
+			remoteRef = 1F0200B619325F2C00EF3D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F0200B919325F2C00EF3D50 /* libLLVMScalarOpts.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMScalarOpts.a;
+			remoteRef = 1F0200B819325F2C00EF3D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F0200BB19325F2C00EF3D50 /* libLLVMTransformUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMTransformUtils.a;
+			remoteRef = 1F0200BA19325F2C00EF3D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F0200BD19325F2C00EF3D50 /* libLLVMVectorize.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMVectorize.a;
+			remoteRef = 1F0200BC19325F2C00EF3D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F0200BF19325F2C00EF3D50 /* libLLVMipo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMipo.a;
+			remoteRef = 1F0200BE19325F2C00EF3D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		1F19591F192FEDFF0098B0BD /* libLLVMAnalysis.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -987,13 +1086,6 @@
 			fileType = archive.ar;
 			path = libLLVMTarget.a;
 			remoteRef = 1F19594E192FEDFF0098B0BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1F19595D192FEDFF0098B0BD /* libLLVMARMCodeGen.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLLVMARMCodeGen.a;
-			remoteRef = 1F19595C192FEDFF0098B0BD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		1F19595F192FEDFF0098B0BD /* libLLVMipa.a */ = {

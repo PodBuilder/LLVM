@@ -602,6 +602,7 @@
 				1F6E0E7019312D5A001B8DC5 /* libLLVMMCJIT.a */,
 				1F6E0E7219312D5A001B8DC5 /* libLLVMMCParser.a */,
 				1F6E0E7419312D5A001B8DC5 /* libLLVMObject.a */,
+				1F6E0E8E19312D5A001B8DC5 /* libLLVMObjCARCOpts.a */,
 				1F6E0E7619312D5A001B8DC5 /* libLLVMOption.a */,
 				1F6E0E7819312D5A001B8DC5 /* libLLVMRuntimeDyld.a */,
 				1F6E0E7A19312D5A001B8DC5 /* libLLVMScalarOpts.a */,
@@ -614,7 +615,6 @@
 				1F6E0E8819312D5A001B8DC5 /* libLLVMipa.a */,
 				1F6E0E8A19312D5A001B8DC5 /* libLLVMipo.a */,
 				1F6E0E8C19312D5A001B8DC5 /* llvm-tblgen */,
-				1F6E0E8E19312D5A001B8DC5 /* libLLVMObjCARCOpts.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -789,7 +789,9 @@
 		1F6E0DA319312C92001B8DC5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LLVM;
 				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "William Kent";
 			};
 			buildConfigurationList = 1F6E0DA619312C92001B8DC5 /* Build configuration list for PBXProject "ARM64" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1722,6 +1724,7 @@
 				1F6E0E9219312D63001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0E9E19312F0E001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMARM64CodeGen" */ = {
 			isa = XCConfigurationList;
@@ -1730,6 +1733,7 @@
 				1F6E0EA019312F0E001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0ED019313038001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMARM64Info" */ = {
 			isa = XCConfigurationList;
@@ -1738,6 +1742,7 @@
 				1F6E0ED219313038001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0EDB1931307A001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMARM64AsmParser" */ = {
 			isa = XCConfigurationList;
@@ -1746,6 +1751,7 @@
 				1F6E0EDD1931307A001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0EE4193130E2001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMARM64Disassembler" */ = {
 			isa = XCConfigurationList;
@@ -1754,6 +1760,7 @@
 				1F6E0EE6193130E2001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0EEF19313118001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMARM64AsmPrinter" */ = {
 			isa = XCConfigurationList;
@@ -1762,6 +1769,7 @@
 				1F6E0EF119313118001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6E0EFA19313149001B8DC5 /* Build configuration list for PBXNativeTarget "LLVMARM64Desc" */ = {
 			isa = XCConfigurationList;
@@ -1770,6 +1778,7 @@
 				1F6E0EFC19313149001B8DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
