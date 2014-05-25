@@ -4256,7 +4256,7 @@ CheckTemplateArgumentAddressOfObjectOrFunction(Sema &S,
     Arg = Arg->IgnoreParenCasts();
 
     bool ExtWarnMSTemplateArg = false;
-    UnaryOperatorKind FirstOpKind;
+    UnaryOperatorKind FirstOpKind = (UnaryOperatorKind) -1;
     SourceLocation FirstOpLoc;
     while (UnaryOperator *UnOp = dyn_cast<UnaryOperator>(Arg)) {
       UnaryOperatorKind UnOpKind = UnOp->getOpcode();

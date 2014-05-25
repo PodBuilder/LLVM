@@ -3125,7 +3125,7 @@ static void TryConstructorInitialization(Sema &S,
   SmallVector<NamedDecl*, 16> Ctors(R.begin(), R.end());
 
   OverloadingResult Result = OR_No_Viable_Function;
-  OverloadCandidateSet::iterator Best;
+  OverloadCandidateSet::iterator Best = nullptr;
   bool AsInitializerList = false;
 
   // C++11 [over.match.list]p1:

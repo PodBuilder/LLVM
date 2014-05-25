@@ -5469,7 +5469,7 @@ static bool checkTrivialSubobjectCall(Sema &S, SourceLocation SubobjLoc,
   if (!SubRD)
     return true;
 
-  CXXMethodDecl *Selected;
+  CXXMethodDecl *Selected = nullptr;
   if (findTrivialSpecialMember(S, SubRD, CSM, SubType.getCVRQualifiers(),
                                Diagnose ? &Selected : 0))
     return true;

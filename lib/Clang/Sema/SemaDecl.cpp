@@ -771,7 +771,7 @@ Corrected:
     
     if (!Result.empty()) {
       bool IsFunctionTemplate;
-      bool IsVarTemplate;
+      bool IsVarTemplate = false;
       TemplateName Template;
       if (Result.end() - Result.begin() > 1) {
         IsFunctionTemplate = true;

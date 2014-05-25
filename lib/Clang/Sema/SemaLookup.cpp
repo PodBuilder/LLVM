@@ -2482,7 +2482,7 @@ Sema::SpecialMemberOverloadResult *Sema::LookupSpecialMember(CXXRecordDecl *RD,
   CanQualType CanTy = Context.getCanonicalType(Context.getTagDeclType(RD));
   DeclarationName Name;
   Expr *Arg = 0;
-  unsigned NumArgs;
+  unsigned NumArgs = 0;
 
   QualType ArgType = CanTy;
   ExprValueKind VK = VK_LValue;
