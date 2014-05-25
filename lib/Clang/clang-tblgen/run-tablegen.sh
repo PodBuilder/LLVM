@@ -40,45 +40,45 @@ ClangTableGen () {
     fi
 }
 
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/Attrs.inc" "-gen-clang-attr-classes"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrImpl.inc" "-gen-clang-attr-impl"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrDump.inc" "-gen-clang-attr-dump"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/StmtNodes.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/StmtNodes.inc" "-gen-clang-stmt-nodes"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/DeclNodes.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/DeclNodes.inc" "-gen-clang-decl-nodes"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/CommentNodes.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentNodes.inc" "-gen-clang-comment-nodes"
-ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentHTMLTags.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentHTMLTags.inc" "-gen-clang-comment-html-tags"
-ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentHTMLTags.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentHTMLTagsProperties.inc" "-gen-clang-comment-html-tags-properties"
-ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentHTMLNamedCharacterReferences.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentHTMLNamedCharacterReferences.inc" "-gen-clang-comment-html-named-character-references"
-ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentCommands.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentCommandInfo.inc" "-gen-clang-comment-command-info"
-ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentCommands.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentCommandList.inc" "-gen-clang-comment-command-list"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/Attrs.inc" "-gen-clang-attr-classes"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/AttrImpl.inc" "-gen-clang-attr-impl"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/AttrDump.inc" "-gen-clang-attr-dump"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/StmtNodes.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/StmtNodes.inc" "-gen-clang-stmt-nodes"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/DeclNodes.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/DeclNodes.inc" "-gen-clang-decl-nodes"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/CommentNodes.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/CommentNodes.inc" "-gen-clang-comment-nodes"
+ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentHTMLTags.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/CommentHTMLTags.inc" "-gen-clang-comment-html-tags"
+ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentHTMLTags.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/CommentHTMLTagsProperties.inc" "-gen-clang-comment-html-tags-properties"
+ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentHTMLNamedCharacterReferences.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/CommentHTMLNamedCharacterReferences.inc" "-gen-clang-comment-html-named-character-references"
+ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentCommands.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/CommentCommandInfo.inc" "-gen-clang-comment-command-info"
+ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentCommands.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/AST/CommentCommandList.inc" "-gen-clang-comment-command-list"
 
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Diagnostic.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/DiagnosticGroups.inc" "-gen-clang-diag-groups -I${TOP_SRCROOT}/include/clang/Basic"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Diagnostic.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/DiagnosticIndexName.inc" "-gen-clang-diags-index-name -I${TOP_SRCROOT}/include/clang/Basic"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrList.inc" "-gen-clang-attr-list"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/arm_neon.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/arm_neon.inc" "-gen-arm-neon-sema"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/arm64_simd.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/arm_simd.inc" "-gen-arm64-simd-sema"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Diagnostic.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Basic/DiagnosticGroups.inc" "-gen-clang-diag-groups -I${TOP_SRCROOT}/include/clang/Basic"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Diagnostic.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Basic/DiagnosticIndexName.inc" "-gen-clang-diags-index-name -I${TOP_SRCROOT}/include/clang/Basic"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Basic/AttrList.inc" "-gen-clang-attr-list"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/arm_neon.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Basic/arm_neon.inc" "-gen-arm-neon-sema"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/arm64_simd.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Basic/arm64_simd.inc" "-gen-arm64-simd-sema"
 
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrSpellings.inc" "-gen-clang-attr-spelling-list"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Lex/AttrSpellings.inc" "-gen-clang-attr-spelling-list"
 
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrIdentifierArg.inc" "-gen-clang-attr-identifier-arg-list"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrTypeArg.inc" "-gen-clang-attr-type-arg-list"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrLateParsed.inc" "-gen-clang-attr-late-parsed-list"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Parse/AttrIdentifierArg.inc" "-gen-clang-attr-identifier-arg-list"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Parse/AttrTypeArg.inc" "-gen-clang-attr-type-arg-list"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Parse/AttrLateParsed.inc" "-gen-clang-attr-late-parsed-list"
 
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrTemplateInstantiate.inc" "-gen-clang-attr-template-instantiate"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrParsedAttrList.inc" "-gen-clang-attr-parsed-attr-list"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrParsedAttrKinds.inc" "-gen-clang-attr-parsed-attr-kinds"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrSpellingListIndex.inc" "-gen-clang-attr-spelling-index"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrParsedAttrImpl.inc" "-gen-clang-attr-parsed-attr-impl"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Sema/AttrTemplateInstantiate.inc" "-gen-clang-attr-template-instantiate"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Sema/AttrParsedAttrList.inc" "-gen-clang-attr-parsed-attr-list"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Sema/AttrParsedAttrKinds.inc" "-gen-clang-attr-parsed-attr-kinds"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Sema/AttrSpellingListIndex.inc" "-gen-clang-attr-spelling-index"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Sema/AttrParsedAttrImpl.inc" "-gen-clang-attr-parsed-attr-impl"
 
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrPCHRead.inc" "-gen-clang-attr-pch-read"
-ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/AttrPCHWrite.inc" "-gen-clang-attr-pch-write"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Serialization/AttrPCHRead.inc" "-gen-clang-attr-pch-read"
+ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Attr.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Serialization/AttrPCHWrite.inc" "-gen-clang-attr-pch-write"
 
-LLVMTableGen "${TOP_SRCROOT}/include/clang/Driver/Options.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/Options.inc" "-gen-opt-parser-defs -I${TOP_SRCROOT}/include/clang/Driver"
-LLVMTableGen "${TOP_SRCROOT}/include/clang/Driver/CC1AsOptions.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CC1AsOptions.inc" "-gen-opt-parser-defs"
+LLVMTableGen "${TOP_SRCROOT}/include/clang/Driver/Options.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Driver/Options.inc" "-gen-opt-parser-defs -I${TOP_SRCROOT}/include/clang/Driver"
+LLVMTableGen "${TOP_SRCROOT}/include/clang/Driver/CC1AsOptions.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Driver/CC1AsOptions.inc" "-gen-opt-parser-defs"
 
 clang_diag_gen () {
     component=$1
-    ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Diagnostic.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/Diagnostic${component}Kinds.inc" "-gen-clang-diags-defs -clang-component=${component} -I${TOP_SRCROOT}/include/clang/Basic"
+    ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Diagnostic.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/clang/Basic/Diagnostic${component}Kinds.inc" "-gen-clang-diags-defs -clang-component=${component} -I${TOP_SRCROOT}/include/clang/Basic"
 }
 
 clang_diag_gen Analysis
