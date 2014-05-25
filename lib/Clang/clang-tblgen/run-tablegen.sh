@@ -49,8 +49,8 @@ ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/CommentNodes.td" "${PROJECT_TE
 ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentHTMLTags.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentHTMLTags.inc" "-gen-clang-comment-html-tags"
 ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentHTMLTags.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentHTMLTagsProperties.inc" "-gen-clang-comment-html-tags-properties"
 ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentHTMLNamedCharacterReferences.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentHTMLNamedCharacterReferences.inc" "-gen-clang-comment-html-named-character-references"
-ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentCommands.td" "${PROJECT_TEMP_DIR}/CommentCommandInfo.inc" "-gen-clang-comment-command-info"
-ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentCommands.td" "${PROJECT_TEMP_DIR}/CommentCommandList.inc" "-gen-clang-comment-command-list"
+ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentCommands.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentCommandInfo.inc" "-gen-clang-comment-command-info"
+ClangTableGen "${TOP_SRCROOT}/include/clang/AST/CommentCommands.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/CommentCommandList.inc" "-gen-clang-comment-command-list"
 
 ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Diagnostic.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/DiagnosticGroups.inc" "-gen-clang-diag-groups -I${TOP_SRCROOT}/include/clang/Basic"
 ClangTableGen "${TOP_SRCROOT}/include/clang/Basic/Diagnostic.td" "${PROJECT_TEMP_DIR}/ClangCommonTableGen/DiagnosticIndexName.inc" "-gen-clang-diags-index-name -I${TOP_SRCROOT}/include/clang/Basic"
