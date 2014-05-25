@@ -42,6 +42,52 @@
 		1F5C86481932A15C002EE2DC /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FFA19315C5D00D90316 /* Parser.cpp */; };
 		1F5C86491932A15C002EE2DC /* Registry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FFB19315C5D00D90316 /* Registry.cpp */; };
 		1F5C864A1932A15C002EE2DC /* VariantValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FFC19315C5D00D90316 /* VariantValue.cpp */; };
+		1F5C86571932A1DE002EE2DC /* AnalysisBasedWarnings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110319315C5D00D90316 /* AnalysisBasedWarnings.cpp */; };
+		1F5C86581932A1DE002EE2DC /* AttributeList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110419315C5D00D90316 /* AttributeList.cpp */; };
+		1F5C86591932A1DE002EE2DC /* CodeCompleteConsumer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110519315C5D00D90316 /* CodeCompleteConsumer.cpp */; };
+		1F5C865A1932A1DE002EE2DC /* DeclSpec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110619315C5D00D90316 /* DeclSpec.cpp */; };
+		1F5C865B1932A1DE002EE2DC /* DelayedDiagnostic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110719315C5D00D90316 /* DelayedDiagnostic.cpp */; };
+		1F5C865C1932A1DE002EE2DC /* IdentifierResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110819315C5D00D90316 /* IdentifierResolver.cpp */; };
+		1F5C865D1932A1DE002EE2DC /* JumpDiagnostics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110919315C5D00D90316 /* JumpDiagnostics.cpp */; };
+		1F5C865E1932A1DE002EE2DC /* MultiplexExternalSemaSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110A19315C5D00D90316 /* MultiplexExternalSemaSource.cpp */; };
+		1F5C865F1932A1DE002EE2DC /* Scope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110B19315C5D00D90316 /* Scope.cpp */; };
+		1F5C86601932A1DE002EE2DC /* ScopeInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110C19315C5D00D90316 /* ScopeInfo.cpp */; };
+		1F5C86611932A1DE002EE2DC /* Sema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110D19315C5D00D90316 /* Sema.cpp */; };
+		1F5C86621932A1DE002EE2DC /* SemaAccess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110E19315C5D00D90316 /* SemaAccess.cpp */; };
+		1F5C86631932A1DE002EE2DC /* SemaAttr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110F19315C5D00D90316 /* SemaAttr.cpp */; };
+		1F5C86641932A1DE002EE2DC /* SemaCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111019315C5D00D90316 /* SemaCast.cpp */; };
+		1F5C86651932A1DE002EE2DC /* SemaChecking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111119315C5D00D90316 /* SemaChecking.cpp */; };
+		1F5C86661932A1DE002EE2DC /* SemaCodeComplete.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111219315C5D00D90316 /* SemaCodeComplete.cpp */; };
+		1F5C86671932A1DE002EE2DC /* SemaConsumer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111319315C5D00D90316 /* SemaConsumer.cpp */; };
+		1F5C86681932A1DE002EE2DC /* SemaCXXScopeSpec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111419315C5D00D90316 /* SemaCXXScopeSpec.cpp */; };
+		1F5C86691932A1DE002EE2DC /* SemaDecl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111519315C5D00D90316 /* SemaDecl.cpp */; };
+		1F5C866A1932A1DE002EE2DC /* SemaDeclAttr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111619315C5D00D90316 /* SemaDeclAttr.cpp */; };
+		1F5C866B1932A1DE002EE2DC /* SemaDeclCXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111719315C5D00D90316 /* SemaDeclCXX.cpp */; };
+		1F5C866C1932A1DE002EE2DC /* SemaDeclObjC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111819315C5D00D90316 /* SemaDeclObjC.cpp */; };
+		1F5C866D1932A1DE002EE2DC /* SemaExceptionSpec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111919315C5D00D90316 /* SemaExceptionSpec.cpp */; };
+		1F5C866E1932A1DE002EE2DC /* SemaExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111A19315C5D00D90316 /* SemaExpr.cpp */; };
+		1F5C866F1932A1DE002EE2DC /* SemaExprCXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111B19315C5D00D90316 /* SemaExprCXX.cpp */; };
+		1F5C86701932A1DE002EE2DC /* SemaExprMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111C19315C5D00D90316 /* SemaExprMember.cpp */; };
+		1F5C86711932A1DE002EE2DC /* SemaExprObjC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111D19315C5D00D90316 /* SemaExprObjC.cpp */; };
+		1F5C86721932A1DE002EE2DC /* SemaFixItUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111E19315C5D00D90316 /* SemaFixItUtils.cpp */; };
+		1F5C86731932A1DE002EE2DC /* SemaInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31111F19315C5D00D90316 /* SemaInit.cpp */; };
+		1F5C86741932A1DE002EE2DC /* SemaLambda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112019315C5D00D90316 /* SemaLambda.cpp */; };
+		1F5C86751932A1DE002EE2DC /* SemaLookup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112119315C5D00D90316 /* SemaLookup.cpp */; };
+		1F5C86761932A1DE002EE2DC /* SemaObjCProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112219315C5D00D90316 /* SemaObjCProperty.cpp */; };
+		1F5C86771932A1DE002EE2DC /* SemaOpenMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112319315C5D00D90316 /* SemaOpenMP.cpp */; };
+		1F5C86781932A1DE002EE2DC /* SemaOverload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112419315C5D00D90316 /* SemaOverload.cpp */; };
+		1F5C86791932A1DE002EE2DC /* SemaPseudoObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112519315C5D00D90316 /* SemaPseudoObject.cpp */; };
+		1F5C867A1932A1DE002EE2DC /* SemaStmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112619315C5D00D90316 /* SemaStmt.cpp */; };
+		1F5C867B1932A1DE002EE2DC /* SemaStmtAsm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112719315C5D00D90316 /* SemaStmtAsm.cpp */; };
+		1F5C867C1932A1DE002EE2DC /* SemaStmtAttr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112819315C5D00D90316 /* SemaStmtAttr.cpp */; };
+		1F5C867D1932A1DE002EE2DC /* SemaTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112919315C5D00D90316 /* SemaTemplate.cpp */; };
+		1F5C867E1932A1DE002EE2DC /* SemaTemplateDeduction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112A19315C5D00D90316 /* SemaTemplateDeduction.cpp */; };
+		1F5C867F1932A1DE002EE2DC /* SemaTemplateInstantiate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112B19315C5D00D90316 /* SemaTemplateInstantiate.cpp */; };
+		1F5C86801932A1DE002EE2DC /* SemaTemplateInstantiateDecl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112C19315C5D00D90316 /* SemaTemplateInstantiateDecl.cpp */; };
+		1F5C86811932A1DE002EE2DC /* SemaTemplateVariadic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112D19315C5D00D90316 /* SemaTemplateVariadic.cpp */; };
+		1F5C86821932A1DE002EE2DC /* SemaType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112E19315C5D00D90316 /* SemaType.cpp */; };
+		1F5C86831932A1DE002EE2DC /* TargetAttributesSema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112F19315C5D00D90316 /* TargetAttributesSema.cpp */; };
+		1F5C86841932A1DE002EE2DC /* TypeLocBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31113219315C5D00D90316 /* TypeLocBuilder.cpp */; };
 		1FDBB8F9193281DF0036BCCF /* Builtins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FFE19315C5D00D90316 /* Builtins.cpp */; };
 		1FDBB8FA193281DF0036BCCF /* CharInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FFF19315C5D00D90316 /* CharInfo.cpp */; };
 		1FDBB8FB193281DF0036BCCF /* Diagnostic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31100019315C5D00D90316 /* Diagnostic.cpp */; };
@@ -402,6 +448,13 @@
 			remoteInfo = ClangCommonTableGen;
 		};
 		1F5C864B1932A179002EE2DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F76BEB21931598E0037CB30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FCE6BB5193264AA006133A3;
+			remoteInfo = ClangCommonTableGen;
+		};
+		1F5C86551932A1D1002EE2DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F76BEB21931598E0037CB30 /* Project object */;
 			proxyType = 1;
@@ -1013,6 +1066,7 @@
 		1F3111C419315CA300D90316 /* LLVM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LLVM.xcodeproj; path = ../../LLVM.xcodeproj; sourceTree = "<group>"; };
 		1F5C86161932A115002EE2DC /* libclangASTMatchers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangASTMatchers.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5C86431932A152002EE2DC /* libclangDynamicASTMatchers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangDynamicASTMatchers.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5C86511932A1CC002EE2DC /* libclangSema.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangSema.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB8D2193281C80036BCCF /* libclangBasic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangBasic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB9101932854F0036BCCF /* libclangLex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangLex.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB930193285E00036BCCF /* libclangParse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangParse.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1038,6 +1092,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F5C86401932A152002EE2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5C864E1932A1CC002EE2DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1085,6 +1146,7 @@
 				1FDBB948193286370036BCCF /* libclangAST.a */,
 				1F5C86161932A115002EE2DC /* libclangASTMatchers.a */,
 				1F5C86431932A152002EE2DC /* libclangDynamicASTMatchers.a */,
+				1F5C86511932A1CC002EE2DC /* libclangSema.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1988,6 +2050,23 @@
 			productReference = 1F5C86431932A152002EE2DC /* libclangDynamicASTMatchers.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F5C86501932A1CC002EE2DC /* clangSema */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5C86521932A1CC002EE2DC /* Build configuration list for PBXNativeTarget "clangSema" */;
+			buildPhases = (
+				1F5C864D1932A1CC002EE2DC /* Sources */,
+				1F5C864E1932A1CC002EE2DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F5C86561932A1D1002EE2DC /* PBXTargetDependency */,
+			);
+			name = clangSema;
+			productName = clangSema;
+			productReference = 1F5C86511932A1CC002EE2DC /* libclangSema.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FDBB8D1193281C80036BCCF /* clangBasic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FDBB8F6193281C80036BCCF /* Build configuration list for PBXNativeTarget "clangBasic" */;
@@ -2092,6 +2171,7 @@
 				1FDBB947193286370036BCCF /* clangAST */,
 				1F5C86151932A115002EE2DC /* clangASTMatchers */,
 				1F5C86421932A152002EE2DC /* clangDynamicASTMatchers */,
+				1F5C86501932A1CC002EE2DC /* clangSema */,
 			);
 		};
 /* End PBXProject section */
@@ -2393,6 +2473,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F5C864D1932A1CC002EE2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5C86571932A1DE002EE2DC /* AnalysisBasedWarnings.cpp in Sources */,
+				1F5C86581932A1DE002EE2DC /* AttributeList.cpp in Sources */,
+				1F5C86591932A1DE002EE2DC /* CodeCompleteConsumer.cpp in Sources */,
+				1F5C865A1932A1DE002EE2DC /* DeclSpec.cpp in Sources */,
+				1F5C865B1932A1DE002EE2DC /* DelayedDiagnostic.cpp in Sources */,
+				1F5C865C1932A1DE002EE2DC /* IdentifierResolver.cpp in Sources */,
+				1F5C865D1932A1DE002EE2DC /* JumpDiagnostics.cpp in Sources */,
+				1F5C865E1932A1DE002EE2DC /* MultiplexExternalSemaSource.cpp in Sources */,
+				1F5C865F1932A1DE002EE2DC /* Scope.cpp in Sources */,
+				1F5C86601932A1DE002EE2DC /* ScopeInfo.cpp in Sources */,
+				1F5C86611932A1DE002EE2DC /* Sema.cpp in Sources */,
+				1F5C86621932A1DE002EE2DC /* SemaAccess.cpp in Sources */,
+				1F5C86631932A1DE002EE2DC /* SemaAttr.cpp in Sources */,
+				1F5C86641932A1DE002EE2DC /* SemaCast.cpp in Sources */,
+				1F5C86651932A1DE002EE2DC /* SemaChecking.cpp in Sources */,
+				1F5C86661932A1DE002EE2DC /* SemaCodeComplete.cpp in Sources */,
+				1F5C86671932A1DE002EE2DC /* SemaConsumer.cpp in Sources */,
+				1F5C86681932A1DE002EE2DC /* SemaCXXScopeSpec.cpp in Sources */,
+				1F5C86691932A1DE002EE2DC /* SemaDecl.cpp in Sources */,
+				1F5C866A1932A1DE002EE2DC /* SemaDeclAttr.cpp in Sources */,
+				1F5C866B1932A1DE002EE2DC /* SemaDeclCXX.cpp in Sources */,
+				1F5C866C1932A1DE002EE2DC /* SemaDeclObjC.cpp in Sources */,
+				1F5C866D1932A1DE002EE2DC /* SemaExceptionSpec.cpp in Sources */,
+				1F5C866E1932A1DE002EE2DC /* SemaExpr.cpp in Sources */,
+				1F5C866F1932A1DE002EE2DC /* SemaExprCXX.cpp in Sources */,
+				1F5C86701932A1DE002EE2DC /* SemaExprMember.cpp in Sources */,
+				1F5C86711932A1DE002EE2DC /* SemaExprObjC.cpp in Sources */,
+				1F5C86721932A1DE002EE2DC /* SemaFixItUtils.cpp in Sources */,
+				1F5C86731932A1DE002EE2DC /* SemaInit.cpp in Sources */,
+				1F5C86741932A1DE002EE2DC /* SemaLambda.cpp in Sources */,
+				1F5C86751932A1DE002EE2DC /* SemaLookup.cpp in Sources */,
+				1F5C86761932A1DE002EE2DC /* SemaObjCProperty.cpp in Sources */,
+				1F5C86771932A1DE002EE2DC /* SemaOpenMP.cpp in Sources */,
+				1F5C86781932A1DE002EE2DC /* SemaOverload.cpp in Sources */,
+				1F5C86791932A1DE002EE2DC /* SemaPseudoObject.cpp in Sources */,
+				1F5C867A1932A1DE002EE2DC /* SemaStmt.cpp in Sources */,
+				1F5C867B1932A1DE002EE2DC /* SemaStmtAsm.cpp in Sources */,
+				1F5C867C1932A1DE002EE2DC /* SemaStmtAttr.cpp in Sources */,
+				1F5C867D1932A1DE002EE2DC /* SemaTemplate.cpp in Sources */,
+				1F5C867E1932A1DE002EE2DC /* SemaTemplateDeduction.cpp in Sources */,
+				1F5C867F1932A1DE002EE2DC /* SemaTemplateInstantiate.cpp in Sources */,
+				1F5C86801932A1DE002EE2DC /* SemaTemplateInstantiateDecl.cpp in Sources */,
+				1F5C86811932A1DE002EE2DC /* SemaTemplateVariadic.cpp in Sources */,
+				1F5C86821932A1DE002EE2DC /* SemaType.cpp in Sources */,
+				1F5C86831932A1DE002EE2DC /* TargetAttributesSema.cpp in Sources */,
+				1F5C86841932A1DE002EE2DC /* TypeLocBuilder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FDBB8CE193281C80036BCCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2544,6 +2677,11 @@
 			isa = PBXTargetDependency;
 			target = 1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */;
 			targetProxy = 1F5C864B1932A179002EE2DC /* PBXContainerItemProxy */;
+		};
+		1F5C86561932A1D1002EE2DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */;
+			targetProxy = 1F5C86551932A1D1002EE2DC /* PBXContainerItemProxy */;
 		};
 		1FCE6BDC193264AF006133A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2756,6 +2894,78 @@
 			name = Debug;
 		};
 		1F5C86461932A152002EE2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F5C86531932A1CC002EE2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F5C86541932A1CC002EE2DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -3149,6 +3359,14 @@
 			buildConfigurations = (
 				1F5C86451932A152002EE2DC /* Debug */,
 				1F5C86461932A152002EE2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F5C86521932A1CC002EE2DC /* Build configuration list for PBXNativeTarget "clangSema" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5C86531932A1CC002EE2DC /* Debug */,
+				1F5C86541932A1CC002EE2DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
