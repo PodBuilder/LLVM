@@ -302,6 +302,55 @@
 			remoteGlobalIDString = 1F195A05192FF2A20098B0BD;
 			remoteInfo = ARMCommonTableGen;
 		};
+		1F7C341119325CD40026365D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F195ABA192FF3BF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D2119312A37001B8DC5;
+			remoteInfo = LLVMInstCombine;
+		};
+		1F7C341319325CD40026365D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F195ABA192FF3BF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D10193129D7001B8DC5;
+			remoteInfo = LLVMInstrumentation;
+		};
+		1F7C341519325CD40026365D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F195ABA192FF3BF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D9219312BFE001B8DC5;
+			remoteInfo = LLVMObjCARCOpts;
+		};
+		1F7C341719325CD40026365D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F195ABA192FF3BF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D3719312AE4001B8DC5;
+			remoteInfo = LLVMScalarOpts;
+		};
+		1F7C341919325CD40026365D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F195ABA192FF3BF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0CE4193127BA001B8DC5;
+			remoteInfo = LLVMTransformUtils;
+		};
+		1F7C341B19325CD40026365D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F195ABA192FF3BF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D8319312BA4001B8DC5;
+			remoteInfo = LLVMVectorize;
+		};
+		1F7C341D19325CD40026365D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F195ABA192FF3BF0098B0BD /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6E0D6319312B4B001B8DC5;
+			remoteInfo = LLVMipo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -661,6 +710,8 @@
 				1F195AE6192FF3C00098B0BD /* libLLVMCore.a */,
 				1F195AE8192FF3C00098B0BD /* libLLVMDebugInfo.a */,
 				1F195AEA192FF3C00098B0BD /* libLLVMExecutionEngine.a */,
+				1F7C341219325CD40026365D /* libLLVMInstCombine.a */,
+				1F7C341419325CD40026365D /* libLLVMInstrumentation.a */,
 				1F195AEC192FF3C00098B0BD /* libLLVMInterpreter.a */,
 				1F195AEE192FF3C00098B0BD /* libLLVMIRReader.a */,
 				1F195AF0192FF3C00098B0BD /* libLLVMJIT.a */,
@@ -671,13 +722,18 @@
 				1F195AFA192FF3C00098B0BD /* libLLVMMCJIT.a */,
 				1F195AFC192FF3C00098B0BD /* libLLVMMCParser.a */,
 				1F195AFE192FF3C00098B0BD /* libLLVMObject.a */,
+				1F7C341619325CD40026365D /* libLLVMObjCARCOpts.a */,
 				1F195B00192FF3C00098B0BD /* libLLVMOption.a */,
 				1F195B02192FF3C00098B0BD /* libLLVMRuntimeDyld.a */,
+				1F7C341819325CD40026365D /* libLLVMScalarOpts.a */,
 				1F195B04192FF3C00098B0BD /* libLLVMSelectionDAG.a */,
 				1F195B06192FF3C00098B0BD /* libLLVMSupport.a */,
 				1F195B08192FF3C00098B0BD /* libLLVMTableGen.a */,
 				1F195B0A192FF3C00098B0BD /* libLLVMTarget.a */,
+				1F7C341A19325CD40026365D /* libLLVMTransformUtils.a */,
+				1F7C341C19325CD40026365D /* libLLVMVectorize.a */,
 				1F195B0E192FF3C00098B0BD /* libLLVMipa.a */,
+				1F7C341E19325CD40026365D /* libLLVMipo.a */,
 				1F195B10192FF3C00098B0BD /* llvm-tblgen */,
 			);
 			name = Products;
@@ -1013,6 +1069,55 @@
 			fileType = "compiled.mach-o.executable";
 			path = "llvm-tblgen";
 			remoteRef = 1F195B0F192FF3C00098B0BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F7C341219325CD40026365D /* libLLVMInstCombine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMInstCombine.a;
+			remoteRef = 1F7C341119325CD40026365D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F7C341419325CD40026365D /* libLLVMInstrumentation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMInstrumentation.a;
+			remoteRef = 1F7C341319325CD40026365D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F7C341619325CD40026365D /* libLLVMObjCARCOpts.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMObjCARCOpts.a;
+			remoteRef = 1F7C341519325CD40026365D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F7C341819325CD40026365D /* libLLVMScalarOpts.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMScalarOpts.a;
+			remoteRef = 1F7C341719325CD40026365D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F7C341A19325CD40026365D /* libLLVMTransformUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMTransformUtils.a;
+			remoteRef = 1F7C341919325CD40026365D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F7C341C19325CD40026365D /* libLLVMVectorize.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMVectorize.a;
+			remoteRef = 1F7C341B19325CD40026365D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F7C341E19325CD40026365D /* libLLVMipo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMipo.a;
+			remoteRef = 1F7C341D19325CD40026365D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1680,6 +1785,7 @@
 				1F195A7C192FF3530098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F195B1B192FF4810098B0BD /* Build configuration list for PBXNativeTarget "LLVMARMInfo" */ = {
 			isa = XCConfigurationList;
@@ -1688,6 +1794,7 @@
 				1F195B1D192FF4810098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F195B27192FF4DC0098B0BD /* Build configuration list for PBXNativeTarget "LLVMARMAsmParser" */ = {
 			isa = XCConfigurationList;
@@ -1696,6 +1803,7 @@
 				1F195B29192FF4DC0098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F195B32192FF5110098B0BD /* Build configuration list for PBXNativeTarget "LLVMARMDisassembler" */ = {
 			isa = XCConfigurationList;
@@ -1704,6 +1812,7 @@
 				1F195B34192FF5110098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F195B3D192FF5450098B0BD /* Build configuration list for PBXNativeTarget "LLVMARMInstPrinter" */ = {
 			isa = XCConfigurationList;
@@ -1712,6 +1821,7 @@
 				1F195B3F192FF5450098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F195B46192FF56A0098B0BD /* Build configuration list for PBXNativeTarget "LLVMARMDesc" */ = {
 			isa = XCConfigurationList;
@@ -1720,6 +1830,7 @@
 				1F195B48192FF56A0098B0BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
