@@ -6,6 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1FCE6BDA193264AB006133A3 /* Build configuration list for PBXAggregateTarget "ClangCommonTableGen" */;
+			buildPhases = (
+				1FCE6BDF193264B3006133A3 /* Run TableGen */,
+			);
+			dependencies = (
+				1FCE6BDE193264B1006133A3 /* PBXTargetDependency */,
+				1FCE6BDC193264AF006133A3 /* PBXTargetDependency */,
+			);
+			name = ClangCommonTableGen;
+			productName = ClangCommonTableGen;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1F02008219325E8200EF3D50 /* ARM64NeonEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F02007719325E8200EF3D50 /* ARM64NeonEmitter.cpp */; };
 		1F02008319325E8200EF3D50 /* ClangASTNodesEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F02007819325E8200EF3D50 /* ClangASTNodesEmitter.cpp */; };
@@ -261,6 +277,20 @@
 			remoteGlobalIDString = 1F1FB3B319280E8C004EB0CA;
 			remoteInfo = "llvm-tblgen";
 		};
+		1FCE6BDB193264AF006133A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F76BEB21931598E0037CB30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F02004919325E2E00EF3D50;
+			remoteInfo = "clang-tblgen";
+		};
+		1FCE6BDD193264B1006133A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F3111C419315CA300D90316 /* LLVM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -277,6 +307,7 @@
 		1F02008019325E8200EF3D50 /* TableGen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TableGen.cpp; sourceTree = "<group>"; };
 		1F02008119325E8200EF3D50 /* TableGenBackends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableGenBackends.h; sourceTree = "<group>"; };
 		1F02008F19325EFB00EF3D50 /* libcurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurses.dylib; path = usr/lib/libcurses.dylib; sourceTree = SDKROOT; };
+		1F02010219325F6300EF3D50 /* run-tablegen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "run-tablegen.sh"; sourceTree = "<group>"; };
 		1F310F8B19315C5C00D90316 /* AnalysisDeclContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AnalysisDeclContext.cpp; sourceTree = "<group>"; };
 		1F310F8C19315C5C00D90316 /* BodyFarm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BodyFarm.cpp; sourceTree = "<group>"; };
 		1F310F8D19315C5C00D90316 /* BodyFarm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyFarm.h; sourceTree = "<group>"; };
@@ -859,6 +890,7 @@
 				1F02007F19325E8200EF3D50 /* NeonEmitter.cpp */,
 				1F02008019325E8200EF3D50 /* TableGen.cpp */,
 				1F02008119325E8200EF3D50 /* TableGenBackends.h */,
+				1F02010219325F6300EF3D50 /* run-tablegen.sh */,
 			);
 			name = "TableGen Tool";
 			path = "clang-tblgen";
@@ -1738,6 +1770,7 @@
 			projectRoot = "";
 			targets = (
 				1F02004919325E2E00EF3D50 /* clang-tblgen */,
+				1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */,
 			);
 		};
 /* End PBXProject section */
@@ -1983,6 +2016,24 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FCE6BDF193264B3006133A3 /* Run TableGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run TableGen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/clang-tblgen/run-tablegen.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F02004619325E2E00EF3D50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -2002,6 +2053,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FCE6BDC193264AF006133A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F02004919325E2E00EF3D50 /* clang-tblgen */;
+			targetProxy = 1FCE6BDB193264AF006133A3 /* PBXContainerItemProxy */;
+		};
+		1FCE6BDE193264B1006133A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "llvm-tblgen";
+			targetProxy = 1FCE6BDD193264B1006133A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1F02005119325E2E00EF3D50 /* Debug */ = {
@@ -2104,6 +2168,20 @@
 			};
 			name = Release;
 		};
+		1FCE6BB6193264AA006133A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FCE6BB7193264AA006133A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2114,6 +2192,7 @@
 				1F02005219325E2E00EF3D50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F76BEB51931598E0037CB30 /* Build configuration list for PBXProject "Clang" */ = {
 			isa = XCConfigurationList;
@@ -2123,6 +2202,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1FCE6BDA193264AB006133A3 /* Build configuration list for PBXAggregateTarget "ClangCommonTableGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCE6BB6193264AA006133A3 /* Debug */,
+				1FCE6BB7193264AA006133A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
