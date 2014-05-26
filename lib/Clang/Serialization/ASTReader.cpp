@@ -4304,7 +4304,7 @@ ASTReader::findBeginPreprocessedEntity(SourceLocation BLoc) const {
   size_t Count = M.NumPreprocessedEntities;
   size_t Half;
   pp_iterator First = pp_begin;
-  pp_iterator PPI;
+  pp_iterator PPI = nullptr;
 
   // Do a binary search manually instead of using std::lower_bound because
   // The end locations of entities may be unordered (when a macro expansion

@@ -1689,7 +1689,7 @@ public:
 }
 
 OMPClause *OMPClauseReader::readClause() {
-  OMPClause *C;
+  OMPClause *C = nullptr;
   switch (Record[Idx++]) {
   case OMPC_default:
     C = new (Context) OMPDefaultClause();
