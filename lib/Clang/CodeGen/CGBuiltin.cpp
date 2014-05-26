@@ -4838,7 +4838,7 @@ Value *CodeGenFunction::EmitARM64BuiltinExpr(unsigned BuiltinID,
   if (!Ty)
     return 0;
 
-  unsigned Int;
+  unsigned Int = 0;
   switch (BuiltinID) {
   default: return 0;
   case ARM64::BI__builtin_arm64_vaeseq_v:
@@ -6633,7 +6633,7 @@ Value *CodeGenFunction::EmitARM64BuiltinExpr(unsigned BuiltinID,
   case ARM64::BI__builtin_arm64_vsubhn_high_v:
   case ARM64::BI__builtin_arm64_vraddhn_high_v:
   case ARM64::BI__builtin_arm64_vaddhn_high_v: {
-    const char *Name;
+    const char *Name = nullptr;
     switch (BuiltinID) {
     case ARM64::BI__builtin_arm64_vrsubhn_high_v:
       Int = Intrinsic::arm64_neon_rsubhn;
