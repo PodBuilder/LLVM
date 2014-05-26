@@ -2079,6 +2079,7 @@
 		1F6E0D8319312BA4001B8DC5 /* libLLVMVectorize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMVectorize.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E0D9219312BFE001B8DC5 /* libLLVMObjCARCOpts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMObjCARCOpts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F86EFE01933D30B001E54FB /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		1F86EFF81933D3FB001E54FB /* Version.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Version.inc; sourceTree = "<group>"; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -2277,7 +2278,6 @@
 		1FCE6CA919326524006133A3 /* TokenKinds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokenKinds.h; sourceTree = "<group>"; };
 		1FCE6CAA19326524006133A3 /* TypeTraits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeTraits.h; sourceTree = "<group>"; };
 		1FCE6CAB19326524006133A3 /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
-		1FCE6CAC19326524006133A3 /* Version.inc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Version.inc.in; sourceTree = "<group>"; };
 		1FCE6CAD19326524006133A3 /* VersionTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionTuple.h; sourceTree = "<group>"; };
 		1FCE6CAE19326524006133A3 /* Visibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visibility.h; sourceTree = "<group>"; };
 		1FCE6CB019326524006133A3 /* BackendUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackendUtil.h; sourceTree = "<group>"; };
@@ -4960,7 +4960,7 @@
 				1FCE6CA919326524006133A3 /* TokenKinds.h */,
 				1FCE6CAA19326524006133A3 /* TypeTraits.h */,
 				1FCE6CAB19326524006133A3 /* Version.h */,
-				1FCE6CAC19326524006133A3 /* Version.inc.in */,
+				1F86EFF81933D3FB001E54FB /* Version.inc */,
 				1FCE6CAD19326524006133A3 /* VersionTuple.h */,
 				1FCE6CAE19326524006133A3 /* Visibility.h */,
 			);
