@@ -159,6 +159,14 @@
 		1F86EF941933D0FA001E54FB /* Rewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110F619315C5D00D90316 /* Rewriter.cpp */; };
 		1F86EF951933D0FA001E54FB /* RewriteRope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110F719315C5D00D90316 /* RewriteRope.cpp */; };
 		1F86EF961933D0FA001E54FB /* TokenRewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110F819315C5D00D90316 /* TokenRewriter.cpp */; };
+		1F86EFA11933D14C001E54FB /* FixItRewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110FA19315C5D00D90316 /* FixItRewriter.cpp */; };
+		1F86EFA21933D14C001E54FB /* FrontendActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110FB19315C5D00D90316 /* FrontendActions.cpp */; };
+		1F86EFA31933D14C001E54FB /* HTMLPrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110FC19315C5D00D90316 /* HTMLPrint.cpp */; };
+		1F86EFA41933D14C001E54FB /* InclusionRewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110FD19315C5D00D90316 /* InclusionRewriter.cpp */; };
+		1F86EFA51933D14C001E54FB /* RewriteMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110FE19315C5D00D90316 /* RewriteMacros.cpp */; };
+		1F86EFA61933D14C001E54FB /* RewriteModernObjC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3110FF19315C5D00D90316 /* RewriteModernObjC.cpp */; };
+		1F86EFA71933D14C001E54FB /* RewriteObjC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110019315C5D00D90316 /* RewriteObjC.cpp */; };
+		1F86EFA81933D14C001E54FB /* RewriteTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31110119315C5D00D90316 /* RewriteTest.cpp */; };
 		1FDBB8F9193281DF0036BCCF /* Builtins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FFE19315C5D00D90316 /* Builtins.cpp */; };
 		1FDBB8FA193281DF0036BCCF /* CharInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FFF19315C5D00D90316 /* CharInfo.cpp */; };
 		1FDBB8FB193281DF0036BCCF /* Diagnostic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31100019315C5D00D90316 /* Diagnostic.cpp */; };
@@ -561,6 +569,13 @@
 			remoteInfo = ClangCommonTableGen;
 		};
 		1F86EF901933D0E2001E54FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F76BEB21931598E0037CB30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FCE6BB5193264AA006133A3;
+			remoteInfo = ClangCommonTableGen;
+		};
+		1F86EF9F1933D140001E54FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F76BEB21931598E0037CB30 /* Project object */;
 			proxyType = 1;
@@ -1177,6 +1192,7 @@
 		1F86EF401933D04B001E54FB /* libclangAnalysis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangAnalysis.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F86EF7F1933D0A4001E54FB /* libclangEdit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangEdit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F86EF8C1933D0DB001E54FB /* libclangRewriteCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangRewriteCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F86EF9B1933D136001E54FB /* libclangRewriteFrontend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangRewriteFrontend.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB8D2193281C80036BCCF /* libclangBasic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangBasic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB9101932854F0036BCCF /* libclangLex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangLex.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB930193285E00036BCCF /* libclangParse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangParse.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1243,6 +1259,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F86EF981933D136001E54FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FDBB8CF193281C80036BCCF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1289,6 +1312,7 @@
 				1F86EF401933D04B001E54FB /* libclangAnalysis.a */,
 				1F86EF7F1933D0A4001E54FB /* libclangEdit.a */,
 				1F86EF8C1933D0DB001E54FB /* libclangRewriteCore.a */,
+				1F86EF9B1933D136001E54FB /* libclangRewriteFrontend.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2279,6 +2303,23 @@
 			productReference = 1F86EF8C1933D0DB001E54FB /* libclangRewriteCore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F86EF9A1933D136001E54FB /* clangRewriteFrontend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F86EF9C1933D136001E54FB /* Build configuration list for PBXNativeTarget "clangRewriteFrontend" */;
+			buildPhases = (
+				1F86EF971933D136001E54FB /* Sources */,
+				1F86EF981933D136001E54FB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F86EFA01933D140001E54FB /* PBXTargetDependency */,
+			);
+			name = clangRewriteFrontend;
+			productName = clangRewriteFrontend;
+			productReference = 1F86EF9B1933D136001E54FB /* libclangRewriteFrontend.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FDBB8D1193281C80036BCCF /* clangBasic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FDBB8F6193281C80036BCCF /* Build configuration list for PBXNativeTarget "clangBasic" */;
@@ -2388,6 +2429,7 @@
 				1F86EF3F1933D04B001E54FB /* clangAnalysis */,
 				1F86EF7E1933D0A4001E54FB /* clangEdit */,
 				1F86EF8B1933D0DB001E54FB /* clangRewriteCore */,
+				1F86EF9A1933D136001E54FB /* clangRewriteFrontend */,
 			);
 		};
 /* End PBXProject section */
@@ -2856,6 +2898,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F86EF971933D136001E54FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F86EFA11933D14C001E54FB /* FixItRewriter.cpp in Sources */,
+				1F86EFA21933D14C001E54FB /* FrontendActions.cpp in Sources */,
+				1F86EFA31933D14C001E54FB /* HTMLPrint.cpp in Sources */,
+				1F86EFA41933D14C001E54FB /* InclusionRewriter.cpp in Sources */,
+				1F86EFA51933D14C001E54FB /* RewriteMacros.cpp in Sources */,
+				1F86EFA61933D14C001E54FB /* RewriteModernObjC.cpp in Sources */,
+				1F86EFA71933D14C001E54FB /* RewriteObjC.cpp in Sources */,
+				1F86EFA81933D14C001E54FB /* RewriteTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FDBB8CE193281C80036BCCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3037,6 +3094,11 @@
 			isa = PBXTargetDependency;
 			target = 1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */;
 			targetProxy = 1F86EF901933D0E2001E54FB /* PBXContainerItemProxy */;
+		};
+		1F86EFA01933D140001E54FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */;
+			targetProxy = 1F86EF9F1933D140001E54FB /* PBXContainerItemProxy */;
 		};
 		1FCE6BDC193264AF006133A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3675,6 +3737,78 @@
 			};
 			name = Release;
 		};
+		1F86EF9D1933D136001E54FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F86EF9E1933D136001E54FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1FCE6BB6193264AA006133A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4055,6 +4189,14 @@
 			buildConfigurations = (
 				1F86EF8E1933D0DB001E54FB /* Debug */,
 				1F86EF8F1933D0DB001E54FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F86EF9C1933D136001E54FB /* Build configuration list for PBXNativeTarget "clangRewriteFrontend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F86EF9D1933D136001E54FB /* Debug */,
+				1F86EF9E1933D136001E54FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
