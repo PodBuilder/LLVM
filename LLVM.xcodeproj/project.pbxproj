@@ -2078,6 +2078,7 @@
 		1F6E0D6319312B4B001B8DC5 /* libLLVMipo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMipo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E0D8319312BA4001B8DC5 /* libLLVMVectorize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMVectorize.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E0D9219312BFE001B8DC5 /* libLLVMObjCARCOpts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMObjCARCOpts.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F86EFE01933D30B001E54FB /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		1F8DEF7C1927F8B900138754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F8DEF7F1927F8B900138754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F8DEF801927F8B900138754 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -2284,8 +2285,6 @@
 		1FCE6CB219326524006133A3 /* CodeGenABITypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeGenABITypes.h; sourceTree = "<group>"; };
 		1FCE6CB319326524006133A3 /* CodeGenAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeGenAction.h; sourceTree = "<group>"; };
 		1FCE6CB419326524006133A3 /* ModuleBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleBuilder.h; sourceTree = "<group>"; };
-		1FCE6CB619326524006133A3 /* config.h.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.h.cmake; sourceTree = "<group>"; };
-		1FCE6CB719326524006133A3 /* config.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
 		1FCE6CB919326524006133A3 /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
 		1FCE6CBA19326524006133A3 /* CC1AsOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CC1AsOptions.h; sourceTree = "<group>"; };
 		1FCE6CBB19326524006133A3 /* CC1AsOptions.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = CC1AsOptions.td; sourceTree = "<group>"; };
@@ -4983,8 +4982,7 @@
 		1FCE6CB519326524006133A3 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				1FCE6CB619326524006133A3 /* config.h.cmake */,
-				1FCE6CB719326524006133A3 /* config.h.in */,
+				1F86EFE01933D30B001E54FB /* config.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
