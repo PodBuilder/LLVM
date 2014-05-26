@@ -88,6 +88,49 @@
 		1F5C86821932A1DE002EE2DC /* SemaType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112E19315C5D00D90316 /* SemaType.cpp */; };
 		1F5C86831932A1DE002EE2DC /* TargetAttributesSema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31112F19315C5D00D90316 /* TargetAttributesSema.cpp */; };
 		1F5C86841932A1DE002EE2DC /* TypeLocBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31113219315C5D00D90316 /* TypeLocBuilder.cpp */; };
+		1F86EEF21933CEC3001E54FB /* BackendUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31101319315C5D00D90316 /* BackendUtil.cpp */; };
+		1F86EEF31933CEC3001E54FB /* CGAtomic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31101419315C5D00D90316 /* CGAtomic.cpp */; };
+		1F86EEF41933CEC3001E54FB /* CGBlocks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31101519315C5D00D90316 /* CGBlocks.cpp */; };
+		1F86EEF71933CEC3001E54FB /* CGBuiltin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31101819315C5D00D90316 /* CGBuiltin.cpp */; };
+		1F86EEF81933CEC3001E54FB /* CGCall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31101919315C5D00D90316 /* CGCall.cpp */; };
+		1F86EEFA1933CEC3001E54FB /* CGClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31101B19315C5D00D90316 /* CGClass.cpp */; };
+		1F86EEFB1933CEC3001E54FB /* CGCleanup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31101C19315C5D00D90316 /* CGCleanup.cpp */; };
+		1F86EEFD1933CEC3001E54FB /* CGCUDANV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31101E19315C5D00D90316 /* CGCUDANV.cpp */; };
+		1F86EEFE1933CEC3001E54FB /* CGCUDARuntime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31101F19315C5D00D90316 /* CGCUDARuntime.cpp */; };
+		1F86EF001933CEC3001E54FB /* CGCXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102119315C5D00D90316 /* CGCXX.cpp */; };
+		1F86EF011933CEC3001E54FB /* CGCXXABI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102219315C5D00D90316 /* CGCXXABI.cpp */; };
+		1F86EF031933CEC3001E54FB /* CGDebugInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102419315C5D00D90316 /* CGDebugInfo.cpp */; };
+		1F86EF051933CEC3001E54FB /* CGDecl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102619315C5D00D90316 /* CGDecl.cpp */; };
+		1F86EF061933CEC3001E54FB /* CGDeclCXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102719315C5D00D90316 /* CGDeclCXX.cpp */; };
+		1F86EF071933CEC3001E54FB /* CGException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102819315C5D00D90316 /* CGException.cpp */; };
+		1F86EF081933CEC3001E54FB /* CGExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102919315C5D00D90316 /* CGExpr.cpp */; };
+		1F86EF091933CEC3001E54FB /* CGExprAgg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102A19315C5D00D90316 /* CGExprAgg.cpp */; };
+		1F86EF0A1933CEC3001E54FB /* CGExprComplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102B19315C5D00D90316 /* CGExprComplex.cpp */; };
+		1F86EF0B1933CEC3001E54FB /* CGExprConstant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102C19315C5D00D90316 /* CGExprConstant.cpp */; };
+		1F86EF0C1933CEC3001E54FB /* CGExprCXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102D19315C5D00D90316 /* CGExprCXX.cpp */; };
+		1F86EF0D1933CEC3001E54FB /* CGExprScalar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102E19315C5D00D90316 /* CGExprScalar.cpp */; };
+		1F86EF0E1933CEC3001E54FB /* CGObjC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31102F19315C5D00D90316 /* CGObjC.cpp */; };
+		1F86EF0F1933CEC3001E54FB /* CGObjCGNU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103019315C5D00D90316 /* CGObjCGNU.cpp */; };
+		1F86EF101933CEC3001E54FB /* CGObjCMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103119315C5D00D90316 /* CGObjCMac.cpp */; };
+		1F86EF111933CEC3001E54FB /* CGObjCRuntime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103219315C5D00D90316 /* CGObjCRuntime.cpp */; };
+		1F86EF131933CEC3001E54FB /* CGOpenCLRuntime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103419315C5D00D90316 /* CGOpenCLRuntime.cpp */; };
+		1F86EF161933CEC3001E54FB /* CGRecordLayoutBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103719315C5D00D90316 /* CGRecordLayoutBuilder.cpp */; };
+		1F86EF171933CEC3001E54FB /* CGRTTI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103819315C5D00D90316 /* CGRTTI.cpp */; };
+		1F86EF181933CEC3001E54FB /* CGStmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103919315C5D00D90316 /* CGStmt.cpp */; };
+		1F86EF1A1933CEC3001E54FB /* CGVTables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103B19315C5D00D90316 /* CGVTables.cpp */; };
+		1F86EF1C1933CEC3001E54FB /* CGVTT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103D19315C5D00D90316 /* CGVTT.cpp */; };
+		1F86EF1D1933CEC3001E54FB /* CodeGenABITypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103E19315C5D00D90316 /* CodeGenABITypes.cpp */; };
+		1F86EF1E1933CEC3001E54FB /* CodeGenAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31103F19315C5D00D90316 /* CodeGenAction.cpp */; };
+		1F86EF1F1933CEC3001E54FB /* CodeGenFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31104019315C5D00D90316 /* CodeGenFunction.cpp */; };
+		1F86EF211933CEC3001E54FB /* CodeGenModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31104219315C5D00D90316 /* CodeGenModule.cpp */; };
+		1F86EF231933CEC3001E54FB /* CodeGenPGO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31104419315C5D00D90316 /* CodeGenPGO.cpp */; };
+		1F86EF251933CEC3001E54FB /* CodeGenTBAA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31104619315C5D00D90316 /* CodeGenTBAA.cpp */; };
+		1F86EF271933CEC3001E54FB /* CodeGenTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31104819315C5D00D90316 /* CodeGenTypes.cpp */; };
+		1F86EF2A1933CEC3001E54FB /* ItaniumCXXABI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31104B19315C5D00D90316 /* ItaniumCXXABI.cpp */; };
+		1F86EF2B1933CEC3001E54FB /* MicrosoftCXXABI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31104C19315C5D00D90316 /* MicrosoftCXXABI.cpp */; };
+		1F86EF2C1933CEC3001E54FB /* MicrosoftVBTables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31104D19315C5D00D90316 /* MicrosoftVBTables.cpp */; };
+		1F86EF2E1933CEC3001E54FB /* ModuleBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31104F19315C5D00D90316 /* ModuleBuilder.cpp */; };
+		1F86EF2F1933CEC3001E54FB /* TargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31105119315C5D00D90316 /* TargetInfo.cpp */; };
 		1FDBB8F9193281DF0036BCCF /* Builtins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FFE19315C5D00D90316 /* Builtins.cpp */; };
 		1FDBB8FA193281DF0036BCCF /* CharInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F310FFF19315C5D00D90316 /* CharInfo.cpp */; };
 		1FDBB8FB193281DF0036BCCF /* Diagnostic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F31100019315C5D00D90316 /* Diagnostic.cpp */; };
@@ -460,6 +503,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1FCE6BB5193264AA006133A3;
 			remoteInfo = ClangCommonTableGen;
+		};
+		1F86EF321933CED0001E54FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F76BEB21931598E0037CB30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FCE6BB5193264AA006133A3;
+			remoteInfo = ClangCommonTableGen;
+		};
+		1F86EF341933CF0F001E54FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F3111C419315CA300D90316 /* LLVM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1FB3B219280E8C004EB0CA;
+			remoteInfo = "llvm-tblgen";
 		};
 		1FCE6BDB193264AF006133A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1067,6 +1124,7 @@
 		1F5C86161932A115002EE2DC /* libclangASTMatchers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangASTMatchers.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5C86431932A152002EE2DC /* libclangDynamicASTMatchers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangDynamicASTMatchers.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5C86511932A1CC002EE2DC /* libclangSema.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangSema.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F86EECD1933CEB1001E54FB /* libclangCodeGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangCodeGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB8D2193281C80036BCCF /* libclangBasic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangBasic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB9101932854F0036BCCF /* libclangLex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangLex.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDBB930193285E00036BCCF /* libclangParse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclangParse.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1099,6 +1157,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F5C864E1932A1CC002EE2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F86EECA1933CEB1001E54FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1147,6 +1212,7 @@
 				1F5C86161932A115002EE2DC /* libclangASTMatchers.a */,
 				1F5C86431932A152002EE2DC /* libclangDynamicASTMatchers.a */,
 				1F5C86511932A1CC002EE2DC /* libclangSema.a */,
+				1F86EECD1933CEB1001E54FB /* libclangCodeGen.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2067,6 +2133,25 @@
 			productReference = 1F5C86511932A1CC002EE2DC /* libclangSema.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F86EECC1933CEB1001E54FB /* clangCodeGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F86EEF11933CEB1001E54FB /* Build configuration list for PBXNativeTarget "clangCodeGen" */;
+			buildPhases = (
+				1F86EF371933CF16001E54FB /* Create Intrinsics.gen */,
+				1F86EEC91933CEB1001E54FB /* Sources */,
+				1F86EECA1933CEB1001E54FB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F86EF351933CF0F001E54FB /* PBXTargetDependency */,
+				1F86EF331933CED0001E54FB /* PBXTargetDependency */,
+			);
+			name = clangCodeGen;
+			productName = clangCodeGen;
+			productReference = 1F86EECD1933CEB1001E54FB /* libclangCodeGen.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FDBB8D1193281C80036BCCF /* clangBasic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FDBB8F6193281C80036BCCF /* Build configuration list for PBXNativeTarget "clangBasic" */;
@@ -2172,6 +2257,7 @@
 				1F5C86151932A115002EE2DC /* clangASTMatchers */,
 				1F5C86421932A152002EE2DC /* clangDynamicASTMatchers */,
 				1F5C86501932A1CC002EE2DC /* clangSema */,
+				1F86EECC1933CEB1001E54FB /* clangCodeGen */,
 			);
 		};
 /* End PBXProject section */
@@ -2418,6 +2504,21 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F86EF371933CF16001E54FB /* Create Intrinsics.gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Intrinsics.gen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${TOP_SRCROOT}/lib/IR/tablegen-intrinsics.sh\"";
+			showEnvVarsInLog = 0;
+		};
 		1FCE6BDF193264B3006133A3 /* Run TableGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2523,6 +2624,56 @@
 				1F5C86821932A1DE002EE2DC /* SemaType.cpp in Sources */,
 				1F5C86831932A1DE002EE2DC /* TargetAttributesSema.cpp in Sources */,
 				1F5C86841932A1DE002EE2DC /* TypeLocBuilder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F86EEC91933CEB1001E54FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F86EEF21933CEC3001E54FB /* BackendUtil.cpp in Sources */,
+				1F86EEF31933CEC3001E54FB /* CGAtomic.cpp in Sources */,
+				1F86EEF41933CEC3001E54FB /* CGBlocks.cpp in Sources */,
+				1F86EEF71933CEC3001E54FB /* CGBuiltin.cpp in Sources */,
+				1F86EEF81933CEC3001E54FB /* CGCall.cpp in Sources */,
+				1F86EEFA1933CEC3001E54FB /* CGClass.cpp in Sources */,
+				1F86EEFB1933CEC3001E54FB /* CGCleanup.cpp in Sources */,
+				1F86EEFD1933CEC3001E54FB /* CGCUDANV.cpp in Sources */,
+				1F86EEFE1933CEC3001E54FB /* CGCUDARuntime.cpp in Sources */,
+				1F86EF001933CEC3001E54FB /* CGCXX.cpp in Sources */,
+				1F86EF011933CEC3001E54FB /* CGCXXABI.cpp in Sources */,
+				1F86EF031933CEC3001E54FB /* CGDebugInfo.cpp in Sources */,
+				1F86EF051933CEC3001E54FB /* CGDecl.cpp in Sources */,
+				1F86EF061933CEC3001E54FB /* CGDeclCXX.cpp in Sources */,
+				1F86EF071933CEC3001E54FB /* CGException.cpp in Sources */,
+				1F86EF081933CEC3001E54FB /* CGExpr.cpp in Sources */,
+				1F86EF091933CEC3001E54FB /* CGExprAgg.cpp in Sources */,
+				1F86EF0A1933CEC3001E54FB /* CGExprComplex.cpp in Sources */,
+				1F86EF0B1933CEC3001E54FB /* CGExprConstant.cpp in Sources */,
+				1F86EF0C1933CEC3001E54FB /* CGExprCXX.cpp in Sources */,
+				1F86EF0D1933CEC3001E54FB /* CGExprScalar.cpp in Sources */,
+				1F86EF0E1933CEC3001E54FB /* CGObjC.cpp in Sources */,
+				1F86EF0F1933CEC3001E54FB /* CGObjCGNU.cpp in Sources */,
+				1F86EF101933CEC3001E54FB /* CGObjCMac.cpp in Sources */,
+				1F86EF111933CEC3001E54FB /* CGObjCRuntime.cpp in Sources */,
+				1F86EF131933CEC3001E54FB /* CGOpenCLRuntime.cpp in Sources */,
+				1F86EF161933CEC3001E54FB /* CGRecordLayoutBuilder.cpp in Sources */,
+				1F86EF171933CEC3001E54FB /* CGRTTI.cpp in Sources */,
+				1F86EF181933CEC3001E54FB /* CGStmt.cpp in Sources */,
+				1F86EF1A1933CEC3001E54FB /* CGVTables.cpp in Sources */,
+				1F86EF1C1933CEC3001E54FB /* CGVTT.cpp in Sources */,
+				1F86EF1D1933CEC3001E54FB /* CodeGenABITypes.cpp in Sources */,
+				1F86EF1E1933CEC3001E54FB /* CodeGenAction.cpp in Sources */,
+				1F86EF1F1933CEC3001E54FB /* CodeGenFunction.cpp in Sources */,
+				1F86EF211933CEC3001E54FB /* CodeGenModule.cpp in Sources */,
+				1F86EF231933CEC3001E54FB /* CodeGenPGO.cpp in Sources */,
+				1F86EF251933CEC3001E54FB /* CodeGenTBAA.cpp in Sources */,
+				1F86EF271933CEC3001E54FB /* CodeGenTypes.cpp in Sources */,
+				1F86EF2A1933CEC3001E54FB /* ItaniumCXXABI.cpp in Sources */,
+				1F86EF2B1933CEC3001E54FB /* MicrosoftCXXABI.cpp in Sources */,
+				1F86EF2C1933CEC3001E54FB /* MicrosoftVBTables.cpp in Sources */,
+				1F86EF2E1933CEC3001E54FB /* ModuleBuilder.cpp in Sources */,
+				1F86EF2F1933CEC3001E54FB /* TargetInfo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2682,6 +2833,16 @@
 			isa = PBXTargetDependency;
 			target = 1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */;
 			targetProxy = 1F5C86551932A1D1002EE2DC /* PBXContainerItemProxy */;
+		};
+		1F86EF331933CED0001E54FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FCE6BB5193264AA006133A3 /* ClangCommonTableGen */;
+			targetProxy = 1F86EF321933CED0001E54FB /* PBXContainerItemProxy */;
+		};
+		1F86EF351933CF0F001E54FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "llvm-tblgen";
+			targetProxy = 1F86EF341933CF0F001E54FB /* PBXContainerItemProxy */;
 		};
 		1FCE6BDC193264AF006133A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3032,6 +3193,78 @@
 			};
 			name = Release;
 		};
+		1F86EECE1933CEB1001E54FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F86EECF1933CEB1001E54FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1FCE6BB6193264AA006133A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3353,6 +3586,7 @@
 				1F5C86181932A115002EE2DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F5C86441932A152002EE2DC /* Build configuration list for PBXNativeTarget "clangDynamicASTMatchers" */ = {
 			isa = XCConfigurationList;
@@ -3361,6 +3595,7 @@
 				1F5C86461932A152002EE2DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F5C86521932A1CC002EE2DC /* Build configuration list for PBXNativeTarget "clangSema" */ = {
 			isa = XCConfigurationList;
@@ -3369,6 +3604,7 @@
 				1F5C86541932A1CC002EE2DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F76BEB51931598E0037CB30 /* Build configuration list for PBXProject "Clang" */ = {
 			isa = XCConfigurationList;
@@ -3378,6 +3614,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1F86EEF11933CEB1001E54FB /* Build configuration list for PBXNativeTarget "clangCodeGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F86EECE1933CEB1001E54FB /* Debug */,
+				1F86EECF1933CEB1001E54FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		1FCE6BDA193264AB006133A3 /* Build configuration list for PBXAggregateTarget "ClangCommonTableGen" */ = {
 			isa = XCConfigurationList;
